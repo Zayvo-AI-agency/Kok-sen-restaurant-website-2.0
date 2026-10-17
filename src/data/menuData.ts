@@ -14,111 +14,111 @@ export const MENU_CATEGORIES: MenuCategoryDef[] = [
     "id": "all",
     "name": "All Dishes",
     "nameEn": "All Dishes",
-    "nameZh": ""
+    "nameZh": "全部菜品"
   },
   {
     "id": "beef",
     "name": "Beef",
     "nameEn": "Beef",
-    "nameZh": "",
+    "nameZh": "牛肉类",
     "count": 4
   },
   {
     "id": "chicken",
     "name": "Chicken",
     "nameEn": "Chicken",
-    "nameZh": "",
+    "nameZh": "鸡肉类",
     "count": 6
   },
   {
     "id": "crab",
     "name": "Crab",
     "nameEn": "Crab",
-    "nameZh": "",
+    "nameZh": "螃蟹类",
     "count": 5
   },
   {
     "id": "eggs",
     "name": "Eggs",
     "nameEn": "Eggs",
-    "nameZh": "",
+    "nameZh": "蛋类",
     "count": 6
   },
   {
     "id": "fish",
     "name": "Fish",
     "nameEn": "Fish",
-    "nameZh": "",
+    "nameZh": "鱼头 / 鱼类",
     "count": 9
   },
   {
     "id": "frogs",
     "name": "Frogs",
     "nameEn": "Frogs",
-    "nameZh": "",
+    "nameZh": "田鸡类",
     "count": 3
   },
   {
     "id": "vegetables",
     "name": "Vegetables",
     "nameEn": "Vegetables",
-    "nameZh": "",
+    "nameZh": "时蔬类",
     "count": 8
   },
   {
     "id": "hor-fun",
     "name": "Hor Fun",
     "nameEn": "Hor Fun",
-    "nameZh": "",
+    "nameZh": "招牌河粉",
     "count": 7
   },
   {
     "id": "noodles",
     "name": "Noodles",
     "nameEn": "Noodles",
-    "nameZh": "",
+    "nameZh": "面 / 米粉类",
     "count": 8
   },
   {
     "id": "pork",
     "name": "Pork",
     "nameEn": "Pork",
-    "nameZh": "",
+    "nameZh": "猪肉 / 排骨类",
     "count": 7
   },
   {
     "id": "rice",
     "name": "Rice",
     "nameEn": "Rice",
-    "nameZh": "",
+    "nameZh": "炒饭 / 饭类",
     "count": 13
   },
   {
     "id": "seafood",
     "name": "Seafood",
     "nameEn": "Seafood",
-    "nameZh": "",
+    "nameZh": "鲜活海鲜",
     "count": 8
   },
   {
     "id": "soup",
     "name": "Soup",
     "nameEn": "Soup",
-    "nameZh": "",
+    "nameZh": "滚汤类",
     "count": 6
   },
   {
     "id": "tofu",
     "name": "Tofu",
     "nameEn": "Tofu",
-    "nameZh": "",
+    "nameZh": "招牌豆腐",
     "count": 7
   },
   {
     "id": "additional-dishes",
     "name": "Additional Dishes",
     "nameEn": "Additional Dishes",
-    "nameZh": "",
+    "nameZh": "特色佳肴",
     "count": 2
   }
 ];
