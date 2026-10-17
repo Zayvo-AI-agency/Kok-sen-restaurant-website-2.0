@@ -1,0 +1,3561 @@
+{
+  "schema_version": 1,
+  "menu_version": "2026-10-15-client-replacement",
+  "restaurant": "Kok Sen Restaurant",
+  "source_archive": "kok sen menu edited(1).zip",
+  "source_archive_sha256": "206e1f8a38770a412e9be8fe314982c3f7254814774ba0c5e7104b846d6c0b95",
+  "source_scope": "100 client-supplied dish photos and filenames, from 14 nested category ZIPs plus 3 standalone image files. No separate written menu, prices, Chinese names, ingredients, portion sizes, dietary labels or official display ordering was provided.",
+  "replacement_policy": "Replace the old live menu with these publishable items; do not append the old Oddle menu or reuse stale photo maps. Keep the unnamed source item in review.",
+  "price_display": false,
+  "statistics": {
+    "source_images": 100,
+    "unique_source_file_hashes": 100,
+    "source_category_archives": 14,
+    "standalone_source_images": 3,
+    "display_groups": 15,
+    "publishable_items": 99,
+    "items_requiring_client_name": 1,
+    "total_image_bytes": 375671172
+  },
+  "categories": [
+    {
+      "id": "beef",
+      "name": "Beef",
+      "sort_order": 1,
+      "source_archive": "beef 1.zip",
+      "count_all": 4,
+      "count_publishable": 4,
+      "is_client_source_category": true
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken",
+      "sort_order": 2,
+      "source_archive": "chicken 1.zip",
+      "count_all": 6,
+      "count_publishable": 6,
+      "is_client_source_category": true
+    },
+    {
+      "id": "crab",
+      "name": "Crab",
+      "sort_order": 3,
+      "source_archive": "crab 1.zip",
+      "count_all": 5,
+      "count_publishable": 5,
+      "is_client_source_category": true
+    },
+    {
+      "id": "eggs",
+      "name": "Eggs",
+      "sort_order": 4,
+      "source_archive": "eggs 1.zip",
+      "count_all": 6,
+      "count_publishable": 6,
+      "is_client_source_category": true
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "sort_order": 5,
+      "source_archive": "fish 1.zip",
+      "count_all": 9,
+      "count_publishable": 9,
+      "is_client_source_category": true
+    },
+    {
+      "id": "frogs",
+      "name": "Frogs",
+      "sort_order": 6,
+      "source_archive": "frogs 1.zip",
+      "count_all": 4,
+      "count_publishable": 3,
+      "is_client_source_category": true
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables",
+      "sort_order": 7,
+      "source_archive": "green 1.zip",
+      "count_all": 8,
+      "count_publishable": 8,
+      "is_client_source_category": true
+    },
+    {
+      "id": "hor-fun",
+      "name": "Hor Fun",
+      "sort_order": 8,
+      "source_archive": "hor fun 1.zip",
+      "count_all": 7,
+      "count_publishable": 7,
+      "is_client_source_category": true
+    },
+    {
+      "id": "noodles",
+      "name": "Noodles",
+      "sort_order": 9,
+      "source_archive": "noodle 1.zip",
+      "count_all": 8,
+      "count_publishable": 8,
+      "is_client_source_category": true
+    },
+    {
+      "id": "pork",
+      "name": "Pork",
+      "sort_order": 10,
+      "source_archive": "pork 1.zip",
+      "count_all": 7,
+      "count_publishable": 7,
+      "is_client_source_category": true
+    },
+    {
+      "id": "rice",
+      "name": "Rice",
+      "sort_order": 11,
+      "source_archive": "rice 1.zip",
+      "count_all": 13,
+      "count_publishable": 13,
+      "is_client_source_category": true
+    },
+    {
+      "id": "seafood",
+      "name": "Seafood",
+      "sort_order": 12,
+      "source_archive": "seafood 1.zip",
+      "count_all": 8,
+      "count_publishable": 8,
+      "is_client_source_category": true
+    },
+    {
+      "id": "soup",
+      "name": "Soup",
+      "sort_order": 13,
+      "source_archive": "soup 1.zip",
+      "count_all": 6,
+      "count_publishable": 6,
+      "is_client_source_category": true
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
+      "sort_order": 14,
+      "source_archive": "tofu 1.zip",
+      "count_all": 7,
+      "count_publishable": 7,
+      "is_client_source_category": true
+    },
+    {
+      "id": "additional-dishes",
+      "name": "Additional Dishes",
+      "sort_order": 15,
+      "source_archive": null,
+      "count_all": 2,
+      "count_publishable": 2,
+      "is_client_source_category": false
+    }
+  ],
+  "items": [
+    {
+      "id": "ks-20261015-001",
+      "source_index": 1,
+      "category_id": "additional-dishes",
+      "category": "Additional Dishes",
+      "category_assignment_basis": "neutral grouping for uncategorised standalone client files; not an official category name",
+      "sort_order": 1,
+      "name": "Yam Ring",
+      "english_name": "Yam Ring",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/additional-dishes/01-yam-ring.jpeg",
+        "width": 750,
+        "height": 750,
+        "format": "JPEG",
+        "bytes": 123037,
+        "sha256": "1a781e5cf735be5ad9687d763afb707740095de833ce092d5700e71897712e38",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": null,
+        "filename": "yam ring.jpeg",
+        "original_name_stem": "yam ring"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ],
+      "category_note": "The client supplied this photo outside every category folder. Additional Dishes is a neutral temporary presentation group; confirm the final category with the client if needed."
+    },
+    {
+      "id": "ks-20261015-002",
+      "source_index": 2,
+      "category_id": "beef",
+      "category": "Beef",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Kai Lan with Beef",
+      "english_name": "Kai Lan with Beef",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/beef/01-kai-lan-with-beef.png",
+        "width": 1920,
+        "height": 1607,
+        "format": "PNG",
+        "bytes": 2518181,
+        "sha256": "8a722983dd502fec434fb21530a45e2ea19860a2136a0e6efff450dfdc304b08",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "beef 1.zip",
+        "filename": "Kai Lan with Beef.png",
+        "original_name_stem": "Kai Lan with Beef"
+      },
+      "name_cleanup_notes": []
+    },
+    {
+      "id": "ks-20261015-003",
+      "source_index": 3,
+      "category_id": "beef",
+      "category": "Beef",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Spring Onion with Beef",
+      "english_name": "Spring Onion with Beef",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/beef/02-spring-onion-with-beef.png",
+        "width": 1098,
+        "height": 894,
+        "format": "PNG",
+        "bytes": 1058718,
+        "sha256": "c0fbbf10059e6643940bd434ec31bbd2f75b77c658cd051109890a6118a24d71",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "beef 1.zip",
+        "filename": "spring onion with beef.png",
+        "original_name_stem": "spring onion with beef"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-004",
+      "source_index": 4,
+      "category_id": "beef",
+      "category": "Beef",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Black Bean with Beef",
+      "english_name": "Black Bean with Beef",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/beef/03-black-bean-with-beef.png",
+        "width": 972,
+        "height": 764,
+        "format": "PNG",
+        "bytes": 902600,
+        "sha256": "4854a5b2fb14c7ad69f51bdb5fd27b29499ec5f63e5afec687f4c4153f0676f7",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "beef 1.zip",
+        "filename": "black bean with beef.png",
+        "original_name_stem": "black bean with beef"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-005",
+      "source_index": 5,
+      "category_id": "beef",
+      "category": "Beef",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Black Pepper Beef",
+      "english_name": "Black Pepper Beef",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/beef/04-black-pepper-beef.png",
+        "width": 1440,
+        "height": 1072,
+        "format": "PNG",
+        "bytes": 1713936,
+        "sha256": "b9bda103177514b49ff018933343f97511198d012e93e9eab30d5a896eb1a8bc",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "beef 1.zip",
+        "filename": "black pepper beef.png",
+        "original_name_stem": "black pepper beef"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-006",
+      "source_index": 6,
+      "category_id": "chicken",
+      "category": "Chicken",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Kung Bao Chicken",
+      "english_name": "Kung Bao Chicken",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/chicken/01-kung-bao-chicken.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1181090,
+        "sha256": "cc9b01d0c71eadee81e4ec9e3fa04890026e32b985dc1d50fdeeb65032baaea0",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "chicken 1.zip",
+        "filename": "Kung bao Chicken.png",
+        "original_name_stem": "Kung bao Chicken"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-007",
+      "source_index": 7,
+      "category_id": "chicken",
+      "category": "Chicken",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Cereal Chicken",
+      "english_name": "Cereal Chicken",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/chicken/02-cereal-chicken.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1803190,
+        "sha256": "2e457ffbcaafda91d9167d561312cd321cb066af05ccc5913e719740984e7d02",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "chicken 1.zip",
+        "filename": "cereal chicken.png",
+        "original_name_stem": "cereal chicken"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-008",
+      "source_index": 8,
+      "category_id": "chicken",
+      "category": "Chicken",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Claypot Chicken",
+      "english_name": "Claypot Chicken",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/chicken/03-claypot-chicken.png",
+        "width": 791,
+        "height": 506,
+        "format": "PNG",
+        "bytes": 613654,
+        "sha256": "d80f05e19a8a162cfd6437d450323086b82fa68dd239559ecf645a46d96879df",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "chicken 1.zip",
+        "filename": "claypot chicken.png",
+        "original_name_stem": "claypot chicken"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-009",
+      "source_index": 9,
+      "category_id": "chicken",
+      "category": "Chicken",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Roasted Chicken",
+      "english_name": "Roasted Chicken",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/chicken/04-roasted-chicken.png",
+        "width": 772,
+        "height": 568,
+        "format": "PNG",
+        "bytes": 548500,
+        "sha256": "b467490e598bcec1c3e2f4168c1a5b63771586cdd40f541526c37320c4a94943",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "chicken 1.zip",
+        "filename": "rooasted chicken.png",
+        "original_name_stem": "rooasted chicken"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-010",
+      "source_index": 10,
+      "category_id": "chicken",
+      "category": "Chicken",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Prawn Paste Chicken",
+      "english_name": "Prawn Paste Chicken",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/chicken/05-prawn-paste-chicken.png",
+        "width": 16278,
+        "height": 8890,
+        "format": "PNG",
+        "bytes": 1870481,
+        "sha256": "73ecf22fe69346af88bfa401f41d88faee84d3360104130538bc3bd122000567",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "chicken 1.zip",
+        "filename": "prawn paste chicken.png",
+        "original_name_stem": "prawn paste chicken"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-011",
+      "source_index": 11,
+      "category_id": "crab",
+      "category": "Crab",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Black Pepper Crab",
+      "english_name": "Black Pepper Crab",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/crab/01-black-pepper-crab.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2350142,
+        "sha256": "4dfccaefaaecc76b525118bb7beadeb62f7566d2ac321d8a7b69ccbbb6f1733f",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "crab 1.zip",
+        "filename": "BLACK PEPPER.png",
+        "original_name_stem": "BLACK PEPPER"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below.",
+        "Crab added from the explicit client category folder."
+      ]
+    },
+    {
+      "id": "ks-20261015-012",
+      "source_index": 12,
+      "category_id": "crab",
+      "category": "Crab",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Chilli Crab",
+      "english_name": "Chilli Crab",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/crab/02-chilli-crab.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1142582,
+        "sha256": "fed1ee9f003cb7dedae92496a0eb5feb0e0644baec0862cdbcd8d541174e1c49",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "crab 1.zip",
+        "filename": "CHIILI crab.png",
+        "original_name_stem": "CHIILI crab"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-013",
+      "source_index": 13,
+      "category_id": "crab",
+      "category": "Crab",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Salted Egg Crab",
+      "english_name": "Salted Egg Crab",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/crab/03-salted-egg-crab.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1928631,
+        "sha256": "bd766f28c3d823c4e75de925563905373538b9470b0cf963bf0e93cfffa6c2e6",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "crab 1.zip",
+        "filename": "SALTED EGG.png",
+        "original_name_stem": "SALTED EGG"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below.",
+        "Crab added from the explicit client category folder."
+      ]
+    },
+    {
+      "id": "ks-20261015-014",
+      "source_index": 14,
+      "category_id": "crab",
+      "category": "Crab",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Sambal Crab",
+      "english_name": "Sambal Crab",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/crab/04-sambal-crab.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1481828,
+        "sha256": "a2ada611ad3a02eda87012c21851bfa6b8ed2817735091ae05569b8c59d8c0f1",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "crab 1.zip",
+        "filename": " sambal crab.png",
+        "original_name_stem": " sambal crab"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-015",
+      "source_index": 15,
+      "category_id": "crab",
+      "category": "Crab",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Spring Onion Crab",
+      "english_name": "Spring Onion Crab",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/crab/05-spring-onion-crab.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1998285,
+        "sha256": "76ff32ab71d7c254505386e6c83362881ab50921c9e71df5916a1eff927ba891",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "crab 1.zip",
+        "filename": "SPRING ONION crab.png",
+        "original_name_stem": "SPRING ONION crab"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-016",
+      "source_index": 16,
+      "category_id": "eggs",
+      "category": "Eggs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Fu Rong Omelette",
+      "english_name": "Fu Rong Omelette",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/eggs/01-fu-rong-omelette.jpg",
+        "width": 4000,
+        "height": 4000,
+        "format": "JPEG",
+        "bytes": 11143215,
+        "sha256": "e6e208c00654ebfb54b5cc240c6d94d1fbb8202c36e1d08961c80b8dcb649461",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "eggs 1.zip",
+        "filename": " furong ometette.JPG",
+        "original_name_stem": " furong ometette"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-017",
+      "source_index": 17,
+      "category_id": "eggs",
+      "category": "Eggs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Minced Pork Steamed Egg",
+      "english_name": "Minced Pork Steamed Egg",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/eggs/02-minced-pork-steamed-egg.png",
+        "width": 306,
+        "height": 306,
+        "format": "PNG",
+        "bytes": 130740,
+        "sha256": "1fd6c082a234e3d4467a5882f46eb64897cf1eca198ff74324e3538878073dd0",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "eggs 1.zip",
+        "filename": "minced pork steam egg.png",
+        "original_name_stem": "minced pork steam egg"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-018",
+      "source_index": 18,
+      "category_id": "eggs",
+      "category": "Eggs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Minced Pork Omelette",
+      "english_name": "Minced Pork Omelette",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/eggs/03-minced-pork-omelette.jpg",
+        "width": 4000,
+        "height": 4000,
+        "format": "JPEG",
+        "bytes": 10659059,
+        "sha256": "90b9731a9c878041e188d486b642c9cb560c5aa860e5027777e1c5fa4d2742d2",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "eggs 1.zip",
+        "filename": "MINCED. pork omeletteJPG.JPG",
+        "original_name_stem": "MINCED. pork omeletteJPG"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-019",
+      "source_index": 19,
+      "category_id": "eggs",
+      "category": "Eggs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Prawn Omelette",
+      "english_name": "Prawn Omelette",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/eggs/04-prawn-omelette.png",
+        "width": 429,
+        "height": 397,
+        "format": "PNG",
+        "bytes": 259531,
+        "sha256": "219b2dab11a466ad417ea43b2ebc1a3ac2df4d0aba6e54f92e4de06daa112ad6",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "eggs 1.zip",
+        "filename": "prawn omelette.png",
+        "original_name_stem": "prawn omelette"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-020",
+      "source_index": 20,
+      "category_id": "eggs",
+      "category": "Eggs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Radish Omelette",
+      "english_name": "Radish Omelette",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/eggs/05-radish-omelette.jpg",
+        "width": 4000,
+        "height": 4000,
+        "format": "JPEG",
+        "bytes": 12317202,
+        "sha256": "43279719b9233499aed21fd9efe32bed028b02961d9ba762b7ba444d7c722f91",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "eggs 1.zip",
+        "filename": "raddish omelette.JPG",
+        "original_name_stem": "raddish omelette"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-021",
+      "source_index": 21,
+      "category_id": "eggs",
+      "category": "Eggs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Steamed Trio Egg",
+      "english_name": "Steamed Trio Egg",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/eggs/06-steamed-trio-egg.png",
+        "width": 306,
+        "height": 306,
+        "format": "PNG",
+        "bytes": 131290,
+        "sha256": "cead502626af601ddfc77bbaa588652893bcc30c3593554db5c74f9954402b50",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "eggs 1.zip",
+        "filename": "steam trio egg.png",
+        "original_name_stem": "steam trio egg"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-022",
+      "source_index": 22,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Deep Fried \"Yu Gai\" Fish",
+      "english_name": "Deep Fried \"Yu Gai\" Fish",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/01-deep-fried-yu-gai-fish.png",
+        "width": 1920,
+        "height": 1276,
+        "format": "PNG",
+        "bytes": 1852900,
+        "sha256": "b9f4a052f7d304ef80619b1970110cff1602b7d838f080175c108c10100e37ae",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "deep fried \"\"yu gai\"\" fish.png",
+        "original_name_stem": "deep fried \"\"yu gai\"\" fish"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-023",
+      "source_index": 23,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Hong Kong Style Steamed Fish Tail",
+      "english_name": "Hong Kong Style Steamed Fish Tail",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/02-hong-kong-style-steamed-fish-tail.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 615720,
+        "sha256": "8bc32b35e0de82cec95ca59e3516cbab16b11a42b9f44ba8890050e1b41b6846",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "hk style steam fish tail.png",
+        "original_name_stem": "hk style steam fish tail"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-024",
+      "source_index": 24,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Black Bean Fish Meat",
+      "english_name": "Black Bean Fish Meat",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/03-black-bean-fish-meat.png",
+        "width": 1920,
+        "height": 1069,
+        "format": "PNG",
+        "bytes": 1343949,
+        "sha256": "eba860bd4cbc2f8965646b8fb906bd6ccd42fe311f37dd834144ab224a02bc61",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "BLACK BEAN FISH MEAT.png",
+        "original_name_stem": "BLACK BEAN FISH MEAT"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-025",
+      "source_index": 25,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Claypot Fish Meat",
+      "english_name": "Claypot Fish Meat",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/04-claypot-fish-meat.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2251374,
+        "sha256": "dd978166dc9975d504d1c72a0f95a0ec79395558a41ecd12fe93fe7313455a58",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "CLAYPOT FISH meat.png",
+        "original_name_stem": "CLAYPOT FISH meat"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-026",
+      "source_index": 26,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Curry Fish Head",
+      "english_name": "Curry Fish Head",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/05-curry-fish-head.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1889238,
+        "sha256": "c65717c201b2795b850aeb9a475fd50e40c825d00627e438c79f60cb60f74f67",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "CURRY FISH HEAD.png",
+        "original_name_stem": "CURRY FISH HEAD"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-027",
+      "source_index": 27,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Deep Fried Fish Meat",
+      "english_name": "Deep Fried Fish Meat",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/06-deep-fried-fish-meat.png",
+        "width": 1920,
+        "height": 1069,
+        "format": "PNG",
+        "bytes": 1378145,
+        "sha256": "ce4c437da8020c80a5240c2a104e44ce9c2c85c1f87b912a160657e3208a6bf2",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "DEEP FRIED FISH MEAT.png",
+        "original_name_stem": "DEEP FRIED FISH MEAT"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-028",
+      "source_index": 28,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Hong Kong Style Steamed Grouper",
+      "english_name": "Hong Kong Style Steamed Grouper",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/07-hong-kong-style-steamed-grouper.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1900746,
+        "sha256": "0dd8e2ecdb449b07ba77b9a9304d6adb4ee130f89b5d6389b6c66317b0b57a47",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "HK STYLE STEAM GROUOPER.png",
+        "original_name_stem": "HK STYLE STEAM GROUOPER"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-029",
+      "source_index": 29,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 8,
+      "name": "Sambal Fish Meat",
+      "english_name": "Sambal Fish Meat",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/08-sambal-fish-meat.png",
+        "width": 1920,
+        "height": 3436,
+        "format": "PNG",
+        "bytes": 1693245,
+        "sha256": "522645e5e982aee465c9c757ac8cbcba0b92e71efdf107370fd05d69b07c098f",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "SAMBAL FISH meat.png",
+        "original_name_stem": "SAMBAL FISH meat"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-030",
+      "source_index": 30,
+      "category_id": "fish",
+      "category": "Fish",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 9,
+      "name": "Sweet and Sour Grouper",
+      "english_name": "Sweet and Sour Grouper",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/fish/09-sweet-and-sour-grouper.png",
+        "width": 1920,
+        "height": 1069,
+        "format": "PNG",
+        "bytes": 1668933,
+        "sha256": "53c57965836a6ee2461ff8ac7a0da19f2d11bacf004bcbcca67ee96a1711f677",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "fish 1.zip",
+        "filename": "SWEET AND SOUR GROUPER.png",
+        "original_name_stem": "SWEET AND SOUR GROUPER"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-031",
+      "source_index": 31,
+      "category_id": "frogs",
+      "category": "Frogs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Spring Onion Frogs",
+      "english_name": "Spring Onion Frogs",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/frogs/01-spring-onion-frogs.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2165329,
+        "sha256": "21271a8f6a2e181d9c7052f5e9b31b31af3e7ad1525b76880a4967b598690443",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "frogs 1.zip",
+        "filename": "spring onion frogs.png",
+        "original_name_stem": "spring onion frogs"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-032",
+      "source_index": 32,
+      "category_id": "frogs",
+      "category": "Frogs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": null,
+      "english_name": null,
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": false,
+      "status": "needs_client_dish_name",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/frogs/02-unnamed-frog-dish-needs-confirmation.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1822102,
+        "sha256": "d1f4b2ce4266785169f1c88909f98ef064a9117b4e3f491ec973fbb0159258f0",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "frogs 1.zip",
+        "filename": "BackgroundEraser_20260906_131532826.png",
+        "original_name_stem": "BackgroundEraser_20260906_131532826"
+      },
+      "name_cleanup_notes": [
+        "No dish name supplied in filename. Do not infer a name from its appearance or from the old Oddle menu."
+      ]
+    },
+    {
+      "id": "ks-20261015-033",
+      "source_index": 33,
+      "category_id": "frogs",
+      "category": "Frogs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Black Bean with Frogs",
+      "english_name": "Black Bean with Frogs",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/frogs/03-black-bean-with-frogs.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1381971,
+        "sha256": "2aa786c23b09684ca36a91b8c25a9a77a17fe0699e5d7e3db686e239702a186c",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "frogs 1.zip",
+        "filename": "balck bean with frogs.png",
+        "original_name_stem": "balck bean with frogs"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-034",
+      "source_index": 34,
+      "category_id": "frogs",
+      "category": "Frogs",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Kung Bao Frogs",
+      "english_name": "Kung Bao Frogs",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/frogs/04-kung-bao-frogs.png",
+        "width": 1920,
+        "height": 3436,
+        "format": "PNG",
+        "bytes": 2952462,
+        "sha256": "8392d99d8855e9f8f52c3d4bd57afa682a299e45e75e8eadffb953210087d138",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "frogs 1.zip",
+        "filename": "kung bao frogs.png",
+        "original_name_stem": "kung bao frogs"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-035",
+      "source_index": 35,
+      "category_id": "chicken",
+      "category": "Chicken",
+      "category_assignment_basis": "explicit dish name",
+      "sort_order": 6,
+      "name": "Golden Dragon Chicken",
+      "english_name": "Golden Dragon Chicken",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/chicken/06-golden-dragon-chicken.png",
+        "width": 1920,
+        "height": 1354,
+        "format": "PNG",
+        "bytes": 2443679,
+        "sha256": "0e42a1304156c603cce7bd81de00aab3b191a47cd3dee01627852870e3b822a3",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": null,
+        "filename": "GOLDEN DRAGON CHICKEN.png",
+        "original_name_stem": "GOLDEN DRAGON CHICKEN"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-036",
+      "source_index": 36,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Bean Sprout with Salted Fish",
+      "english_name": "Bean Sprout with Salted Fish",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/01-bean-sprout-with-salted-fish.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2115633,
+        "sha256": "6261150c48749d93096bfcd2a825b06f67d674b0f3d766b1995f6939b5b8bd56",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "beansprout with salted fish.png",
+        "original_name_stem": "beansprout with salted fish"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-037",
+      "source_index": 37,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Garlic Broccoli",
+      "english_name": "Garlic Broccoli",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/02-garlic-broccoli.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1518517,
+        "sha256": "2fd8a172b65c4d2cbcdcc3fd86249ed649593b9e93eaf6ab129c76410486aebb",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "garlic broccolli.png",
+        "original_name_stem": "garlic broccolli"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-038",
+      "source_index": 38,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Sambal Kangkong",
+      "english_name": "Sambal Kangkong",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/03-sambal-kangkong.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2270901,
+        "sha256": "13730b053b77a4b8e7a9a06d4e2b1b6344320264ebf614133324fca45dc7c540",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "sambal kangkong.png",
+        "original_name_stem": "sambal kangkong"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-039",
+      "source_index": 39,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Kai Lan with Garlic",
+      "english_name": "Kai Lan with Garlic",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/04-kai-lan-with-garlic.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2266768,
+        "sha256": "354f7aa5368653fdd85811c387e54d465bd7849f3fb4e1971166549e19377245",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "kailan with garlic.png",
+        "original_name_stem": "kailan with garlic"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-040",
+      "source_index": 40,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Poached Lettuce",
+      "english_name": "Poached Lettuce",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/05-poached-lettuce.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1588567,
+        "sha256": "b94dd037d8db5c87424d03f5cfa4fc1b81337392237fcd8f2431228d6d677e33",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "poached lettuce.png",
+        "original_name_stem": "poached lettuce"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-041",
+      "source_index": 41,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Romaine Lettuce with Fermented Beancurd",
+      "english_name": "Romaine Lettuce with Fermented Beancurd",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/06-romaine-lettuce-with-fermented-beancurd.png",
+        "width": 1920,
+        "height": 1314,
+        "format": "PNG",
+        "bytes": 2381925,
+        "sha256": "f94747349f06d2c79d2f0c2a8bd575ac1e1dbb2188cf3602477e2275e866a51c",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "romaine lettuce with fermented beancurd.png",
+        "original_name_stem": "romaine lettuce with fermented beancurd"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-042",
+      "source_index": 42,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Garlic with Small Cabbage",
+      "english_name": "Garlic with Small Cabbage",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/07-garlic-with-small-cabbage.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2022949,
+        "sha256": "03a75cf97133c2a3fd5524b91af752a6e944e73b8801f76999eb7a134e7f9cd4",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "garlic with small cabbage.png",
+        "original_name_stem": "garlic with small cabbage"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-043",
+      "source_index": 43,
+      "category_id": "vegetables",
+      "category": "Vegetables",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 8,
+      "name": "Chinese Spinach with Trio Egg",
+      "english_name": "Chinese Spinach with Trio Egg",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/vegetables/08-chinese-spinach-with-trio-egg.png",
+        "width": 766,
+        "height": 541,
+        "format": "PNG",
+        "bytes": 574535,
+        "sha256": "618eb1c9ba7bf471a686b747895e31d2483612425a2bb4350915b2ad10ee539a",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "green 1.zip",
+        "filename": "chimese spinach with trio egg.png",
+        "original_name_stem": "chimese spinach with trio egg"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-044",
+      "source_index": 44,
+      "category_id": "hor-fun",
+      "category": "Hor Fun",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Black Bean Beef Hor Fun",
+      "english_name": "Black Bean Beef Hor Fun",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/hor-fun/01-black-bean-beef-hor-fun.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "PNG",
+        "bytes": 772488,
+        "sha256": "7fe756a22e65183f4dca6411a5d0ae695c46a6aa6c35177682201a9e232c62b1",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "hor fun 1.zip",
+        "filename": "black bean beef hor fun.png",
+        "original_name_stem": "black bean beef hor fun"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-045",
+      "source_index": 45,
+      "category_id": "hor-fun",
+      "category": "Hor Fun",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Sanluo Hor Fun",
+      "english_name": "Sanluo Hor Fun",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/hor-fun/02-sanluo-hor-fun.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2122451,
+        "sha256": "48ff1f3e0b2440a94297c5cea60c46518f18b1b6f04ecef122d9406f192d7009",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "hor fun 1.zip",
+        "filename": "sanluo hor fun.png",
+        "original_name_stem": "sanluo hor fun"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-046",
+      "source_index": 46,
+      "category_id": "hor-fun",
+      "category": "Hor Fun",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Black Bean Fish Hor Fun",
+      "english_name": "Black Bean Fish Hor Fun",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/hor-fun/03-black-bean-fish-hor-fun.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "PNG",
+        "bytes": 753309,
+        "sha256": "1861256db5076fc06b2be909d13450d51df4ff8be3fd1cc58ca9fc9ac9b8b858",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "hor fun 1.zip",
+        "filename": "balck bean fish hor fun.png",
+        "original_name_stem": "balck bean fish hor fun"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-047",
+      "source_index": 47,
+      "category_id": "hor-fun",
+      "category": "Hor Fun",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Dry Beef Hor Fun",
+      "english_name": "Dry Beef Hor Fun",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/hor-fun/04-dry-beef-hor-fun.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "PNG",
+        "bytes": 772964,
+        "sha256": "5f3416e64d92b3e926614f8357575653bce5fdb0f03a5efd5f884883b4e0a158",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "hor fun 1.zip",
+        "filename": "dry beef hor fun.png",
+        "original_name_stem": "dry beef hor fun"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-048",
+      "source_index": 48,
+      "category_id": "hor-fun",
+      "category": "Hor Fun",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Seafood and Pork Hor Fun",
+      "english_name": "Seafood and Pork Hor Fun",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/hor-fun/05-seafood-and-pork-hor-fun.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "PNG",
+        "bytes": 757907,
+        "sha256": "4ae780e6b6f7fa3635df306645e007746c2585f95efcf2503000a93246b07169",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "hor fun 1.zip",
+        "filename": "seafoof and pork hor fun.png",
+        "original_name_stem": "seafoof and pork hor fun"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-049",
+      "source_index": 49,
+      "category_id": "hor-fun",
+      "category": "Hor Fun",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Moonlight Hor Fun",
+      "english_name": "Moonlight Hor Fun",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/hor-fun/06-moonlight-hor-fun.png",
+        "width": 529,
+        "height": 433,
+        "format": "PNG",
+        "bytes": 357292,
+        "sha256": "1477d3f60948833c3fdbd69a6fec4a3e2708e3551b59a483b9e30f8a6cd749d9",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "hor fun 1.zip",
+        "filename": "moonlight hor fun.png",
+        "original_name_stem": "moonlight hor fun"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-050",
+      "source_index": 50,
+      "category_id": "hor-fun",
+      "category": "Hor Fun",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Big Prawn Hor Fun",
+      "english_name": "Big Prawn Hor Fun",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/hor-fun/07-big-prawn-hor-fun.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "PNG",
+        "bytes": 888304,
+        "sha256": "609e7cf6ff0b99cad7ed197923ce24b42f7443b08f5553c9680637446672804a",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "hor fun 1.zip",
+        "filename": " big prawn hor fun .png",
+        "original_name_stem": " big prawn hor fun "
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-051",
+      "source_index": 51,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Black Bean Fish Meat Bee Hoon",
+      "english_name": "Black Bean Fish Meat Bee Hoon",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/01-black-bean-fish-meat-bee-hoon.png",
+        "width": 14917,
+        "height": 6334,
+        "format": "PNG",
+        "bytes": 21772165,
+        "sha256": "6cde58ba5f54c114244ae9c5f20a63db37df32a3faf42eae4138489d5d10f3e4",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "black bean fish meat bee hoon.png",
+        "original_name_stem": "black bean fish meat bee hoon"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-052",
+      "source_index": 52,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Dry Bee Hoon",
+      "english_name": "Dry Bee Hoon",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/02-dry-bee-hoon.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "PNG",
+        "bytes": 707482,
+        "sha256": "970d27930e2b76fb6e3d7e2c49133361cbe4856940a9714514ca984ef668c4ae",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "dry bee hoon.png",
+        "original_name_stem": "dry bee hoon"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-053",
+      "source_index": 53,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Fish Meat Bee Hoon Soup",
+      "english_name": "Fish Meat Bee Hoon Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/03-fish-meat-bee-hoon-soup.png",
+        "width": 1080,
+        "height": 1080,
+        "format": "PNG",
+        "bytes": 803433,
+        "sha256": "6c00f5871cca714355106c78b1d175bfde0958833a174d470a12823c918b9843",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "fish maet bee hoon. soup png.png",
+        "original_name_stem": "fish maet bee hoon. soup png"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-054",
+      "source_index": 54,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Hokkien Mee",
+      "english_name": "Hokkien Mee",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/04-hokkien-mee.png",
+        "width": 306,
+        "height": 306,
+        "format": "PNG",
+        "bytes": 154317,
+        "sha256": "07bf676ed0ca80bdd656cfce1f6f6c346d5e77575b7b47d667a07975464037ba",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "hokkein mee.png",
+        "original_name_stem": "hokkein mee"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-055",
+      "source_index": 55,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Eggs Crispy Noodle",
+      "english_name": "Eggs Crispy Noodle",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/05-eggs-crispy-noodle.png",
+        "width": 1806,
+        "height": 1354,
+        "format": "PNG",
+        "bytes": 1503758,
+        "sha256": "007cc0ce6f0c919b79d041e841646280af7d7ab81e8df0925ac8ac1dcb8d90e2",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "eggs crisoy noodle.png",
+        "original_name_stem": "eggs crisoy noodle"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-056",
+      "source_index": 56,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Mee Goreng",
+      "english_name": "Mee Goreng",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/06-mee-goreng.png",
+        "width": 306,
+        "height": 306,
+        "format": "PNG",
+        "bytes": 157071,
+        "sha256": "7a141825ec7ba8b36a96decb7ab418246783b4e381637b72ff17369a75f23455",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "mee goreng.png",
+        "original_name_stem": "mee goreng"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-057",
+      "source_index": 57,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Prawn Bee Hoon Soup",
+      "english_name": "Prawn Bee Hoon Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/07-prawn-bee-hoon-soup.png",
+        "width": 1920,
+        "height": 1063,
+        "format": "PNG",
+        "bytes": 523317,
+        "sha256": "fa5d5ec1a1a3d56b14294db130ea77358231ae0400559991eae19197142b39eb",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "PRAWN bee hoon SOUP.png",
+        "original_name_stem": "PRAWN bee hoon SOUP"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-058",
+      "source_index": 58,
+      "category_id": "noodles",
+      "category": "Noodles",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 8,
+      "name": "Crispy Noodle",
+      "english_name": "Crispy Noodle",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/noodles/08-crispy-noodle.png",
+        "width": 940,
+        "height": 470,
+        "format": "PNG",
+        "bytes": 276712,
+        "sha256": "c8b8d48cb40035e9edd39c18b9f30d39d6e11f90c14525278268b1ffc5c84637",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "noodle 1.zip",
+        "filename": "crispy noodle.png",
+        "original_name_stem": "crispy noodle"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-059",
+      "source_index": 59,
+      "category_id": "pork",
+      "category": "Pork",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Sweet and Sour Pork Chop",
+      "english_name": "Sweet and Sour Pork Chop",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/pork/01-sweet-and-sour-pork-chop.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 837461,
+        "sha256": "cadd20a6586365fe49dff99d7d2ce5861f607adab9047e5a879bb4b7bb0b8a9c",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "pork 1.zip",
+        "filename": "sweet and sour pork chop.png",
+        "original_name_stem": "sweet and sour pork chop"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-060",
+      "source_index": 60,
+      "category_id": "pork",
+      "category": "Pork",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Black Sauce Roasted Pork",
+      "english_name": "Black Sauce Roasted Pork",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/pork/02-black-sauce-roasted-pork.png",
+        "width": 1920,
+        "height": 1276,
+        "format": "PNG",
+        "bytes": 2597838,
+        "sha256": "bde3895b4f11cdf553a543f905374b53c2dc0a2dc785fd2b605a3fc2cc104321",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "pork 1.zip",
+        "filename": "black sauce roasted pork.png",
+        "original_name_stem": "black sauce roasted pork"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-061",
+      "source_index": 61,
+      "category_id": "pork",
+      "category": "Pork",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Bittergourd Pork Ribs",
+      "english_name": "Bittergourd Pork Ribs",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/pork/03-bittergourd-pork-ribs.png",
+        "width": 1920,
+        "height": 1326,
+        "format": "PNG",
+        "bytes": 2155348,
+        "sha256": "07222004ce25674234e6e582867f92ca19b7935af3c124cb94bb9a342be3d026",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "pork 1.zip",
+        "filename": "bittergourd pork ribs.png",
+        "original_name_stem": "bittergourd pork ribs"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-062",
+      "source_index": 62,
+      "category_id": "pork",
+      "category": "Pork",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Kai Lan Roasted Pork",
+      "english_name": "Kai Lan Roasted Pork",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/pork/04-kai-lan-roasted-pork.png",
+        "width": 1920,
+        "height": 1276,
+        "format": "PNG",
+        "bytes": 1687907,
+        "sha256": "3ccc7db0335cb469b45838dac6f5122f4703b08dc7985b4630d310778f2d80d4",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "pork 1.zip",
+        "filename": "kai lan rooasted pork.png",
+        "original_name_stem": "kai lan rooasted pork"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-063",
+      "source_index": 63,
+      "category_id": "pork",
+      "category": "Pork",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Minced Pork with Eggplants",
+      "english_name": "Minced Pork with Eggplants",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/pork/05-minced-pork-with-eggplants.png",
+        "width": 938,
+        "height": 468,
+        "format": "PNG",
+        "bytes": 338045,
+        "sha256": "4cb14fda4e57bdc8c57e0b6fd9feb5315a626ab0718119c6222e5ad22a76a47b",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "pork 1.zip",
+        "filename": "minced pork with egg palnts.png",
+        "original_name_stem": "minced pork with egg palnts"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-064",
+      "source_index": 64,
+      "category_id": "pork",
+      "category": "Pork",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Sweet and Sour Pork",
+      "english_name": "Sweet and Sour Pork",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/pork/06-sweet-and-sour-pork.png",
+        "width": 939,
+        "height": 1175,
+        "format": "PNG",
+        "bytes": 965559,
+        "sha256": "9b867f2d9e4d339b8c05a87ea06786bb9d683fbf94da697a711054b2e9da337f",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "pork 1.zip",
+        "filename": "sweet and sour pork.png",
+        "original_name_stem": "sweet and sour pork"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-065",
+      "source_index": 65,
+      "category_id": "pork",
+      "category": "Pork",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Steamed Pork with Prawn Paste",
+      "english_name": "Steamed Pork with Prawn Paste",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/pork/07-steamed-pork-with-prawn-paste.png",
+        "width": 431,
+        "height": 408,
+        "format": "PNG",
+        "bytes": 317694,
+        "sha256": "8dc096bb112d3019d607d8bee2b891489f71f714892dd119bae1927e5dcee828",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "pork 1.zip",
+        "filename": "steam pork with prawn paste.png",
+        "original_name_stem": "steam pork with prawn paste"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-066",
+      "source_index": 66,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Black Bean with Sliced Fish Rice",
+      "english_name": "Black Bean with Sliced Fish Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/01-black-bean-with-sliced-fish-rice.jpg",
+        "width": 4000,
+        "height": 4000,
+        "format": "JPEG",
+        "bytes": 5080215,
+        "sha256": "47b6289de9cb8b128c4e0c35cb05a4f7a1d30e236ee52983c43f75e47e16a9d0",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "black bean with slice fish.JPG",
+        "original_name_stem": "black bean with slice fish"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below.",
+        "Rice added from the explicit client category folder, to distinguish rice meals from main dishes."
+      ]
+    },
+    {
+      "id": "ks-20261015-067",
+      "source_index": 67,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Black Sauce with Roasted Pork Rice",
+      "english_name": "Black Sauce with Roasted Pork Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/02-black-sauce-with-roasted-pork-rice.png",
+        "width": 4000,
+        "height": 4000,
+        "format": "PNG",
+        "bytes": 22168999,
+        "sha256": "204f438648daf10ec04e794237623067d3cb94a6b26f8290292d6565acc681e8",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "black sauce with roasted pork.png",
+        "original_name_stem": "black sauce with roasted pork"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below.",
+        "Rice added from the explicit client category folder, to distinguish rice meals from main dishes."
+      ]
+    },
+    {
+      "id": "ks-20261015-068",
+      "source_index": 68,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Seafood Fried Rice",
+      "english_name": "Seafood Fried Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/03-seafood-fried-rice.png",
+        "width": 4000,
+        "height": 4000,
+        "format": "PNG",
+        "bytes": 28720772,
+        "sha256": "9ed5f0c1c84f1e5ba415b0857449c7a8e22191567efc829126cd0bc5f954a1d9",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "seafood fried rice.png",
+        "original_name_stem": "seafood fried rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-069",
+      "source_index": 69,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Beef Fried Rice",
+      "english_name": "Beef Fried Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/04-beef-fried-rice.png",
+        "width": 245,
+        "height": 245,
+        "format": "PNG",
+        "bytes": 137297,
+        "sha256": "0063326c98148c95d3ec297ba22aad60d46abf5fbe2950ae70994ae29b89cdba",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "BEEF FIRED RICE.png",
+        "original_name_stem": "BEEF FIRED RICE"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-070",
+      "source_index": 70,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Braised Rice",
+      "english_name": "Braised Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/05-braised-rice.png",
+        "width": 306,
+        "height": 306,
+        "format": "PNG",
+        "bytes": 176180,
+        "sha256": "c1aeb9191e1538bb791ed5235fe0f355f3bece14f5cac13c2277b7bd40e7ddae",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "brasied rice.png",
+        "original_name_stem": "brasied rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-071",
+      "source_index": 71,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Thai Style Fried Rice",
+      "english_name": "Thai Style Fried Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/06-thai-style-fried-rice.png",
+        "width": 446,
+        "height": 338,
+        "format": "PNG",
+        "bytes": 220489,
+        "sha256": "7c14d7e570ad02081d32b530678f0373bfefeef92b20ef04173db837895f7fb6",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "thai style fired rice.png",
+        "original_name_stem": "thai style fired rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-072",
+      "source_index": 72,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Kai Lan Roasted Pork Rice",
+      "english_name": "Kai Lan Roasted Pork Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/07-kai-lan-roasted-pork-rice.png",
+        "width": 227,
+        "height": 227,
+        "format": "PNG",
+        "bytes": 107989,
+        "sha256": "2b72e227b58343075fc7b71ed73997b3f0cb4531c119125e84ab6dda2ba47ff5",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "kai lan roosted pork rice.png",
+        "original_name_stem": "kai lan roosted pork rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-073",
+      "source_index": 73,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 8,
+      "name": "Kai Lan with Beef Rice",
+      "english_name": "Kai Lan with Beef Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/08-kai-lan-with-beef-rice.png",
+        "width": 285,
+        "height": 285,
+        "format": "PNG",
+        "bytes": 167183,
+        "sha256": "0890425c5b40b9c61d82278dc344d2836693eb51e975d21732131fb2343878e8",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "KAI LAN WITH BEEF RICE.png",
+        "original_name_stem": "KAI LAN WITH BEEF RICE"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-074",
+      "source_index": 74,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 9,
+      "name": "Soup Rice",
+      "english_name": "Soup Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/09-soup-rice.png",
+        "width": 727,
+        "height": 725,
+        "format": "PNG",
+        "bytes": 677654,
+        "sha256": "42695bbecf730550c79425b8f14669fcf2c9b945f9617231b1379c79e14ee092",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "soup rice.png",
+        "original_name_stem": "soup rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-075",
+      "source_index": 75,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 10,
+      "name": "Spring Onion Beef Rice",
+      "english_name": "Spring Onion Beef Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/10-spring-onion-beef-rice.png",
+        "width": 224,
+        "height": 224,
+        "format": "PNG",
+        "bytes": 103533,
+        "sha256": "f04b4f770b01739bb758019e3e4b1c0ba76fedd5a6218675405dfc4c48f49b49",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "spring onion beef rice.png",
+        "original_name_stem": "spring onion beef rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-076",
+      "source_index": 76,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 11,
+      "name": "Sweet & Sour Pork Rice",
+      "english_name": "Sweet & Sour Pork Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/11-sweet-sour-pork-rice.png",
+        "width": 4000,
+        "height": 4000,
+        "format": "PNG",
+        "bytes": 21254238,
+        "sha256": "cf1c8bc074392073803f94efb03cafeb0d79dda8f16aa510f6f3e0171becd9ff",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "Sweet & Sour Pork Rice.png",
+        "original_name_stem": "Sweet & Sour Pork Rice"
+      },
+      "name_cleanup_notes": []
+    },
+    {
+      "id": "ks-20261015-077",
+      "source_index": 77,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 12,
+      "name": "Roasted Pork Tofu Rice",
+      "english_name": "Roasted Pork Tofu Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/12-roasted-pork-tofu-rice.png",
+        "width": 379,
+        "height": 379,
+        "format": "PNG",
+        "bytes": 273604,
+        "sha256": "12786a4febfae0e57bcba944bbfedc7c5a9391c484e0b5b529969a8218c18735",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "roasted pork tofu rice.png",
+        "original_name_stem": "roasted pork tofu rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-078",
+      "source_index": 78,
+      "category_id": "rice",
+      "category": "Rice",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 13,
+      "name": "Yang Zhuo Fried Rice",
+      "english_name": "Yang Zhuo Fried Rice",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/rice/13-yang-zhuo-fried-rice.png",
+        "width": 4000,
+        "height": 4000,
+        "format": "PNG",
+        "bytes": 28376942,
+        "sha256": "d2e35e506e0ee33311131e6c7d10f1ca587bef1842e5935cf1d1ed30f27e8fdd",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "rice 1.zip",
+        "filename": "yangzhuo fried rice.png",
+        "original_name_stem": "yangzhuo fried rice"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-079",
+      "source_index": 79,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Stir Fried Big Prawns with Spring Onion",
+      "english_name": "Stir Fried Big Prawns with Spring Onion",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/01-stir-fried-big-prawns-with-spring-onion.png",
+        "width": 1920,
+        "height": 1052,
+        "format": "PNG",
+        "bytes": 2021864,
+        "sha256": "e393a999156213414a24147601a59506fbea0af6a3dad3f5196afceb76c8f895",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "stir fired big prawns with spring onion.png",
+        "original_name_stem": "stir fired big prawns with spring onion"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-080",
+      "source_index": 80,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Broccoli Prawn Balls",
+      "english_name": "Broccoli Prawn Balls",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/02-broccoli-prawn-balls.png",
+        "width": 1920,
+        "height": 1063,
+        "format": "PNG",
+        "bytes": 1374163,
+        "sha256": "a0cbb0ba2f7f7f0b281ddc48b500253d247c102ade69dfc38a8335d4de00aa0e",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "broccolli prawn balls.png",
+        "original_name_stem": "broccolli prawn balls"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-081",
+      "source_index": 81,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Cereal Prawns",
+      "english_name": "Cereal Prawns",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/03-cereal-prawns.png",
+        "width": 846,
+        "height": 506,
+        "format": "PNG",
+        "bytes": 595970,
+        "sha256": "aa373fbd82935b2d11606492056de1fe07dd6540db29fc731a5108200ba86c11",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "cereal prawns.png",
+        "original_name_stem": "cereal prawns"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-082",
+      "source_index": 82,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Prawn Roll",
+      "english_name": "Prawn Roll",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/04-prawn-roll.png",
+        "width": 844,
+        "height": 520,
+        "format": "PNG",
+        "bytes": 557818,
+        "sha256": "9f2898b40e23405cfc2eabdce674e035d220431e23d849a3b4bb7a35fb7764eb",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "prawn roll.png",
+        "original_name_stem": "prawn roll"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-083",
+      "source_index": 83,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Salt & Pepper Prawn",
+      "english_name": "Salt & Pepper Prawn",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/05-salt-pepper-prawn.png",
+        "width": 1920,
+        "height": 1436,
+        "format": "PNG",
+        "bytes": 2374299,
+        "sha256": "a0f026d936eea1544806080a0a42435cd45f39f3f425109c98b158387f5b494d",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "salt pepper prawn.png",
+        "original_name_stem": "salt pepper prawn"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-084",
+      "source_index": 84,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Salted Egg Prawns",
+      "english_name": "Salted Egg Prawns",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/06-salted-egg-prawns.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1203818,
+        "sha256": "9eba05dd9f459803bf8437b9ba431097d7e120e1349d2a5e20fe4d28ea853f63",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "salted egg prawns.png",
+        "original_name_stem": "salted egg prawns"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-085",
+      "source_index": 85,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Sambal Prawn",
+      "english_name": "Sambal Prawn",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/07-sambal-prawn.png",
+        "width": 1920,
+        "height": 1063,
+        "format": "PNG",
+        "bytes": 971448,
+        "sha256": "81d226b588a54f5eeeedde33a1ff6508b7b5f89396ae5849daf8aec27a619793",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "sambal prawn.png",
+        "original_name_stem": "sambal prawn"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-086",
+      "source_index": 86,
+      "category_id": "seafood",
+      "category": "Seafood",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 8,
+      "name": "Sea Cucumber with Mushroom",
+      "english_name": "Sea Cucumber with Mushroom",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/seafood/08-sea-cucumber-with-mushroom.png",
+        "width": 1920,
+        "height": 1306,
+        "format": "PNG",
+        "bytes": 2570281,
+        "sha256": "45f8ea57bdc4dfec4f93d25e81cd50365d38a6266cda1d7e286ad20a7d61c168",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "seafood 1.zip",
+        "filename": "sea cucumber with mushroom.png",
+        "original_name_stem": "sea cucumber with mushroom"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-087",
+      "source_index": 87,
+      "category_id": "soup",
+      "category": "Soup",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Sliced Fish Soup",
+      "english_name": "Sliced Fish Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/soup/01-sliced-fish-soup.png",
+        "width": 4164,
+        "height": 4164,
+        "format": "PNG",
+        "bytes": 26413620,
+        "sha256": "38135ad6c84a62d078fb0a628917aa57e9e5e6257e98896507be573f83fc8348",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "soup 1.zip",
+        "filename": "sliced fish soup.png",
+        "original_name_stem": "sliced fish soup"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-088",
+      "source_index": 88,
+      "category_id": "soup",
+      "category": "Soup",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Salted Vegetables Tofu Soup",
+      "english_name": "Salted Vegetables Tofu Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/soup/02-salted-vegetables-tofu-soup.png",
+        "width": 4164,
+        "height": 4164,
+        "format": "PNG",
+        "bytes": 25394242,
+        "sha256": "0a553a816e2992544632952ef160f35ec81848f053611ad783728521974b77e5",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "soup 1.zip",
+        "filename": "salted vegtables tofu soup.png",
+        "original_name_stem": "salted vegtables tofu soup"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-089",
+      "source_index": 89,
+      "category_id": "soup",
+      "category": "Soup",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Spinach Soup",
+      "english_name": "Spinach Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/soup/03-spinach-soup.png",
+        "width": 4164,
+        "height": 4164,
+        "format": "PNG",
+        "bytes": 26001449,
+        "sha256": "09046c451dba272a84f22b8f5a092e316358294cee6d673d92e22bb6b9f51f2e",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "soup 1.zip",
+        "filename": "spinach soup.png",
+        "original_name_stem": "spinach soup"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-090",
+      "source_index": 90,
+      "category_id": "soup",
+      "category": "Soup",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Fish Meat Soup",
+      "english_name": "Fish Meat Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/soup/04-fish-meat-soup.png",
+        "width": 4164,
+        "height": 4164,
+        "format": "PNG",
+        "bytes": 28290257,
+        "sha256": "1cd946739b79cca19fdcb4f5ac595b05bc833086025b74d3f07d35222915afe0",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "soup 1.zip",
+        "filename": "fish meat soup.png",
+        "original_name_stem": "fish meat soup"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-091",
+      "source_index": 91,
+      "category_id": "soup",
+      "category": "Soup",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Fish Maw Soup",
+      "english_name": "Fish Maw Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/soup/05-fish-maw-soup.png",
+        "width": 1920,
+        "height": 3436,
+        "format": "PNG",
+        "bytes": 2818605,
+        "sha256": "0a2b6434ecada530ae71301d6ed11ea47d06824e9d3af6551156b5488c01ef7c",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "soup 1.zip",
+        "filename": "fish maw soup.png",
+        "original_name_stem": "fish maw soup"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-092",
+      "source_index": 92,
+      "category_id": "soup",
+      "category": "Soup",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Bittergourd Soup",
+      "english_name": "Bittergourd Soup",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/soup/06-bittergourd-soup.png",
+        "width": 347,
+        "height": 347,
+        "format": "PNG",
+        "bytes": 210171,
+        "sha256": "5afc1651d63def0a4384315fa741e40099ac204ccf8f80d0e250ded9421730b7",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "soup 1.zip",
+        "filename": "bittergourd soup.png",
+        "original_name_stem": "bittergourd soup"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-093",
+      "source_index": 93,
+      "category_id": "tofu",
+      "category": "Tofu",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 1,
+      "name": "Braised Tofu",
+      "english_name": "Braised Tofu",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/tofu/01-braised-tofu.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2377387,
+        "sha256": "13d09455d7b0bec1c9ad573c7588e325c875c77582a5f47abde5d59499cc905f",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "tofu 1.zip",
+        "filename": "braised tofu.png",
+        "original_name_stem": "braised tofu"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-094",
+      "source_index": 94,
+      "category_id": "tofu",
+      "category": "Tofu",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 2,
+      "name": "Deep Fried Tofu",
+      "english_name": "Deep Fried Tofu",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/tofu/02-deep-fried-tofu.png",
+        "width": 205,
+        "height": 196,
+        "format": "PNG",
+        "bytes": 67572,
+        "sha256": "049fd2a0caee07292245a92e943c57063acf21cd50b60851af030149688b9203",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "tofu 1.zip",
+        "filename": "deep fried tofu.png",
+        "original_name_stem": "deep fried tofu"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-095",
+      "source_index": 95,
+      "category_id": "tofu",
+      "category": "Tofu",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 3,
+      "name": "Homemade Tofu",
+      "english_name": "Homemade Tofu",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/tofu/03-homemade-tofu.png",
+        "width": 14195,
+        "height": 7280,
+        "format": "PNG",
+        "bytes": 1371308,
+        "sha256": "a499d0d948c563756bab3ce105ffead0b0143f4b61db74b339a6b7631ea972b0",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "tofu 1.zip",
+        "filename": "homemade tofu.png",
+        "original_name_stem": "homemade tofu"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-096",
+      "source_index": 96,
+      "category_id": "tofu",
+      "category": "Tofu",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 4,
+      "name": "Hotplate Tofu",
+      "english_name": "Hotplate Tofu",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/tofu/04-hotplate-tofu.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 2696636,
+        "sha256": "594dfb761dbe9da1b366cb1efaaa48a71fe5e16ed2603df38d47a33f2fde33f3",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "tofu 1.zip",
+        "filename": "hotplate tofu.png",
+        "original_name_stem": "hotplate tofu"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-097",
+      "source_index": 97,
+      "category_id": "tofu",
+      "category": "Tofu",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 5,
+      "name": "Prawn Tofu",
+      "english_name": "Prawn Tofu",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/tofu/05-prawn-tofu.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1693236,
+        "sha256": "bb564674202ffaa45cd047b9774137c8c2e31de5982aa90df5104d3c744200d1",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "tofu 1.zip",
+        "filename": "prawn tofu.png",
+        "original_name_stem": "prawn tofu"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-098",
+      "source_index": 98,
+      "category_id": "tofu",
+      "category": "Tofu",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 6,
+      "name": "Sea Cucumber with Tofu",
+      "english_name": "Sea Cucumber with Tofu",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/tofu/06-sea-cucumber-with-tofu.png",
+        "width": 1920,
+        "height": 1068,
+        "format": "PNG",
+        "bytes": 1289423,
+        "sha256": "2d0ee4fc82fa046132930a99e4ed56d925f35cf4b9edbc6575691c03cad0f208",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "tofu 1.zip",
+        "filename": "sea cumber with tofu.png",
+        "original_name_stem": "sea cumber with tofu"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-099",
+      "source_index": 99,
+      "category_id": "tofu",
+      "category": "Tofu",
+      "category_assignment_basis": "client source archive",
+      "sort_order": 7,
+      "name": "Yong Tau Foo",
+      "english_name": "Yong Tau Foo",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/tofu/07-yong-tau-foo.png",
+        "width": 752,
+        "height": 525,
+        "format": "PNG",
+        "bytes": 598545,
+        "sha256": "e795b62e9c6ad1827db8f27399014347ed20e837275eb2b12385383bfeecb163",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": "tofu 1.zip",
+        "filename": "yong tau foo.png",
+        "original_name_stem": "yong tau foo"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ]
+    },
+    {
+      "id": "ks-20261015-100",
+      "source_index": 100,
+      "category_id": "additional-dishes",
+      "category": "Additional Dishes",
+      "category_assignment_basis": "neutral grouping for uncategorised standalone client files; not an official category name",
+      "sort_order": 2,
+      "name": "Yam Paste",
+      "english_name": "Yam Paste",
+      "chinese_name": null,
+      "description": null,
+      "variants": null,
+      "prices": null,
+      "publish": true,
+      "status": "ready_from_client_filename",
+      "photo": {
+        "asset": "/kok-sen-menu-2026-10-15/additional-dishes/02-yam-paste.png",
+        "width": 306,
+        "height": 306,
+        "format": "PNG",
+        "bytes": 115663,
+        "sha256": "7df3f5ba87f3f57e1bd5fcde6caf0ba563596ef1f43dc6c2481dada73285f909",
+        "original_bytes_preserved": true
+      },
+      "source": {
+        "archive": "kok sen menu edited(1).zip",
+        "category_archive": null,
+        "filename": "yam paste.png",
+        "original_name_stem": "yam paste"
+      },
+      "name_cleanup_notes": [
+        "Display casing, spelling/spacing or filename artefacts cleaned; exact original filename is retained below."
+      ],
+      "category_note": "The client supplied this photo outside every category folder. Additional Dishes is a neutral temporary presentation group; confirm the final category with the client if needed."
+    }
+  ]
+}

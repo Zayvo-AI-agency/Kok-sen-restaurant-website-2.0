@@ -1,0 +1,65 @@
+{
+  "style_reference": "Dark-brown wooden tabletop with natural grain, soft warm directional daylight from window, authentic Chinese restaurant atmosphere, natural food textures and gentle shadows",
+  "total_items": 100,
+  "publishable_items": 99,
+  "unnamed_review_items": 1,
+  "enhanced_count": 6,
+  "original_retained_count": 93,
+  "mappings": [
+    {
+      "id": "ks-20261015-050",
+      "name": "Big Prawn Hor Fun",
+      "category": "Hor Fun",
+      "original_asset": "/menu-photos/big-prawns-hor-fun--a25f97d3b6.png",
+      "enhanced_asset": null,
+      "status": "retained_original_authentic",
+      "note": "Iconic authentic photograph retained per user instruction; never regenerate.",
+      "fidelity_verified": true
+    },
+    {
+      "id": "ks-20261015-099",
+      "name": "Yong Tau Foo",
+      "category": "Tofu",
+      "original_asset": "/kok-sen-menu-2026-10-15/tofu/07-yong-tau-foo.png",
+      "enhanced_asset": "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-099-enhanced.jpg",
+      "status": "enhanced",
+      "fidelity_verified": true
+    },
+    {
+      "id": "ks-20261015-010",
+      "name": "Prawn Paste Chicken",
+      "category": "Chicken",
+      "original_asset": "/kok-sen-menu-2026-10-15/chicken/05-prawn-paste-chicken.png",
+      "enhanced_asset": "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-010-enhanced.jpg",
+      "status": "enhanced",
+      "fidelity_verified": true
+    },
+    {
+      "id": "ks-20261015-026",
+      "name": "Curry Fish Head",
+      "category": "Fish",
+      "original_asset": "/kok-sen-menu-2026-10-15/fish/05-curry-fish-head.png",
+      "enhanced_asset": "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-026-enhanced.jpg",
+      "status": "enhanced",
+      "fidelity_verified": true
+    },
+    {
+      "id": "ks-20261015-006",
+      "name": "Kung Bao Chicken",
+      "category": "Chicken",
+      "original_asset": "/kok-sen-menu-2026-10-15/chicken/01-kung-bao-chicken.png",
+      "enhanced_asset": "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-006-enhanced.jpg",
+      "status": "enhanced",
+      "fidelity_verified": true
+    },
+    {
+      "id": "ks-20261015-001",
+      "name": "Yam Ring",
+      "category": "Additional Dishes",
+      "original_asset": "/kok-sen-menu-2026-10-15/additional-dishes/01-yam-ring.jpeg",
+      "enhanced_asset": "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-001-enhanced.jpg",
+      "status": "enhanced",
+      "fidelity_verified": true
+    }
+  ]
+}

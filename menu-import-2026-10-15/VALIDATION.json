@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "source_images": 100,
+  "publishable_menu_items": 99,
+  "items_awaiting_client_name": 1,
+  "display_groups": 15,
+  "unique_ids": 100,
+  "unique_asset_paths": 100,
+  "prices_hidden": true,
+  "original_image_byte_hashes_verified": true,
+  "scope": "Package integrity and source-to-asset mapping. This does not verify integration into an external website or browser rendering.",
+  "errors": []
+}

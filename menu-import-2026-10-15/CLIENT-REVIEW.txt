@@ -1,0 +1,13 @@
+CLIENT CONFIRMATION NEEDED
+
+1. UNNAMED FROG PHOTO — REQUIRED BEFORE PUBLISHING THIS ONE ITEM
+Source: frogs 1.zip / BackgroundEraser_20260906_131532826.png
+Catalogue ID: ks-20261015-032
+The supplied filename does not identify the dish. The image is included and visible in MENU-REVIEW.html; publish=false. Ask the client for the exact dish name. Once confirmed, update this same item's name, english_name, status and publish flag. Do not create a duplicate or guess the name from the old menu.
+
+2. TWO STANDALONE DISH CATEGORIES
+yam ring.jpeg and yam paste.png were supplied outside all category archives. Their names are retained as Yam Ring and Yam Paste. They are grouped under Additional Dishes so no specific cuisine category is invented. Confirm the preferred category if required. Both are included in the 99 publishable named entries.
+
+Golden Dragon Chicken was also standalone; its explicit name supports placing it in Chicken.
+
+This package does not infer official Chinese names, prices, portion sizes, descriptions, ingredients, spice/allergen/dietary labels or promotional badges from food appearances.

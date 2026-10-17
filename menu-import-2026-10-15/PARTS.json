@@ -1,0 +1,176 @@
+{
+  "required_parts": 10,
+  "expected_images": 100,
+  "parts": [
+    {
+      "part": 1,
+      "zip": "Kok-Sen-Menu-Part-01-of-10.zip",
+      "image_count": 5,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/rice/03-seafood-fried-rice.png",
+        "public/kok-sen-menu-2026-10-15/rice/01-black-bean-with-sliced-fish-rice.jpg",
+        "public/kok-sen-menu-2026-10-15/frogs/04-kung-bao-frogs.png",
+        "public/kok-sen-menu-2026-10-15/frogs/01-spring-onion-frogs.png",
+        "public/kok-sen-menu-2026-10-15/tofu/02-deep-fried-tofu.png"
+      ]
+    },
+    {
+      "part": 2,
+      "zip": "Kok-Sen-Menu-Part-02-of-10.zip",
+      "image_count": 5,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/rice/13-yang-zhuo-fried-rice.png",
+        "public/kok-sen-menu-2026-10-15/soup/05-fish-maw-soup.png",
+        "public/kok-sen-menu-2026-10-15/tofu/04-hotplate-tofu.png",
+        "public/kok-sen-menu-2026-10-15/pork/02-black-sauce-roasted-pork.png",
+        "public/kok-sen-menu-2026-10-15/chicken/06-golden-dragon-chicken.png"
+      ]
+    },
+    {
+      "part": 3,
+      "zip": "Kok-Sen-Menu-Part-03-of-10.zip",
+      "image_count": 2,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/soup/04-fish-meat-soup.png",
+        "public/kok-sen-menu-2026-10-15/eggs/03-minced-pork-omelette.jpg"
+      ]
+    },
+    {
+      "part": 4,
+      "zip": "Kok-Sen-Menu-Part-04-of-10.zip",
+      "image_count": 3,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/soup/01-sliced-fish-soup.png",
+        "public/kok-sen-menu-2026-10-15/eggs/05-radish-omelette.jpg",
+        "public/kok-sen-menu-2026-10-15/eggs/04-prawn-omelette.png"
+      ]
+    },
+    {
+      "part": 5,
+      "zip": "Kok-Sen-Menu-Part-05-of-10.zip",
+      "image_count": 3,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/soup/03-spinach-soup.png",
+        "public/kok-sen-menu-2026-10-15/eggs/01-fu-rong-omelette.jpg",
+        "public/kok-sen-menu-2026-10-15/fish/01-deep-fried-yu-gai-fish.png"
+      ]
+    },
+    {
+      "part": 6,
+      "zip": "Kok-Sen-Menu-Part-06-of-10.zip",
+      "image_count": 7,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/soup/02-salted-vegetables-tofu-soup.png",
+        "public/kok-sen-menu-2026-10-15/seafood/08-sea-cucumber-with-mushroom.png",
+        "public/kok-sen-menu-2026-10-15/beef/01-kai-lan-with-beef.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/06-romaine-lettuce-with-fermented-beancurd.png",
+        "public/kok-sen-menu-2026-10-15/tofu/01-braised-tofu.png",
+        "public/kok-sen-menu-2026-10-15/seafood/05-salt-pepper-prawn.png",
+        "public/kok-sen-menu-2026-10-15/frogs/03-black-bean-with-frogs.png"
+      ]
+    },
+    {
+      "part": 7,
+      "zip": "Kok-Sen-Menu-Part-07-of-10.zip",
+      "image_count": 9,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/rice/02-black-sauce-with-roasted-pork-rice.png",
+        "public/kok-sen-menu-2026-10-15/crab/01-black-pepper-crab.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/03-sambal-kangkong.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/04-kai-lan-with-garlic.png",
+        "public/kok-sen-menu-2026-10-15/fish/04-claypot-fish-meat.png",
+        "public/kok-sen-menu-2026-10-15/pork/03-bittergourd-pork-ribs.png",
+        "public/kok-sen-menu-2026-10-15/hor-fun/02-sanluo-hor-fun.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/01-bean-sprout-with-salted-fish.png",
+        "public/kok-sen-menu-2026-10-15/tofu/06-sea-cucumber-with-tofu.png"
+      ]
+    },
+    {
+      "part": 8,
+      "zip": "Kok-Sen-Menu-Part-08-of-10.zip",
+      "image_count": 10,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/noodles/01-black-bean-fish-meat-bee-hoon.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/07-garlic-with-small-cabbage.png",
+        "public/kok-sen-menu-2026-10-15/seafood/01-stir-fried-big-prawns-with-spring-onion.png",
+        "public/kok-sen-menu-2026-10-15/crab/05-spring-onion-crab.png",
+        "public/kok-sen-menu-2026-10-15/crab/03-salted-egg-crab.png",
+        "public/kok-sen-menu-2026-10-15/fish/07-hong-kong-style-steamed-grouper.png",
+        "public/kok-sen-menu-2026-10-15/fish/05-curry-fish-head.png",
+        "public/kok-sen-menu-2026-10-15/chicken/05-prawn-paste-chicken.png",
+        "public/kok-sen-menu-2026-10-15/frogs/02-unnamed-frog-dish-needs-confirmation.png",
+        "public/kok-sen-menu-2026-10-15/beef/04-black-pepper-beef.png"
+      ]
+    },
+    {
+      "part": 9,
+      "zip": "Kok-Sen-Menu-Part-09-of-10.zip",
+      "image_count": 13,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/rice/11-sweet-sour-pork-rice.png",
+        "public/kok-sen-menu-2026-10-15/chicken/02-cereal-chicken.png",
+        "public/kok-sen-menu-2026-10-15/fish/08-sambal-fish-meat.png",
+        "public/kok-sen-menu-2026-10-15/tofu/05-prawn-tofu.png",
+        "public/kok-sen-menu-2026-10-15/pork/04-kai-lan-roasted-pork.png",
+        "public/kok-sen-menu-2026-10-15/fish/09-sweet-and-sour-grouper.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/05-poached-lettuce.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/02-garlic-broccoli.png",
+        "public/kok-sen-menu-2026-10-15/noodles/05-eggs-crispy-noodle.png",
+        "public/kok-sen-menu-2026-10-15/crab/04-sambal-crab.png",
+        "public/kok-sen-menu-2026-10-15/fish/06-deep-fried-fish-meat.png",
+        "public/kok-sen-menu-2026-10-15/seafood/02-broccoli-prawn-balls.png",
+        "public/kok-sen-menu-2026-10-15/pork/05-minced-pork-with-eggplants.png"
+      ]
+    },
+    {
+      "part": 10,
+      "zip": "Kok-Sen-Menu-Part-10-of-10.zip",
+      "image_count": 43,
+      "asset_paths": [
+        "public/kok-sen-menu-2026-10-15/tofu/03-homemade-tofu.png",
+        "public/kok-sen-menu-2026-10-15/fish/03-black-bean-fish-meat.png",
+        "public/kok-sen-menu-2026-10-15/seafood/06-salted-egg-prawns.png",
+        "public/kok-sen-menu-2026-10-15/chicken/01-kung-bao-chicken.png",
+        "public/kok-sen-menu-2026-10-15/crab/02-chilli-crab.png",
+        "public/kok-sen-menu-2026-10-15/beef/02-spring-onion-with-beef.png",
+        "public/kok-sen-menu-2026-10-15/seafood/07-sambal-prawn.png",
+        "public/kok-sen-menu-2026-10-15/pork/06-sweet-and-sour-pork.png",
+        "public/kok-sen-menu-2026-10-15/beef/03-black-bean-with-beef.png",
+        "public/kok-sen-menu-2026-10-15/hor-fun/07-big-prawn-hor-fun.png",
+        "public/kok-sen-menu-2026-10-15/pork/01-sweet-and-sour-pork-chop.png",
+        "public/kok-sen-menu-2026-10-15/noodles/03-fish-meat-bee-hoon-soup.png",
+        "public/kok-sen-menu-2026-10-15/hor-fun/04-dry-beef-hor-fun.png",
+        "public/kok-sen-menu-2026-10-15/hor-fun/01-black-bean-beef-hor-fun.png",
+        "public/kok-sen-menu-2026-10-15/hor-fun/05-seafood-and-pork-hor-fun.png",
+        "public/kok-sen-menu-2026-10-15/hor-fun/03-black-bean-fish-hor-fun.png",
+        "public/kok-sen-menu-2026-10-15/noodles/02-dry-bee-hoon.png",
+        "public/kok-sen-menu-2026-10-15/rice/09-soup-rice.png",
+        "public/kok-sen-menu-2026-10-15/fish/02-hong-kong-style-steamed-fish-tail.png",
+        "public/kok-sen-menu-2026-10-15/chicken/03-claypot-chicken.png",
+        "public/kok-sen-menu-2026-10-15/tofu/07-yong-tau-foo.png",
+        "public/kok-sen-menu-2026-10-15/seafood/03-cereal-prawns.png",
+        "public/kok-sen-menu-2026-10-15/vegetables/08-chinese-spinach-with-trio-egg.png",
+        "public/kok-sen-menu-2026-10-15/seafood/04-prawn-roll.png",
+        "public/kok-sen-menu-2026-10-15/chicken/04-roasted-chicken.png",
+        "public/kok-sen-menu-2026-10-15/noodles/07-prawn-bee-hoon-soup.png",
+        "public/kok-sen-menu-2026-10-15/hor-fun/06-moonlight-hor-fun.png",
+        "public/kok-sen-menu-2026-10-15/pork/07-steamed-pork-with-prawn-paste.png",
+        "public/kok-sen-menu-2026-10-15/noodles/08-crispy-noodle.png",
+        "public/kok-sen-menu-2026-10-15/rice/12-roasted-pork-tofu-rice.png",
+        "public/kok-sen-menu-2026-10-15/rice/06-thai-style-fried-rice.png",
+        "public/kok-sen-menu-2026-10-15/soup/06-bittergourd-soup.png",
+        "public/kok-sen-menu-2026-10-15/rice/05-braised-rice.png",
+        "public/kok-sen-menu-2026-10-15/rice/08-kai-lan-with-beef-rice.png",
+        "public/kok-sen-menu-2026-10-15/noodles/06-mee-goreng.png",
+        "public/kok-sen-menu-2026-10-15/noodles/04-hokkien-mee.png",
+        "public/kok-sen-menu-2026-10-15/rice/04-beef-fried-rice.png",
+        "public/kok-sen-menu-2026-10-15/eggs/06-steamed-trio-egg.png",
+        "public/kok-sen-menu-2026-10-15/eggs/02-minced-pork-steamed-egg.png",
+        "public/kok-sen-menu-2026-10-15/additional-dishes/01-yam-ring.jpeg",
+        "public/kok-sen-menu-2026-10-15/additional-dishes/02-yam-paste.png",
+        "public/kok-sen-menu-2026-10-15/rice/07-kai-lan-roasted-pork-rice.png",
+        "public/kok-sen-menu-2026-10-15/rice/10-spring-onion-beef-rice.png"
+      ]
+    }
+  ]
+}

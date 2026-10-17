@@ -1,0 +1,16 @@
+SMALL ZIP DOWNLOAD EDITION — KOK SEN CLIENT MENU
+
+The same original menu package is now supplied in 10 normal ZIP files.
+All 10 are required. They are independent importable ZIPs, not .001 archive fragments.
+Original photo bytes, names, categories, IDs and image paths are unchanged.
+
+IN AI STUDIO
+1. Download all 10 ZIP files.
+2. Open the existing project: File Explorer > + > Upload Zip file.
+3. Import Part 01, then Part 02 through Part 10, using the same project root each time. Save the imported changes.
+4. The folders must merge into the same root public/kok-sen-menu-2026-10-15 and data folders. If the importer places each ZIP in its own wrapper, the AI assistant must consolidate the contents into the intended root paths.
+5. Only after ALL parts are present, send the AI-STUDIO-PROMPT.txt text or the chat prompt provided with the downloads.
+
+Part 01 includes the full JSON catalogue, detailed prompt, review sheet, validation script and this instructions file. The other parts contain additional original photos and a part inventory. A complete installation has 100 image files, 99 publishable named menu items and one unnamed frog photo awaiting client confirmation.
+
+Do not run a menu replacement after importing only Part 01. The included validation script will flag photos missing from any unimported part. Once every part is imported, the normal validation and integration instructions apply.

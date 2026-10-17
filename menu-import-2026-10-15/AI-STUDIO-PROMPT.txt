@@ -1,0 +1,34 @@
+This is the 10-part download edition. Read menu-import-2026-10-15/INSTALL-SMALL-ZIPS.txt and PARTS.json first. All 10 parts must be imported and all 100 photo paths must exist before replacing the active menu. If files are missing, report the missing parts and preserve the currently working menu until the complete package is available.
+
+Replace the existing Kok Sen website menu using the newly uploaded CLIENT menu package. Apply the implementation, not just a plan.
+
+AUTHORITATIVE SOURCE
+Read data/kok-sen-menu-2026-10-15.json, menu-import-2026-10-15/README.txt, CLIENT-REVIEW.txt and VALIDATION.json. Inspect the existing menu loaders/components first. This client revision supersedes the previous Oddle menu and all old photo-map.json / PHOTO-MAPPING.json menu-photo assignments.
+
+FILE PLACEMENT
+All 100 images belong under the PROJECT ROOT public/kok-sen-menu-2026-10-15/. If AI Studio inserted an extra enclosing folder, locate the package and copy its contents into the intended root locations, preserving unrelated files. Confirm the actual image files exist; do not create empty stand-ins or claim binary copying succeeded without checking. The data file belongs at data/kok-sen-menu-2026-10-15.json.
+
+REPLACE THE MENU DATA
+Use this JSON as the single source for the replacement menu and adapt it to the existing UI. It has categories[] and a FLAT items[] list. Each item's photo is at item.photo.asset. Use its id as a stable unique key. It is a new catalogue; do not try to match these IDs against old SIG1 or Oddle IDs. Replace the old live menu entries instead of appending, and remove stale menu data/photo fallbacks from active code. Keep a recoverable backup or use project history.
+
+EXACT CONTENT AND IMAGE ASSIGNMENT
+- Render items where publish === true: exactly 99 named entries initially, across 15 presentation groups. All 100 supplied images must remain included; the one unpublished item is the unnamed frog photo.
+- Use each exact English display name, category, sort_order and photo.asset from this JSON. Do not assign images by position, approximate matching or visual guesses. Preserve the source filenames recorded for traceability.
+- Crab and Hor Fun remain their own source categories. Do not merge similarly named dishes such as rice meals vs main dishes, black-bean vs dry beef hor fun, or the two separately named deep-fried fish dishes.
+- Golden Dragon Chicken belongs in Chicken. Yam Ring and Yam Paste are in the neutral Additional Dishes group because the source supplied no category; do not claim this group was an official client heading.
+- ks-20261015-032 has name=null and publish=false because its source file is BackgroundEraser_20260906_131532826.png. Keep it in review, report it to me and do not guess a dish name. Do not render an internal filename or invented name to customers.
+- Never import old dishes absent from this client revision, fetch replacement photos from Oddle, generate pictures, recolour/crop the supplied food, duplicate photos across different dishes, or replace correct images with placeholders.
+- Render the provided local photo path (without /public/). Handle the existing application's deployment base path correctly. Keep the source image aspect ratio, use object-fit: contain so the complete dish remains visible, preserve transparent backgrounds, and avoid a global background change. Use lazy loading and asynchronous decoding for these original-size files.
+- A broken local image URL is a technical error to fix, not proof that the dish has no photo. No runtime fallback to old/unrelated dish photos.
+
+NO INVENTED MENU DETAILS
+The archive provided names and photos only. chinese_name, description, variants and prices are intentionally null. Do not fill them with guesses, stale descriptions/portion selectors, generated Chinese translations, inferred ingredients, allergens, dietary labels, prices or availability claims. Hide sections that have no supplied content. Keep all food prices hidden throughout the website.
+
+ALL MENU SURFACES
+Use the new catalogue for the full menu, category filters, search, dish detail popups, homepage dish features and any menu-driven recommendation/pre-order UI. Remove stale items from AI assistant recommendations and ensure suggestions use current publishable dish IDs without repeating the same dish in one response. Do not invent signature/bestseller tags from the uploaded photos; report any homepage feature selection requiring client input.
+
+PRESERVE THE WEBSITE
+Preserve the existing overall design, responsive layout, working Oddle ordering link, outlet reservation links, verified opening hours, restaurant contact details and unrelated pages. Change only what the menu replacement needs. Do not publish automatically.
+
+REQUIRED VERIFICATION
+Run the included read-only validation script if Node is available: node menu-import-2026-10-15/validate-menu.mjs. Fix every missing path before completion. If tools cannot access binary files, report the limitation accurately. Build the application. Inspect all categories, desktop and mobile views, image loading and dish details; inspect actual rendered images rather than relying on build success. Verify 99 live entries, one clearly reported review item, no old-only dishes, no broken images, correct one-to-one image mappings and no displayed prices. Report exact counts and any checks you could not perform. Make the code changes now.
