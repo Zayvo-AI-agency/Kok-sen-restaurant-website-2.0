@@ -1,0 +1,24 @@
+Apply this ZIP as a targeted photo replacement to the EXISTING website. Implement the changes, not just a plan.
+
+AUTHORITATIVE INPUT
+Read data/oddle-three-photo-overrides-2026-10-19.json. The three supplied PNG files are the exact photos approved by the client. Their bytes, backgrounds, table settings, plates, food and framing must remain unchanged. Do not fetch replacements from Oddle, use older downloaded versions, generate new images, enhance/upscale them or remove their backgrounds.
+
+EXACT MAPPING
+1. Curry Fish Head — client ID ks-20261015-026 — /oddle-three-exact-2026-10-19/curry-fish-head.png
+2. Curry Fish Tail — no verified client ID — /oddle-three-exact-2026-10-19/curry-fish-tail.png
+3. Big Prawn Hor Fun / Big Prawns Hor Fun — client ID ks-20261015-050 — /oddle-three-exact-2026-10-19/big-prawns-hor-fun.png
+
+MATCHING
+Inspect the current project. Validate both the ID and corresponding dish name before changing a record. If IDs differ, use only an unambiguous exact name or the explicit singular/plural alias listed above; never use fuzzy matching, generic words such as fish/prawn/curry, array positions or category order. Do not rename the menu dishes. Curry Fish Tail was absent from the supplied older client-menu snapshot: look for its exact existing entry in the current project. Never assign that photo to Hong Kong Style Steamed Fish Tail or Curry Fish Head. If a target is missing or ambiguous, report it and leave its asset ready without creating an extra menu item or guessing.
+
+IMPLEMENTATION
+- Copy the three files under public/ into the project's actual static public directory, adapting the asset base only if this app requires it. Do not create public/public nesting. The usual browser path starts /oddle-three-exact-2026-10-19/, not /public/.
+- Connect the new mapping to the data/component path that actually renders the website. Merely adding JSON or image files is not completion.
+- For these target dishes, the new mapping must override every older photo-map, enhanced-photo path, hardcoded image, cached photo assignment and fallback that would show the previous image. Keep this override limited to the three exact dishes. Handle any application/service-worker cache serving their stale assets through the project's normal cache versioning; preserve unrelated user data.
+- Apply the same approved image wherever the confirmed dish is shown: menu cards, dish detail/modal, search results, recommendations and any featured/gallery reference to that exact dish. Do not add new cards or assign one dish's photo to another dish. Remove old alternate-photo references for these specific dishes so a modal cannot bring back the rejected photo. Do not delete shared files blindly.
+- Preserve the complete square image. Use object-fit: contain (or equivalent), no clipping, no zoom, no stretching and no background removal. Keep a 1:1 image area where practical. These uploads are 250 x 250 pixels; do not claim they are 4K or invent high-resolution detail.
+- Preserve the existing menu entries, names, categories, ordering, descriptions, other dish photos, links and price visibility. Food prices must stay hidden. Do not copy prices from the name-reference screenshots.
+- Do not replace the whole application, import another complete menu, install unnecessary packages or restore old code from another ZIP.
+
+VERIFY BEFORE REPORTING DONE
+Check that exactly three distinct supplied image files exist and decode. Confirm each changed record resolves to its correct new path; verify served images against the manifest hashes when possible. Open the affected cards and detail views on desktop and mobile, refresh, and confirm the old images do not return. Run the existing build if available. Report the dish name, matched record ID and final image path for each successful replacement, plus any absent/ambiguous target and checks you could not perform. Do not claim all three are replaced if Curry Fish Tail has no matching entry. Do not claim deployment or GitHub sync succeeded unless actually performed and verified.

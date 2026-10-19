@@ -74,13 +74,13 @@ export function WokFavouritesSection({
               className="bg-surface-container hover:bg-surface-container-high rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-surface-container-high/70 shadow-md hover:shadow-xl transition-all duration-200 flex items-start gap-3 sm:gap-4 group cursor-pointer w-full max-w-full min-w-0 overflow-hidden"
               onClick={() => onSelectDish(dish)}
             >
-              {/* Square Food Image or Clean Neutral Placeholder */}
+              {/* Square Food Image with pure white background */}
               {hasValidImage ? (
-                <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-lg sm:rounded-xl overflow-hidden bg-surface-container-lowest shrink-0 border border-surface-container-high/60 shadow-xs">
+                <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-lg sm:rounded-xl overflow-hidden bg-white shrink-0 border border-surface-container-high/70 shadow-xs flex items-center justify-center p-1.5">
                   <img 
                     src={currentSrc} 
                     alt={dish.nameEn}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="max-h-full max-w-full w-auto h-auto object-contain"
                     loading="lazy"
                     onError={() => {
                       const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
@@ -93,7 +93,7 @@ export function WokFavouritesSection({
                   />
                 </div>
               ) : (
-                <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-lg sm:rounded-xl overflow-hidden bg-surface-container-lowest shrink-0 border border-surface-container-high/60 shadow-xs flex flex-col items-center justify-center p-2 text-center text-tertiary select-none">
+                <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-lg sm:rounded-xl overflow-hidden bg-white shrink-0 border border-surface-container-high/60 shadow-xs flex flex-col items-center justify-center p-2 text-center text-tertiary select-none">
                   <span className="font-mono text-xs font-bold text-secondary mb-0.5">{dish.itemCode || dish.code}</span>
                   <span className="text-[10px] text-tertiary/70 leading-tight">Photo unavailable</span>
                 </div>

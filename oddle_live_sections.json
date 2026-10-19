@@ -1,0 +1,1450 @@
+[
+  {
+    "@type": "MenuSection",
+    "name": "SIGNATURE",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Big Prawns Hor Fun | 大虾滑蛋河粉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/9a0263ba-c404-4e16-9348-23d7859c3842/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Claypot Yong Tau Foo | 巧手三宝煲",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/c8bbfc23-e348-411b-bfd5-fd7b8dba4363/",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Golden Dragon Chicken | 脆皮金龙鸡",
+        "description": "<p>Order 1 day in advance during Monday-Thursday(Cut-off time 11pm Daily) / Available during Friday, Saturday &amp; Sunday(Limited Stock)</p>",
+        "image": "https://ucarecdn.com/d985976a-5134-4f8b-bcfc-22a2055a0bfe/",
+        "offers": {
+          "@type": "Offer",
+          "price": 46.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Prawn Paste Chicken | 虾酱鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/d5709a32-eb33-4e52-8579-0f611d0dd94a/",
+        "offers": {
+          "@type": "Offer",
+          "price": 20,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Kai Lan Stir Fried with Roasted Pork | 芥兰炒烧肉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/KaiLanStirFriedwithRoastedPorkce6496.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Prawn Roll | 虾枣",
+        "description": "<p>Hand-made prawn roll (Sotong &amp; Prawn Paste)</p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/PrawnRolldb589a.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 17.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Bittergourd Pork Ribs with Black Bean Sauce | 苦瓜豉汁闷排骨",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BittergourdPorkRibswithBlackBeanSauce223406.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Beef with Spring Onion | 姜葱炒牛肉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/StirFriedBeefwithSpringOnion355f6b.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean/Dry Beef Hor Fun | 豉汁/干炒牛肉河",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanDryBeefHorFun02af52.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Sauce with Fish Head / Sliced Fish | 豉汁炒鱼头 / 鱼片",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanSaucewithFishHead8e2087.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 20,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Curry Fish Head | 咖喱鱼头",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/CurryFishHeadf4244f.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 57.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Curry Fish Tail | 咖喱鱼尾",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/4581a9a0-6e14-4263-aece-3ac396121c68/-/crop/768x770/0,358/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 111.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Sauce with Fish Meat | 豉汁炒鱼鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/f8185b1c-dbdb-4fcb-9a9a-21929dcdd45e/-/crop/768x770/0,303/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Deep Fried Fish Meat with Light Sauce | 炸鱼肉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/DeepFriedFishMeatwithLightSauceab67c8.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 38.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Salted Egg Prawn Ball | 咸蛋黄虾球",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/30566e74-6b83-4eca-9953-19190ae48d8f/-/crop/2557x2554/1136,1022/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 30.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Salted Egg Squid | 咸蛋黄苏东",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "SEAFOOD",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Sea Cucumber Braised Mushrooms | 冬菇海参煲",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/79c3f608-e52f-4ffd-8d4e-f81553ea28cf/",
+        "offers": {
+          "@type": "Offer",
+          "price": 42.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Roasted Pork Braised Sea Cucumber | 红烧海参煲",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 42.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sambal Squid | 叁巴苏冬",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/4ccfc850-b749-47c2-9299-c5fa555901e3/",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Prawn Roll | 虾枣",
+        "description": "<p>Hand-made prawn roll (Sotong &amp; Prawn Paste)</p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/PrawnRoll1fc1b0.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 17.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Salted Egg Squid | 咸蛋黄苏东",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "PRAWN",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Yam Ring | 芋头圈",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/ae5e3756-b4d0-4285-b1ab-1fab276a383d/",
+        "offers": {
+          "@type": "Offer",
+          "price": 37.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Cereal Butter Prawns | 麦片鲜虾",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/738ac104-4e4e-423a-b4f3-99fbc4cde42c/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sambal Stir Fried with Prawns Balls | 叁巴炒虾球",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/83374fba-30ed-462b-9af6-a44bfe5ded90/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Salt & Pepper Prawns | 椒盐鲜虾",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/2f7ad766-0456-4cb0-adf7-de445b42689d/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sweet & Sour Prawns Balls | 酸甜虾球",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/bb34232e-8b9c-49c3-9972-bb00e0ca8d67/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Broccoli Stir Fried with Prawns Balls | 西兰花炒虾球",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/1f6b5431-4a71-44a2-8e19-78f481bf8975/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Light Sauce with Big Prawn | 干煎大虾碌",
+        "description": "<p>Min 3pcs</p>",
+        "image": "https://ucarecdn.com/d9b30666-0e8a-4190-84c4-54b87af7b8ea/",
+        "offers": {
+          "@type": "Offer",
+          "price": 48.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Salted Egg Prawn Ball | 咸蛋黄虾球",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/4eee6f36-63bf-42b2-93d6-dddc82b0c0d3/",
+        "offers": {
+          "@type": "Offer",
+          "price": 30.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Spring Onion Prawn(Normal Size) | 姜葱炒明虾",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/28cc2416-f83a-4eb1-a3c2-fe9392371c4c/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "FROGS",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Frogs With Spring Onion | 姜葱炒田鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/bad55b76-1fdb-462f-8ef0-2f20160a3726/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Deep Fried Frogs With Ginger | 姜片炸田鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/6b5158e4-c948-44e0-8510-9c8c8f0076f6/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Stir Fried With Frogs | 豉汁炒田鸡",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "‘Kung Pao’ Frogs With Fried With Dried Chilli | 宫宝田鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/e5502007-f1cc-456a-a610-27677717cb27/",
+        "offers": {
+          "@type": "Offer",
+          "price": 29.1,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "PORK",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Sweet & Sour Pork | 咕酪肉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/SweetSourPorkf92992.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Bittergourd Pork Ribs with Black Bean Sauce | 苦瓜豉汁闷排骨",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BittergourdPorkRibswithBlackBeanSauce58d7bc.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sweet & Sour Pork Chop | 酸甜排骨王",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/cd1c95b1-fb8e-493f-89b8-ddd76e734478/",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Kai Lan Stir Fried with Roasted Pork | 芥兰炒烧肉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/KaiLanStirFriedwithRoastedPork6ffbe3.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Salted Fish Steam Minced Pork | 咸鱼蒸肉碎",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/c0e32736-51b6-49d4-be1c-c3aaa04d8125/",
+        "offers": {
+          "@type": "Offer",
+          "price": 20,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Fried Crispy Roast Pork with Black Sauce | 香爆烧肉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/3f008506-20b7-4dfa-8c4b-4acbd0bb65f5/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "FISH",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Deep Fried Fish Meat with Light Sauce | 炸鱼肉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/4e40c3e4-6700-4b68-820f-8b1be25c590f/",
+        "offers": {
+          "@type": "Offer",
+          "price": 38.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "HK Style Steam Fish Tail | 港 / 潮式蒸鱼尾",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/HKStyleSteamFishTail0e7b94.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 111.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Sauce with Fish Head | 豉汁炒鱼头",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanSaucewithFishHead8d5031.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Kai Lan with Sliced Fish | 芥兰炒鱼片",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/5cb26cb2-c786-435b-b162-8029a69f493e/",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Fish Meat with Sambal Kaffir Leaves | 甘香炒鱼肉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/StirFriedFishMeatwithSambalKaffirLeaves465189.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "HK Style Steam Fish Head | 港/潮式蒸鱼头",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/6b684f7c-f1ab-4bfb-b22f-cdde351b687c/-/crop/763x763/237,5/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 57.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Curry Fish Head | 咖喱鱼头",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/a4a4600e-b87b-4709-b83c-865dbf5e1bed/",
+        "offers": {
+          "@type": "Offer",
+          "price": 57.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Curry Fish Tail | 咖喱鱼尾",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/4581a9a0-6e14-4263-aece-3ac396121c68/-/crop/768x770/0,377/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 111.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Sauce with Fish Meat | 豉汁炒鱼鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/f8185b1c-dbdb-4fcb-9a9a-21929dcdd45e/-/crop/737x739/16,334/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sweet & Sour Sliced Fish | 酸甜鱼片",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/SweetSourSlicedFish0045f7.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir-fry Spring Onion with Sliced Fish | 姜葱炒鱼片",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/86eeb9fc-809b-462a-95a0-86d0f17e1bde/",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Deep Fried \"Yu Gai\"| 香脆炸鱼鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/2f4ef959-ca9e-4daa-96bd-38438ecded85/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "BEEF",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Kai Lan Stir Fried with Beef | 芥兰炒牛肉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/KaiLanStirFriedwithBeefc23c11.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Stir Fried with Beef | 豉汁炒牛肉",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Pepper Beef | 黑椒炒牛肉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/0fc8d9e9-d8a8-4c9e-a914-57c347c7a873/",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Beef with Spring Onion | 姜葱炒牛肉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/9844d195-87a8-4b53-ae4f-d86ec1aee2d1/",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "CHICKEN",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Prawn Paste Chicken | 虾酱鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/d5709a32-eb33-4e52-8579-0f611d0dd94a/",
+        "offers": {
+          "@type": "Offer",
+          "price": 20,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Claypot Thai Style Chicken | 甘香鸡",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/b1b4fd30-06e7-42c4-b3ee-8213479357fc/",
+        "offers": {
+          "@type": "Offer",
+          "price": 20,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Golden Dragon Chicken | 脆皮金龙鸡",
+        "description": "<p>Order 1 day in advance during Monday-Thursday(Cut-off time 11pm Daily) / Available during Friday, Saturday &amp; Sunday(Limited Stock)</p>",
+        "image": "https://ucarecdn.com/d985976a-5134-4f8b-bcfc-22a2055a0bfe/",
+        "offers": {
+          "@type": "Offer",
+          "price": 46.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Crispy Roasted Chicken | 脆皮烧鸡",
+        "description": "<p>Order 1 day in advance. Available only on Friday and weekends.(Limited Stock) (Cut-off time 11pm )</p>",
+        "image": "https://ucarecdn.com/9641d9fe-6966-4cca-8c3c-b4de212e4754/",
+        "offers": {
+          "@type": "Offer",
+          "price": 31.6,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Cereal Chicken | 麦片鸡丁",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Kung Bao Chicken | 宫保鸡丁",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/06a0300d-e8d2-4ef2-b2df-54b7ac11f808/",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sweet & Sour Chicken | 咕噜鸡丁",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 19.9,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "RICE",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Sweet & Sour Pork Rice | 酸甜咕酪肉饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/1e5ef048-fade-4b10-9361-93bca6420023/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Roasted Pork Tofu Rice | 烧肉豆腐饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/c50d367a-bb71-45f8-ac9b-9f16cb01395f/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Thai Style Fried Rice | 泰式炒饭",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/ThaiStyleFriedRice92d71d.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Kai Lan Roasted Pork Rice | 芥兰烧肉饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/cec740f2-2b72-448a-b5dd-4a959fefddee/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "'Yang Zhuo’ Fried Rice | 杨州炒饭",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/YangZhuoFriedRice330dd5.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "'Salted Fish’ Fried Rice | 咸鱼炒饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/64524cce-2653-48d8-b633-44ee4a6908df/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Kai Lan Sliced Fish/Beef Rice | 芥兰鱼片/牛肉饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/e34e4fc8-5b4c-4f1c-bb3e-623dbc74c649/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Seafoods & Pork Braised Rice | 什锦滑蛋绘饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/44a71aeb-5bf5-4a57-8a62-57fe44d1ddc5/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Seafoods Fried Rice | 海鲜炒饭",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/SeafoodsFriedRicecba8aa.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Sliced Fish Rice | 豉汁鱼片饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/eef4976b-16c5-408f-82b8-09e32fdac516/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Seafoods & Pork Soup Rice | 上汤什锦饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/06ee20bc-2196-4ebc-92ed-3851b13bdb61/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Beef Fried Rice | 牛肉炒饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/12eb2df2-41f3-443d-92e0-d8bbfbe1c11b/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Sauce Roasted Pork Rice | 香爆烧肉饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/eaad0a1f-19fa-4722-9cae-6bf2db23493b/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Spring Onion Sliced Beef Rice | 姜葱牛肉饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/5e91ea4e-d23f-4cdc-9057-50851f592acd/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.09,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Spring Onion Sliced Fish Rice | 姜葱鱼片饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/c7d34324-fe95-448d-b42a-8035b7973c97/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.09,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Spring Onion Sliced Pork Rice | 姜葱猪肉饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/3645f4e3-a645-4564-98ee-4e899f892078/",
+        "offers": {
+          "@type": "Offer",
+          "price": 11.44,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Rice/白米饭",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/3e730c75-90a8-49f5-ad78-8f0be36ad85f/",
+        "offers": {
+          "@type": "Offer",
+          "price": 2,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "NOODLE",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Big Prawns Hor Fun | 大虾滑蛋河粉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/9a0263ba-c404-4e16-9348-23d7859c3842/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Big Prawns Crispy Noodle | 大虾滑蛋生面",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/f34de575-832a-45be-b13a-ac079445c60a/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Big Prawns Bee Hoon Soup | 大虾粗米粉汤",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/119e29f0-48f0-4069-b199-1dff8325d009/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Fish Meat Braised Bee Hoon/Hor Fun | 豉汁鱼鸡闷米粉/河粉-",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/3f0ec630-dfb6-4857-b515-ac2e5add5621/",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.7,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Crispy Noodle Surface With Shrimp Omelette | 黄布虾球生面",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/0e60a8c7-e703-465e-b0e3-e7c3ea016c85/",
+        "offers": {
+          "@type": "Offer",
+          "price": 18.6,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sliced Fish Hor Fun With Bean Sprout | 生捞河粉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/92d9f541-3833-452f-b38d-bfab3bb7c469/",
+        "offers": {
+          "@type": "Offer",
+          "price": 11.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean/Dry Beef Hor Fun | 豉汁/干炒牛肉河",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanDryBeefHorFunbe3c97.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Seafood & Pork Hor Fun / Bee Hoon | 滑蛋 什锦河粉 /米粉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/SeafoodPorkHorFunBeeHoon520cf2.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Fish Meat Bee Hoon Soup | 鱼鸡粗米粉汤",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/FishMeatBeeHoonSoupe5dd06.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 13.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Dry Bee Hoon/ HK Noodle | 新州米粉 /香港面",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/54c74a9a-d35f-4688-b4c8-de5780c0d485/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Fish Head/Sliced Fish Bee Hoon Soup | 鱼头/鱼片粗米粉汤",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/73a46c50-ef7a-41eb-9b0c-d082d9d3c19e/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Sliced Fish Bee Hoon/Hor Fun | 鼓汁鱼片米粉/河粉",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanSlicedFishHorFunb7fc4d.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 11.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Seafood & Pork Crispy Noodle |滑蛋 什锦生面",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/410a6eb0-8feb-4a48-8cc2-a0629c5159c7/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Moonlight Hor Fun | 月光河粉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/da2e980d-1904-4294-b028-6dcef5729dc3/",
+        "offers": {
+          "@type": "Offer",
+          "price": 11.44,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Black Bean Assorted Seafood & Pork Bee Hoon/Hor Fun | 豉汁什锦米粉/河粉",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/373af7d7-b07e-4bca-9a18-d7c89e07e0cb/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.2,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "SOUP",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Bittergourd Soup With Seafoods & Pork | 什锦凉瓜汤",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/bdd8e959-071e-4ebc-99c4-b7cf3a91e253/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Fish Meat Soup | 鱼鸡汤",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/FishMeatSoupf39820.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 13.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sliced Fish/Fish Head Soup | 鱼片/鱼头汤",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/0af1da77-be52-48c0-a0c6-473252052d77/-/preview/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Salted Vegetable Tofu Soup | 什锦咸菜豆腐汤",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/84806e8a-f626-436d-bfac-e6309f9ce637/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Big Prawns Soup | 大虾汤",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BigPrawnsSoup53a82a.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 26.5,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Spinach Soup | 苋菜汤",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/2bdaf5ae-3032-4e66-aa88-b741c92c32c6/",
+        "offers": {
+          "@type": "Offer",
+          "price": 10.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Fish Maw Soup | 鱼鳔羹",
+        "description": "<p></p>\n",
+        "image": "https://ucarecdn.com/88e2d587-c891-4ac9-8b1a-51f24ca9464e/",
+        "offers": {
+          "@type": "Offer",
+          "price": 89.7,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "TOFU",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Claypot Yong Tau Foo | 巧手三宝煲",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/ClaypotYongTauFoo47e8cd.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 23.8,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Homemade Tofu with Minced Pork | 家乡豆腐",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/43356430-e76a-4966-a427-71c6a80f131c/",
+        "offers": {
+          "@type": "Offer",
+          "price": 16.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Braised Tofu with Roast Pork | 红烧豆腐",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/365e48fb-b05a-47e3-a6b7-2bf5f9071e77/",
+        "offers": {
+          "@type": "Offer",
+          "price": 16.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Prawns Balls Braised Tofu | 虾球豆腐",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 25.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Braised Tofu with Sea Cucumber | 豆腐海参煲",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 42,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Hotplate Tofu | 铁板豆腐",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/15e2335e-2cf8-4b7a-a408-be0f4bffc7e2/",
+        "offers": {
+          "@type": "Offer",
+          "price": 16.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Golden Beancurds | 黄金豆腐",
+        "description": "<p></p>",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/GoldenBeancurds198556.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": 14.9,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "EGGS",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Fu Rong Omelette | 芙蓉煎蛋",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/b91c1ce7-1c3a-439c-ab7b-25d69ccad47e/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.2,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Prawns Omelette | 虾仁煎蛋",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/b5a57347-e1a9-422d-ad6e-fad331cb2c23/",
+        "offers": {
+          "@type": "Offer",
+          "price": 16,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Minced Pork Omelette | 肉碎煎蛋",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/111addfa-fcea-4a32-a89b-2955b930f428/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Combination Of 3 Steam Eggs | 三王蒸蛋",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/4e9e5645-13f8-4564-a66b-e05f4b8c539c/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Minced Pork Steam Eggs | 蒸肉碎蛋",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/ba7cd454-0ef0-4a7d-8728-7fcc07d50594/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Preserved Radish Omelette | 菜脯蛋",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/98e382f8-97b1-4751-b480-56c7be093569/",
+        "offers": {
+          "@type": "Offer",
+          "price": 12.1,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  },
+  {
+    "@type": "MenuSection",
+    "name": "VEGETABLE",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Kai Lan With Garlic | 蒜茸炒芥兰",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/6dbef44e-a954-4170-a8fc-075ad66788e0/",
+        "offers": {
+          "@type": "Offer",
+          "price": 13.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Boiled Chinese Lettuce With Light Sauces | 白灼生菜",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 13.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Romaine Lettuce Stir Fried Fermented Beancurd | 腐乳炒麦菜",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/9e5e5561-6866-4ec5-b495-7cfff32e7ac9/",
+        "offers": {
+          "@type": "Offer",
+          "price": 13.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Broccoli With Oyster Sauce | 西兰花炒蚝油",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/063040fb-454f-46a0-bdb1-7810310ed27c/",
+        "offers": {
+          "@type": "Offer",
+          "price": 14.7,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Bean Sprout Stir Fried With Salted Fish | 银芽炒咸鱼",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/7ba462a8-cb8d-4a17-8bd2-e7559238db3f/",
+        "offers": {
+          "@type": "Offer",
+          "price": 17.3,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Claypot Brinjal With Minced Pork | 肉碎茄子煲",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/250ee69a-bed3-44ef-8baf-29fee8714b40/",
+        "offers": {
+          "@type": "Offer",
+          "price": 16.1,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Small Cabbage With Garlic | 蒜茸炒小白菜",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/29c1096a-3ded-4813-83b6-49a5a999f4ae/",
+        "offers": {
+          "@type": "Offer",
+          "price": 13.4,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Celery Stir Fried With Garlic | 蒜茸炒西芹",
+        "description": "<p></p>",
+        "offers": {
+          "@type": "Offer",
+          "price": 14.7,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Poached Chinese Spinach | 金银蛋苋菜",
+        "description": "<p>Century Eggs, Salted Eggs and Whitebait with Superior Soup</p>",
+        "image": "https://ucarecdn.com/9d59fe45-c76a-4bee-ab0d-2c038d2404ca/",
+        "offers": {
+          "@type": "Offer",
+          "price": 18.6,
+          "priceCurrency": "SGD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Stir Fried Kangkong With Sambal | 马来风光",
+        "description": "<p></p>",
+        "image": "https://ucarecdn.com/93417926-cc22-4f66-8316-72f4543393a0/",
+        "offers": {
+          "@type": "Offer",
+          "price": 13.4,
+          "priceCurrency": "SGD"
+        }
+      }
+    ]
+  }
+]

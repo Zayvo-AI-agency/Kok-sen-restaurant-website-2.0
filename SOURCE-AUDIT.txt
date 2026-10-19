@@ -1,0 +1,64 @@
+SOURCE AUDIT — 19 OCTOBER 2026
+{
+  "source_categories": 14,
+  "source_listings": 125,
+  "distinct_dish_names": 110,
+  "distinct_dishes_with_photos": 100,
+  "distinct_dishes_without_photos": 10,
+  "downloaded_image_urls": 118,
+  "unique_image_files": 113,
+  "original_unique_image_bytes": 37989757,
+  "compressed_image_bytes": 6002984,
+  "client_mapping_counts": {
+    "matched": 81,
+    "no_photo_on_oddle": 6,
+    "no_confirmed_oddle_match": 12,
+    "unpublished_awaiting_client_name": 1
+  }
+}
+
+ODDLE DISHES WITHOUT PHOTOS
+Salted Egg Squid | 咸蛋黄苏东
+Roasted Pork Braised Sea Cucumber | 红烧海参煲
+Black Bean Stir Fried With Frogs | 豉汁炒田鸡
+Black Bean Stir Fried with Beef | 豉汁炒牛肉
+Cereal Chicken | 麦片鸡丁
+Sweet & Sour Chicken | 咕噜鸡丁
+Prawns Balls Braised Tofu | 虾球豆腐
+Braised Tofu with Sea Cucumber | 豆腐海参煲
+Boiled Chinese Lettuce With Light Sauces | 白灼生菜
+Celery Stir Fried With Garlic | 蒜茸炒西芹
+
+SOURCE IMAGE ASSIGNMENT CONFLICTS
+[
+  {
+    "source_sha256": "1a1e783182cd5639264a36dedf36e0ec75ddda4fec90e15451f19b7b40c4c718",
+    "asset": "/oddle-photos-web-2026-10-19/stir-fried-kai-lan-with-sliced-fish--1a1e783182cd.webp",
+    "dish_names": [
+      "Stir Fried Kai Lan with Sliced Fish | 芥兰炒鱼片",
+      "Stir-fry Spring Onion with Sliced Fish | 姜葱炒鱼片"
+    ],
+    "action": "Source contains the same image for different named dishes. Included for completeness; do not auto-assign to either dish."
+  }
+]
+
+CURRENT CLIENT DISHES RETAINING EXISTING PHOTOS
+ks-20261015-004 — Black Bean with Beef — no_photo_on_oddle
+ks-20261015-007 — Cereal Chicken — no_photo_on_oddle
+ks-20261015-011 — Black Pepper Crab — no_confirmed_oddle_match
+ks-20261015-012 — Chilli Crab — no_confirmed_oddle_match
+ks-20261015-013 — Salted Egg Crab — no_confirmed_oddle_match
+ks-20261015-014 — Sambal Crab — no_confirmed_oddle_match
+ks-20261015-015 — Spring Onion Crab — no_confirmed_oddle_match
+ks-20261015-025 — Claypot Fish Meat — no_confirmed_oddle_match
+ks-20261015-028 — Hong Kong Style Steamed Grouper — no_confirmed_oddle_match
+ks-20261015-030 — Sweet and Sour Grouper — no_confirmed_oddle_match
+ks-20261015-032 — None — unpublished_awaiting_client_name
+ks-20261015-033 — Black Bean with Frogs — no_photo_on_oddle
+ks-20261015-040 — Poached Lettuce — no_photo_on_oddle
+ks-20261015-054 — Hokkien Mee — no_confirmed_oddle_match
+ks-20261015-056 — Mee Goreng — no_confirmed_oddle_match
+ks-20261015-065 — Steamed Pork with Prawn Paste — no_confirmed_oddle_match
+ks-20261015-097 — Prawn Tofu — no_photo_on_oddle
+ks-20261015-098 — Sea Cucumber with Tofu — no_photo_on_oddle
+ks-20261015-100 — Yam Paste — no_confirmed_oddle_match

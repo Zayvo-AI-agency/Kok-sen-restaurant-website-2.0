@@ -58,16 +58,33 @@ export function MenuPage() {
     setSearchQuery(q);
   }, [searchParams]);
 
-  // Handle category switch
-  const handleSelectCategory = (catId: string) => {
+  // Handle category switch (Smooth jump to section in all-sections view, or filter)
+  const handleSelectCategory = (catId: string, forceFilter = false) => {
+    if (catId === 'all') {
+      setActiveCategory('all');
+      setSearchParam('category', null);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (!forceFilter && activeCategory === 'all' && !searchQuery.trim()) {
+      // Smooth scroll directly to the section in the full menu
+      const element = document.getElementById(catId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
+    }
+
+    // Otherwise filter to single category
     setActiveCategory(catId);
-    setSearchParam('category', catId === 'all' ? null : catId);
-    if (catId !== 'all') {
+    setSearchParam('category', catId);
+    setTimeout(() => {
       const element = document.getElementById(catId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-    }
+    }, 50);
   };
 
   // Handle search input change
@@ -115,22 +132,20 @@ export function MenuPage() {
     return result;
   }, [activeCategory, searchQuery]);
 
-  // Group dishes by category when in 'all' view with no active search
+  // Group dishes by category sections so dishes are ALWAYS organized by section
   const categorySections = useMemo(() => {
-    if (activeCategory !== 'all' || searchQuery.trim()) {
-      return [];
-    }
+    const targetCategories = activeCategory === 'all'
+      ? MENU_CATEGORIES.filter((c) => c.id !== 'all')
+      : MENU_CATEGORIES.filter((c) => c.id === activeCategory);
 
-    return MENU_CATEGORIES.filter((c) => c.id !== 'all').map((cat) => {
-      const dishes = FULL_MENU_ITEMS.filter((item) => 
-        item.publish !== false && isItemInCategory(item, cat.id)
-      );
+    return targetCategories.map((cat) => {
+      const dishes = filteredDishes.filter((item) => isItemInCategory(item, cat.id));
       return {
         category: cat,
         dishes
       };
     }).filter((section) => section.dishes.length > 0);
-  }, [activeCategory, searchQuery]);
+  }, [activeCategory, filteredDishes]);
 
   // Active category display name
   const currentCategoryDef = MENU_CATEGORIES.find((c) => c.id === activeCategory);
@@ -148,16 +163,16 @@ export function MenuPage() {
         key={dishKey}
         className="group relative flex flex-col rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-md transition-all duration-300 hover:border-secondary/40 hover:-translate-y-1 hover:shadow-xl"
       >
-        {/* Food Image or Clean Neutral Placeholder */}
+        {/* Food Image with pure white background and generous containment to prevent photo cropping */}
         <div 
-          className="relative aspect-16/10 overflow-hidden bg-surface-container-lowest cursor-pointer"
+          className="relative aspect-4/3 sm:aspect-[4/3] overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
           onClick={() => setSelectedDish(dish)}
         >
           {hasValidImage ? (
             <img
               src={currentSrc}
               alt={dish.nameEn || dish.name}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-200"
               loading="lazy"
               onError={() => {
                 const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
@@ -169,25 +184,25 @@ export function MenuPage() {
               }}
             />
           ) : (
-            <div className="w-full h-full flex flex-col items-center justify-center bg-surface-container-low text-tertiary p-4 text-center select-none">
-              <span className="font-mono text-xs font-bold text-secondary mb-1 px-2 py-0.5 rounded bg-surface-container border border-surface-container-high/60">
+            <div className="w-full h-full flex flex-col items-center justify-center bg-white text-tertiary p-4 text-center select-none">
+              <span className="font-mono text-xs font-bold text-secondary mb-1 px-2 py-0.5 rounded bg-surface-container-highest border border-surface-container-high/60 shadow-xs">
                 {dish.itemCode || dish.code}
               </span>
-              <span className="font-dish-title text-sm font-bold text-on-surface line-clamp-1">{dish.nameEn || dish.name}</span>
-              <span className="text-xs text-tertiary mt-0.5 line-clamp-1">{dish.nameZh || dish.chinese_name}</span>
-              <span className="text-[10px] text-tertiary/75 mt-1 font-medium">
+              <span className="font-dish-title text-sm font-bold text-neutral-900 line-clamp-1">{dish.nameEn || dish.name}</span>
+              <span className="text-xs text-neutral-600 mt-0.5 line-clamp-1">{dish.nameZh || dish.chinese_name}</span>
+              <span className="text-[10px] text-neutral-500 mt-1 font-medium">
                 Photo unavailable
               </span>
             </div>
           )}
 
           {/* Code Badge */}
-          <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-[11px] font-bold text-secondary border border-secondary/30">
+          <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-secondary border border-secondary/30 shadow-xs">
             {dish.itemCode || dish.code}
           </div>
 
           {dish.isSignature && (
-            <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider">
+            <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-white text-[10px] font-bold uppercase tracking-wider shadow-xs">
               Signature
             </div>
           )}
@@ -478,8 +493,8 @@ export function MenuPage() {
             Reset Filters
           </button>
         </div>
-      ) : activeCategory === 'all' && !searchQuery.trim() ? (
-        /* Section-by-section categorized view */
+      ) : (
+        /* Section-by-section categorized view across all browsing and search modes */
         <div className="flex flex-col gap-12 sm:gap-14">
           {categorySections.map(({ category, dishes }) => (
             <section 
@@ -504,14 +519,24 @@ export function MenuPage() {
                   </span>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() => handleSelectCategory(category.id)}
-                  className="inline-flex items-center gap-1 text-xs text-secondary hover:text-white transition-colors cursor-pointer font-semibold"
-                >
-                  <span>Filter only {category.nameEn}</span>
-                  <ChevronRight className="w-3.5 h-3.5" />
-                </button>
+                {activeCategory === 'all' ? (
+                  <button
+                    type="button"
+                    onClick={() => handleSelectCategory(category.id, true)}
+                    className="inline-flex items-center gap-1 text-xs text-secondary hover:text-white transition-colors cursor-pointer font-semibold"
+                  >
+                    <span>Filter only {category.nameEn}</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => handleSelectCategory('all')}
+                    className="text-xs text-secondary hover:underline cursor-pointer font-medium"
+                  >
+                    Back to All 15 Sections
+                  </button>
+                )}
               </div>
 
               {/* Grid of Dishes in this Category */}
@@ -520,40 +545,6 @@ export function MenuPage() {
               </div>
             </section>
           ))}
-        </div>
-      ) : (
-        /* Single category filtered grid or search results grid */
-        <div className="flex flex-col gap-6">
-          {activeCategory !== 'all' && (
-            <div className="flex items-center justify-between pb-3 border-b border-surface-container-high/60">
-              <div className="flex items-center gap-3">
-                <div className="w-2.5 h-6 rounded-full bg-secondary" />
-                <h2 className="font-headline-md text-xl sm:text-2xl font-extrabold text-on-surface tracking-tight">
-                  {currentCategoryDef?.nameEn}
-                  {currentCategoryDef?.nameZh && (
-                    <span className="ml-2 font-normal text-secondary font-serif text-lg sm:text-xl">
-                      {currentCategoryDef.nameZh}
-                    </span>
-                  )}
-                </h2>
-                <span className="text-xs px-2.5 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-semibold border border-surface-container-high">
-                  {filteredDishes.length} {filteredDishes.length === 1 ? 'dish' : 'dishes'}
-                </span>
-              </div>
-
-              <button
-                type="button"
-                onClick={() => handleSelectCategory('all')}
-                className="text-xs text-secondary hover:underline cursor-pointer font-medium"
-              >
-                Back to All Sections
-              </button>
-            </div>
-          )}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
-            {filteredDishes.map((dish) => renderDishCard(dish))}
-          </div>
         </div>
       )}
     </div>

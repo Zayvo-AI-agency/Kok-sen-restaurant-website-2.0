@@ -37,6 +37,10 @@ export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModal
   // Deduplicate identical photos within dish gallery while preserving supplied order
   const availablePhotos = useMemo(() => {
     if (!dish) return [];
+    // Strict enforcement for exact photo overrides: never bring back rejected older photos
+    if (photoRes?.imageUrl && photoRes.imageUrl.startsWith('/oddle-three-exact-2026-10-19/')) {
+      return [photoRes.imageUrl];
+    }
     const candidates = [
       ...(dish.photos || []),
       photoRes?.imageUrl,
@@ -96,13 +100,13 @@ export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModal
 
         {/* Scrollable Body */}
         <div className="overflow-y-auto flex-1">
-          {/* Dish Image or Neutral Placeholder Header */}
+          {/* Dish Image with pure white background and full containment to avoid cropping */}
           {hasValidPhoto ? (
-            <div className="relative h-48 sm:h-60 md:h-64 w-full overflow-hidden bg-surface-container shrink-0">
+            <div className="relative h-56 sm:h-68 md:h-80 w-full overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 sm:p-4 shrink-0">
               <img 
                 src={currentPhoto} 
                 alt={dish.nameEn} 
-                className="w-full h-full object-cover transition-opacity duration-300"
+                className="max-h-full max-w-full w-auto h-auto object-contain transition-opacity duration-300"
                 onError={(e) => {
                   const target = e.currentTarget;
                   const fallbackUrl = dish.photo_source_url || dish.source_url;
@@ -113,7 +117,6 @@ export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModal
                   }
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent" />
               {dish.signatureNumber && (
                 <span className="absolute bottom-3 left-3 sm:left-4 px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-caps text-[11px] sm:text-label-caps uppercase font-bold shadow-md">
                   Signature {dish.signatureNumber} · Wok Hei

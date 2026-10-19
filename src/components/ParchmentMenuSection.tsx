@@ -117,13 +117,13 @@ export function ParchmentMenuSection({
         className="group/item flex items-start gap-2.5 sm:gap-3.5 p-2.5 sm:p-3 rounded-xl bg-[#F5EFE4]/80 hover:bg-[#E2D8C5]/95 transition-all duration-200 ease-out cursor-pointer border border-[#DDD3C1]/80 hover:border-[#C83E2B]/40 hover:shadow-md transform hover:scale-[1.01] active:scale-[0.99] w-full max-w-full min-w-0 overflow-hidden"
         onClick={() => onSelectDish(item)}
       >
-        {/* Thumbnail Image or Clean Neutral Placeholder */}
+        {/* Thumbnail Image with pure white background */}
         {hasValidImage ? (
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shrink-0 border border-[#DDD3C1] bg-[#FAF6EE] shadow-xs group-hover/item:border-[#C83E2B]/40">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shrink-0 border border-[#DDD3C1] bg-white shadow-xs group-hover/item:border-[#C83E2B]/40 flex items-center justify-center p-1">
             <img 
               src={currentSrc} 
               alt={item.nameEn}
-              className="w-full h-full object-contain p-1 group-hover/item:scale-105 transition-transform duration-300"
+              className="max-h-full max-w-full w-auto h-auto object-contain"
               loading="lazy"
               decoding="async"
               onError={() => {

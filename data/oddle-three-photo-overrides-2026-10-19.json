@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "purpose": "Replace only these three dish photos with the exact user-approved uploads. This is a targeted override, not a full menu replacement.",
+  "authority": "The three image attachments and two name-reference screenshots supplied by the user in this request.",
+  "image_count": 3,
+  "unique_image_count": 3,
+  "precedence": "For confirmed target dishes, these photo paths take priority over previous Oddle, enhanced-image, gallery and photo-map assignments.",
+  "matching_rule": "Check a supplied ID and its exact dish name together. If IDs changed, use only an unambiguous allowed exact name, ignoring case and surrounding whitespace. Never use fuzzy, substring, array-index or category-order matching.",
+  "missing_target_rule": "Report absent or ambiguous targets and keep their asset available. Do not silently attach a photo to another dish or create an extra dish.",
+  "items": [
+    {
+      "dish_name": "Curry Fish Head",
+      "chinese_name": "咖喱鱼头",
+      "client_item_id": "ks-20261015-026",
+      "existing_client_name": "Curry Fish Head",
+      "allowed_exact_name_matches": [
+        "Curry Fish Head",
+        "Curry Fish Head | 咖喱鱼头"
+      ],
+      "source_attachment": "image(20261019-103546).png",
+      "name_reference_attachment": "image(20261019-103653).png",
+      "match_note": "ID and name verified in the supplied client menu snapshot. Confirm both against the current project before updating.",
+      "photo": {
+        "asset": "/oddle-three-exact-2026-10-19/curry-fish-head.png",
+        "file": "public/oddle-three-exact-2026-10-19/curry-fish-head.png",
+        "format": "PNG",
+        "width": 250,
+        "height": 250,
+        "bytes": 136490,
+        "sha256": "8b44eecfb2633c99d40238bd9eccf0310168071a00354adf5b18c2bfecfbf247",
+        "original_upload_bytes_preserved": true,
+        "resized": false,
+        "cropped": false,
+        "background_removed": false,
+        "ai_edited": false
+      }
+    },
+    {
+      "dish_name": "Curry Fish Tail",
+      "chinese_name": "咖喱鱼尾",
+      "client_item_id": null,
+      "existing_client_name": null,
+      "allowed_exact_name_matches": [
+        "Curry Fish Tail",
+        "Curry Fish Tail | 咖喱鱼尾"
+      ],
+      "source_attachment": "image(20261019-103556).png",
+      "name_reference_attachment": "image(20261019-103653).png",
+      "match_note": "Not present in the available client menu snapshot. Match only the current project's exact Curry Fish Tail entry, if present. Never apply to Hong Kong Style Steamed Fish Tail, Curry Fish Head, Claypot Fish Meat or another fish dish. If absent or ambiguous, leave the asset ready and report the missing target; do not create or rename a menu entry.",
+      "photo": {
+        "asset": "/oddle-three-exact-2026-10-19/curry-fish-tail.png",
+        "file": "public/oddle-three-exact-2026-10-19/curry-fish-tail.png",
+        "format": "PNG",
+        "width": 250,
+        "height": 250,
+        "bytes": 153823,
+        "sha256": "7184fe5a947f09b7fc27e8f44bfea02832645e43a3ded36f026e823ddc8a5368",
+        "original_upload_bytes_preserved": true,
+        "resized": false,
+        "cropped": false,
+        "background_removed": false,
+        "ai_edited": false
+      }
+    },
+    {
+      "dish_name": "Big Prawns Hor Fun",
+      "chinese_name": "大虾滑蛋河粉",
+      "client_item_id": "ks-20261015-050",
+      "existing_client_name": "Big Prawn Hor Fun",
+      "allowed_exact_name_matches": [
+        "Big Prawn Hor Fun",
+        "Big Prawns Hor Fun",
+        "Big Prawns Hor Fun | 大虾滑蛋河粉"
+      ],
+      "source_attachment": "image(20261019-103614).png",
+      "name_reference_attachment": "image(20261019-103637).png",
+      "match_note": "The supplied client menu uses singular Prawn; the user's Oddle screenshot uses plural Prawns. This specific alias is verified. Do not confuse it with Big Prawns Crispy Noodle or Big Prawns Bee Hoon Soup.",
+      "photo": {
+        "asset": "/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png",
+        "file": "public/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png",
+        "format": "PNG",
+        "width": 250,
+        "height": 250,
+        "bytes": 143184,
+        "sha256": "8bc0ccd7e341b880e61e045d6e31e0b0739cb3c9b7087cbc1fd8dd030b9cfbf5",
+        "original_upload_bytes_preserved": true,
+        "resized": false,
+        "cropped": false,
+        "background_removed": false,
+        "ai_edited": false
+      }
+    }
+  ]
+}

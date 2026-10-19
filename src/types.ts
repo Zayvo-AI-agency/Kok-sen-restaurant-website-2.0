@@ -30,6 +30,10 @@ export interface MenuItem {
   nameZh: string;
   fullName?: string;
   category: string;
+  categoryId?: string;
+  publish?: boolean;
+  hasOddleOriginalPhoto?: boolean;
+  oddle_source_url?: string;
   price: number;
   priceNote?: string;
   sizes?: {

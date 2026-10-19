@@ -54,7 +54,7 @@ import photoO4 from '../assets/client-menu/017-egg-minced.webp';
 import photoO6 from '../assets/client-menu/020-egg-minced-pork-steam-egg.webp';
 
 export const CLIENT_MENU_PHOTOS = {
-  H1: photoH1,
+  H1: '/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png',
   H2: photoH2,
   H5: photoH5,
   H6: photoH6,
@@ -81,7 +81,7 @@ export const CLIENT_MENU_PHOTOS = {
   SE6: photoSE6,
   SE7: photoSE7,
   SE8: photoSE8,
-  F3: photoF3,
+  F3: '/oddle-three-exact-2026-10-19/curry-fish-head.png',
   F5: photoF5,
   F7: photoF7,
   F8: photoF8,

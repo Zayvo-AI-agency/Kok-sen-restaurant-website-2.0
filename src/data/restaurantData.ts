@@ -361,7 +361,7 @@ export const GALLERY_IMAGES: GalleryPhotoItem[] = [
     id: 'big-prawn-hor-fun-photo',
     title: 'Big Prawns Hor Fun (大虾滑蛋河粉)',
     category: 'dishes',
-    url: CLIENT_MENU_PHOTOS.H1,
+    url: '/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png',
     caption: 'Kok Sen signature dish: wide flat rice noodles charred with intense wok hei, steeped in spicy-savory orange prawn gravy with split king prawns.',
     tag: 'Signature Hor Fun',
     aspect: 'standard'
@@ -523,7 +523,7 @@ export const GALLERY_IMAGES: GalleryPhotoItem[] = [
     id: 'diner-prawn-horfun-snap',
     title: 'Feast of Big Prawn Hor Fun & Har Cheong Gai',
     category: 'diner',
-    url: CLIENT_MENU_PHOTOS.H1,
+    url: '/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png',
     caption: 'Visited Keong Saik flagship with family! The orange prawn gravy is out of this world, rich with wok hei and juicy giant prawns.',
     tag: 'Verified Diner Snap',
     aspect: 'standard',

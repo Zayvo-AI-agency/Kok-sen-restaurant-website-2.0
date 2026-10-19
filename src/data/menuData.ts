@@ -138,8 +138,10 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "additional-dishes",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-001-enhanced.jpg",
+    "imageUrl": "/oddle-photos-web-2026-10-19/yam-ring--1a781e5cf735.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/yam-ring--1a781e5cf735.webp",
+      "/menu-photos/yam-ring--43e8e1d854.jpg",
       "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-001-enhanced.jpg",
       "/kok-sen-menu-2026-10-15/additional-dishes/01-yam-ring.jpeg"
     ],
@@ -147,7 +149,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/ae5e3756-b4d0-4285-b1ab-1fab276a383d/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-002",
@@ -163,15 +167,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "beef",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/beef/01-kai-lan-with-beef.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/kai-lan-stir-fried-with-beef--b9eafd2ef060.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/kai-lan-stir-fried-with-beef--b9eafd2ef060.webp",
+      "/menu-photos/kai-lan-stir-fried-with-beef--36417aa787.jpg",
       "/kok-sen-menu-2026-10-15/beef/01-kai-lan-with-beef.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/KaiLanStirFriedwithBeefc23c11.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-003",
@@ -187,15 +195,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "beef",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/beef/02-spring-onion-with-beef.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-beef-with-spring-onion--f5e0c895d955.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-beef-with-spring-onion--f5e0c895d955.webp",
+      "/menu-photos/stir-fried-beef-with-spring-onion--2204173013.png",
       "/kok-sen-menu-2026-10-15/beef/02-spring-onion-with-beef.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/StirFriedBeefwithSpringOnion355f6b.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-004",
@@ -219,7 +231,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-005",
@@ -235,15 +248,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "beef",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/beef/04-black-pepper-beef.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-pepper-beef--780fa4551284.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-pepper-beef--780fa4551284.webp",
+      "/menu-photos/black-pepper-beef--8abc775977.png",
       "/kok-sen-menu-2026-10-15/beef/04-black-pepper-beef.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/0fc8d9e9-d8a8-4c9e-a914-57c347c7a873/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-006",
@@ -259,15 +276,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "chicken",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/chicken/01-kung-bao-chicken.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/kung-bao-chicken--6ea303d86a8e.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/kung-bao-chicken--6ea303d86a8e.webp",
+      "/menu-photos/kung-bao-chicken--900d3d611a.png",
       "/kok-sen-menu-2026-10-15/chicken/01-kung-bao-chicken.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/06a0300d-e8d2-4ef2-b2df-54b7ac11f808/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-007",
@@ -291,7 +312,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-008",
@@ -307,15 +329,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "chicken",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/chicken/03-claypot-chicken.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/claypot-thai-style-chicken--c5e632069911.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/claypot-thai-style-chicken--c5e632069911.webp",
+      "/menu-photos/claypot-thai-style-chicken--c57d9e675d.png",
       "/kok-sen-menu-2026-10-15/chicken/03-claypot-chicken.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/b1b4fd30-06e7-42c4-b3ee-8213479357fc/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-009",
@@ -331,15 +357,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "chicken",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/chicken/04-roasted-chicken.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/crispy-roasted-chicken--6ba0cc736767.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/crispy-roasted-chicken--6ba0cc736767.webp",
+      "/menu-photos/crispy-roasted-chicken--40298160a5.png",
       "/kok-sen-menu-2026-10-15/chicken/04-roasted-chicken.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/9641d9fe-6966-4cca-8c3c-b4de212e4754/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-010",
@@ -355,15 +385,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "chicken",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/chicken/05-prawn-paste-chicken.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/prawn-paste-chicken--48bcd4e57aee.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/prawn-paste-chicken--48bcd4e57aee.webp",
+      "/menu-photos/prawn-paste-chicken--b58388235a.jpg",
       "/kok-sen-menu-2026-10-15/chicken/05-prawn-paste-chicken.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/d5709a32-eb33-4e52-8579-0f611d0dd94a/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-011",
@@ -387,7 +421,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-012",
@@ -411,7 +446,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-013",
@@ -435,7 +471,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-014",
@@ -459,7 +496,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-015",
@@ -483,7 +521,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-016",
@@ -499,15 +538,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "eggs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/eggs/01-fu-rong-omelette.jpg",
+    "imageUrl": "/oddle-photos-web-2026-10-19/fu-rong-omelette--a5c1510a52b1.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/fu-rong-omelette--a5c1510a52b1.webp",
+      "/menu-photos/fu-rong-omelette--64ffa91df7.png",
       "/kok-sen-menu-2026-10-15/eggs/01-fu-rong-omelette.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/b91c1ce7-1c3a-439c-ab7b-25d69ccad47e/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-017",
@@ -523,15 +566,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "eggs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/eggs/02-minced-pork-steamed-egg.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/minced-pork-steam-eggs--d38c98cf11c0.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/minced-pork-steam-eggs--d38c98cf11c0.webp",
+      "/menu-photos/minced-pork-steam-eggs--0ec3cbf2a8.png",
       "/kok-sen-menu-2026-10-15/eggs/02-minced-pork-steamed-egg.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/ba7cd454-0ef0-4a7d-8728-7fcc07d50594/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-018",
@@ -547,15 +594,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "eggs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/eggs/03-minced-pork-omelette.jpg",
+    "imageUrl": "/oddle-photos-web-2026-10-19/minced-pork-omelette--c868ba536a20.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/minced-pork-omelette--c868ba536a20.webp",
+      "/menu-photos/minced-pork-omelette--b36d634ab2.png",
       "/kok-sen-menu-2026-10-15/eggs/03-minced-pork-omelette.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/111addfa-fcea-4a32-a89b-2955b930f428/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-019",
@@ -571,15 +622,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "eggs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/eggs/04-prawn-omelette.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/prawns-omelette--2315cf2b05fe.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/prawns-omelette--2315cf2b05fe.webp",
+      "/menu-photos/prawns-omelette--5c6211322a.png",
       "/kok-sen-menu-2026-10-15/eggs/04-prawn-omelette.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/b5a57347-e1a9-422d-ad6e-fad331cb2c23/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-020",
@@ -595,15 +650,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "eggs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/eggs/05-radish-omelette.jpg",
+    "imageUrl": "/oddle-photos-web-2026-10-19/preserved-radish-omelette--832f2fac4d10.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/preserved-radish-omelette--832f2fac4d10.webp",
+      "/menu-photos/preserved-radish-omelette--9c8ac012b6.png",
       "/kok-sen-menu-2026-10-15/eggs/05-radish-omelette.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/98e382f8-97b1-4751-b480-56c7be093569/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-021",
@@ -619,15 +678,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "eggs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/eggs/06-steamed-trio-egg.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/combination-of-3-steam-eggs--63b0fee551fe.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/combination-of-3-steam-eggs--63b0fee551fe.webp",
+      "/menu-photos/combination-of-3-steam-eggs--67add39365.png",
       "/kok-sen-menu-2026-10-15/eggs/06-steamed-trio-egg.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/4e9e5645-13f8-4564-a66b-e05f4b8c539c/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-022",
@@ -643,15 +706,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "fish",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/fish/01-deep-fried-yu-gai-fish.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/deep-fried-yu-gai--1d5e39986873.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/deep-fried-yu-gai--1d5e39986873.webp",
+      "/menu-photos/deep-fried-yu-gai--8d422cab26.png",
       "/kok-sen-menu-2026-10-15/fish/01-deep-fried-yu-gai-fish.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/2f4ef959-ca9e-4daa-96bd-38438ecded85/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-023",
@@ -667,15 +734,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "fish",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/fish/02-hong-kong-style-steamed-fish-tail.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/hk-style-steam-fish-tail--15dd878b1f14.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/hk-style-steam-fish-tail--15dd878b1f14.webp",
+      "/menu-photos/hk-style-steam-fish-tail--432dec6afd.jpg",
       "/kok-sen-menu-2026-10-15/fish/02-hong-kong-style-steamed-fish-tail.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/HKStyleSteamFishTail0e7b94.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-024",
@@ -691,15 +762,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "fish",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/fish/03-black-bean-fish-meat.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-bean-sauce-with-fish-meat--181e6bf853c7.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-bean-sauce-with-fish-meat--181e6bf853c7.webp",
+      "/menu-photos/black-bean-sauce-with-fish-meat--7d44f24f34.jpg",
       "/kok-sen-menu-2026-10-15/fish/03-black-bean-fish-meat.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/f8185b1c-dbdb-4fcb-9a9a-21929dcdd45e/-/crop/768x770/0,303/-/preview/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-025",
@@ -723,7 +798,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-026",
@@ -739,16 +815,17 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "fish",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-026-enhanced.jpg",
+    "imageUrl": "/oddle-three-exact-2026-10-19/curry-fish-head.png",
     "photos": [
-      "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-026-enhanced.jpg",
-      "/kok-sen-menu-2026-10-15/fish/05-curry-fish-head.png"
+      "/oddle-three-exact-2026-10-19/curry-fish-head.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "/oddle-three-exact-2026-10-19/curry-fish-head.png",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-027",
@@ -764,15 +841,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "fish",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/fish/06-deep-fried-fish-meat.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/deep-fried-fish-meat-with-light-sauce--537668bc242a.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/deep-fried-fish-meat-with-light-sauce--537668bc242a.webp",
+      "/menu-photos/deep-fried-fish-meat-with-light-sauce--728290fa73.png",
       "/kok-sen-menu-2026-10-15/fish/06-deep-fried-fish-meat.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/DeepFriedFishMeatwithLightSauceab67c8.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-028",
@@ -796,7 +877,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-029",
@@ -812,15 +894,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "fish",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/fish/08-sambal-fish-meat.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-fish-meat-with-sambal-kaffir-leaves--c55ccefca3b3.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-fish-meat-with-sambal-kaffir-leaves--c55ccefca3b3.webp",
+      "/menu-photos/stir-fried-fish-meat-with-sambal-kaffir-leaves--1954caa223.jpg",
       "/kok-sen-menu-2026-10-15/fish/08-sambal-fish-meat.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/StirFriedFishMeatwithSambalKaffirLeaves465189.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-030",
@@ -844,7 +930,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-031",
@@ -860,15 +947,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "frogs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/frogs/01-spring-onion-frogs.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-frogs-with-spring-onion--ee64f58ba6d9.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-frogs-with-spring-onion--ee64f58ba6d9.webp",
+      "/menu-photos/stir-fried-frogs-with-spring-onion--09bc4d4e07.png",
       "/kok-sen-menu-2026-10-15/frogs/01-spring-onion-frogs.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/bad55b76-1fdb-462f-8ef0-2f20160a3726/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-033",
@@ -892,7 +983,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-034",
@@ -908,15 +1000,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "frogs",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/frogs/04-kung-bao-frogs.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/kung-pao-frogs-with-fried-with-dried-chilli--e74291e67043.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/kung-pao-frogs-with-fried-with-dried-chilli--e74291e67043.webp",
+      "/menu-photos/kung-pao-frogs-with-fried-with-dried-chilli--86881b3bc0.png",
       "/kok-sen-menu-2026-10-15/frogs/04-kung-bao-frogs.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/e5502007-f1cc-456a-a610-27677717cb27/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-035",
@@ -932,15 +1028,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "chicken",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/chicken/06-golden-dragon-chicken.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/golden-dragon-chicken--631525685203.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/golden-dragon-chicken--631525685203.webp",
+      "/menu-photos/golden-dragon-chicken--b8b833bddc.png",
       "/kok-sen-menu-2026-10-15/chicken/06-golden-dragon-chicken.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/d985976a-5134-4f8b-bcfc-22a2055a0bfe/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-036",
@@ -956,15 +1056,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "vegetables",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/vegetables/01-bean-sprout-with-salted-fish.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/bean-sprout-stir-fried-with-salted-fish--2722258f9ac5.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/bean-sprout-stir-fried-with-salted-fish--2722258f9ac5.webp",
+      "/menu-photos/bean-sprout-stir-fried-with-salted-fish--0a203db54b.png",
       "/kok-sen-menu-2026-10-15/vegetables/01-bean-sprout-with-salted-fish.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/7ba462a8-cb8d-4a17-8bd2-e7559238db3f/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-037",
@@ -980,15 +1084,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "vegetables",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/vegetables/02-garlic-broccoli.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-broccoli-with-oyster-sauce--4018e30a4915.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-broccoli-with-oyster-sauce--4018e30a4915.webp",
       "/kok-sen-menu-2026-10-15/vegetables/02-garlic-broccoli.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://ucarecdn.com/063040fb-454f-46a0-bdb1-7810310ed27c/"
   },
   {
     "id": "ks-20261015-038",
@@ -1004,15 +1111,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "vegetables",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/vegetables/03-sambal-kangkong.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-kangkong-with-sambal--959be41cb088.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-kangkong-with-sambal--959be41cb088.webp",
+      "/menu-photos/stir-fried-kangkong-with-sambal--886d47cb95.png",
       "/kok-sen-menu-2026-10-15/vegetables/03-sambal-kangkong.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/93417926-cc22-4f66-8316-72f4543393a0/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-039",
@@ -1028,15 +1139,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "vegetables",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/vegetables/04-kai-lan-with-garlic.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-kai-lan-with-garlic--3c6a079db6e7.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-kai-lan-with-garlic--3c6a079db6e7.webp",
+      "/menu-photos/stir-fried-kai-lan-with-garlic--9df4b52dee.png",
       "/kok-sen-menu-2026-10-15/vegetables/04-kai-lan-with-garlic.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/6dbef44e-a954-4170-a8fc-075ad66788e0/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-040",
@@ -1060,7 +1175,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-041",
@@ -1076,15 +1192,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "vegetables",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/vegetables/06-romaine-lettuce-with-fermented-beancurd.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/romaine-lettuce-stir-fried-fermented-beancurd--b68213015d74.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/romaine-lettuce-stir-fried-fermented-beancurd--b68213015d74.webp",
+      "/menu-photos/romaine-lettuce-stir-fried-fermented-beancurd--98a161a1f4.png",
       "/kok-sen-menu-2026-10-15/vegetables/06-romaine-lettuce-with-fermented-beancurd.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/9e5e5561-6866-4ec5-b495-7cfff32e7ac9/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-042",
@@ -1100,15 +1220,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "vegetables",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/vegetables/07-garlic-with-small-cabbage.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-small-cabbage-with-garlic--ce56da224ce2.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-small-cabbage-with-garlic--ce56da224ce2.webp",
+      "/menu-photos/stir-fried-small-cabbage-with-garlic--50de44b43d.png",
       "/kok-sen-menu-2026-10-15/vegetables/07-garlic-with-small-cabbage.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/29c1096a-3ded-4813-83b6-49a5a999f4ae/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-043",
@@ -1124,15 +1248,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "vegetables",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/vegetables/08-chinese-spinach-with-trio-egg.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/poached-chinese-spinach--de6ea24cb4ec.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/poached-chinese-spinach--de6ea24cb4ec.webp",
+      "/menu-photos/poached-chinese-spinach--8767847a77.png",
       "/kok-sen-menu-2026-10-15/vegetables/08-chinese-spinach-with-trio-egg.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/9d59fe45-c76a-4bee-ab0d-2c038d2404ca/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-044",
@@ -1148,15 +1276,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "hor-fun",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/hor-fun/01-black-bean-beef-hor-fun.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-bean-dry-beef-hor-fun--277e16a6b517.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-bean-dry-beef-hor-fun--277e16a6b517.webp",
       "/kok-sen-menu-2026-10-15/hor-fun/01-black-bean-beef-hor-fun.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanDryBeefHorFunbe3c97.jpg"
   },
   {
     "id": "ks-20261015-045",
@@ -1172,15 +1303,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "hor-fun",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/hor-fun/02-sanluo-hor-fun.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/sliced-fish-hor-fun-with-bean-sprout--639cf5527217.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/sliced-fish-hor-fun-with-bean-sprout--639cf5527217.webp",
+      "/menu-photos/sliced-fish-hor-fun-with-bean-sprout--8d81d8bc79.png",
       "/kok-sen-menu-2026-10-15/hor-fun/02-sanluo-hor-fun.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/92d9f541-3833-452f-b38d-bfab3bb7c469/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-046",
@@ -1196,15 +1331,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "hor-fun",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/hor-fun/03-black-bean-fish-hor-fun.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-bean-sliced-fish-bee-hoon-hor-fun--f48d8187df8d.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-bean-sliced-fish-bee-hoon-hor-fun--f48d8187df8d.webp",
       "/kok-sen-menu-2026-10-15/hor-fun/03-black-bean-fish-hor-fun.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanSlicedFishHorFunb7fc4d.jpg"
   },
   {
     "id": "ks-20261015-047",
@@ -1220,15 +1358,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "hor-fun",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/hor-fun/04-dry-beef-hor-fun.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-bean-dry-beef-hor-fun--9f729fa6bcb7.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-bean-dry-beef-hor-fun--9f729fa6bcb7.webp",
       "/kok-sen-menu-2026-10-15/hor-fun/04-dry-beef-hor-fun.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BlackBeanDryBeefHorFun4d1521.jpg"
   },
   {
     "id": "ks-20261015-048",
@@ -1244,15 +1385,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "hor-fun",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/hor-fun/05-seafood-and-pork-hor-fun.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/seafood-pork-hor-fun-bee-hoon--5898e8437b69.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/seafood-pork-hor-fun-bee-hoon--5898e8437b69.webp",
       "/kok-sen-menu-2026-10-15/hor-fun/05-seafood-and-pork-hor-fun.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/SeafoodPorkHorFunBeeHoon520cf2.jpg"
   },
   {
     "id": "ks-20261015-049",
@@ -1268,15 +1412,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "hor-fun",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/hor-fun/06-moonlight-hor-fun.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/moonlight-hor-fun--baad5851622e.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/moonlight-hor-fun--baad5851622e.webp",
+      "/menu-photos/moonlight-hor-fun--2d97e5cc72.png",
       "/kok-sen-menu-2026-10-15/hor-fun/06-moonlight-hor-fun.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/da2e980d-1904-4294-b028-6dcef5729dc3/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-050",
@@ -1292,15 +1440,17 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "hor-fun",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/hor-fun/07-big-prawn-hor-fun.png",
+    "imageUrl": "/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png",
     "photos": [
-      "/kok-sen-menu-2026-10-15/hor-fun/07-big-prawn-hor-fun.png"
+      "/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-051",
@@ -1316,15 +1466,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/01-black-bean-fish-meat-bee-hoon.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-bean-fish-meat-braised-bee-hoon-hor-fun--a69f2bb86bf6.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-bean-fish-meat-braised-bee-hoon-hor-fun--a69f2bb86bf6.webp",
       "/kok-sen-menu-2026-10-15/noodles/01-black-bean-fish-meat-bee-hoon.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://ucarecdn.com/3f0ec630-dfb6-4857-b515-ac2e5add5621/"
   },
   {
     "id": "ks-20261015-052",
@@ -1340,15 +1493,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/02-dry-bee-hoon.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/stir-fried-dry-bee-hoon-hk-noodle--c2a76b7e6568.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/stir-fried-dry-bee-hoon-hk-noodle--c2a76b7e6568.webp",
       "/kok-sen-menu-2026-10-15/noodles/02-dry-bee-hoon.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://ucarecdn.com/54c74a9a-d35f-4688-b4c8-de5780c0d485/"
   },
   {
     "id": "ks-20261015-053",
@@ -1364,15 +1520,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/03-fish-meat-bee-hoon-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/fish-meat-bee-hoon-soup--116762e8ef96.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/fish-meat-bee-hoon-soup--116762e8ef96.webp",
+      "/menu-photos/fish-meat-bee-hoon-soup--0861cc5427.jpg",
       "/kok-sen-menu-2026-10-15/noodles/03-fish-meat-bee-hoon-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/FishMeatBeeHoonSoupe5dd06.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-054",
@@ -1396,7 +1556,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-055",
@@ -1412,15 +1573,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/05-eggs-crispy-noodle.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/crispy-noodle-surface-with-shrimp-omelette--a1e4de266169.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/crispy-noodle-surface-with-shrimp-omelette--a1e4de266169.webp",
+      "/menu-photos/crispy-noodle-surface-with-shrimp-omelette--718f63bc50.png",
       "/kok-sen-menu-2026-10-15/noodles/05-eggs-crispy-noodle.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/0e60a8c7-e703-465e-b0e3-e7c3ea016c85/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-056",
@@ -1444,7 +1609,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-057",
@@ -1460,15 +1626,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/07-prawn-bee-hoon-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/big-prawns-bee-hoon-soup--c86085002340.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/big-prawns-bee-hoon-soup--c86085002340.webp",
+      "/menu-photos/big-prawns-bee-hoon-soup--d2a89004fb.png",
       "/kok-sen-menu-2026-10-15/noodles/07-prawn-bee-hoon-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/119e29f0-48f0-4069-b199-1dff8325d009/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-058",
@@ -1484,15 +1654,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/08-crispy-noodle.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/seafood-pork-crispy-noodle--89103aad49c7.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/seafood-pork-crispy-noodle--89103aad49c7.webp",
+      "/menu-photos/seafood-pork-crispy-noodle--d99040f8c3.png",
       "/kok-sen-menu-2026-10-15/noodles/08-crispy-noodle.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/410a6eb0-8feb-4a48-8cc2-a0629c5159c7/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-059",
@@ -1508,15 +1682,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "pork",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/pork/01-sweet-and-sour-pork-chop.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/sweet-sour-pork-chop--86afed602a64.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/sweet-sour-pork-chop--86afed602a64.webp",
+      "/menu-photos/sweet-sour-pork-chop--2c8d04a504.png",
       "/kok-sen-menu-2026-10-15/pork/01-sweet-and-sour-pork-chop.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/cd1c95b1-fb8e-493f-89b8-ddd76e734478/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-060",
@@ -1532,15 +1710,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "pork",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/pork/02-black-sauce-roasted-pork.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/fried-crispy-roast-pork-with-black-sauce--a9faf085681a.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/fried-crispy-roast-pork-with-black-sauce--a9faf085681a.webp",
+      "/menu-photos/fried-crispy-roast-pork-with-black-sauce--0631e5e49c.jpg",
       "/kok-sen-menu-2026-10-15/pork/02-black-sauce-roasted-pork.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/3f008506-20b7-4dfa-8c4b-4acbd0bb65f5/-/preview/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-061",
@@ -1556,15 +1738,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "pork",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/pork/03-bittergourd-pork-ribs.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/bittergourd-pork-ribs-with-black-bean-sauce--6136349367f5.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/bittergourd-pork-ribs-with-black-bean-sauce--6136349367f5.webp",
+      "/menu-photos/bittergourd-pork-ribs-with-black-bean-sauce--63792e6836.jpg",
       "/kok-sen-menu-2026-10-15/pork/03-bittergourd-pork-ribs.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/BittergourdPorkRibswithBlackBeanSauce223406.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-062",
@@ -1580,15 +1766,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "pork",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/pork/04-kai-lan-roasted-pork.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/kai-lan-stir-fried-with-roasted-pork--c483d5503f66.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/kai-lan-stir-fried-with-roasted-pork--c483d5503f66.webp",
+      "/menu-photos/kai-lan-stir-fried-with-roasted-pork--64fd085aac.jpg",
       "/kok-sen-menu-2026-10-15/pork/04-kai-lan-roasted-pork.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/KaiLanStirFriedwithRoastedPorkce6496.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-063",
@@ -1604,15 +1794,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "pork",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/pork/05-minced-pork-with-eggplants.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/claypot-brinjal-with-minced-pork--8e2e027b2e44.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/claypot-brinjal-with-minced-pork--8e2e027b2e44.webp",
+      "/menu-photos/claypot-brinjal-with-minced-pork--9e9a1b802f.png",
       "/kok-sen-menu-2026-10-15/pork/05-minced-pork-with-eggplants.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/250ee69a-bed3-44ef-8baf-29fee8714b40/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-064",
@@ -1628,15 +1822,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "pork",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/pork/06-sweet-and-sour-pork.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/sweet-sour-pork--09f16de3b0f2.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/sweet-sour-pork--09f16de3b0f2.webp",
+      "/menu-photos/sweet-sour-pork--e30c775b1f.jpg",
       "/kok-sen-menu-2026-10-15/pork/06-sweet-and-sour-pork.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/SweetSourPorkf92992.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-065",
@@ -1660,7 +1858,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-066",
@@ -1676,15 +1875,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/01-black-bean-with-sliced-fish-rice.jpg",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-bean-sliced-fish-rice--f19264b23b62.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-bean-sliced-fish-rice--f19264b23b62.webp",
+      "/menu-photos/black-bean-sliced-fish-rice--e0ad4e1897.png",
       "/kok-sen-menu-2026-10-15/rice/01-black-bean-with-sliced-fish-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/eef4976b-16c5-408f-82b8-09e32fdac516/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-067",
@@ -1700,15 +1903,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/02-black-sauce-with-roasted-pork-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/black-bean-sauce-roasted-pork-rice--5a72bb1c474d.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/black-bean-sauce-roasted-pork-rice--5a72bb1c474d.webp",
+      "/menu-photos/black-bean-sauce-roasted-pork-rice--bd33a6d60d.png",
       "/kok-sen-menu-2026-10-15/rice/02-black-sauce-with-roasted-pork-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/eaad0a1f-19fa-4722-9cae-6bf2db23493b/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-068",
@@ -1724,15 +1931,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/03-seafood-fried-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/seafoods-fried-rice--079d04471fc9.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/seafoods-fried-rice--079d04471fc9.webp",
+      "/menu-photos/seafoods-fried-rice--9b916b0f95.jpg",
       "/kok-sen-menu-2026-10-15/rice/03-seafood-fried-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/SeafoodsFriedRicecba8aa.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-069",
@@ -1748,15 +1959,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/04-beef-fried-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/beef-fried-rice--0063326c9814.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/beef-fried-rice--0063326c9814.webp",
+      "/menu-photos/beef-fried-rice--b5825b34bf.png",
       "/kok-sen-menu-2026-10-15/rice/04-beef-fried-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/12eb2df2-41f3-443d-92e0-d8bbfbe1c11b/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-070",
@@ -1772,15 +1987,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/05-braised-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/seafoods-pork-braised-rice--4fba5c0d36c8.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/seafoods-pork-braised-rice--4fba5c0d36c8.webp",
+      "/menu-photos/seafoods-pork-braised-rice--5c7f7b7bd6.png",
       "/kok-sen-menu-2026-10-15/rice/05-braised-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/44a71aeb-5bf5-4a57-8a62-57fe44d1ddc5/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-071",
@@ -1796,15 +2015,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/06-thai-style-fried-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/thai-style-fried-rice--4d78f6f2505a.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/thai-style-fried-rice--4d78f6f2505a.webp",
+      "/menu-photos/thai-style-fried-rice--132f479410.jpg",
       "/kok-sen-menu-2026-10-15/rice/06-thai-style-fried-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/ThaiStyleFriedRice92d71d.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-072",
@@ -1820,15 +2043,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/07-kai-lan-roasted-pork-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/kai-lan-roasted-pork-rice--2b72e227b583.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/kai-lan-roasted-pork-rice--2b72e227b583.webp",
+      "/menu-photos/kai-lan-roasted-pork-rice--945f23ea9f.png",
       "/kok-sen-menu-2026-10-15/rice/07-kai-lan-roasted-pork-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/cec740f2-2b72-448a-b5dd-4a959fefddee/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-073",
@@ -1844,15 +2071,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/08-kai-lan-with-beef-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/kai-lan-sliced-fish-beef-rice--0890425c5b40.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/kai-lan-sliced-fish-beef-rice--0890425c5b40.webp",
       "/kok-sen-menu-2026-10-15/rice/08-kai-lan-with-beef-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://ucarecdn.com/e34e4fc8-5b4c-4f1c-bb3e-623dbc74c649/"
   },
   {
     "id": "ks-20261015-074",
@@ -1868,15 +2098,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/09-soup-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/seafoods-pork-soup-rice--0197f7c45fb8.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/seafoods-pork-soup-rice--0197f7c45fb8.webp",
+      "/menu-photos/seafoods-pork-soup-rice--f2a33c14d6.png",
       "/kok-sen-menu-2026-10-15/rice/09-soup-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/06ee20bc-2196-4ebc-92ed-3851b13bdb61/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-075",
@@ -1892,15 +2126,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/10-spring-onion-beef-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/spring-onion-sliced-beef-rice--f04b4f770b01.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/spring-onion-sliced-beef-rice--f04b4f770b01.webp",
+      "/menu-photos/spring-onion-sliced-beef-rice--46ec53163d.png",
       "/kok-sen-menu-2026-10-15/rice/10-spring-onion-beef-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/5e91ea4e-d23f-4cdc-9057-50851f592acd/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-076",
@@ -1916,15 +2154,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/11-sweet-sour-pork-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/sweet-sour-pork-rice--086f650770eb.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/sweet-sour-pork-rice--086f650770eb.webp",
+      "/menu-photos/sweet-sour-pork-rice--7b4f540a88.png",
       "/kok-sen-menu-2026-10-15/rice/11-sweet-sour-pork-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/1e5ef048-fade-4b10-9361-93bca6420023/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-077",
@@ -1940,15 +2182,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/12-roasted-pork-tofu-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/roasted-pork-tofu-rice--4a87777f6e26.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/roasted-pork-tofu-rice--4a87777f6e26.webp",
+      "/menu-photos/roasted-pork-tofu-rice--f3f3960d23.png",
       "/kok-sen-menu-2026-10-15/rice/12-roasted-pork-tofu-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/c50d367a-bb71-45f8-ac9b-9f16cb01395f/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-078",
@@ -1964,15 +2210,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "rice",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/rice/13-yang-zhuo-fried-rice.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/yang-zhuo-fried-rice--75e181e0bc73.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/yang-zhuo-fried-rice--75e181e0bc73.webp",
+      "/menu-photos/yang-zhuo-fried-rice--985b632c71.jpg",
       "/kok-sen-menu-2026-10-15/rice/13-yang-zhuo-fried-rice.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/YangZhuoFriedRice330dd5.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-079",
@@ -1988,15 +2238,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/01-stir-fried-big-prawns-with-spring-onion.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/spring-onion-prawn-normal-size--947f7b5052de.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/spring-onion-prawn-normal-size--947f7b5052de.webp",
       "/kok-sen-menu-2026-10-15/seafood/01-stir-fried-big-prawns-with-spring-onion.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://ucarecdn.com/28cc2416-f83a-4eb1-a3c2-fe9392371c4c/"
   },
   {
     "id": "ks-20261015-080",
@@ -2012,15 +2265,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/02-broccoli-prawn-balls.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/broccoli-stir-fried-with-prawns-balls--67a8fb91996f.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/broccoli-stir-fried-with-prawns-balls--67a8fb91996f.webp",
+      "/menu-photos/broccoli-stir-fried-with-prawns-balls--1cb59800f5.png",
       "/kok-sen-menu-2026-10-15/seafood/02-broccoli-prawn-balls.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/1f6b5431-4a71-44a2-8e19-78f481bf8975/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-081",
@@ -2036,15 +2293,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/03-cereal-prawns.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/cereal-butter-prawns--62a78290361a.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/cereal-butter-prawns--62a78290361a.webp",
+      "/menu-photos/cereal-butter-prawns--690753ad2e.png",
       "/kok-sen-menu-2026-10-15/seafood/03-cereal-prawns.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/738ac104-4e4e-423a-b4f3-99fbc4cde42c/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-082",
@@ -2060,15 +2321,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/04-prawn-roll.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/prawn-roll--da2cfbc9d2c8.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/prawn-roll--da2cfbc9d2c8.webp",
+      "/menu-photos/prawn-roll--0e7e26cd9a.jpg",
       "/kok-sen-menu-2026-10-15/seafood/04-prawn-roll.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/PrawnRolldb589a.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-083",
@@ -2084,15 +2349,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/05-salt-pepper-prawn.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/salt-pepper-prawns--7951b9ce8646.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/salt-pepper-prawns--7951b9ce8646.webp",
+      "/menu-photos/salt-pepper-prawns--631f79ab29.png",
       "/kok-sen-menu-2026-10-15/seafood/05-salt-pepper-prawn.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/2f7ad766-0456-4cb0-adf7-de445b42689d/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-084",
@@ -2108,15 +2377,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/06-salted-egg-prawns.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/salted-egg-prawn-ball--5dd1bb7f8f9c.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/salted-egg-prawn-ball--5dd1bb7f8f9c.webp",
+      "/menu-photos/salted-egg-prawn-ball--fcddef7418.png",
       "/kok-sen-menu-2026-10-15/seafood/06-salted-egg-prawns.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/30566e74-6b83-4eca-9953-19190ae48d8f/-/crop/2557x2554/1136,1022/-/preview/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-085",
@@ -2132,15 +2405,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/07-sambal-prawn.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/sambal-stir-fried-with-prawns-balls--5f11a3b9cd39.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/sambal-stir-fried-with-prawns-balls--5f11a3b9cd39.webp",
+      "/menu-photos/sambal-stir-fried-with-prawns-balls--15d69837ce.png",
       "/kok-sen-menu-2026-10-15/seafood/07-sambal-prawn.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/83374fba-30ed-462b-9af6-a44bfe5ded90/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-086",
@@ -2156,15 +2433,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/seafood/08-sea-cucumber-with-mushroom.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/sea-cucumber-braised-mushrooms--548bf1bba923.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/sea-cucumber-braised-mushrooms--548bf1bba923.webp",
+      "/menu-photos/sea-cucumber-braised-mushrooms--9700bbbf58.png",
       "/kok-sen-menu-2026-10-15/seafood/08-sea-cucumber-with-mushroom.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/79c3f608-e52f-4ffd-8d4e-f81553ea28cf/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-087",
@@ -2180,15 +2461,18 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "soup",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/soup/01-sliced-fish-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/sliced-fish-fish-head-soup--2d8180912382.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/sliced-fish-fish-head-soup--2d8180912382.webp",
       "/kok-sen-menu-2026-10-15/soup/01-sliced-fish-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": true,
+    "oddle_source_url": "https://ucarecdn.com/0af1da77-be52-48c0-a0c6-473252052d77/-/preview/"
   },
   {
     "id": "ks-20261015-088",
@@ -2204,15 +2488,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "soup",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/soup/02-salted-vegetables-tofu-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/salted-vegetable-tofu-soup--511faae90b01.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/salted-vegetable-tofu-soup--511faae90b01.webp",
+      "/menu-photos/salted-vegetable-tofu-soup--0f874e4aed.png",
       "/kok-sen-menu-2026-10-15/soup/02-salted-vegetables-tofu-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/84806e8a-f626-436d-bfac-e6309f9ce637/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-089",
@@ -2228,15 +2516,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "soup",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/soup/03-spinach-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/spinach-soup--37829b4235e8.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/spinach-soup--37829b4235e8.webp",
+      "/menu-photos/spinach-soup--9829677649.png",
       "/kok-sen-menu-2026-10-15/soup/03-spinach-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/2bdaf5ae-3032-4e66-aa88-b741c92c32c6/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-090",
@@ -2252,15 +2544,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "soup",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/soup/04-fish-meat-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/fish-meat-soup--1c295ca29a24.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/fish-meat-soup--1c295ca29a24.webp",
+      "/menu-photos/fish-meat-soup--2019c09c8e.jpg",
       "/kok-sen-menu-2026-10-15/soup/04-fish-meat-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/FishMeatSoupf39820.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-091",
@@ -2276,15 +2572,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "soup",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/soup/05-fish-maw-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/fish-maw-soup--e93305e11ebb.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/fish-maw-soup--e93305e11ebb.webp",
+      "/menu-photos/fish-maw-soup--cec6afe213.png",
       "/kok-sen-menu-2026-10-15/soup/05-fish-maw-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/88e2d587-c891-4ac9-8b1a-51f24ca9464e/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-092",
@@ -2300,15 +2600,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "soup",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/soup/06-bittergourd-soup.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/bittergourd-soup-with-seafoods-pork--5afc1651d63d.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/bittergourd-soup-with-seafoods-pork--5afc1651d63d.webp",
+      "/menu-photos/bittergourd-soup-with-seafoods-pork--f18ebc5779.png",
       "/kok-sen-menu-2026-10-15/soup/06-bittergourd-soup.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/bdd8e959-071e-4ebc-99c4-b7cf3a91e253/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-093",
@@ -2324,15 +2628,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "tofu",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/tofu/01-braised-tofu.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/braised-tofu-with-roast-pork--157e8996fa83.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/braised-tofu-with-roast-pork--157e8996fa83.webp",
+      "/menu-photos/braised-tofu-with-roast-pork--7dddd0c8b6.png",
       "/kok-sen-menu-2026-10-15/tofu/01-braised-tofu.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/365e48fb-b05a-47e3-a6b7-2bf5f9071e77/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-094",
@@ -2348,15 +2656,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "tofu",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/tofu/02-deep-fried-tofu.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/golden-beancurds--9c8c27666813.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/golden-beancurds--9c8c27666813.webp",
+      "/menu-photos/golden-beancurds--8681e586bd.jpg",
       "/kok-sen-menu-2026-10-15/tofu/02-deep-fried-tofu.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://s3-ap-southeast-1.amazonaws.com/v3-live.image.oddle.me/product/GoldenBeancurds198556.jpg",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-095",
@@ -2372,15 +2684,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "tofu",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/tofu/03-homemade-tofu.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/homemade-tofu-with-minced-pork--45d5cbd75ba5.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/homemade-tofu-with-minced-pork--45d5cbd75ba5.webp",
+      "/menu-photos/homemade-tofu-with-minced-pork--612ced2912.png",
       "/kok-sen-menu-2026-10-15/tofu/03-homemade-tofu.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/43356430-e76a-4966-a427-71c6a80f131c/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-096",
@@ -2396,15 +2712,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "tofu",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/tofu/04-hotplate-tofu.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/hotplate-tofu--62456b0fff25.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/hotplate-tofu--62456b0fff25.webp",
+      "/menu-photos/hotplate-tofu--3456d5b479.png",
       "/kok-sen-menu-2026-10-15/tofu/04-hotplate-tofu.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/15e2335e-2cf8-4b7a-a408-be0f4bffc7e2/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-097",
@@ -2428,7 +2748,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-098",
@@ -2452,7 +2773,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-099",
@@ -2468,15 +2790,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "tofu",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/tofu/07-yong-tau-foo.png",
+    "imageUrl": "/oddle-photos-web-2026-10-19/claypot-yong-tau-foo--17a26c1e15a0.webp",
     "photos": [
+      "/oddle-photos-web-2026-10-19/claypot-yong-tau-foo--17a26c1e15a0.webp",
+      "/menu-photos/claypot-yong-tau-foo--20bc99fcfc.png",
       "/kok-sen-menu-2026-10-15/tofu/07-yong-tau-foo.png"
     ],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": true,
     "isChefRecommendation": true,
-    "publish": true
+    "publish": true,
+    "oddle_source_url": "https://ucarecdn.com/c8bbfc23-e348-411b-bfd5-fd7b8dba4363/",
+    "hasOddleOriginalPhoto": true
   },
   {
     "id": "ks-20261015-100",
@@ -2500,7 +2826,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "isConflict": false,
     "isSignature": false,
     "isChefRecommendation": false,
-    "publish": true
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   }
 ];
 

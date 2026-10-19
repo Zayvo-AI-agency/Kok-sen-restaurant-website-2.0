@@ -20,8 +20,11 @@ import {
   QrCode,
   Truck,
   ShoppingBag,
-  ExternalLink
+  ExternalLink,
+  ArrowRight,
+  Calendar
 } from 'lucide-react';
+import horFunHeroPhoto from '../assets/client-menu/049-hor-fun-prawn-hor-fun.webp';
 import { ReviewsSection } from '../components/ReviewsSection';
 import { FaqSection } from '../components/FaqSection';
 
@@ -45,26 +48,28 @@ export function HomePage() {
 
   return (
     <div className="flex flex-col gap-12 sm:gap-16 lg:gap-24 animate-in fade-in duration-300">
-      {/* 1. Refined Hero Section */}
+      {/* 1. Hero Section matching https://kok-sen-restaurant.vercel.app/ */}
       <section className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-surface-container border border-surface-container-high/80 p-6 sm:p-10 md:p-12 lg:p-16 shadow-2xl min-h-[460px] sm:min-h-[500px] md:min-h-[520px] flex items-center">
-        {/* Natural food photograph on the right: No grayscale, reduced dark overlays */}
+        {/* Full Hero Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
-            src={CLIENT_MENU_PHOTOS.H1}
+            src={horFunHeroPhoto}
             alt="Kok Sen Signature Big Prawns Hor Fun"
             className="w-full h-full object-cover object-[78%_center] sm:object-[72%_center] md:object-[68%_center] lg:object-[65%_center] brightness-[0.92] contrast-[1.05]"
             loading="eager"
             fetchPriority="high"
+            onError={(e) => {
+              e.currentTarget.src = 'https://kok-sen-restaurant.vercel.app/assets/049-hor-fun-prawn-hor-fun-DVcgJeCD.webp';
+            }}
           />
         </div>
 
-        {/* Directional Gradient Scrim: Deep dark backdrop on the left for crisp text readability, fading softly to reveal the vibrant golden-red food on the right */}
+        {/* Directional Cinematic Scrim */}
         <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t md:bg-gradient-to-r from-black/95 via-black/85 via-50% md:via-48% to-black/25 md:to-transparent" />
-        {/* Subtle radial depth to ensure header transition is smooth */}
         <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-black/40 via-transparent to-black/50" />
 
+        {/* Hero Content */}
         <div className="relative z-20 max-w-xl lg:max-w-2xl flex flex-col gap-4 sm:gap-5 min-w-0">
-          {/* Consolidated, Restrained Michelin Hero Badge */}
           <div className="flex items-center gap-2 flex-wrap text-xs font-semibold">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 border border-secondary/35 text-secondary backdrop-blur-md shadow-sm">
               <Award className="w-3.5 h-3.5 text-secondary shrink-0" />
@@ -72,42 +77,36 @@ export function HomePage() {
             </span>
           </div>
 
-          {/* Refined Headline: Responsive, balanced composition keeping "Keong Saik" together */}
           <div className="flex flex-col gap-2">
             <h1 className="font-display-hero text-2xl sm:text-4xl md:text-5xl lg:text-5xl text-white font-extrabold tracking-tight leading-[1.15]">
               The Roar of the Wok.{' '}
               <br className="hidden sm:inline" />
               <span className="text-secondary italic font-normal">Cantonese Heritage</span> at&nbsp;Keong&nbsp;Saik.
             </h1>
-            {/* Shortened, focused description (2-3 readable lines on desktop) */}
             <p className="font-body-lg text-xs sm:text-sm md:text-base text-white/85 leading-relaxed max-w-xl mt-1">
               Discover our signature Big Prawns Hor Fun, claypot tofu and prawn paste chicken. Explore the menu and find your next favourite.
             </p>
           </div>
 
-          {/* Action Hierarchy: View Menu (Primary Red) · Reserve a Table (Secondary Gold) · Order Online (Official Oddle) · Visit & Hours */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3.5 pt-2 sm:pt-3">
-            {/* Primary Action: View Menu */}
             <Link
               href="/menu"
               className="h-11 sm:h-12 px-6 rounded-xl bg-primary hover:bg-[#A82B1B] text-white font-button-text font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-primary/30 transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
             >
               <UtensilsCrossed className="w-4 h-4 shrink-0" />
               <span>View Menu</span>
-              <ChevronRight className="w-4 h-4 shrink-0" />
+              <ArrowRight className="w-4 h-4 shrink-0" />
             </Link>
 
-            {/* Secondary Action: Reserve a Table */}
             <button
               type="button"
               onClick={() => setReservationOpen(true)}
               className="h-11 sm:h-12 px-6 rounded-xl bg-secondary hover:bg-secondary-fixed text-on-secondary font-button-text font-bold text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-secondary/20 transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
             >
-              <CalendarDays className="w-4 h-4 shrink-0" />
+              <Calendar className="w-4 h-4 shrink-0" />
               <span>Reserve a Table</span>
             </button>
 
-            {/* Main Order Online Action */}
             <a
               href="https://koksen.oddle.me/en_SG"
               target="_blank"
@@ -120,7 +119,6 @@ export function HomePage() {
               <ExternalLink className="w-3.5 h-3.5 opacity-80 shrink-0" />
             </a>
 
-            {/* Subtle Tertiary Action: Visit & Hours text link */}
             <Link
               href="/visit"
               className="h-10 sm:h-12 px-3 sm:px-4 text-white/80 hover:text-secondary font-button-text font-semibold text-xs sm:text-sm transition-colors flex items-center justify-center sm:justify-start gap-1.5 cursor-pointer"
@@ -279,16 +277,16 @@ export function HomePage() {
                 key={dishKey}
                 className="group relative flex flex-col rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-2xl"
               >
-                {/* Food Image */}
+                {/* Food Image - Pure white background to prevent photo clipping */}
                 <div 
-                  className="relative aspect-4/3 overflow-hidden bg-surface-container-lowest cursor-pointer"
+                  className="relative aspect-4/3 overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
                   onClick={() => setSelectedDish(dish)}
                 >
                   {hasValidImage ? (
                     <img
                       src={currentSrc}
                       alt={dish.nameEn}
-                      className="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105"
+                      className="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-200"
                       loading="lazy"
                       onError={() => {
                         const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
@@ -300,19 +298,19 @@ export function HomePage() {
                       }}
                     />
                   ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center bg-surface-container-low text-tertiary p-4 text-center select-none">
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-white text-tertiary p-4 text-center select-none">
                       <UtensilsCrossed className="w-8 h-8 text-secondary/40 mb-2" />
-                      <span className="font-bold text-sm text-on-surface">{dish.itemCode || dish.code}</span>
-                      <span className="text-xs text-tertiary">Photo unavailable</span>
+                      <span className="font-bold text-sm text-neutral-900">{dish.itemCode || dish.code}</span>
+                      <span className="text-xs text-neutral-500">Photo unavailable</span>
                     </div>
                   )}
 
-                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-[11px] font-bold text-secondary border border-secondary/30">
+                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-secondary border border-secondary/30 shadow-xs">
                     {dish.category}
                   </div>
 
                   {dish.isSignature && (
-                    <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider">
+                    <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-white text-[10px] font-bold uppercase tracking-wider shadow-xs">
                       Signature
                     </div>
                   )}
@@ -387,25 +385,25 @@ export function HomePage() {
           </div>
 
           <div className="lg:col-span-5 grid grid-cols-2 gap-3 sm:gap-4">
-            <div className="relative rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high shadow-lg">
+            <div className="relative rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high/80 shadow-lg bg-white flex items-center justify-center p-3">
               <img
                 src="https://ucarecdn.com/c8bbfc23-e348-411b-bfd5-fd7b8dba4363/"
                 alt="Kok Sen Claypot Yong Tau Foo"
-                className="w-full h-full object-cover"
+                className="max-h-full max-w-full w-auto h-auto object-contain"
                 loading="lazy"
               />
-              <div className="absolute bottom-2 left-2 right-2 p-1.5 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md text-[10px] text-tertiary font-medium text-center">
+              <div className="absolute bottom-2 left-2 right-2 p-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md text-[10px] text-on-surface font-semibold text-center shadow-xs border border-surface-container-high/60">
                 Claypot Craft
               </div>
             </div>
-            <div className="relative rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high shadow-lg mt-6">
+            <div className="relative rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high/80 shadow-lg mt-6 bg-white flex items-center justify-center p-3">
               <img
                 src="https://ucarecdn.com/d5709a32-eb33-4e52-8579-0f611d0dd94a/"
                 alt="Kok Sen Har Cheong Gai"
-                className="w-full h-full object-cover"
+                className="max-h-full max-w-full w-auto h-auto object-contain"
                 loading="lazy"
               />
-              <div className="absolute bottom-2 left-2 right-2 p-1.5 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md text-[10px] text-tertiary font-medium text-center">
+              <div className="absolute bottom-2 left-2 right-2 p-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md text-[10px] text-on-surface font-semibold text-center shadow-xs border border-surface-container-high/60">
                 Har Cheong Gai
               </div>
             </div>

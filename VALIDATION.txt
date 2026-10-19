@@ -1,0 +1,12 @@
+PASS — All 118 current Oddle image URLs downloaded, image-decoded and source-hash checked.
+PASS — 113 distinct nonempty WebP files; every output decoded, dimension-checked and SHA-256 verified.
+PASS — All 125 source listings and 110 distinct source dish names covered; 100 dishes have photos and 10 have none.
+PASS — Every source URL and photo-map asset resolves to a packaged file; no duplicated output-file contents.
+PASS — Full-frame aspect ratios preserved to resizing precision, no upscaling, no added backgrounds or cropping.
+PASS — 81 previously reviewed client mappings revalidated against fresh source hashes and distinct output paths; 18 published client items retain their existing photos; one unnamed record remains unpublished.
+PASS — Known source assignment conflict is flagged and excluded from automatic client mapping.
+PASS — No application source code is included for overwriting; no menu price data imported.
+VISUAL CHECK — Representative dish images and their backgrounds inspected after compression.
+SIZE — Unique original images 37,989,757 bytes; WebP images 6,002,984 bytes; reduction 84.2% before ZIP metadata.
+LIMIT — Images use lossy WebP compression, max 1600 pixels on the long edge; quality depends on the source. Smaller source images remain small.
+LIMIT — The website build, live rendering and deployment require integration in the user's current project and were not performed here.

@@ -1,5 +1,6 @@
+import clientPhotoMapJson from '../../data/oddle-photos-2026-10-19/client-photo-map.json';
 import clientMenuJson from '../../data/kok-sen-menu-2026-10-15.json';
-import enhancedMappingJson from '../../data/enhanced-dish-mapping.json';
+import oddleThreeOverridesJson from '../../data/oddle-three-photo-overrides-2026-10-19.json';
 import { MenuItem } from '../types';
 
 export interface ResolvedDishPhoto {
@@ -9,6 +10,7 @@ export interface ResolvedDishPhoto {
   hasOriginalPhoto: boolean;
   isConflict: boolean;
   source_item_id?: string;
+  isOddleOriginal?: boolean;
 }
 
 export function normalizeEnglishName(nameEn?: string): string {
@@ -17,6 +19,37 @@ export function normalizeEnglishName(nameEn?: string): string {
 
 export function normalizeCategoryKey(category?: string): string {
   return (category || '').toUpperCase().replace(/[^A-Z]/g, '');
+}
+
+interface ClientPhotoMapItem {
+  client_item_id: string;
+  client_name: string;
+  client_category?: string;
+  publish: boolean;
+  status: 'matched' | 'no_photo_on_oddle' | 'no_confirmed_oddle_match' | 'unpublished_awaiting_client_name';
+  oddle_name?: string;
+  oddle_source_item_ids?: string[];
+  photo?: {
+    asset: string;
+    file: string;
+    format: string;
+    width: number;
+    height: number;
+    bytes: number;
+    sha256: string;
+    source_sha256: string;
+    source_bytes: number;
+    source_width: number;
+    source_height: number;
+    upscaled: boolean;
+    cropped: boolean;
+    background_removed: boolean;
+    ai_generated_by_this_export: boolean;
+    webp_quality: number;
+    source_assignment_conflict: boolean;
+    source_url: string;
+  };
+  match_basis?: string;
 }
 
 interface ClientMenuItem {
@@ -35,35 +68,64 @@ interface ClientMenuItem {
   };
 }
 
+interface PhotoOverrideItem {
+  dish_name: string;
+  chinese_name: string;
+  client_item_id: string | null;
+  existing_client_name: string | null;
+  allowed_exact_name_matches: string[];
+  photo: {
+    asset: string;
+    file: string;
+    format: string;
+    width: number;
+    height: number;
+    bytes: number;
+    sha256: string;
+  };
+}
+
+const clientPhotoMap = clientPhotoMapJson as { items: ClientPhotoMapItem[] };
 const clientItems: ClientMenuItem[] = (clientMenuJson.items as ClientMenuItem[]) || [];
+const photoOverrides = (oddleThreeOverridesJson as { items: PhotoOverrideItem[] }).items || [];
 
-const byId = new Map<string, ClientMenuItem>();
-const byNormName = new Map<string, ClientMenuItem>();
-const enhancedAssets = new Map<string, string>();
+const byClientItemId = new Map<string, ClientPhotoMapItem>();
+const byNormName = new Map<string, ClientPhotoMapItem>();
+const clientFallbackById = new Map<string, ClientMenuItem>();
+const clientFallbackByNormName = new Map<string, ClientMenuItem>();
 
-for (const m of (enhancedMappingJson.mappings || [])) {
-  if (m.id && m.enhanced_asset) {
-    enhancedAssets.set(m.id.toLowerCase(), m.enhanced_asset);
+for (const item of clientPhotoMap.items) {
+  if (item.client_item_id) {
+    byClientItemId.set(item.client_item_id.toLowerCase(), item);
+  }
+  if (item.client_name) {
+    byNormName.set(normalizeEnglishName(item.client_name), item);
   }
 }
 
 for (const item of clientItems) {
   if (item.id) {
-    byId.set(item.id.toLowerCase(), item);
+    clientFallbackById.set(item.id.toLowerCase(), item);
   }
   if (item.name) {
-    const norm = normalizeEnglishName(item.name);
-    byNormName.set(norm, item);
+    clientFallbackByNormName.set(normalizeEnglishName(item.name), item);
   }
   if (item.english_name) {
-    const normEn = normalizeEnglishName(item.english_name);
-    byNormName.set(normEn, item);
+    clientFallbackByNormName.set(normalizeEnglishName(item.english_name), item);
   }
 }
 
 /**
- * Resolves verified authentic dish photography from the authoritative client catalogue
- * (data/kok-sen-menu-2026-10-15.json) with client-supplied photographs and verified enhanced versions.
+ * Resolves verified authentic dish photography.
+ * Highest precedence:
+ * - data/oddle-three-photo-overrides-2026-10-19.json:
+ *   1. Curry Fish Head (ks-20261015-026) -> /oddle-three-exact-2026-10-19/curry-fish-head.png
+ *   2. Big Prawns Hor Fun / Big Prawn Hor Fun (ks-20261015-050) -> /oddle-three-exact-2026-10-19/big-prawns-hor-fun.png
+ *   3. Curry Fish Tail -> /oddle-three-exact-2026-10-19/curry-fish-tail.png (only if exact dish present; never to Hong Kong Style Steamed Fish Tail or Curry Fish Head)
+ * Authoritative 19 October 2026 reviewed photo map:
+ * - 81 matched dishes use exact Oddle WebP assets with complete natural proportions and full background
+ * - 18 published dishes retain their existing client photo assets
+ * - 1 item (ks-20261015-032) remains unpublished awaiting client confirmation
  */
 export function resolveDishPhoto(
   query: Partial<MenuItem> | {
@@ -80,74 +142,159 @@ export function resolveDishPhoto(
     source_url?: string;
     photo_status?: string;
     isConflict?: boolean;
+    name?: string;
   }
 ): ResolvedDishPhoto {
   const rawId = (query.id || query.source_item_id || query.sourceItemId || '').toLowerCase();
   const enName = query.nameEn || query.english_name || query.name || '';
   const normEn = normalizeEnglishName(enName);
 
-  // 1. Direct lookup by stable client catalogue ID
-  if (rawId && byId.has(rawId)) {
-    const matched = byId.get(rawId)!;
-    const asset = enhancedAssets.get(matched.id.toLowerCase()) || matched.photo?.asset;
+  // 0. Exact Photo Overrides from oddle-three-photo-overrides-2026-10-19.json
+  // Priority 1: Curry Fish Head (ID ks-20261015-026 or exact allowed name)
+  if (rawId === 'ks-20261015-026' || normEn === 'curry fish head') {
+    const override = photoOverrides.find((o) => o.client_item_id === 'ks-20261015-026');
+    const asset = override?.photo.asset || '/oddle-three-exact-2026-10-19/curry-fish-head.png';
     return {
       imageUrl: asset,
       photo_source_url: asset,
-      photo_status: matched.publish ? 'available' : 'awaiting_client_name',
-      hasOriginalPhoto: Boolean(asset),
+      photo_status: 'available',
+      hasOriginalPhoto: true,
       isConflict: false,
-      source_item_id: matched.id
+      source_item_id: 'ks-20261015-026',
+      isOddleOriginal: false
     };
   }
 
-  // 2. Lookup by normalized dish name
+  // Priority 2: Big Prawns Hor Fun / Big Prawn Hor Fun (ID ks-20261015-050 or exact allowed name)
+  if (
+    rawId === 'ks-20261015-050' ||
+    normEn === 'big prawn hor fun' ||
+    normEn === 'big prawns hor fun'
+  ) {
+    const override = photoOverrides.find((o) => o.client_item_id === 'ks-20261015-050');
+    const asset = override?.photo.asset || '/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png';
+    return {
+      imageUrl: asset,
+      photo_source_url: asset,
+      photo_status: 'available',
+      hasOriginalPhoto: true,
+      isConflict: false,
+      source_item_id: 'ks-20261015-050',
+      isOddleOriginal: false
+    };
+  }
+
+  // Priority 3: Curry Fish Tail (Strict check: Never match HK Steamed Fish Tail or Curry Fish Head)
+  if (
+    normEn === 'curry fish tail' &&
+    rawId !== 'ks-20261015-023' &&
+    rawId !== 'ks-20261015-026'
+  ) {
+    const override = photoOverrides.find((o) => o.dish_name === 'Curry Fish Tail');
+    const asset = override?.photo.asset || '/oddle-three-exact-2026-10-19/curry-fish-tail.png';
+    return {
+      imageUrl: asset,
+      photo_source_url: asset,
+      photo_status: 'available',
+      hasOriginalPhoto: true,
+      isConflict: false,
+      isOddleOriginal: false
+    };
+  }
+
+  // 1. Direct lookup by canonical dish ID against 2026-10-19 client-photo-map
+  if (rawId && byClientItemId.has(rawId)) {
+    const entry = byClientItemId.get(rawId)!;
+    if (entry.status === 'matched' && entry.photo?.asset) {
+      return {
+        imageUrl: entry.photo.asset,
+        photo_source_url: entry.photo.source_url,
+        photo_status: 'available',
+        hasOriginalPhoto: true,
+        isConflict: false,
+        source_item_id: entry.client_item_id,
+        isOddleOriginal: true
+      };
+    }
+
+    if (entry.status === 'unpublished_awaiting_client_name') {
+      const fallback = clientFallbackById.get(rawId);
+      const fallbackAsset = fallback?.photo?.asset || query.imageUrl;
+      return {
+        imageUrl: fallbackAsset,
+        photo_source_url: fallbackAsset,
+        photo_status: 'awaiting_client_name',
+        hasOriginalPhoto: Boolean(fallbackAsset),
+        isConflict: false,
+        source_item_id: entry.client_item_id,
+        isOddleOriginal: false
+      };
+    }
+
+    // 18 Retained dishes without Oddle match or with multi-variant ambiguity
+    const fallback = clientFallbackById.get(rawId);
+    const fallbackAsset = query.imageUrl || fallback?.photo?.asset;
+    return {
+      imageUrl: fallbackAsset,
+      photo_source_url: fallbackAsset,
+      photo_status: 'available',
+      hasOriginalPhoto: Boolean(fallbackAsset),
+      isConflict: false,
+      source_item_id: entry.client_item_id,
+      isOddleOriginal: false
+    };
+  }
+
+  // 2. Lookup by normalized name against 2026-10-19 client-photo-map
   if (normEn && byNormName.has(normEn)) {
-    const matched = byNormName.get(normEn)!;
-    const asset = enhancedAssets.get(matched.id.toLowerCase()) || matched.photo?.asset;
+    const entry = byNormName.get(normEn)!;
+    if (entry.status === 'matched' && entry.photo?.asset) {
+      return {
+        imageUrl: entry.photo.asset,
+        photo_source_url: entry.photo.source_url,
+        photo_status: 'available',
+        hasOriginalPhoto: true,
+        isConflict: false,
+        source_item_id: entry.client_item_id,
+        isOddleOriginal: true
+      };
+    }
+
+    const fallback = clientFallbackByNormName.get(normEn);
+    const fallbackAsset = query.imageUrl || fallback?.photo?.asset;
     return {
-      imageUrl: asset,
-      photo_source_url: asset,
-      photo_status: matched.publish ? 'available' : 'awaiting_client_name',
-      hasOriginalPhoto: Boolean(asset),
+      imageUrl: fallbackAsset,
+      photo_source_url: fallbackAsset,
+      photo_status: entry.publish ? 'available' : 'awaiting_client_name',
+      hasOriginalPhoto: Boolean(fallbackAsset),
       isConflict: false,
-      source_item_id: matched.id
+      source_item_id: entry.client_item_id,
+      isOddleOriginal: false
     };
   }
 
-  // 3. Fallback for query if it already specifies a valid client asset path
-  const asset = query.imageUrl || query.photo_source_url || query.source_url;
-  if (asset && asset.startsWith('/kok-sen-menu-2026-10-15/')) {
+  // 3. Direct valid oddle-photos-web URL or client photo URL passed in query
+  const directAsset = query.imageUrl || query.photo_source_url || query.source_url;
+  if (directAsset && (directAsset.startsWith('/oddle-photos-web-') || directAsset.startsWith('/kok-sen-') || directAsset.startsWith('/menu-photos/'))) {
     return {
-      imageUrl: asset,
-      photo_source_url: asset,
+      imageUrl: directAsset,
+      photo_source_url: directAsset,
       photo_status: 'available',
       hasOriginalPhoto: true,
       isConflict: false,
-      source_item_id: rawId || undefined
+      source_item_id: rawId || undefined,
+      isOddleOriginal: directAsset.startsWith('/oddle-photos-web-') || directAsset.startsWith('/menu-photos/')
     };
   }
 
-  // 4. Special preservation for iconic Big Prawn Hor Fun if queried by legacy names
-  if (normEn.includes('big prawn') && normEn.includes('hor fun')) {
-    const bigPrawnAsset = '/kok-sen-menu-2026-10-15/hor-fun/07-big-prawn-hor-fun.png';
-    return {
-      imageUrl: bigPrawnAsset,
-      photo_source_url: bigPrawnAsset,
-      photo_status: 'available',
-      hasOriginalPhoto: true,
-      isConflict: false,
-      source_item_id: 'ks-20261015-050'
-    };
-  }
-
-  // Fallback to provided image if present
-  const fallbackImg = query.imageUrl || query.photo_source_url || query.source_url;
+  // 4. Fallback to provided image if present
   return {
-    imageUrl: fallbackImg,
-    photo_source_url: fallbackImg,
-    photo_status: fallbackImg ? 'available' : 'not_provided_on_official_menu',
-    hasOriginalPhoto: Boolean(fallbackImg),
+    imageUrl: directAsset,
+    photo_source_url: directAsset,
+    photo_status: directAsset ? 'available' : 'not_provided_on_official_menu',
+    hasOriginalPhoto: Boolean(directAsset),
     isConflict: false,
-    source_item_id: rawId || undefined
+    source_item_id: rawId || undefined,
+    isOddleOriginal: Boolean(directAsset && directAsset.startsWith('/oddle-photos-web-'))
   };
 }

@@ -1,0 +1,702 @@
+[
+  {
+    "id": "ks-20261015-001",
+    "name": "Yam Ring",
+    "category": "Additional Dishes",
+    "sourceFile": "yam ring.jpeg\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/additional-dishes/ks-20261015-001-yam-ring.webp"
+  },
+  {
+    "id": "ks-20261015-002",
+    "name": "Kai Lan with Beef",
+    "category": "Beef",
+    "sourceFile": "Kai Lan with Beef.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/beef/ks-20261015-002-kai-lan-with-beef.webp"
+  },
+  {
+    "id": "ks-20261015-003",
+    "name": "Spring Onion with Beef",
+    "category": "Beef",
+    "sourceFile": "spring onion with beef.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/beef/ks-20261015-003-spring-onion-with-beef.webp"
+  },
+  {
+    "id": "ks-20261015-004",
+    "name": "Black Bean with Beef",
+    "category": "Beef",
+    "sourceFile": "black bean with beef.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/beef/ks-20261015-004-black-bean-with-beef.webp"
+  },
+  {
+    "id": "ks-20261015-005",
+    "name": "Black Pepper Beef",
+    "category": "Beef",
+    "sourceFile": "black pepper beef.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/beef/ks-20261015-005-black-pepper-beef.webp"
+  },
+  {
+    "id": "ks-20261015-006",
+    "name": "Kung Bao Chicken",
+    "category": "Chicken",
+    "sourceFile": "Kung bao Chicken.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/chicken/ks-20261015-006-kung-bao-chicken.webp"
+  },
+  {
+    "id": "ks-20261015-007",
+    "name": "Cereal Chicken",
+    "category": "Chicken",
+    "sourceFile": "cereal chicken.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/chicken/ks-20261015-007-cereal-chicken.webp"
+  },
+  {
+    "id": "ks-20261015-008",
+    "name": "Claypot Chicken",
+    "category": "Chicken",
+    "sourceFile": "claypot chicken.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/chicken/ks-20261015-008-claypot-chicken.webp"
+  },
+  {
+    "id": "ks-20261015-009",
+    "name": "Roasted Chicken",
+    "category": "Chicken",
+    "sourceFile": "rooasted chicken.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/chicken/ks-20261015-009-roasted-chicken.webp"
+  },
+  {
+    "id": "ks-20261015-010",
+    "name": "Prawn Paste Chicken",
+    "category": "Chicken",
+    "sourceFile": "prawn paste chicken.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/chicken/ks-20261015-010-prawn-paste-chicken.webp"
+  },
+  {
+    "id": "ks-20261015-011",
+    "name": "Black Pepper Crab",
+    "category": "Crab",
+    "sourceFile": "BLACK PEPPER.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/crab/ks-20261015-011-black-pepper-crab.webp"
+  },
+  {
+    "id": "ks-20261015-012",
+    "name": "Chilli Crab",
+    "category": "Crab",
+    "sourceFile": "CHIILI crab.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/crab/ks-20261015-012-chilli-crab.webp"
+  },
+  {
+    "id": "ks-20261015-013",
+    "name": "Salted Egg Crab",
+    "category": "Crab",
+    "sourceFile": "SALTED EGG.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/crab/ks-20261015-013-salted-egg-crab.webp"
+  },
+  {
+    "id": "ks-20261015-014",
+    "name": "Sambal Crab",
+    "category": "Crab",
+    "sourceFile": " sambal crab.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/crab/ks-20261015-014-sambal-crab.webp"
+  },
+  {
+    "id": "ks-20261015-015",
+    "name": "Spring Onion Crab",
+    "category": "Crab",
+    "sourceFile": "SPRING ONION crab.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/crab/ks-20261015-015-spring-onion-crab.webp"
+  },
+  {
+    "id": "ks-20261015-016",
+    "name": "Fu Rong Omelette",
+    "category": "Eggs",
+    "sourceFile": " furong ometette.JPG\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/eggs/ks-20261015-016-fu-rong-omelette.webp"
+  },
+  {
+    "id": "ks-20261015-017",
+    "name": "Minced Pork Steamed Egg",
+    "category": "Eggs",
+    "sourceFile": "minced pork steam egg.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/eggs/ks-20261015-017-minced-pork-steamed-egg.webp"
+  },
+  {
+    "id": "ks-20261015-018",
+    "name": "Minced Pork Omelette",
+    "category": "Eggs",
+    "sourceFile": "MINCED. pork omeletteJPG.JPG\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/eggs/ks-20261015-018-minced-pork-omelette.webp"
+  },
+  {
+    "id": "ks-20261015-019",
+    "name": "Prawn Omelette",
+    "category": "Eggs",
+    "sourceFile": "prawn omelette.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/eggs/ks-20261015-019-prawn-omelette.webp"
+  },
+  {
+    "id": "ks-20261015-020",
+    "name": "Radish Omelette",
+    "category": "Eggs",
+    "sourceFile": "raddish omelette.JPG\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/eggs/ks-20261015-020-radish-omelette.webp"
+  },
+  {
+    "id": "ks-20261015-021",
+    "name": "Steamed Trio Egg",
+    "category": "Eggs",
+    "sourceFile": "steam trio egg.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/eggs/ks-20261015-021-steamed-trio-egg.webp"
+  },
+  {
+    "id": "ks-20261015-022",
+    "name": "Deep Fried \"Yu Gai\" Fish",
+    "category": "Fish",
+    "sourceFile": "\"deep fried \"\"\"\"yu gai\"\"\"\" fish.png\"\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-022-deep-fried-yu-gai-fish.webp"
+  },
+  {
+    "id": "ks-20261015-023",
+    "name": "Hong Kong Style Steamed Fish Tail",
+    "category": "Fish",
+    "sourceFile": "hk style steam fish tail.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-023-hong-kong-style-steamed-fish-tail.webp"
+  },
+  {
+    "id": "ks-20261015-024",
+    "name": "Black Bean Fish Meat",
+    "category": "Fish",
+    "sourceFile": "BLACK BEAN FISH MEAT.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-024-black-bean-fish-meat.webp"
+  },
+  {
+    "id": "ks-20261015-025",
+    "name": "Claypot Fish Meat",
+    "category": "Fish",
+    "sourceFile": "CLAYPOT FISH meat.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-025-claypot-fish-meat.webp"
+  },
+  {
+    "id": "ks-20261015-026",
+    "name": "Curry Fish Head",
+    "category": "Fish",
+    "sourceFile": "CURRY FISH HEAD.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-026-curry-fish-head.webp"
+  },
+  {
+    "id": "ks-20261015-027",
+    "name": "Deep Fried Fish Meat",
+    "category": "Fish",
+    "sourceFile": "DEEP FRIED FISH MEAT.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-027-deep-fried-fish-meat.webp"
+  },
+  {
+    "id": "ks-20261015-028",
+    "name": "Hong Kong Style Steamed Grouper",
+    "category": "Fish",
+    "sourceFile": "HK STYLE STEAM GROUOPER.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-028-hong-kong-style-steamed-grouper.webp"
+  },
+  {
+    "id": "ks-20261015-029",
+    "name": "Sambal Fish Meat",
+    "category": "Fish",
+    "sourceFile": "SAMBAL FISH meat.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-029-sambal-fish-meat.webp"
+  },
+  {
+    "id": "ks-20261015-030",
+    "name": "Sweet and Sour Grouper",
+    "category": "Fish",
+    "sourceFile": "SWEET AND SOUR GROUPER.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/fish/ks-20261015-030-sweet-and-sour-grouper.webp"
+  },
+  {
+    "id": "ks-20261015-031",
+    "name": "Spring Onion Frogs",
+    "category": "Frogs",
+    "sourceFile": "spring onion frogs.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/frogs/ks-20261015-031-spring-onion-frogs.webp"
+  },
+  {
+    "id": "ks-20261015-032",
+    "name": null,
+    "category": "Frogs",
+    "sourceFile": "BackgroundEraser_20260906_131532826.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/frogs/ks-20261015-032-unnamed-frog-dish-needs-confirmation.webp"
+  },
+  {
+    "id": "ks-20261015-033",
+    "name": "Black Bean with Frogs",
+    "category": "Frogs",
+    "sourceFile": "balck bean with frogs.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/frogs/ks-20261015-033-black-bean-with-frogs.webp"
+  },
+  {
+    "id": "ks-20261015-034",
+    "name": "Kung Bao Frogs",
+    "category": "Frogs",
+    "sourceFile": "kung bao frogs.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/frogs/ks-20261015-034-kung-bao-frogs.webp"
+  },
+  {
+    "id": "ks-20261015-035",
+    "name": "Golden Dragon Chicken",
+    "category": "Chicken",
+    "sourceFile": "GOLDEN DRAGON CHICKEN.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/chicken/ks-20261015-035-golden-dragon-chicken.webp"
+  },
+  {
+    "id": "ks-20261015-036",
+    "name": "Bean Sprout with Salted Fish",
+    "category": "Vegetables",
+    "sourceFile": "beansprout with salted fish.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-036-bean-sprout-with-salted-fish.webp"
+  },
+  {
+    "id": "ks-20261015-037",
+    "name": "Garlic Broccoli",
+    "category": "Vegetables",
+    "sourceFile": "garlic broccolli.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-037-garlic-broccoli.webp"
+  },
+  {
+    "id": "ks-20261015-038",
+    "name": "Sambal Kangkong",
+    "category": "Vegetables",
+    "sourceFile": "sambal kangkong.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-038-sambal-kangkong.webp"
+  },
+  {
+    "id": "ks-20261015-039",
+    "name": "Kai Lan with Garlic",
+    "category": "Vegetables",
+    "sourceFile": "kailan with garlic.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-039-kai-lan-with-garlic.webp"
+  },
+  {
+    "id": "ks-20261015-040",
+    "name": "Poached Lettuce",
+    "category": "Vegetables",
+    "sourceFile": "poached lettuce.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-040-poached-lettuce.webp"
+  },
+  {
+    "id": "ks-20261015-041",
+    "name": "Romaine Lettuce with Fermented Beancurd",
+    "category": "Vegetables",
+    "sourceFile": "romaine lettuce with fermented beancurd.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-041-romaine-lettuce-with-fermented-beancurd.webp"
+  },
+  {
+    "id": "ks-20261015-042",
+    "name": "Garlic with Small Cabbage",
+    "category": "Vegetables",
+    "sourceFile": "garlic with small cabbage.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-042-garlic-with-small-cabbage.webp"
+  },
+  {
+    "id": "ks-20261015-043",
+    "name": "Chinese Spinach with Trio Egg",
+    "category": "Vegetables",
+    "sourceFile": "chimese spinach with trio egg.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/vegetables/ks-20261015-043-chinese-spinach-with-trio-egg.webp"
+  },
+  {
+    "id": "ks-20261015-044",
+    "name": "Black Bean Beef Hor Fun",
+    "category": "Hor Fun",
+    "sourceFile": "black bean beef hor fun.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/hor-fun/ks-20261015-044-black-bean-beef-hor-fun.webp"
+  },
+  {
+    "id": "ks-20261015-045",
+    "name": "Sanluo Hor Fun",
+    "category": "Hor Fun",
+    "sourceFile": "sanluo hor fun.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/hor-fun/ks-20261015-045-sanluo-hor-fun.webp"
+  },
+  {
+    "id": "ks-20261015-046",
+    "name": "Black Bean Fish Hor Fun",
+    "category": "Hor Fun",
+    "sourceFile": "balck bean fish hor fun.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/hor-fun/ks-20261015-046-black-bean-fish-hor-fun.webp"
+  },
+  {
+    "id": "ks-20261015-047",
+    "name": "Dry Beef Hor Fun",
+    "category": "Hor Fun",
+    "sourceFile": "dry beef hor fun.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/hor-fun/ks-20261015-047-dry-beef-hor-fun.webp"
+  },
+  {
+    "id": "ks-20261015-048",
+    "name": "Seafood and Pork Hor Fun",
+    "category": "Hor Fun",
+    "sourceFile": "seafoof and pork hor fun.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/hor-fun/ks-20261015-048-seafood-and-pork-hor-fun.webp"
+  },
+  {
+    "id": "ks-20261015-049",
+    "name": "Moonlight Hor Fun",
+    "category": "Hor Fun",
+    "sourceFile": "moonlight hor fun.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/hor-fun/ks-20261015-049-moonlight-hor-fun.webp"
+  },
+  {
+    "id": "ks-20261015-050",
+    "name": "Big Prawn Hor Fun",
+    "category": "Hor Fun",
+    "sourceFile": " big prawn hor fun .png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/hor-fun/ks-20261015-050-big-prawn-hor-fun.webp"
+  },
+  {
+    "id": "ks-20261015-051",
+    "name": "Black Bean Fish Meat Bee Hoon",
+    "category": "Noodles",
+    "sourceFile": "black bean fish meat bee hoon.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-051-black-bean-fish-meat-bee-hoon.webp"
+  },
+  {
+    "id": "ks-20261015-052",
+    "name": "Dry Bee Hoon",
+    "category": "Noodles",
+    "sourceFile": "dry bee hoon.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-052-dry-bee-hoon.webp"
+  },
+  {
+    "id": "ks-20261015-053",
+    "name": "Fish Meat Bee Hoon Soup",
+    "category": "Noodles",
+    "sourceFile": "fish maet bee hoon. soup png.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-053-fish-meat-bee-hoon-soup.webp"
+  },
+  {
+    "id": "ks-20261015-054",
+    "name": "Hokkien Mee",
+    "category": "Noodles",
+    "sourceFile": "hokkein mee.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-054-hokkien-mee.webp"
+  },
+  {
+    "id": "ks-20261015-055",
+    "name": "Eggs Crispy Noodle",
+    "category": "Noodles",
+    "sourceFile": "eggs crisoy noodle.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-055-eggs-crispy-noodle.webp"
+  },
+  {
+    "id": "ks-20261015-056",
+    "name": "Mee Goreng",
+    "category": "Noodles",
+    "sourceFile": "mee goreng.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-056-mee-goreng.webp"
+  },
+  {
+    "id": "ks-20261015-057",
+    "name": "Prawn Bee Hoon Soup",
+    "category": "Noodles",
+    "sourceFile": "PRAWN bee hoon SOUP.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-057-prawn-bee-hoon-soup.webp"
+  },
+  {
+    "id": "ks-20261015-058",
+    "name": "Crispy Noodle",
+    "category": "Noodles",
+    "sourceFile": "crispy noodle.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/noodles/ks-20261015-058-crispy-noodle.webp"
+  },
+  {
+    "id": "ks-20261015-059",
+    "name": "Sweet and Sour Pork Chop",
+    "category": "Pork",
+    "sourceFile": "sweet and sour pork chop.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/pork/ks-20261015-059-sweet-and-sour-pork-chop.webp"
+  },
+  {
+    "id": "ks-20261015-060",
+    "name": "Black Sauce Roasted Pork",
+    "category": "Pork",
+    "sourceFile": "black sauce roasted pork.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/pork/ks-20261015-060-black-sauce-roasted-pork.webp"
+  },
+  {
+    "id": "ks-20261015-061",
+    "name": "Bittergourd Pork Ribs",
+    "category": "Pork",
+    "sourceFile": "bittergourd pork ribs.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/pork/ks-20261015-061-bittergourd-pork-ribs.webp"
+  },
+  {
+    "id": "ks-20261015-062",
+    "name": "Kai Lan Roasted Pork",
+    "category": "Pork",
+    "sourceFile": "kai lan rooasted pork.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/pork/ks-20261015-062-kai-lan-roasted-pork.webp"
+  },
+  {
+    "id": "ks-20261015-063",
+    "name": "Minced Pork with Eggplants",
+    "category": "Pork",
+    "sourceFile": "minced pork with egg palnts.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/pork/ks-20261015-063-minced-pork-with-eggplants.webp"
+  },
+  {
+    "id": "ks-20261015-064",
+    "name": "Sweet and Sour Pork",
+    "category": "Pork",
+    "sourceFile": "sweet and sour pork.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/pork/ks-20261015-064-sweet-and-sour-pork.webp"
+  },
+  {
+    "id": "ks-20261015-065",
+    "name": "Steamed Pork with Prawn Paste",
+    "category": "Pork",
+    "sourceFile": "steam pork with prawn paste.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/pork/ks-20261015-065-steamed-pork-with-prawn-paste.webp"
+  },
+  {
+    "id": "ks-20261015-066",
+    "name": "Black Bean with Sliced Fish Rice",
+    "category": "Rice",
+    "sourceFile": "black bean with slice fish.JPG\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-066-black-bean-with-sliced-fish-rice.webp"
+  },
+  {
+    "id": "ks-20261015-067",
+    "name": "Black Sauce with Roasted Pork Rice",
+    "category": "Rice",
+    "sourceFile": "black sauce with roasted pork.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-067-black-sauce-with-roasted-pork-rice.webp"
+  },
+  {
+    "id": "ks-20261015-068",
+    "name": "Seafood Fried Rice",
+    "category": "Rice",
+    "sourceFile": "seafood fried rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-068-seafood-fried-rice.webp"
+  },
+  {
+    "id": "ks-20261015-069",
+    "name": "Beef Fried Rice",
+    "category": "Rice",
+    "sourceFile": "BEEF FIRED RICE.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-069-beef-fried-rice.webp"
+  },
+  {
+    "id": "ks-20261015-070",
+    "name": "Braised Rice",
+    "category": "Rice",
+    "sourceFile": "brasied rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-070-braised-rice.webp"
+  },
+  {
+    "id": "ks-20261015-071",
+    "name": "Thai Style Fried Rice",
+    "category": "Rice",
+    "sourceFile": "thai style fired rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-071-thai-style-fried-rice.webp"
+  },
+  {
+    "id": "ks-20261015-072",
+    "name": "Kai Lan Roasted Pork Rice",
+    "category": "Rice",
+    "sourceFile": "kai lan roosted pork rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-072-kai-lan-roasted-pork-rice.webp"
+  },
+  {
+    "id": "ks-20261015-073",
+    "name": "Kai Lan with Beef Rice",
+    "category": "Rice",
+    "sourceFile": "KAI LAN WITH BEEF RICE.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-073-kai-lan-with-beef-rice.webp"
+  },
+  {
+    "id": "ks-20261015-074",
+    "name": "Soup Rice",
+    "category": "Rice",
+    "sourceFile": "soup rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-074-soup-rice.webp"
+  },
+  {
+    "id": "ks-20261015-075",
+    "name": "Spring Onion Beef Rice",
+    "category": "Rice",
+    "sourceFile": "spring onion beef rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-075-spring-onion-beef-rice.webp"
+  },
+  {
+    "id": "ks-20261015-076",
+    "name": "Sweet & Sour Pork Rice",
+    "category": "Rice",
+    "sourceFile": "Sweet & Sour Pork Rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-076-sweet-sour-pork-rice.webp"
+  },
+  {
+    "id": "ks-20261015-077",
+    "name": "Roasted Pork Tofu Rice",
+    "category": "Rice",
+    "sourceFile": "roasted pork tofu rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-077-roasted-pork-tofu-rice.webp"
+  },
+  {
+    "id": "ks-20261015-078",
+    "name": "Yang Zhuo Fried Rice",
+    "category": "Rice",
+    "sourceFile": "yangzhuo fried rice.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/rice/ks-20261015-078-yang-zhuo-fried-rice.webp"
+  },
+  {
+    "id": "ks-20261015-079",
+    "name": "Stir Fried Big Prawns with Spring Onion",
+    "category": "Seafood",
+    "sourceFile": "stir fired big prawns with spring onion.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-079-stir-fried-big-prawns-with-spring-onion.webp"
+  },
+  {
+    "id": "ks-20261015-080",
+    "name": "Broccoli Prawn Balls",
+    "category": "Seafood",
+    "sourceFile": "broccolli prawn balls.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-080-broccoli-prawn-balls.webp"
+  },
+  {
+    "id": "ks-20261015-081",
+    "name": "Cereal Prawns",
+    "category": "Seafood",
+    "sourceFile": "cereal prawns.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-081-cereal-prawns.webp"
+  },
+  {
+    "id": "ks-20261015-082",
+    "name": "Prawn Roll",
+    "category": "Seafood",
+    "sourceFile": "prawn roll.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-082-prawn-roll.webp"
+  },
+  {
+    "id": "ks-20261015-083",
+    "name": "Salt & Pepper Prawn",
+    "category": "Seafood",
+    "sourceFile": "salt pepper prawn.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-083-salt-pepper-prawn.webp"
+  },
+  {
+    "id": "ks-20261015-084",
+    "name": "Salted Egg Prawns",
+    "category": "Seafood",
+    "sourceFile": "salted egg prawns.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-084-salted-egg-prawns.webp"
+  },
+  {
+    "id": "ks-20261015-085",
+    "name": "Sambal Prawn",
+    "category": "Seafood",
+    "sourceFile": "sambal prawn.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-085-sambal-prawn.webp"
+  },
+  {
+    "id": "ks-20261015-086",
+    "name": "Sea Cucumber with Mushroom",
+    "category": "Seafood",
+    "sourceFile": "sea cucumber with mushroom.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/seafood/ks-20261015-086-sea-cucumber-with-mushroom.webp"
+  },
+  {
+    "id": "ks-20261015-087",
+    "name": "Sliced Fish Soup",
+    "category": "Soup",
+    "sourceFile": "sliced fish soup.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/soup/ks-20261015-087-sliced-fish-soup.webp"
+  },
+  {
+    "id": "ks-20261015-088",
+    "name": "Salted Vegetables Tofu Soup",
+    "category": "Soup",
+    "sourceFile": "salted vegtables tofu soup.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/soup/ks-20261015-088-salted-vegetables-tofu-soup.webp"
+  },
+  {
+    "id": "ks-20261015-089",
+    "name": "Spinach Soup",
+    "category": "Soup",
+    "sourceFile": "spinach soup.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/soup/ks-20261015-089-spinach-soup.webp"
+  },
+  {
+    "id": "ks-20261015-090",
+    "name": "Fish Meat Soup",
+    "category": "Soup",
+    "sourceFile": "fish meat soup.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/soup/ks-20261015-090-fish-meat-soup.webp"
+  },
+  {
+    "id": "ks-20261015-091",
+    "name": "Fish Maw Soup",
+    "category": "Soup",
+    "sourceFile": "fish maw soup.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/soup/ks-20261015-091-fish-maw-soup.webp"
+  },
+  {
+    "id": "ks-20261015-092",
+    "name": "Bittergourd Soup",
+    "category": "Soup",
+    "sourceFile": "bittergourd soup.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/soup/ks-20261015-092-bittergourd-soup.webp"
+  },
+  {
+    "id": "ks-20261015-093",
+    "name": "Braised Tofu",
+    "category": "Tofu",
+    "sourceFile": "braised tofu.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/tofu/ks-20261015-093-braised-tofu.webp"
+  },
+  {
+    "id": "ks-20261015-094",
+    "name": "Deep Fried Tofu",
+    "category": "Tofu",
+    "sourceFile": "deep fried tofu.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/tofu/ks-20261015-094-deep-fried-tofu.webp"
+  },
+  {
+    "id": "ks-20261015-095",
+    "name": "Homemade Tofu",
+    "category": "Tofu",
+    "sourceFile": "homemade tofu.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/tofu/ks-20261015-095-homemade-tofu.webp"
+  },
+  {
+    "id": "ks-20261015-096",
+    "name": "Hotplate Tofu",
+    "category": "Tofu",
+    "sourceFile": "hotplate tofu.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/tofu/ks-20261015-096-hotplate-tofu.webp"
+  },
+  {
+    "id": "ks-20261015-097",
+    "name": "Prawn Tofu",
+    "category": "Tofu",
+    "sourceFile": "prawn tofu.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/tofu/ks-20261015-097-prawn-tofu.webp"
+  },
+  {
+    "id": "ks-20261015-098",
+    "name": "Sea Cucumber with Tofu",
+    "category": "Tofu",
+    "sourceFile": "sea cumber with tofu.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/tofu/ks-20261015-098-sea-cucumber-with-tofu.webp"
+  },
+  {
+    "id": "ks-20261015-099",
+    "name": "Yong Tau Foo",
+    "category": "Tofu",
+    "sourceFile": "yong tau foo.png\r",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/tofu/ks-20261015-099-yong-tau-foo.webp"
+  },
+  {
+    "id": "ks-20261015-100",
+    "name": "Yam Paste",
+    "category": "Additional Dishes",
+    "sourceFile": "yam paste.png",
+    "currentAsset": "/kok-sen-enhanced-2026-10-16/additional-dishes/ks-20261015-100-yam-paste.webp"
+  }
+]

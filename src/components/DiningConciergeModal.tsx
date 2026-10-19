@@ -514,13 +514,13 @@ What would you like to explore today? Ask about our heritage signatures, claypot
                                 className="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container-high/80 flex flex-col justify-between gap-2 shadow-xs hover:border-primary/40 transition-colors"
                               >
                                 <div className="flex items-start gap-2.5">
-                                  {/* Authoritative Food Photo or Clean Text-Only Presentation */}
+                                  {/* Authoritative Food Photo with pure white background */}
                                   {hasValidImage ? (
-                                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shrink-0 border border-surface-container-high bg-surface-container">
+                                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shrink-0 border border-surface-container-high/80 bg-white flex items-center justify-center p-1">
                                       <img
                                         src={currentSrc}
                                         alt={dish.nameEn}
-                                        className="w-full h-full object-cover"
+                                        className="max-h-full max-w-full w-auto h-auto object-contain"
                                         loading="lazy"
                                         onError={(e) => {
                                           const target = e.currentTarget;
