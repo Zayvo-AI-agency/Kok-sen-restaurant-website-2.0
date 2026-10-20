@@ -115,17 +115,15 @@ for (const item of clientItems) {
   }
 }
 
+import exactUploadPhotoMap from '../data/exactUploadPhotoMap.json';
+
+const uploadMap = exactUploadPhotoMap as Record<string, string>;
+
 /**
  * Resolves verified authentic dish photography.
  * Highest precedence:
- * - data/oddle-three-photo-overrides-2026-10-19.json:
- *   1. Curry Fish Head (ks-20261015-026) -> /oddle-three-exact-2026-10-19/curry-fish-head.png
- *   2. Big Prawns Hor Fun / Big Prawn Hor Fun (ks-20261015-050) -> /oddle-three-exact-2026-10-19/big-prawns-hor-fun.png
- *   3. Curry Fish Tail -> /oddle-three-exact-2026-10-19/curry-fish-tail.png (only if exact dish present; never to Hong Kong Style Steamed Fish Tail or Curry Fish Head)
- * Authoritative 19 October 2026 reviewed photo map:
- * - 81 matched dishes use exact Oddle WebP assets with complete natural proportions and full background
- * - 18 published dishes retain their existing client photo assets
- * - 1 item (ks-20261015-032) remains unpublished awaiting client confirmation
+ * - Newly uploaded verified photos in /images/ mapped via exactUploadPhotoMap.json
+ * - Fallbacks to existing high quality assets for dishes without new photos
  */
 export function resolveDishPhoto(
   query: Partial<MenuItem> | {
@@ -149,18 +147,16 @@ export function resolveDishPhoto(
   const enName = query.nameEn || query.english_name || query.name || '';
   const normEn = normalizeEnglishName(enName);
 
-  // 0. Exact Photo Overrides from oddle-three-photo-overrides-2026-10-19.json
-  // Priority 1: Curry Fish Head (ID ks-20261015-026 or exact allowed name)
-  if (rawId === 'ks-20261015-026' || normEn === 'curry fish head') {
-    const override = photoOverrides.find((o) => o.client_item_id === 'ks-20261015-026');
-    const asset = override?.photo.asset || '/oddle-three-exact-2026-10-19/curry-fish-head.png';
+  // 0. Primary: Newly uploaded exact dish photos from user zip
+  if (rawId && uploadMap[rawId]) {
+    const asset = uploadMap[rawId];
     return {
       imageUrl: asset,
       photo_source_url: asset,
       photo_status: 'available',
       hasOriginalPhoto: true,
       isConflict: false,
-      source_item_id: 'ks-20261015-026',
+      source_item_id: rawId,
       isOddleOriginal: false
     };
   }
