@@ -275,18 +275,18 @@ export function HomePage() {
             return (
               <div
                 key={dishKey}
-                className="group relative flex flex-col rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-2xl"
+                className="group relative flex flex-col w-full max-w-full min-w-0 rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-2xl"
               >
                 {/* Food Image - Pure white background to prevent photo clipping */}
                 <div 
-                  className="relative aspect-4/3 overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
+                  className="relative w-full aspect-4/3 overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
                   onClick={() => setSelectedDish(dish)}
                 >
                   {hasValidImage ? (
                     <img
                       src={currentSrc}
                       alt={dish.nameEn}
-                      className="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-200"
+                      className="w-full h-full object-contain transition-transform duration-200 block"
                       loading="lazy"
                       onError={() => {
                         const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
@@ -385,22 +385,22 @@ export function HomePage() {
           </div>
 
           <div className="lg:col-span-5 grid grid-cols-2 gap-3 sm:gap-4">
-            <div className="relative rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high/80 shadow-lg bg-white flex items-center justify-center p-3">
+            <div className="relative w-full rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high/80 shadow-lg bg-white flex items-center justify-center p-3">
               <img
                 src="https://ucarecdn.com/c8bbfc23-e348-411b-bfd5-fd7b8dba4363/"
                 alt="Kok Sen Claypot Yong Tau Foo"
-                className="max-h-full max-w-full w-auto h-auto object-contain"
+                className="w-full h-full object-contain block"
                 loading="lazy"
               />
               <div className="absolute bottom-2 left-2 right-2 p-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md text-[10px] text-on-surface font-semibold text-center shadow-xs border border-surface-container-high/60">
                 Claypot Craft
               </div>
             </div>
-            <div className="relative rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high/80 shadow-lg mt-6 bg-white flex items-center justify-center p-3">
+            <div className="relative w-full rounded-xl overflow-hidden aspect-4/5 border border-surface-container-high/80 shadow-lg mt-6 bg-white flex items-center justify-center p-3">
               <img
                 src="https://ucarecdn.com/d5709a32-eb33-4e52-8579-0f611d0dd94a/"
                 alt="Kok Sen Har Cheong Gai"
-                className="max-h-full max-w-full w-auto h-auto object-contain"
+                className="w-full h-full object-contain block"
                 loading="lazy"
               />
               <div className="absolute bottom-2 left-2 right-2 p-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md text-[10px] text-on-surface font-semibold text-center shadow-xs border border-surface-container-high/60">
@@ -544,12 +544,12 @@ export function HomePage() {
             <div
               key={item.id}
               onClick={() => navigate('/gallery')}
-              className="group relative rounded-xl overflow-hidden aspect-square bg-surface-container cursor-pointer border border-surface-container-high/60 shadow-md"
+              className="group relative w-full min-w-0 rounded-xl overflow-hidden aspect-square bg-surface-container cursor-pointer border border-surface-container-high/60 shadow-md"
             >
               <img
                 src={item.url}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 block"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-2 flex items-end">

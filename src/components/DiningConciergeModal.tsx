@@ -520,7 +520,7 @@ What would you like to explore today? Ask about our heritage signatures, claypot
                                       <img
                                         src={currentSrc}
                                         alt={dish.nameEn}
-                                        className="max-h-full max-w-full w-auto h-auto object-contain"
+                                        className="w-full h-full object-contain block"
                                         loading="lazy"
                                         onError={(e) => {
                                           const target = e.currentTarget;

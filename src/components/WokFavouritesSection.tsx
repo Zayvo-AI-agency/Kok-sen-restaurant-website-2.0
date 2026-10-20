@@ -80,7 +80,7 @@ export function WokFavouritesSection({
                   <img 
                     src={currentSrc} 
                     alt={dish.nameEn}
-                    className="max-h-full max-w-full w-auto h-auto object-contain"
+                    className="w-full h-full object-contain block"
                     loading="lazy"
                     onError={() => {
                       const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;

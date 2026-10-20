@@ -145,14 +145,14 @@ export function GalleryPage() {
             <div
               key={image.id}
               onClick={() => setSelectedPhotoIndex(index)}
-              className="group relative flex flex-col rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-xl"
+              className="group relative flex flex-col w-full max-w-full min-w-0 rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-xl"
             >
               {/* Photo */}
-              <div className="relative aspect-4/3 overflow-hidden bg-surface-container-lowest">
+              <div className="relative w-full aspect-4/3 overflow-hidden bg-surface-container-lowest">
                 <img
                   src={image.url}
                   alt={image.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 block"
                   loading="lazy"
                 />
 
@@ -244,11 +244,11 @@ export function GalleryPage() {
             </div>
 
             {/* Main Image with Navigation Arrows */}
-            <div className="relative flex-1 bg-black/60 flex items-center justify-center overflow-hidden min-h-[300px] sm:min-h-[420px] max-h-[60vh]">
+            <div className="relative flex-1 bg-black/60 flex items-center justify-center overflow-hidden min-h-[300px] sm:min-h-[420px] max-h-[60vh] w-full">
               <img
                 src={selectedPhoto.url}
                 alt={selectedPhoto.title}
-                className="max-h-full max-w-full object-contain mx-auto"
+                className="max-h-full max-w-full object-contain mx-auto block"
               />
 
               {/* Prev / Next buttons */}

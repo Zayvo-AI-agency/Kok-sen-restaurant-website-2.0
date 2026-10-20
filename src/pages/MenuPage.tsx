@@ -161,18 +161,18 @@ export function MenuPage() {
     return (
       <div
         key={dishKey}
-        className="group relative flex flex-col rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-md transition-all duration-300 hover:border-secondary/40 hover:-translate-y-1 hover:shadow-xl"
+        className="group relative flex flex-col w-full max-w-full min-w-0 rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-md transition-all duration-300 hover:border-secondary/40 hover:-translate-y-1 hover:shadow-xl"
       >
         {/* Food Image with pure white background and generous containment to prevent photo cropping */}
         <div 
-          className="relative aspect-4/3 sm:aspect-[4/3] overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
+          className="relative w-full aspect-4/3 overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
           onClick={() => setSelectedDish(dish)}
         >
           {hasValidImage ? (
             <img
               src={currentSrc}
               alt={dish.nameEn || dish.name}
-              className="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-200"
+              className="w-full h-full object-contain transition-transform duration-200 block"
               loading="lazy"
               onError={() => {
                 const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;

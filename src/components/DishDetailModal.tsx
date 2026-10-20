@@ -106,7 +106,7 @@ export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModal
               <img 
                 src={currentPhoto} 
                 alt={dish.nameEn} 
-                className="max-h-full max-w-full w-auto h-auto object-contain transition-opacity duration-300"
+                className="w-full h-full object-contain transition-opacity duration-300 block"
                 onError={(e) => {
                   const target = e.currentTarget;
                   const fallbackUrl = dish.photo_source_url || dish.source_url;

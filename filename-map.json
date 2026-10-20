@@ -1,0 +1,787 @@
+{
+  "images_checked": 111,
+  "images_validated": 111,
+  "failed": [],
+  "identical_pixel_duplicates": [],
+  "removed_mac_metadata_files": 111,
+  "note": "Original dish content, background and dimensions preserved. Opaque photos re-encoded as high-quality JPEG; transparency preserved as PNG. Filenames made Windows-safe; original names mapped below. Names do not establish dish identity.",
+  "files": [
+    {
+      "original": "\"furong\" omelette.png",
+      "file": "images/furong-omelette.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 278763
+    },
+    {
+      "original": "\"kungbao\" chicken.png",
+      "file": "images/kungbao-chicken.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 271335
+    },
+    {
+      "original": "\"kungbao\" frogs.png",
+      "file": "images/kungbao-frogs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 261005
+    },
+    {
+      "original": "\"Sanluo\" hor fun.png",
+      "file": "images/sanluo-hor-fun.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 321060
+    },
+    {
+      "original": "456103305_1792164305365434.png",
+      "file": "images/456103305-1792164305365434.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 264736
+    },
+    {
+      "original": "balck pepper beef.png",
+      "file": "images/balck-pepper-beef.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 264713
+    },
+    {
+      "original": "bean sprout with salted fish.png",
+      "file": "images/bean-sprout-with-salted-fish.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 242900
+    },
+    {
+      "original": "beef fried rice.png",
+      "file": "images/beef-fried-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 242840
+    },
+    {
+      "original": "bif prawn crispy noodle.png",
+      "file": "images/bif-prawn-crispy-noodle.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 357200
+    },
+    {
+      "original": "Big prawn soup.png",
+      "file": "images/big-prawn-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 249014
+    },
+    {
+      "original": "bittergourd pork ribs.png",
+      "file": "images/bittergourd-pork-ribs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 276802
+    },
+    {
+      "original": "bittergourd with slice fish.png",
+      "file": "images/bittergourd-with-slice-fish.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 281072
+    },
+    {
+      "original": "bitterguord soup.png",
+      "file": "images/bitterguord-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 273563
+    },
+    {
+      "original": "black bean beef hor fun.png",
+      "file": "images/black-bean-beef-hor-fun.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 257503
+    },
+    {
+      "original": "black bean fish head.png",
+      "file": "images/black-bean-fish-head.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 254605
+    },
+    {
+      "original": "black bean frogs.png",
+      "file": "images/black-bean-frogs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 248440
+    },
+    {
+      "original": "black bean hor fun with seafood and prok.png",
+      "file": "images/black-bean-hor-fun-with-seafood-and-prok.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 335201
+    },
+    {
+      "original": "black bean slice fish hor fun.png",
+      "file": "images/black-bean-slice-fish-hor-fun.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 285046
+    },
+    {
+      "original": "black bean with beef.png",
+      "file": "images/black-bean-with-beef.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 272807
+    },
+    {
+      "original": "black bean with fish meat.png",
+      "file": "images/black-bean-with-fish-meat.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 262602
+    },
+    {
+      "original": "black bean with slice fish rice.png",
+      "file": "images/black-bean-with-slice-fish-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 274615
+    },
+    {
+      "original": "black pepper beef.png",
+      "file": "images/black-pepper-beef.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 272323
+    },
+    {
+      "original": "blck sauce with roasted pork.png",
+      "file": "images/blck-sauce-with-roasted-pork.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 245689
+    },
+    {
+      "original": "braised fish meat bee hoon.png",
+      "file": "images/braised-fish-meat-bee-hoon.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 268686
+    },
+    {
+      "original": "braised prawn with tofu.png",
+      "file": "images/braised-prawn-with-tofu.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 339134
+    },
+    {
+      "original": "braised seafood and pork rice.png",
+      "file": "images/braised-seafood-and-pork-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 278552
+    },
+    {
+      "original": "braised tofu.png",
+      "file": "images/braised-tofu.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 249404
+    },
+    {
+      "original": "braised tofu with seafood cucumber.png",
+      "file": "images/braised-tofu-with-seafood-cucumber.jpg",
+      "width": 4096,
+      "height": 2286,
+      "bytes": 1736173
+    },
+    {
+      "original": "cereal chicken.png",
+      "file": "images/cereal-chicken.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 227684
+    },
+    {
+      "original": "cereal prawn.png",
+      "file": "images/cereal-prawn.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 306432
+    },
+    {
+      "original": "cereal squid.png",
+      "file": "images/cereal-squid.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 283452
+    },
+    {
+      "original": "claypot thai stle chicken.png",
+      "file": "images/claypot-thai-stle-chicken.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 289365
+    },
+    {
+      "original": "curry fish head.png",
+      "file": "images/curry-fish-head.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 302172
+    },
+    {
+      "original": "curry fish tail.png",
+      "file": "images/curry-fish-tail.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 362133
+    },
+    {
+      "original": "curryb fish head.png",
+      "file": "images/curryb-fish-head.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 286573
+    },
+    {
+      "original": "deep fried fish meat.png",
+      "file": "images/deep-fried-fish-meat.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 218313
+    },
+    {
+      "original": "deep fried frogs.png",
+      "file": "images/deep-fried-frogs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 260296
+    },
+    {
+      "original": "deep fried tofu.png",
+      "file": "images/deep-fried-tofu.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 246222
+    },
+    {
+      "original": "dry beef hor fun.png",
+      "file": "images/dry-beef-hor-fun.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 292880
+    },
+    {
+      "original": "egg and prawn crispy noodle.png",
+      "file": "images/egg-and-prawn-crispy-noodle.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 285891
+    },
+    {
+      "original": "fermented beancurd with romaine lettuce .png",
+      "file": "images/fermented-beancurd-with-romaine-lettuce.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 225750
+    },
+    {
+      "original": "fish head bee hoon soup.png",
+      "file": "images/fish-head-bee-hoon-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 294380
+    },
+    {
+      "original": "fish maw soup.png",
+      "file": "images/fish-maw-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 248761
+    },
+    {
+      "original": "fish meat bee hoon soup.png",
+      "file": "images/fish-meat-bee-hoon-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 236264
+    },
+    {
+      "original": "fish meat soup.png",
+      "file": "images/fish-meat-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 275030
+    },
+    {
+      "original": "garlic broccolli.png",
+      "file": "images/garlic-broccolli.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 265182
+    },
+    {
+      "original": "garlic kai lan.png",
+      "file": "images/garlic-kai-lan.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 277094
+    },
+    {
+      "original": "garlic with small cabbage.png",
+      "file": "images/garlic-with-small-cabbage.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 235959
+    },
+    {
+      "original": "garlice with celery.png",
+      "file": "images/garlice-with-celery.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 247651
+    },
+    {
+      "original": "golden dragon chicken.png",
+      "file": "images/golden-dragon-chicken.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 292918
+    },
+    {
+      "original": "hk style steam fsih tail.png",
+      "file": "images/hk-style-steam-fsih-tail.jpg",
+      "width": 2048,
+      "height": 1143,
+      "bytes": 508931
+    },
+    {
+      "original": "hotplate tofu.png",
+      "file": "images/hotplate-tofu.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 280521
+    },
+    {
+      "original": "kai lan beef.png",
+      "file": "images/kai-lan-beef.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 236263
+    },
+    {
+      "original": "kai lan roasted pork.png",
+      "file": "images/kai-lan-roasted-pork.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 254752
+    },
+    {
+      "original": "kai lan roasted pork rice.png",
+      "file": "images/kai-lan-roasted-pork-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 235055
+    },
+    {
+      "original": "kai lan sliced fish rice.png",
+      "file": "images/kai-lan-sliced-fish-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 261914
+    },
+    {
+      "original": "kan lan  beef rice.png",
+      "file": "images/kan-lan-beef-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 253269
+    },
+    {
+      "original": "minced pork egg plants.png",
+      "file": "images/minced-pork-egg-plants.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 271519
+    },
+    {
+      "original": "minced pork ometette.png",
+      "file": "images/minced-pork-ometette.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 291479
+    },
+    {
+      "original": "minced pork tofu.png",
+      "file": "images/minced-pork-tofu.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 239666
+    },
+    {
+      "original": "minced prok steam eggs.png",
+      "file": "images/minced-prok-steam-eggs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 314591
+    },
+    {
+      "original": "moonlight hor fun.png",
+      "file": "images/moonlight-hor-fun.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 350020
+    },
+    {
+      "original": "mushroom with sea cucumber.png",
+      "file": "images/mushroom-with-sea-cucumber.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 284737
+    },
+    {
+      "original": "poach lettuce.png",
+      "file": "images/poach-lettuce.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 292093
+    },
+    {
+      "original": "prawn hor fun.png",
+      "file": "images/prawn-hor-fun.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 278068
+    },
+    {
+      "original": "prawn omelette.png",
+      "file": "images/prawn-omelette.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 261296
+    },
+    {
+      "original": "prawn paste chicken.png",
+      "file": "images/prawn-paste-chicken.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 300086
+    },
+    {
+      "original": "prawn roll.png",
+      "file": "images/prawn-roll.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 287674
+    },
+    {
+      "original": "preserved raddish omelette.png",
+      "file": "images/preserved-raddish-omelette.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 265220
+    },
+    {
+      "original": "roasted chicken.png",
+      "file": "images/roasted-chicken.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 334267
+    },
+    {
+      "original": "salted egg prawns ball.png",
+      "file": "images/salted-egg-prawns-ball.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 321871
+    },
+    {
+      "original": "salted egg with squid.png",
+      "file": "images/salted-egg-with-squid.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 240299
+    },
+    {
+      "original": "salted fish fried rice.png",
+      "file": "images/salted-fish-fried-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 340484
+    },
+    {
+      "original": "salted fish steam minced pork.png",
+      "file": "images/salted-fish-steam-minced-pork.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 255534
+    },
+    {
+      "original": "salted vegetable  tofu soup.png",
+      "file": "images/salted-vegetable-tofu-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 229987
+    },
+    {
+      "original": "sambal fish meat.png",
+      "file": "images/sambal-fish-meat.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 218319
+    },
+    {
+      "original": "sambal kangkong.png",
+      "file": "images/sambal-kangkong.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 307331
+    },
+    {
+      "original": "sambal squid.png",
+      "file": "images/sambal-squid.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 244055
+    },
+    {
+      "original": "sea cucumber with tofu.png",
+      "file": "images/sea-cucumber-with-tofu.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 209482
+    },
+    {
+      "original": "seafood and poirk soup rice.png",
+      "file": "images/seafood-and-poirk-soup-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 238309
+    },
+    {
+      "original": "seafood and pork crispy noodle.png",
+      "file": "images/seafood-and-pork-crispy-noodle.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 322278
+    },
+    {
+      "original": "seafood and pork for fun.png",
+      "file": "images/seafood-and-pork-for-fun.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 398469
+    },
+    {
+      "original": "seafood fried rice.png",
+      "file": "images/seafood-fried-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 259425
+    },
+    {
+      "original": "Sliced fish bee hoon soup.png",
+      "file": "images/sliced-fish-bee-hoon-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 308903
+    },
+    {
+      "original": "sliced fish soup.png",
+      "file": "images/sliced-fish-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 262741
+    },
+    {
+      "original": "spinach soup.png",
+      "file": "images/spinach-soup.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 218469
+    },
+    {
+      "original": "spinach with trio eggs.png",
+      "file": "images/spinach-with-trio-eggs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 262302
+    },
+    {
+      "original": "spring onion beef.png",
+      "file": "images/spring-onion-beef.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 291135
+    },
+    {
+      "original": "spring onion beef rice.png",
+      "file": "images/spring-onion-beef-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 262178
+    },
+    {
+      "original": "spring onion frogs.png",
+      "file": "images/spring-onion-frogs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 241035
+    },
+    {
+      "original": "spring onion slice fish .png",
+      "file": "images/spring-onion-slice-fish.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 264444
+    },
+    {
+      "original": "spring onion slice fish rice.png",
+      "file": "images/spring-onion-slice-fish-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 213666
+    },
+    {
+      "original": "spring onion with beef.png",
+      "file": "images/spring-onion-with-beef.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 158189
+    },
+    {
+      "original": "spring onion with sliced fish.png",
+      "file": "images/spring-onion-with-sliced-fish.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 251566
+    },
+    {
+      "original": "spring onion with sliced pork rice.png",
+      "file": "images/spring-onion-with-sliced-pork-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 309902
+    },
+    {
+      "original": "spring onion withn prawns.png",
+      "file": "images/spring-onion-withn-prawns.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 225725
+    },
+    {
+      "original": "steam fish head hk.png",
+      "file": "images/steam-fish-head-hk.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 218928
+    },
+    {
+      "original": "stir fried been hoon:noodle.png",
+      "file": "images/stir-fried-been-hoon-noodle.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 319771
+    },
+    {
+      "original": "sweet and soue pork rice.png",
+      "file": "images/sweet-and-soue-pork-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 231134
+    },
+    {
+      "original": "sweet and sour chicken.png",
+      "file": "images/sweet-and-sour-chicken.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 277043
+    },
+    {
+      "original": "sweet and sour pork.png",
+      "file": "images/sweet-and-sour-pork.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 222703
+    },
+    {
+      "original": "sweet and sour pork chop.png",
+      "file": "images/sweet-and-sour-pork-chop.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 326953
+    },
+    {
+      "original": "sweet and sour sliced fish.png",
+      "file": "images/sweet-and-sour-sliced-fish.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 223489
+    },
+    {
+      "original": "teochew fish head.png",
+      "file": "images/teochew-fish-head.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 231427
+    },
+    {
+      "original": "thai style fried rice.png",
+      "file": "images/thai-style-fried-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 304581
+    },
+    {
+      "original": "tofu roasted pork rice.png",
+      "file": "images/tofu-roasted-pork-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 249734
+    },
+    {
+      "original": "trio steam eggs.png",
+      "file": "images/trio-steam-eggs.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 220769
+    },
+    {
+      "original": "white rice.png",
+      "file": "images/white-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 230749
+    },
+    {
+      "original": "yam paste.png",
+      "file": "images/yam-paste.jpg",
+      "width": 1414,
+      "height": 2000,
+      "bytes": 677137
+    },
+    {
+      "original": "yangzhuo fried rice.png",
+      "file": "images/yangzhuo-fried-rice.jpg",
+      "width": 768,
+      "height": 1376,
+      "bytes": 262246
+    },
+    {
+      "original": "ytf.png",
+      "file": "images/ytf.jpg",
+      "width": 1376,
+      "height": 768,
+      "bytes": 304608
+    }
+  ]
+}

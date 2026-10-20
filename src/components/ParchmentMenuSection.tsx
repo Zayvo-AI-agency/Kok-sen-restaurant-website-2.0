@@ -123,7 +123,7 @@ export function ParchmentMenuSection({
             <img 
               src={currentSrc} 
               alt={item.nameEn}
-              className="max-h-full max-w-full w-auto h-auto object-contain"
+              className="w-full h-full object-contain block"
               loading="lazy"
               decoding="async"
               onError={() => {
