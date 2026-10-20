@@ -4,6 +4,7 @@ import { useApp } from '../context/AppContext';
 import { MENU_CATEGORIES, FULL_MENU_ITEMS, TABLE_SPREAD_PRESETS } from '../data/restaurantData';
 import { MenuItem } from '../types';
 import { resolveDishPhoto } from '../utils/dishPhotoResolver';
+import { getDishFocalPosition } from '../data/dishFocalPositions';
 import { 
   Search, 
   X, 
@@ -163,16 +164,17 @@ export function MenuPage() {
         key={dishKey}
         className="group relative flex flex-col w-full max-w-full min-w-0 rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-md transition-all duration-300 hover:border-secondary/40 hover:-translate-y-1 hover:shadow-xl"
       >
-        {/* Food Image with pure white background and generous containment to prevent photo cropping */}
+        {/* Food Image - Edge-to-edge frame with custom focal positioning, zero gaps */}
         <div 
-          className="relative w-full aspect-4/3 overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
+          className="relative w-full aspect-square overflow-hidden bg-surface-container-high border-b border-surface-container-high/60 cursor-pointer"
           onClick={() => setSelectedDish(dish)}
         >
           {hasValidImage ? (
             <img
               src={currentSrc}
               alt={dish.nameEn || dish.name}
-              className="w-full h-full object-contain transition-transform duration-200 block"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 block"
+              style={{ objectPosition: getDishFocalPosition(dish.id) }}
               loading="lazy"
               onError={() => {
                 const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
@@ -184,25 +186,25 @@ export function MenuPage() {
               }}
             />
           ) : (
-            <div className="w-full h-full flex flex-col items-center justify-center bg-white text-tertiary p-4 text-center select-none">
+            <div className="w-full h-full flex flex-col items-center justify-center bg-surface-container-high/80 text-tertiary p-4 text-center select-none">
               <span className="font-mono text-xs font-bold text-secondary mb-1 px-2 py-0.5 rounded bg-surface-container-highest border border-surface-container-high/60 shadow-xs">
                 {dish.itemCode || dish.code}
               </span>
-              <span className="font-dish-title text-sm font-bold text-neutral-900 line-clamp-1">{dish.nameEn || dish.name}</span>
-              <span className="text-xs text-neutral-600 mt-0.5 line-clamp-1">{dish.nameZh || dish.chinese_name}</span>
-              <span className="text-[10px] text-neutral-500 mt-1 font-medium">
+              <span className="font-dish-title text-sm font-bold text-on-surface line-clamp-1">{dish.nameEn || dish.name}</span>
+              <span className="text-xs text-tertiary mt-0.5 line-clamp-1">{dish.nameZh || dish.chinese_name}</span>
+              <span className="text-[10px] text-tertiary/70 mt-1 font-medium">
                 Photo unavailable
               </span>
             </div>
           )}
 
           {/* Code Badge */}
-          <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-secondary border border-secondary/30 shadow-xs">
+          <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-[11px] font-mono font-bold text-secondary border border-secondary/30 shadow-md z-10">
             {dish.itemCode || dish.code}
           </div>
 
           {dish.isSignature && (
-            <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-white text-[10px] font-bold uppercase tracking-wider shadow-xs">
+            <div className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full bg-primary/95 text-white text-[10px] font-bold uppercase tracking-wider shadow-md z-10">
               Signature
             </div>
           )}

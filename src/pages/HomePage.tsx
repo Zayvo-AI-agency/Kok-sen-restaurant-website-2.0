@@ -5,6 +5,7 @@ import { RESTAURANT_INFO, OUTLETS, GALLERY_IMAGES } from '../data/restaurantData
 import { TOP_SIGNATURES } from '../data/menuData';
 import { CLIENT_MENU_PHOTOS } from '../data/clientMenuPhotos';
 import { resolveDishPhoto } from '../utils/dishPhotoResolver';
+import { getDishFocalPosition } from '../data/dishFocalPositions';
 import { 
   Flame, 
   Award, 
@@ -277,16 +278,17 @@ export function HomePage() {
                 key={dishKey}
                 className="group relative flex flex-col w-full max-w-full min-w-0 rounded-2xl bg-surface-container border border-surface-container-high/80 overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-2xl"
               >
-                {/* Food Image - Pure white background to prevent photo clipping */}
+                {/* Food Image - Edge-to-edge square frame with custom focal positioning */}
                 <div 
-                  className="relative w-full aspect-4/3 overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 cursor-pointer"
+                  className="relative w-full aspect-square overflow-hidden bg-surface-container-high border-b border-surface-container-high/60 cursor-pointer"
                   onClick={() => setSelectedDish(dish)}
                 >
                   {hasValidImage ? (
                     <img
                       src={currentSrc}
                       alt={dish.nameEn}
-                      className="w-full h-full object-contain transition-transform duration-200 block"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 block"
+                      style={{ objectPosition: getDishFocalPosition(dish.id) }}
                       loading="lazy"
                       onError={() => {
                         const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
@@ -298,19 +300,19 @@ export function HomePage() {
                       }}
                     />
                   ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center bg-white text-tertiary p-4 text-center select-none">
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-surface-container-high/80 text-tertiary p-4 text-center select-none">
                       <UtensilsCrossed className="w-8 h-8 text-secondary/40 mb-2" />
-                      <span className="font-bold text-sm text-neutral-900">{dish.itemCode || dish.code}</span>
-                      <span className="text-xs text-neutral-500">Photo unavailable</span>
+                      <span className="font-bold text-sm text-on-surface">{dish.itemCode || dish.code}</span>
+                      <span className="text-xs text-tertiary">Photo unavailable</span>
                     </div>
                   )}
 
-                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-secondary border border-secondary/30 shadow-xs">
+                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-[11px] font-bold text-secondary border border-secondary/30 shadow-md z-10">
                     {dish.category}
                   </div>
 
                   {dish.isSignature && (
-                    <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-white text-[10px] font-bold uppercase tracking-wider shadow-xs">
+                    <div className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full bg-primary/95 text-white text-[10px] font-bold uppercase tracking-wider shadow-md z-10">
                       Signature
                     </div>
                   )}
