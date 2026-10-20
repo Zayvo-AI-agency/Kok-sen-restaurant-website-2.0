@@ -5,6 +5,7 @@ const sambalCrabPhoto = '/Sambal%20Crab.jpeg';
 const springOnionCrabPhoto = '/Spring%20Onion%20Crab.jpeg';
 const saltandPepperPrawnPhoto = '/Salt%20and%20Pepper%20Prawns.jpeg';
 const broccoliPrwanBallsPhoto = '/Broccoli%20Prwan%20Balls.jpeg';
+const steamedPorkWithPrawnPastePhoto = '/Steamed%20Pork%20with%20Prawn%20Paste.jpeg';
 
 
 
@@ -1766,9 +1767,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "pork",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/pork/07-steamed-pork-with-prawn-paste.png",
+    "imageUrl": steamedPorkWithPrawnPastePhoto,
     "photos": [
-      "/kok-sen-menu-2026-10-15/pork/07-steamed-pork-with-prawn-paste.png"
+      steamedPorkWithPrawnPastePhoto
     ],
     "photo_status": "available",
     "isConflict": false,
