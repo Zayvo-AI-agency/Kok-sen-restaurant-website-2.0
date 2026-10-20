@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { MenuItem } from '../types';
 import { TOP_SIGNATURES } from '../data/restaurantData';
-import { resolveDishPhoto } from '../utils/dishPhotoResolver';
+import { getDisplayedDishPhoto } from '../utils/dishPhotoResolver';
 import { Plus, Check, Flame, UtensilsCrossed } from 'lucide-react';
 
 interface WokFavouritesSectionProps {
-  onSelectDish: (dish: MenuItem) => void;
+  onSelectDish: (dish: MenuItem, resolvedImage?: string) => void;
   onAddToOrder: (dish: MenuItem) => void;
   orderedItemIds: string[];
   onViewAll?: () => void;
@@ -64,15 +64,15 @@ export function WokFavouritesSection({
         {TOP_SIGNATURES.map((dish, idx) => {
           const dishKey = dish.source_item_id || dish.id;
           const isAdded = orderedItemIds.includes(dish.id);
-          const photoRes = resolveDishPhoto(dish);
-          const currentSrc = imageSources[dishKey] || photoRes.imageUrl || dish.imageUrl || photoRes.photo_source_url || dish.photo_source_url;
-          const hasValidImage = Boolean(photoRes.hasOriginalPhoto && currentSrc && !imageErrors[dishKey] && !photoRes.isConflict);
+          const resolvedPhoto = getDisplayedDishPhoto(dish, imageSources[dishKey]);
+          const currentSrc = resolvedPhoto.src;
+          const hasValidImage = Boolean(resolvedPhoto.hasValidPhoto && !imageErrors[dishKey]);
 
           return (
             <div 
               key={dishKey}
               className="bg-surface-container hover:bg-surface-container-high rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-surface-container-high/70 shadow-md hover:shadow-xl transition-all duration-200 flex items-start gap-3 sm:gap-4 group cursor-pointer w-full max-w-full min-w-0 overflow-hidden"
-              onClick={() => onSelectDish(dish)}
+              onClick={() => onSelectDish(dish, hasValidImage ? currentSrc : undefined)}
             >
               {/* Square Food Image with pure white background */}
               {hasValidImage ? (
@@ -83,7 +83,7 @@ export function WokFavouritesSection({
                     className="w-full h-full object-contain block"
                     loading="lazy"
                     onError={() => {
-                      const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
+                      const fallbackUrl = resolvedPhoto.fallbackSrc;
                       if (fallbackUrl && currentSrc !== fallbackUrl) {
                         setImageSources((prev) => ({ ...prev, [dishKey]: fallbackUrl }));
                       } else {

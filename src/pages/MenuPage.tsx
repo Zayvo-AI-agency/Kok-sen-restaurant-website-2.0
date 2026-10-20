@@ -3,7 +3,7 @@ import { useNavigation } from '../context/NavigationContext';
 import { useApp } from '../context/AppContext';
 import { MENU_CATEGORIES, FULL_MENU_ITEMS, TABLE_SPREAD_PRESETS } from '../data/restaurantData';
 import { MenuItem } from '../types';
-import { resolveDishPhoto } from '../utils/dishPhotoResolver';
+import { getDisplayedDishPhoto } from '../utils/dishPhotoResolver';
 import { getDishFocalPosition } from '../data/dishFocalPositions';
 import { 
   Search, 
@@ -155,9 +155,10 @@ export function MenuPage() {
   const renderDishCard = (dish: MenuItem) => {
     const dishKey = dish.source_item_id || dish.id;
     const isOrdered = orderedItemIds.includes(dish.id);
-    const photoRes = resolveDishPhoto(dish);
-    const currentSrc = imageSources[dishKey] || photoRes.imageUrl || dish.imageUrl || photoRes.photo_source_url || dish.photo_source_url;
-    const hasValidImage = Boolean(photoRes.hasOriginalPhoto && currentSrc && !imageErrors[dishKey] && !photoRes.isConflict);
+    const resolvedPhoto = getDisplayedDishPhoto(dish, imageSources[dishKey]);
+    const currentSrc = resolvedPhoto.src;
+    const hasValidImage = Boolean(resolvedPhoto.hasValidPhoto && !imageErrors[dishKey]);
+    const openModalForDish = () => setSelectedDish(dish, hasValidImage ? currentSrc : undefined);
 
     return (
       <div
@@ -167,7 +168,7 @@ export function MenuPage() {
         {/* Food Image - Edge-to-edge frame with custom focal positioning, zero gaps */}
         <div 
           className="relative w-full aspect-square overflow-hidden bg-surface-container-high border-b border-surface-container-high/60 cursor-pointer"
-          onClick={() => setSelectedDish(dish)}
+          onClick={openModalForDish}
         >
           {hasValidImage ? (
             <img
@@ -177,7 +178,7 @@ export function MenuPage() {
               style={{ objectPosition: getDishFocalPosition(dish.id) }}
               loading="lazy"
               onError={() => {
-                const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
+                const fallbackUrl = resolvedPhoto.fallbackSrc;
                 if (fallbackUrl && currentSrc !== fallbackUrl) {
                   setImageSources((prev) => ({ ...prev, [dishKey]: fallbackUrl }));
                 } else {
@@ -215,7 +216,7 @@ export function MenuPage() {
           <div className="flex flex-col gap-1">
             <div className="flex items-start justify-between gap-2">
               <h3
-                onClick={() => setSelectedDish(dish)}
+                onClick={openModalForDish}
                 className="font-dish-title text-base font-bold text-on-surface hover:text-primary transition-colors cursor-pointer leading-snug line-clamp-2"
               >
                 {dish.nameEn || dish.name}
@@ -258,7 +259,7 @@ export function MenuPage() {
           <div className="pt-2 border-t border-surface-container-high/60">
             <button
               type="button"
-              onClick={() => setSelectedDish(dish)}
+              onClick={openModalForDish}
               className="w-full py-1.5 px-2.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface text-xs font-semibold transition-colors cursor-pointer text-center truncate"
             >
               Sizes &amp; Info

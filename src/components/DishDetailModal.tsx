@@ -1,23 +1,32 @@
 import { useState, useEffect, useMemo } from 'react';
 import { MenuItem } from '../types';
-import { resolveDishPhoto } from '../utils/dishPhotoResolver';
+import { getDisplayedDishPhoto } from '../utils/dishPhotoResolver';
 
 interface DishDetailModalProps {
   dish: MenuItem | null;
+  resolvedImage?: string;
   onClose: () => void;
   onAddToOrder: (dish: MenuItem, quantity: number, size?: string, unitPrice?: number) => void;
 }
 
-export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModalProps) {
+export function DishDetailModal({ dish, resolvedImage, onClose, onAddToOrder }: DishDetailModalProps) {
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState<string>('S');
-  const [activePhotoIndex, setActivePhotoIndex] = useState(0);
-  const [imageError, setImageError] = useState(false);
+
+  const resolvedPhoto = useMemo(() => {
+    return getDisplayedDishPhoto(dish, resolvedImage);
+  }, [dish, resolvedImage]);
+
+  const dishIdentityKey = dish ? `${dish.source_item_id || dish.id}-${resolvedPhoto.src || ''}` : 'none';
+  const [overrideState, setOverrideState] = useState<{
+    key: string;
+    fallbackSrc?: string;
+    hasError: boolean;
+  }>({ key: dishIdentityKey, fallbackSrc: undefined, hasError: false });
 
   useEffect(() => {
     setQuantity(1);
-    setActivePhotoIndex(0);
-    setImageError(false);
+    setOverrideState({ key: dishIdentityKey, fallbackSrc: undefined, hasError: false });
     if (dish?.sizes) {
       if (dish.sizes.small !== undefined) setSelectedSize('S');
       else if (dish.sizes.half !== undefined) setSelectedSize('Half');
@@ -28,41 +37,14 @@ export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModal
     } else {
       setSelectedSize('S');
     }
-  }, [dish]);
-
-  const photoRes = useMemo(() => {
-    return dish ? resolveDishPhoto(dish) : null;
-  }, [dish]);
-
-  // Deduplicate identical photos within dish gallery while preserving supplied order
-  const availablePhotos = useMemo(() => {
-    if (!dish) return [];
-    // Strict enforcement for exact photo overrides: never bring back rejected older photos
-    if (photoRes?.imageUrl && photoRes.imageUrl.startsWith('/oddle-three-exact-2026-10-19/')) {
-      return [photoRes.imageUrl];
-    }
-    const candidates = [
-      ...(dish.photos || []),
-      photoRes?.imageUrl,
-      dish.imageUrl,
-      photoRes?.photo_source_url,
-      dish.photo_source_url,
-      dish.source_url
-    ].filter(Boolean) as string[];
-    return Array.from(new Set(candidates));
-  }, [dish, photoRes]);
+  }, [dish, dishIdentityKey]);
 
   if (!dish) return null;
 
-  const isConflict = Boolean(
-    dish.isConflict ||
-    photoRes?.isConflict ||
-    dish.photo_status === 'conflict_unresolved' ||
-    dish.photo_status === 'official_image_conflict_requires_client_review'
-  );
-
-  const currentPhoto = availablePhotos[activePhotoIndex] || photoRes?.imageUrl || dish.imageUrl || photoRes?.photo_source_url || dish.photo_source_url;
-  const hasValidPhoto = Boolean(currentPhoto && !imageError && !isConflict && photoRes?.hasOriginalPhoto !== false);
+  const isCurrentDishState = overrideState.key === dishIdentityKey;
+  const imageError = isCurrentDishState ? overrideState.hasError : false;
+  const currentPhoto = (isCurrentDishState && overrideState.fallbackSrc) || resolvedPhoto.src;
+  const hasValidPhoto = Boolean(currentPhoto && !imageError && resolvedPhoto.hasValidPhoto);
 
   // Determine effective unit price based on selected size or base price
   let currentUnitPrice = dish.price;
@@ -100,20 +82,28 @@ export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModal
 
         {/* Scrollable Body */}
         <div className="overflow-y-auto flex-1">
-          {/* Dish Image with pure white background and full containment to avoid cropping */}
+          {/* Dish Image - Single approved photo matching the clicked card, proportional with original background and no white padding */}
           {hasValidPhoto ? (
-            <div className="relative h-56 sm:h-68 md:h-80 w-full overflow-hidden bg-white border-b border-surface-container-high/60 flex items-center justify-center p-3 sm:p-4 shrink-0">
+            <div className="relative w-full max-h-[56vh] sm:max-h-[62vh] overflow-hidden bg-surface-container-lowest border-b border-surface-container-high/60 flex items-center justify-center shrink-0">
               <img 
+                key={dishIdentityKey}
                 src={currentPhoto} 
-                alt={dish.nameEn} 
-                className="w-full h-full object-contain transition-opacity duration-300 block"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  const fallbackUrl = dish.photo_source_url || dish.source_url;
-                  if (fallbackUrl && target.src !== fallbackUrl) {
-                    target.src = fallbackUrl;
+                alt={dish.nameEn || dish.name} 
+                className="w-full h-auto max-h-[56vh] sm:max-h-[62vh] object-contain transition-opacity duration-200 block"
+                onError={() => {
+                  const fallbackUrl = resolvedPhoto.fallbackSrc;
+                  if (fallbackUrl && currentPhoto !== fallbackUrl) {
+                    setOverrideState({
+                      key: dishIdentityKey,
+                      fallbackSrc: fallbackUrl,
+                      hasError: false,
+                    });
                   } else {
-                    setImageError(true);
+                    setOverrideState({
+                      key: dishIdentityKey,
+                      fallbackSrc: undefined,
+                      hasError: true,
+                    });
                   }
                 }}
               />
@@ -121,30 +111,6 @@ export function DishDetailModal({ dish, onClose, onAddToOrder }: DishDetailModal
                 <span className="absolute bottom-3 left-3 sm:left-4 px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-caps text-[11px] sm:text-label-caps uppercase font-bold shadow-md">
                   Signature {dish.signatureNumber} · Wok Hei
                 </span>
-              )}
-
-              {/* Gallery Navigator for dishes with multiple photos */}
-              {availablePhotos.length > 1 && (
-                <div className="absolute bottom-3 right-3 flex items-center gap-1.5 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
-                  {availablePhotos.map((_, idx) => (
-                    <button
-                      key={idx}
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setActivePhotoIndex(idx);
-                        setImageError(false);
-                      }}
-                      className={`text-[10px] font-bold px-2 py-0.5 rounded-full transition-all cursor-pointer ${
-                        activePhotoIndex === idx
-                          ? 'bg-secondary text-on-secondary'
-                          : 'text-neutral-300 hover:text-white hover:bg-white/10'
-                      }`}
-                    >
-                      Photo {idx + 1}
-                    </button>
-                  ))}
-                </div>
               )}
             </div>
           ) : (

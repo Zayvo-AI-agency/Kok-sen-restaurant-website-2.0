@@ -146,24 +146,33 @@ export function resolveDishPhoto(
   const rawId = (query.id || query.source_item_id || query.sourceItemId || '').toLowerCase();
   const enName = query.nameEn || query.english_name || query.name || '';
   const normEn = normalizeEnglishName(enName);
+  const canonicalId =
+    rawId ||
+    (normEn
+      ? (
+          byNormName.get(normEn)?.client_item_id ||
+          clientFallbackByNormName.get(normEn)?.id ||
+          ''
+        ).toLowerCase()
+      : '');
 
   // 0. Primary: Newly uploaded exact dish photos from user zip
-  if (rawId && uploadMap[rawId]) {
-    const asset = uploadMap[rawId];
+  if (canonicalId && uploadMap[canonicalId]) {
+    const asset = uploadMap[canonicalId];
     return {
       imageUrl: asset,
       photo_source_url: asset,
       photo_status: 'available',
       hasOriginalPhoto: true,
       isConflict: false,
-      source_item_id: rawId,
+      source_item_id: canonicalId,
       isOddleOriginal: false
     };
   }
 
   // Priority 2: Big Prawns Hor Fun / Big Prawn Hor Fun (ID ks-20261015-050 or exact allowed name)
   if (
-    rawId === 'ks-20261015-050' ||
+    canonicalId === 'ks-20261015-050' ||
     normEn === 'big prawn hor fun' ||
     normEn === 'big prawns hor fun'
   ) {
@@ -183,8 +192,8 @@ export function resolveDishPhoto(
   // Priority 3: Curry Fish Tail (Strict check: Never match HK Steamed Fish Tail or Curry Fish Head)
   if (
     normEn === 'curry fish tail' &&
-    rawId !== 'ks-20261015-023' &&
-    rawId !== 'ks-20261015-026'
+    canonicalId !== 'ks-20261015-023' &&
+    canonicalId !== 'ks-20261015-026'
   ) {
     const override = photoOverrides.find((o) => o.dish_name === 'Curry Fish Tail');
     const asset = override?.photo.asset || '/oddle-three-exact-2026-10-19/curry-fish-tail.png';
@@ -199,8 +208,8 @@ export function resolveDishPhoto(
   }
 
   // 1. Direct lookup by canonical dish ID against 2026-10-19 client-photo-map
-  if (rawId && byClientItemId.has(rawId)) {
-    const entry = byClientItemId.get(rawId)!;
+  if (canonicalId && byClientItemId.has(canonicalId)) {
+    const entry = byClientItemId.get(canonicalId)!;
     if (entry.status === 'matched' && entry.photo?.asset) {
       return {
         imageUrl: entry.photo.asset,
@@ -214,7 +223,7 @@ export function resolveDishPhoto(
     }
 
     if (entry.status === 'unpublished_awaiting_client_name') {
-      const fallback = clientFallbackById.get(rawId);
+      const fallback = clientFallbackById.get(canonicalId);
       const fallbackAsset = fallback?.photo?.asset || query.imageUrl;
       return {
         imageUrl: fallbackAsset,
@@ -228,7 +237,7 @@ export function resolveDishPhoto(
     }
 
     // 18 Retained dishes without Oddle match or with multi-variant ambiguity
-    const fallback = clientFallbackById.get(rawId);
+    const fallback = clientFallbackById.get(canonicalId);
     const fallbackAsset = query.imageUrl || fallback?.photo?.asset;
     return {
       imageUrl: fallbackAsset,
@@ -271,14 +280,14 @@ export function resolveDishPhoto(
 
   // 3. Direct valid oddle-photos-web URL or client photo URL passed in query
   const directAsset = query.imageUrl || query.photo_source_url || query.source_url;
-  if (directAsset && (directAsset.startsWith('/oddle-photos-web-') || directAsset.startsWith('/kok-sen-') || directAsset.startsWith('/menu-photos/'))) {
+  if (directAsset && (directAsset.startsWith('/images/') || directAsset.startsWith('/oddle-photos-web-') || directAsset.startsWith('/kok-sen-') || directAsset.startsWith('/menu-photos/'))) {
     return {
       imageUrl: directAsset,
       photo_source_url: directAsset,
       photo_status: 'available',
       hasOriginalPhoto: true,
       isConflict: false,
-      source_item_id: rawId || undefined,
+      source_item_id: canonicalId || undefined,
       isOddleOriginal: directAsset.startsWith('/oddle-photos-web-') || directAsset.startsWith('/menu-photos/')
     };
   }
@@ -290,7 +299,69 @@ export function resolveDishPhoto(
     photo_status: directAsset ? 'available' : 'not_provided_on_official_menu',
     hasOriginalPhoto: Boolean(directAsset),
     isConflict: false,
-    source_item_id: rawId || undefined,
+    source_item_id: canonicalId || undefined,
     isOddleOriginal: Boolean(directAsset && directAsset.startsWith('/oddle-photos-web-'))
+  };
+}
+
+export interface DisplayedDishPhoto {
+  dishId: string;
+  src: string | undefined;
+  fallbackSrc: string | undefined;
+  hasValidPhoto: boolean;
+  isConflict: boolean;
+}
+
+/**
+ * Single shared image-resolution method used by both menu cards and the dish detail modal.
+ * Never reads legacy `dish.photos[]` arrays or alternate gallery photos.
+ * If the clicked card passed its active `overrideSrc` (including a loaded fallback),
+ * that exact image is preserved.
+ */
+export function getDisplayedDishPhoto(
+  dish: MenuItem | null | undefined,
+  overrideSrc?: string
+): DisplayedDishPhoto {
+  if (!dish) {
+    return {
+      dishId: '',
+      src: undefined,
+      fallbackSrc: undefined,
+      hasValidPhoto: false,
+      isConflict: false,
+    };
+  }
+
+  const dishId = dish.source_item_id || dish.id || '';
+  const photoRes = resolveDishPhoto(dish);
+  const isConflict = Boolean(
+    dish.isConflict ||
+    photoRes.isConflict ||
+    dish.photo_status === 'conflict_unresolved' ||
+    dish.photo_status === 'official_image_conflict_requires_client_review'
+  );
+
+  const src =
+    overrideSrc ||
+    dish.resolvedDisplayImage ||
+    photoRes.imageUrl ||
+    dish.imageUrl ||
+    photoRes.photo_source_url ||
+    dish.photo_source_url ||
+    dish.source_url;
+
+  const fallbackSrc =
+    photoRes.photo_source_url ||
+    dish.photo_source_url ||
+    dish.source_url;
+
+  const hasValidPhoto = Boolean(photoRes.hasOriginalPhoto && src && !isConflict);
+
+  return {
+    dishId,
+    src,
+    fallbackSrc,
+    hasValidPhoto,
+    isConflict,
   };
 }

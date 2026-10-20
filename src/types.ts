@@ -47,6 +47,7 @@ export interface MenuItem {
   options?: MenuItemOption[];
   description: string;
   imageUrl?: string;
+  resolvedDisplayImage?: string;
   photos?: string[];
   photo_status?: string;
   isConflict?: boolean;

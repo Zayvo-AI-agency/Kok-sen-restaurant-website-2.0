@@ -140,10 +140,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/yam-paste.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/yam-ring--1a781e5cf735.webp",
-      "/menu-photos/yam-ring--43e8e1d854.jpg",
-      "/kok-sen-menu-2026-10-15/enhanced/ks-20261015-001-enhanced.jpg",
-      "/kok-sen-menu-2026-10-15/additional-dishes/01-yam-ring.jpeg"
+      "/images/yam-paste.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -169,9 +166,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/kai-lan-beef.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/kai-lan-stir-fried-with-beef--b9eafd2ef060.webp",
-      "/menu-photos/kai-lan-stir-fried-with-beef--36417aa787.jpg",
-      "/kok-sen-menu-2026-10-15/beef/01-kai-lan-with-beef.png"
+      "/images/kai-lan-beef.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -197,9 +192,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/spring-onion-beef.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-beef-with-spring-onion--f5e0c895d955.webp",
-      "/menu-photos/stir-fried-beef-with-spring-onion--2204173013.png",
-      "/kok-sen-menu-2026-10-15/beef/02-spring-onion-with-beef.png"
+      "/images/spring-onion-beef.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -225,7 +218,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-bean-with-beef.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/beef/03-black-bean-with-beef.png"
+      "/images/black-bean-with-beef.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -250,9 +243,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-pepper-beef.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-pepper-beef--780fa4551284.webp",
-      "/menu-photos/black-pepper-beef--8abc775977.png",
-      "/kok-sen-menu-2026-10-15/beef/04-black-pepper-beef.png"
+      "/images/black-pepper-beef.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -278,9 +269,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/kungbao-chicken.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/kung-bao-chicken--6ea303d86a8e.webp",
-      "/menu-photos/kung-bao-chicken--900d3d611a.png",
-      "/kok-sen-menu-2026-10-15/chicken/01-kung-bao-chicken.png"
+      "/images/kungbao-chicken.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -306,7 +295,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/cereal-chicken.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/chicken/02-cereal-chicken.png"
+      "/images/cereal-chicken.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -331,9 +320,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/claypot-thai-stle-chicken.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/claypot-thai-style-chicken--c5e632069911.webp",
-      "/menu-photos/claypot-thai-style-chicken--c57d9e675d.png",
-      "/kok-sen-menu-2026-10-15/chicken/03-claypot-chicken.png"
+      "/images/claypot-thai-stle-chicken.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -359,9 +346,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/roasted-chicken.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/crispy-roasted-chicken--6ba0cc736767.webp",
-      "/menu-photos/crispy-roasted-chicken--40298160a5.png",
-      "/kok-sen-menu-2026-10-15/chicken/04-roasted-chicken.png"
+      "/images/roasted-chicken.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -387,9 +372,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/prawn-paste-chicken.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/prawn-paste-chicken--48bcd4e57aee.webp",
-      "/menu-photos/prawn-paste-chicken--b58388235a.jpg",
-      "/kok-sen-menu-2026-10-15/chicken/05-prawn-paste-chicken.png"
+      "/images/prawn-paste-chicken.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -540,9 +523,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/furong-omelette.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/fu-rong-omelette--a5c1510a52b1.webp",
-      "/menu-photos/fu-rong-omelette--64ffa91df7.png",
-      "/kok-sen-menu-2026-10-15/eggs/01-fu-rong-omelette.jpg"
+      "/images/furong-omelette.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -568,9 +549,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/minced-prok-steam-eggs.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/minced-pork-steam-eggs--d38c98cf11c0.webp",
-      "/menu-photos/minced-pork-steam-eggs--0ec3cbf2a8.png",
-      "/kok-sen-menu-2026-10-15/eggs/02-minced-pork-steamed-egg.png"
+      "/images/minced-prok-steam-eggs.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -596,9 +575,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/minced-pork-ometette.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/minced-pork-omelette--c868ba536a20.webp",
-      "/menu-photos/minced-pork-omelette--b36d634ab2.png",
-      "/kok-sen-menu-2026-10-15/eggs/03-minced-pork-omelette.jpg"
+      "/images/minced-pork-ometette.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -624,9 +601,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/prawn-omelette.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/prawns-omelette--2315cf2b05fe.webp",
-      "/menu-photos/prawns-omelette--5c6211322a.png",
-      "/kok-sen-menu-2026-10-15/eggs/04-prawn-omelette.png"
+      "/images/prawn-omelette.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -652,9 +627,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/preserved-raddish-omelette.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/preserved-radish-omelette--832f2fac4d10.webp",
-      "/menu-photos/preserved-radish-omelette--9c8ac012b6.png",
-      "/kok-sen-menu-2026-10-15/eggs/05-radish-omelette.jpg"
+      "/images/preserved-raddish-omelette.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -680,9 +653,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/trio-steam-eggs.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/combination-of-3-steam-eggs--63b0fee551fe.webp",
-      "/menu-photos/combination-of-3-steam-eggs--67add39365.png",
-      "/kok-sen-menu-2026-10-15/eggs/06-steamed-trio-egg.png"
+      "/images/trio-steam-eggs.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -708,9 +679,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/deep-fried-fish-meat.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/deep-fried-yu-gai--1d5e39986873.webp",
-      "/menu-photos/deep-fried-yu-gai--8d422cab26.png",
-      "/kok-sen-menu-2026-10-15/fish/01-deep-fried-yu-gai-fish.png"
+      "/images/deep-fried-fish-meat.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -736,9 +705,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/hk-style-steam-fsih-tail.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/hk-style-steam-fish-tail--15dd878b1f14.webp",
-      "/menu-photos/hk-style-steam-fish-tail--432dec6afd.jpg",
-      "/kok-sen-menu-2026-10-15/fish/02-hong-kong-style-steamed-fish-tail.png"
+      "/images/hk-style-steam-fsih-tail.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -764,9 +731,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-bean-with-fish-meat.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-bean-sauce-with-fish-meat--181e6bf853c7.webp",
-      "/menu-photos/black-bean-sauce-with-fish-meat--7d44f24f34.jpg",
-      "/kok-sen-menu-2026-10-15/fish/03-black-bean-fish-meat.png"
+      "/images/black-bean-with-fish-meat.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -792,7 +757,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/curry-fish-tail.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/fish/04-claypot-fish-meat.png"
+      "/images/curry-fish-tail.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -817,7 +782,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/curry-fish-head.jpg",
     "photos": [
-      "/oddle-three-exact-2026-10-19/curry-fish-head.png"
+      "/images/curry-fish-head.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -843,9 +808,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/deep-fried-fish-meat.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/deep-fried-fish-meat-with-light-sauce--537668bc242a.webp",
-      "/menu-photos/deep-fried-fish-meat-with-light-sauce--728290fa73.png",
-      "/kok-sen-menu-2026-10-15/fish/06-deep-fried-fish-meat.png"
+      "/images/deep-fried-fish-meat.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -871,7 +834,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/steam-fish-head-hk.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/fish/07-hong-kong-style-steamed-grouper.png"
+      "/images/steam-fish-head-hk.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -896,9 +859,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sambal-fish-meat.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-fish-meat-with-sambal-kaffir-leaves--c55ccefca3b3.webp",
-      "/menu-photos/stir-fried-fish-meat-with-sambal-kaffir-leaves--1954caa223.jpg",
-      "/kok-sen-menu-2026-10-15/fish/08-sambal-fish-meat.png"
+      "/images/sambal-fish-meat.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -924,7 +885,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sweet-and-sour-sliced-fish.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/fish/09-sweet-and-sour-grouper.png"
+      "/images/sweet-and-sour-sliced-fish.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -949,9 +910,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/spring-onion-frogs.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-frogs-with-spring-onion--ee64f58ba6d9.webp",
-      "/menu-photos/stir-fried-frogs-with-spring-onion--09bc4d4e07.png",
-      "/kok-sen-menu-2026-10-15/frogs/01-spring-onion-frogs.png"
+      "/images/spring-onion-frogs.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -977,7 +936,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-bean-frogs.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/frogs/03-black-bean-with-frogs.png"
+      "/images/black-bean-frogs.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1002,9 +961,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/kungbao-frogs.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/kung-pao-frogs-with-fried-with-dried-chilli--e74291e67043.webp",
-      "/menu-photos/kung-pao-frogs-with-fried-with-dried-chilli--86881b3bc0.png",
-      "/kok-sen-menu-2026-10-15/frogs/04-kung-bao-frogs.png"
+      "/images/kungbao-frogs.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1030,9 +987,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/golden-dragon-chicken.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/golden-dragon-chicken--631525685203.webp",
-      "/menu-photos/golden-dragon-chicken--b8b833bddc.png",
-      "/kok-sen-menu-2026-10-15/chicken/06-golden-dragon-chicken.png"
+      "/images/golden-dragon-chicken.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1058,9 +1013,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/bean-sprout-with-salted-fish.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/bean-sprout-stir-fried-with-salted-fish--2722258f9ac5.webp",
-      "/menu-photos/bean-sprout-stir-fried-with-salted-fish--0a203db54b.png",
-      "/kok-sen-menu-2026-10-15/vegetables/01-bean-sprout-with-salted-fish.png"
+      "/images/bean-sprout-with-salted-fish.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1086,8 +1039,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/garlic-broccolli.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-broccoli-with-oyster-sauce--4018e30a4915.webp",
-      "/kok-sen-menu-2026-10-15/vegetables/02-garlic-broccoli.png"
+      "/images/garlic-broccolli.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1113,9 +1065,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sambal-kangkong.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-kangkong-with-sambal--959be41cb088.webp",
-      "/menu-photos/stir-fried-kangkong-with-sambal--886d47cb95.png",
-      "/kok-sen-menu-2026-10-15/vegetables/03-sambal-kangkong.png"
+      "/images/sambal-kangkong.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1141,9 +1091,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/garlic-kai-lan.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-kai-lan-with-garlic--3c6a079db6e7.webp",
-      "/menu-photos/stir-fried-kai-lan-with-garlic--9df4b52dee.png",
-      "/kok-sen-menu-2026-10-15/vegetables/04-kai-lan-with-garlic.png"
+      "/images/garlic-kai-lan.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1169,7 +1117,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/poach-lettuce.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/vegetables/05-poached-lettuce.png"
+      "/images/poach-lettuce.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1194,9 +1142,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/fermented-beancurd-with-romaine-lettuce.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/romaine-lettuce-stir-fried-fermented-beancurd--b68213015d74.webp",
-      "/menu-photos/romaine-lettuce-stir-fried-fermented-beancurd--98a161a1f4.png",
-      "/kok-sen-menu-2026-10-15/vegetables/06-romaine-lettuce-with-fermented-beancurd.png"
+      "/images/fermented-beancurd-with-romaine-lettuce.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1222,9 +1168,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/garlic-with-small-cabbage.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-small-cabbage-with-garlic--ce56da224ce2.webp",
-      "/menu-photos/stir-fried-small-cabbage-with-garlic--50de44b43d.png",
-      "/kok-sen-menu-2026-10-15/vegetables/07-garlic-with-small-cabbage.png"
+      "/images/garlic-with-small-cabbage.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1250,9 +1194,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/spinach-with-trio-eggs.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/poached-chinese-spinach--de6ea24cb4ec.webp",
-      "/menu-photos/poached-chinese-spinach--8767847a77.png",
-      "/kok-sen-menu-2026-10-15/vegetables/08-chinese-spinach-with-trio-egg.png"
+      "/images/spinach-with-trio-eggs.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1278,8 +1220,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-bean-beef-hor-fun.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-bean-dry-beef-hor-fun--277e16a6b517.webp",
-      "/kok-sen-menu-2026-10-15/hor-fun/01-black-bean-beef-hor-fun.png"
+      "/images/black-bean-beef-hor-fun.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1305,9 +1246,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sanluo-hor-fun.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sliced-fish-hor-fun-with-bean-sprout--639cf5527217.webp",
-      "/menu-photos/sliced-fish-hor-fun-with-bean-sprout--8d81d8bc79.png",
-      "/kok-sen-menu-2026-10-15/hor-fun/02-sanluo-hor-fun.png"
+      "/images/sanluo-hor-fun.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1333,8 +1272,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-bean-slice-fish-hor-fun.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-bean-sliced-fish-bee-hoon-hor-fun--f48d8187df8d.webp",
-      "/kok-sen-menu-2026-10-15/hor-fun/03-black-bean-fish-hor-fun.png"
+      "/images/black-bean-slice-fish-hor-fun.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1360,8 +1298,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/dry-beef-hor-fun.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-bean-dry-beef-hor-fun--9f729fa6bcb7.webp",
-      "/kok-sen-menu-2026-10-15/hor-fun/04-dry-beef-hor-fun.png"
+      "/images/dry-beef-hor-fun.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1387,8 +1324,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-bean-hor-fun-with-seafood-and-prok.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/seafood-pork-hor-fun-bee-hoon--5898e8437b69.webp",
-      "/kok-sen-menu-2026-10-15/hor-fun/05-seafood-and-pork-hor-fun.png"
+      "/images/black-bean-hor-fun-with-seafood-and-prok.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1414,9 +1350,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/moonlight-hor-fun.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/moonlight-hor-fun--baad5851622e.webp",
-      "/menu-photos/moonlight-hor-fun--2d97e5cc72.png",
-      "/kok-sen-menu-2026-10-15/hor-fun/06-moonlight-hor-fun.png"
+      "/images/moonlight-hor-fun.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1442,7 +1376,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/prawn-hor-fun.jpg",
     "photos": [
-      "/oddle-three-exact-2026-10-19/big-prawns-hor-fun.png"
+      "/images/prawn-hor-fun.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1468,8 +1402,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/braised-fish-meat-bee-hoon.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-bean-fish-meat-braised-bee-hoon-hor-fun--a69f2bb86bf6.webp",
-      "/kok-sen-menu-2026-10-15/noodles/01-black-bean-fish-meat-bee-hoon.png"
+      "/images/braised-fish-meat-bee-hoon.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1495,8 +1428,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/stir-fried-been-hoon-noodle.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/stir-fried-dry-bee-hoon-hk-noodle--c2a76b7e6568.webp",
-      "/kok-sen-menu-2026-10-15/noodles/02-dry-bee-hoon.png"
+      "/images/stir-fried-been-hoon-noodle.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1522,9 +1454,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/fish-meat-bee-hoon-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/fish-meat-bee-hoon-soup--116762e8ef96.webp",
-      "/menu-photos/fish-meat-bee-hoon-soup--0861cc5427.jpg",
-      "/kok-sen-menu-2026-10-15/noodles/03-fish-meat-bee-hoon-soup.png"
+      "/images/fish-meat-bee-hoon-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1575,9 +1505,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/egg-and-prawn-crispy-noodle.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/crispy-noodle-surface-with-shrimp-omelette--a1e4de266169.webp",
-      "/menu-photos/crispy-noodle-surface-with-shrimp-omelette--718f63bc50.png",
-      "/kok-sen-menu-2026-10-15/noodles/05-eggs-crispy-noodle.png"
+      "/images/egg-and-prawn-crispy-noodle.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1628,9 +1556,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/big-prawn-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/big-prawns-bee-hoon-soup--c86085002340.webp",
-      "/menu-photos/big-prawns-bee-hoon-soup--d2a89004fb.png",
-      "/kok-sen-menu-2026-10-15/noodles/07-prawn-bee-hoon-soup.png"
+      "/images/big-prawn-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1656,9 +1582,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/seafood-and-pork-crispy-noodle.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/seafood-pork-crispy-noodle--89103aad49c7.webp",
-      "/menu-photos/seafood-pork-crispy-noodle--d99040f8c3.png",
-      "/kok-sen-menu-2026-10-15/noodles/08-crispy-noodle.png"
+      "/images/seafood-and-pork-crispy-noodle.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1684,9 +1608,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sweet-and-sour-pork-chop.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sweet-sour-pork-chop--86afed602a64.webp",
-      "/menu-photos/sweet-sour-pork-chop--2c8d04a504.png",
-      "/kok-sen-menu-2026-10-15/pork/01-sweet-and-sour-pork-chop.png"
+      "/images/sweet-and-sour-pork-chop.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1712,9 +1634,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/blck-sauce-with-roasted-pork.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/fried-crispy-roast-pork-with-black-sauce--a9faf085681a.webp",
-      "/menu-photos/fried-crispy-roast-pork-with-black-sauce--0631e5e49c.jpg",
-      "/kok-sen-menu-2026-10-15/pork/02-black-sauce-roasted-pork.png"
+      "/images/blck-sauce-with-roasted-pork.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1740,9 +1660,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/bittergourd-pork-ribs.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/bittergourd-pork-ribs-with-black-bean-sauce--6136349367f5.webp",
-      "/menu-photos/bittergourd-pork-ribs-with-black-bean-sauce--63792e6836.jpg",
-      "/kok-sen-menu-2026-10-15/pork/03-bittergourd-pork-ribs.png"
+      "/images/bittergourd-pork-ribs.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1768,9 +1686,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/kai-lan-roasted-pork.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/kai-lan-stir-fried-with-roasted-pork--c483d5503f66.webp",
-      "/menu-photos/kai-lan-stir-fried-with-roasted-pork--64fd085aac.jpg",
-      "/kok-sen-menu-2026-10-15/pork/04-kai-lan-roasted-pork.png"
+      "/images/kai-lan-roasted-pork.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1796,9 +1712,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/minced-pork-egg-plants.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/claypot-brinjal-with-minced-pork--8e2e027b2e44.webp",
-      "/menu-photos/claypot-brinjal-with-minced-pork--9e9a1b802f.png",
-      "/kok-sen-menu-2026-10-15/pork/05-minced-pork-with-eggplants.png"
+      "/images/minced-pork-egg-plants.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1824,9 +1738,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sweet-and-sour-pork.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sweet-sour-pork--09f16de3b0f2.webp",
-      "/menu-photos/sweet-sour-pork--e30c775b1f.jpg",
-      "/kok-sen-menu-2026-10-15/pork/06-sweet-and-sour-pork.png"
+      "/images/sweet-and-sour-pork.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1877,9 +1789,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/black-bean-with-slice-fish-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-bean-sliced-fish-rice--f19264b23b62.webp",
-      "/menu-photos/black-bean-sliced-fish-rice--e0ad4e1897.png",
-      "/kok-sen-menu-2026-10-15/rice/01-black-bean-with-sliced-fish-rice.jpg"
+      "/images/black-bean-with-slice-fish-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1905,9 +1815,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/tofu-roasted-pork-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/black-bean-sauce-roasted-pork-rice--5a72bb1c474d.webp",
-      "/menu-photos/black-bean-sauce-roasted-pork-rice--bd33a6d60d.png",
-      "/kok-sen-menu-2026-10-15/rice/02-black-sauce-with-roasted-pork-rice.png"
+      "/images/tofu-roasted-pork-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1933,9 +1841,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/seafood-fried-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/seafoods-fried-rice--079d04471fc9.webp",
-      "/menu-photos/seafoods-fried-rice--9b916b0f95.jpg",
-      "/kok-sen-menu-2026-10-15/rice/03-seafood-fried-rice.png"
+      "/images/seafood-fried-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1961,9 +1867,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/beef-fried-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/beef-fried-rice--0063326c9814.webp",
-      "/menu-photos/beef-fried-rice--b5825b34bf.png",
-      "/kok-sen-menu-2026-10-15/rice/04-beef-fried-rice.png"
+      "/images/beef-fried-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1989,9 +1893,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/braised-seafood-and-pork-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/seafoods-pork-braised-rice--4fba5c0d36c8.webp",
-      "/menu-photos/seafoods-pork-braised-rice--5c7f7b7bd6.png",
-      "/kok-sen-menu-2026-10-15/rice/05-braised-rice.png"
+      "/images/braised-seafood-and-pork-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2017,9 +1919,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/thai-style-fried-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/thai-style-fried-rice--4d78f6f2505a.webp",
-      "/menu-photos/thai-style-fried-rice--132f479410.jpg",
-      "/kok-sen-menu-2026-10-15/rice/06-thai-style-fried-rice.png"
+      "/images/thai-style-fried-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2045,9 +1945,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/kai-lan-roasted-pork-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/kai-lan-roasted-pork-rice--2b72e227b583.webp",
-      "/menu-photos/kai-lan-roasted-pork-rice--945f23ea9f.png",
-      "/kok-sen-menu-2026-10-15/rice/07-kai-lan-roasted-pork-rice.png"
+      "/images/kai-lan-roasted-pork-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2073,8 +1971,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/kan-lan-beef-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/kai-lan-sliced-fish-beef-rice--0890425c5b40.webp",
-      "/kok-sen-menu-2026-10-15/rice/08-kai-lan-with-beef-rice.png"
+      "/images/kan-lan-beef-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2100,9 +1997,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/seafood-and-poirk-soup-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/seafoods-pork-soup-rice--0197f7c45fb8.webp",
-      "/menu-photos/seafoods-pork-soup-rice--f2a33c14d6.png",
-      "/kok-sen-menu-2026-10-15/rice/09-soup-rice.png"
+      "/images/seafood-and-poirk-soup-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2128,9 +2023,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/spring-onion-beef-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/spring-onion-sliced-beef-rice--f04b4f770b01.webp",
-      "/menu-photos/spring-onion-sliced-beef-rice--46ec53163d.png",
-      "/kok-sen-menu-2026-10-15/rice/10-spring-onion-beef-rice.png"
+      "/images/spring-onion-beef-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2156,9 +2049,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sweet-and-soue-pork-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sweet-sour-pork-rice--086f650770eb.webp",
-      "/menu-photos/sweet-sour-pork-rice--7b4f540a88.png",
-      "/kok-sen-menu-2026-10-15/rice/11-sweet-sour-pork-rice.png"
+      "/images/sweet-and-soue-pork-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2184,9 +2075,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/tofu-roasted-pork-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/roasted-pork-tofu-rice--4a87777f6e26.webp",
-      "/menu-photos/roasted-pork-tofu-rice--f3f3960d23.png",
-      "/kok-sen-menu-2026-10-15/rice/12-roasted-pork-tofu-rice.png"
+      "/images/tofu-roasted-pork-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2212,9 +2101,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/yangzhuo-fried-rice.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/yang-zhuo-fried-rice--75e181e0bc73.webp",
-      "/menu-photos/yang-zhuo-fried-rice--985b632c71.jpg",
-      "/kok-sen-menu-2026-10-15/rice/13-yang-zhuo-fried-rice.png"
+      "/images/yangzhuo-fried-rice.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2240,8 +2127,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/spring-onion-withn-prawns.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/spring-onion-prawn-normal-size--947f7b5052de.webp",
-      "/kok-sen-menu-2026-10-15/seafood/01-stir-fried-big-prawns-with-spring-onion.png"
+      "/images/spring-onion-withn-prawns.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2267,9 +2153,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/oddle-photos-web-2026-10-19/broccoli-stir-fried-with-prawns-balls--67a8fb91996f.webp",
     "photos": [
-      "/oddle-photos-web-2026-10-19/broccoli-stir-fried-with-prawns-balls--67a8fb91996f.webp",
-      "/menu-photos/broccoli-stir-fried-with-prawns-balls--1cb59800f5.png",
-      "/kok-sen-menu-2026-10-15/seafood/02-broccoli-prawn-balls.png"
+      "/oddle-photos-web-2026-10-19/broccoli-stir-fried-with-prawns-balls--67a8fb91996f.webp"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2295,9 +2179,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/cereal-prawn.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/cereal-butter-prawns--62a78290361a.webp",
-      "/menu-photos/cereal-butter-prawns--690753ad2e.png",
-      "/kok-sen-menu-2026-10-15/seafood/03-cereal-prawns.png"
+      "/images/cereal-prawn.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2323,9 +2205,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/prawn-roll.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/prawn-roll--da2cfbc9d2c8.webp",
-      "/menu-photos/prawn-roll--0e7e26cd9a.jpg",
-      "/kok-sen-menu-2026-10-15/seafood/04-prawn-roll.png"
+      "/images/prawn-roll.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2351,9 +2231,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/oddle-photos-web-2026-10-19/salt-pepper-prawns--7951b9ce8646.webp",
     "photos": [
-      "/oddle-photos-web-2026-10-19/salt-pepper-prawns--7951b9ce8646.webp",
-      "/menu-photos/salt-pepper-prawns--631f79ab29.png",
-      "/kok-sen-menu-2026-10-15/seafood/05-salt-pepper-prawn.png"
+      "/oddle-photos-web-2026-10-19/salt-pepper-prawns--7951b9ce8646.webp"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2379,9 +2257,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/salted-egg-prawns-ball.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/salted-egg-prawn-ball--5dd1bb7f8f9c.webp",
-      "/menu-photos/salted-egg-prawn-ball--fcddef7418.png",
-      "/kok-sen-menu-2026-10-15/seafood/06-salted-egg-prawns.png"
+      "/images/salted-egg-prawns-ball.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2407,9 +2283,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/oddle-photos-web-2026-10-19/sambal-stir-fried-with-prawns-balls--5f11a3b9cd39.webp",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sambal-stir-fried-with-prawns-balls--5f11a3b9cd39.webp",
-      "/menu-photos/sambal-stir-fried-with-prawns-balls--15d69837ce.png",
-      "/kok-sen-menu-2026-10-15/seafood/07-sambal-prawn.png"
+      "/oddle-photos-web-2026-10-19/sambal-stir-fried-with-prawns-balls--5f11a3b9cd39.webp"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2435,9 +2309,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/mushroom-with-sea-cucumber.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sea-cucumber-braised-mushrooms--548bf1bba923.webp",
-      "/menu-photos/sea-cucumber-braised-mushrooms--9700bbbf58.png",
-      "/kok-sen-menu-2026-10-15/seafood/08-sea-cucumber-with-mushroom.png"
+      "/images/mushroom-with-sea-cucumber.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2463,8 +2335,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sliced-fish-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sliced-fish-fish-head-soup--2d8180912382.webp",
-      "/kok-sen-menu-2026-10-15/soup/01-sliced-fish-soup.png"
+      "/images/sliced-fish-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2490,9 +2361,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/salted-vegetable-tofu-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/salted-vegetable-tofu-soup--511faae90b01.webp",
-      "/menu-photos/salted-vegetable-tofu-soup--0f874e4aed.png",
-      "/kok-sen-menu-2026-10-15/soup/02-salted-vegetables-tofu-soup.png"
+      "/images/salted-vegetable-tofu-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2518,9 +2387,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/spinach-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/spinach-soup--37829b4235e8.webp",
-      "/menu-photos/spinach-soup--9829677649.png",
-      "/kok-sen-menu-2026-10-15/soup/03-spinach-soup.png"
+      "/images/spinach-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2546,9 +2413,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/fish-meat-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/fish-meat-soup--1c295ca29a24.webp",
-      "/menu-photos/fish-meat-soup--2019c09c8e.jpg",
-      "/kok-sen-menu-2026-10-15/soup/04-fish-meat-soup.png"
+      "/images/fish-meat-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2574,9 +2439,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/fish-maw-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/fish-maw-soup--e93305e11ebb.webp",
-      "/menu-photos/fish-maw-soup--cec6afe213.png",
-      "/kok-sen-menu-2026-10-15/soup/05-fish-maw-soup.png"
+      "/images/fish-maw-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2602,9 +2465,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/bitterguord-soup.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/bittergourd-soup-with-seafoods-pork--5afc1651d63d.webp",
-      "/menu-photos/bittergourd-soup-with-seafoods-pork--f18ebc5779.png",
-      "/kok-sen-menu-2026-10-15/soup/06-bittergourd-soup.png"
+      "/images/bitterguord-soup.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2630,9 +2491,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/braised-tofu.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/braised-tofu-with-roast-pork--157e8996fa83.webp",
-      "/menu-photos/braised-tofu-with-roast-pork--7dddd0c8b6.png",
-      "/kok-sen-menu-2026-10-15/tofu/01-braised-tofu.png"
+      "/images/braised-tofu.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2658,9 +2517,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/deep-fried-tofu.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/golden-beancurds--9c8c27666813.webp",
-      "/menu-photos/golden-beancurds--8681e586bd.jpg",
-      "/kok-sen-menu-2026-10-15/tofu/02-deep-fried-tofu.png"
+      "/images/deep-fried-tofu.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2686,9 +2543,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/minced-pork-tofu.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/homemade-tofu-with-minced-pork--45d5cbd75ba5.webp",
-      "/menu-photos/homemade-tofu-with-minced-pork--612ced2912.png",
-      "/kok-sen-menu-2026-10-15/tofu/03-homemade-tofu.png"
+      "/images/minced-pork-tofu.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2714,9 +2569,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/hotplate-tofu.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/hotplate-tofu--62456b0fff25.webp",
-      "/menu-photos/hotplate-tofu--3456d5b479.png",
-      "/kok-sen-menu-2026-10-15/tofu/04-hotplate-tofu.png"
+      "/images/hotplate-tofu.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2742,7 +2595,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/braised-prawn-with-tofu.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/tofu/05-prawn-tofu.png"
+      "/images/braised-prawn-with-tofu.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2767,7 +2620,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/sea-cucumber-with-tofu.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/tofu/06-sea-cucumber-with-tofu.png"
+      "/images/sea-cucumber-with-tofu.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2792,9 +2645,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/ytf.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/claypot-yong-tau-foo--17a26c1e15a0.webp",
-      "/menu-photos/claypot-yong-tau-foo--20bc99fcfc.png",
-      "/kok-sen-menu-2026-10-15/tofu/07-yong-tau-foo.png"
+      "/images/ytf.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2820,7 +2671,7 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "description": "",
     "imageUrl": "/images/yam-paste.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/additional-dishes/02-yam-paste.png"
+      "/images/yam-paste.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,

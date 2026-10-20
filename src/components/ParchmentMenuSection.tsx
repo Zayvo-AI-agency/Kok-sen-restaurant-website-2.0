@@ -1,10 +1,10 @@
 import { useState, useMemo } from 'react';
 import { MenuItem } from '../types';
 import { FULL_MENU_ITEMS, MENU_CATEGORIES, RESTAURANT_INFO } from '../data/restaurantData';
-import { resolveDishPhoto } from '../utils/dishPhotoResolver';
+import { getDisplayedDishPhoto } from '../utils/dishPhotoResolver';
 
 interface ParchmentMenuSectionProps {
-  onSelectDish: (dish: MenuItem) => void;
+  onSelectDish: (dish: MenuItem, resolvedImage?: string) => void;
   onAddToOrder: (dish: MenuItem) => void;
   orderedItemIds: string[];
 }
@@ -107,15 +107,15 @@ export function ParchmentMenuSection({
   const renderDishRow = (item: MenuItem) => {
     const dishKey = item.source_item_id || item.id;
     const isAdded = orderedItemIds.includes(item.id);
-    const photoRes = resolveDishPhoto(item);
-    const currentSrc = imageSources[dishKey] || photoRes.imageUrl || item.imageUrl || photoRes.photo_source_url || item.photo_source_url;
-    const hasValidImage = Boolean(photoRes.hasOriginalPhoto && currentSrc && !imageErrors[dishKey] && !photoRes.isConflict);
+    const resolvedPhoto = getDisplayedDishPhoto(item, imageSources[dishKey]);
+    const currentSrc = resolvedPhoto.src;
+    const hasValidImage = Boolean(resolvedPhoto.hasValidPhoto && !imageErrors[dishKey]);
 
     return (
       <div 
         key={dishKey}
         className="group/item flex items-start gap-2.5 sm:gap-3.5 p-2.5 sm:p-3 rounded-xl bg-[#F5EFE4]/80 hover:bg-[#E2D8C5]/95 transition-all duration-200 ease-out cursor-pointer border border-[#DDD3C1]/80 hover:border-[#C83E2B]/40 hover:shadow-md transform hover:scale-[1.01] active:scale-[0.99] w-full max-w-full min-w-0 overflow-hidden"
-        onClick={() => onSelectDish(item)}
+        onClick={() => onSelectDish(item, hasValidImage ? currentSrc : undefined)}
       >
         {/* Thumbnail Image with pure white background */}
         {hasValidImage ? (
@@ -127,7 +127,7 @@ export function ParchmentMenuSection({
               loading="lazy"
               decoding="async"
               onError={() => {
-                const fallbackUrl = photoRes.photo_source_url || item.photo_source_url || item.source_url;
+                const fallbackUrl = resolvedPhoto.fallbackSrc;
                 if (fallbackUrl && currentSrc !== fallbackUrl) {
                   setImageSources((prev) => ({ ...prev, [dishKey]: fallbackUrl }));
                 } else {

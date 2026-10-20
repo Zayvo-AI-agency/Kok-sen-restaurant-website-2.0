@@ -8,7 +8,7 @@ import {
   detectDishesInTextSafely,
   resolveCanonicalDish,
 } from '../utils/menuIdentity';
-import { resolveDishPhoto } from '../utils/dishPhotoResolver';
+import { getDisplayedDishPhoto } from '../utils/dishPhotoResolver';
 import {
   Sparkles,
   Send,
@@ -501,12 +501,11 @@ What would you like to explore today? Ask about our heritage signatures, claypot
                           {msg.suggestedDishes.map((dish) => {
                             const isAdded = Boolean(addedDishIds[dish.id]);
                             const dishKey = normalizeDishIdentity(dish.nameEn, dish.nameZh);
-                            const photoRes = resolveDishPhoto(dish);
-                            const currentSrc = photoRes.imageUrl || dish.imageUrl || photoRes.photo_source_url || dish.photo_source_url;
+                            const resolvedPhoto = getDisplayedDishPhoto(dish);
+                            const currentSrc = resolvedPhoto.src;
                             const hasValidImage =
-                              Boolean(photoRes.hasOriginalPhoto && currentSrc) &&
-                              !brokenImages[dishKey] &&
-                              !photoRes.isConflict;
+                              Boolean(resolvedPhoto.hasValidPhoto) &&
+                              !brokenImages[dishKey];
 
                             return (
                               <div
@@ -524,7 +523,7 @@ What would you like to explore today? Ask about our heritage signatures, claypot
                                         loading="lazy"
                                         onError={(e) => {
                                           const target = e.currentTarget;
-                                          const fallbackUrl = photoRes.photo_source_url || dish.photo_source_url || dish.source_url;
+                                          const fallbackUrl = resolvedPhoto.fallbackSrc;
                                           if (fallbackUrl && target.src !== fallbackUrl) {
                                             target.src = fallbackUrl;
                                           } else {

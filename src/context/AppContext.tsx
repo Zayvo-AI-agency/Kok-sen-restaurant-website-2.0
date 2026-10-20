@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { MenuItem, TableOrderItem, TableSpreadPreset, OutletInfo } from '../types';
 import { OUTLETS, FULL_MENU_ITEMS, TOP_SIGNATURES } from '../data/restaurantData';
+import { getDisplayedDishPhoto } from '../utils/dishPhotoResolver';
 
 interface AppContextType {
   // Cart / Table Order
@@ -35,7 +36,8 @@ interface AppContextType {
   deliveryOpen: boolean;
   setDeliveryOpen: (open: boolean) => void;
   selectedDish: MenuItem | null;
-  setSelectedDish: (dish: MenuItem | null) => void;
+  selectedDishImage?: string;
+  setSelectedDish: (dish: MenuItem | null, resolvedImage?: string) => void;
 
   // Toast
   toastMessage: string | null;
@@ -119,7 +121,22 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [conciergeInitialPrompt, setConciergeInitialPrompt] = useState<string | undefined>(undefined);
   const [scanTableOpen, setScanTableOpen] = useState(false);
   const [deliveryOpen, setDeliveryOpen] = useState(false);
-  const [selectedDish, setSelectedDish] = useState<MenuItem | null>(null);
+  const [selectedDish, setSelectedDishState] = useState<MenuItem | null>(null);
+  const [selectedDishImage, setSelectedDishImage] = useState<string | undefined>(undefined);
+
+  const setSelectedDish = useCallback((dish: MenuItem | null, resolvedImage?: string) => {
+    if (!dish) {
+      setSelectedDishState(null);
+      setSelectedDishImage(undefined);
+      return;
+    }
+    const resolved = getDisplayedDishPhoto(dish, resolvedImage);
+    setSelectedDishImage(resolved.src);
+    setSelectedDishState({
+      ...dish,
+      resolvedDisplayImage: resolved.src,
+    });
+  }, []);
 
   // Toast
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -247,6 +264,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         deliveryOpen,
         setDeliveryOpen,
         selectedDish,
+        selectedDishImage,
         setSelectedDish,
         toastMessage,
         showToast,

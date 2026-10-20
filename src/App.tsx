@@ -38,6 +38,7 @@ function AppContent() {
     handleRemoveItem,
     handleClearOrder,
     selectedDish,
+    selectedDishImage,
     setSelectedDish,
     reservationOpen,
     setReservationOpen,
@@ -123,7 +124,9 @@ function AppContent() {
 
       {/* Global Dish Detail Modal */}
       <DishDetailModal
+        key={selectedDish ? `${selectedDish.source_item_id || selectedDish.id}` : 'closed'}
         dish={selectedDish}
+        resolvedImage={selectedDishImage || selectedDish?.resolvedDisplayImage}
         onClose={() => setSelectedDish(null)}
         onAddToOrder={handleAddToOrder}
       />
