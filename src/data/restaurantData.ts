@@ -1,3 +1,8 @@
+import newGalleryPhoto1 from '../../WhatsApp Image 2026-10-20 at 5.52.15 PM.jpeg';
+import newGalleryPhoto2 from '../../WhatsApp Image 2026-10-20 at 5.52.23 PM.jpeg';
+import newGalleryPhoto3 from '../../WhatsApp Image 2026-10-20 at 5.52.31 PM.jpeg';
+
+
 import { MenuItem, TableSpreadPreset, ReviewItem, FaqItem, OutletInfo, GalleryPhotoItem } from '../types';
 import { CLIENT_MENU_PHOTOS } from './clientMenuPhotos';
 
@@ -280,7 +285,7 @@ export const GALLERY_IMAGES: GalleryPhotoItem[] = [
     id: 'michelin-entrance-photo',
     title: 'Michelin Bib Gourmand Entrance & Backlit Signage',
     category: 'space',
-    url: koksenMichelinDoor,
+    url: newGalleryPhoto1,
     caption: 'Front entrance at 4 Keong Saik Road featuring backlit 3D calligraphy "國成 菜馆 KOK SEN" and consecutive Michelin Bib Gourmand seals spanning 2016 through 2026.',
     tag: '4 Keong Saik Rd',
     aspect: 'tall'
@@ -289,7 +294,7 @@ export const GALLERY_IMAGES: GalleryPhotoItem[] = [
     id: 'collection-storefront-photo',
     title: 'Takeaway Collection Station & Keong Saik Shophouse Facade',
     category: 'space',
-    url: koksenCollectionStorefront,
+    url: newGalleryPhoto2,
     caption: 'Daytime street level view of Kok Sen with the wooden calligraphy signage, vintage mosaic tiles, and dedicated takeaway collection station.',
     tag: 'Collection Window',
     aspect: 'standard'
@@ -298,7 +303,7 @@ export const GALLERY_IMAGES: GalleryPhotoItem[] = [
     id: 'evening-queue-photo',
     title: 'Evening Bustle & Al Fresco Tables',
     category: 'space',
-    url: koksenEveningQueue,
+    url: newGalleryPhoto3,
     caption: 'Diners gathering beneath the heritage awning on Keong Saik Road, enjoying dinner and queueing for dinner service under the evening glow.',
     tag: 'Night Atmosphere',
     aspect: 'standard'
