@@ -1,3 +1,13 @@
+const blackPepperCrabPhoto = '/Black%20Pepper%20Crab.jpeg';
+const chilliCrabPhoto = '/Chilli%20Crab.jpeg';
+const saltedEggCrabPhoto = '/Salted%20Egg%20Crab.jpeg';
+const sambalCrabPhoto = '/Sambal%20Crab.jpeg';
+const springOnionCrabPhoto = '/Spring%20Onion%20Crab.jpeg';
+const saltandPepperPrawnPhoto = '/Salt%20and%20Pepper%20Prawns.jpeg';
+const broccoliPrwanBallsPhoto = '/Broccoli%20Prwan%20Balls.jpeg';
+
+
+
 import { MenuItem } from "../types";
 
 export interface MenuCategoryDef {
@@ -396,10 +406,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "crab",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/crab/01-black-pepper-crab.png",
-    "photos": [
-      "/kok-sen-menu-2026-10-15/crab/01-black-pepper-crab.png"
-    ],
+    "imageUrl": blackPepperCrabPhoto,
+    "photos": [blackPepperCrabPhoto],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
@@ -421,10 +429,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "crab",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/crab/02-chilli-crab.png",
-    "photos": [
-      "/kok-sen-menu-2026-10-15/crab/02-chilli-crab.png"
-    ],
+    "imageUrl": chilliCrabPhoto,
+    "photos": [chilliCrabPhoto],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
@@ -446,10 +452,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "crab",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/crab/03-salted-egg-crab.png",
-    "photos": [
-      "/kok-sen-menu-2026-10-15/crab/03-salted-egg-crab.png"
-    ],
+    "imageUrl": saltedEggCrabPhoto,
+    "photos": [saltedEggCrabPhoto],
     "photo_status": "available",
     "isConflict": false,
     "isSignature": false,
@@ -471,9 +475,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "crab",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/crab/04-sambal-crab.png",
-    "photos": [
-      "/kok-sen-menu-2026-10-15/crab/04-sambal-crab.png"
+    "imageUrl": sambalCrabPhoto,
+    "photos": [sambalCrabPhoto
+      
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -496,9 +500,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "crab",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/crab/05-spring-onion-crab.png",
+    "imageUrl": springOnionCrabPhoto,
     "photos": [
-      "/kok-sen-menu-2026-10-15/crab/05-spring-onion-crab.png"
+      springOnionCrabPhoto
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2151,9 +2155,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/oddle-photos-web-2026-10-19/broccoli-stir-fried-with-prawns-balls--67a8fb91996f.webp",
+    "imageUrl": broccoliPrwanBallsPhoto,
     "photos": [
-      "/oddle-photos-web-2026-10-19/broccoli-stir-fried-with-prawns-balls--67a8fb91996f.webp"
+      broccoliPrwanBallsPhoto
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2229,9 +2233,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/oddle-photos-web-2026-10-19/salt-pepper-prawns--7951b9ce8646.webp",
+    "imageUrl": saltandPepperPrawnPhoto,
     "photos": [
-      "/oddle-photos-web-2026-10-19/salt-pepper-prawns--7951b9ce8646.webp"
+      saltandPepperPrawnPhoto
     ],
     "photo_status": "available",
     "isConflict": false,
