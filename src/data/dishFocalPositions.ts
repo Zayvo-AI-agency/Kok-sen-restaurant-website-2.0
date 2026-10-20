@@ -8,7 +8,7 @@
 
 export const DISH_FOCAL_POSITIONS: Record<string, string> = {
   // Additional Dishes
-  "ks-20261015-001": "center 46%", // Yam Ring
+  "ks-20261015-001": "center center", // Yam Ring (750x750 square)
 
   // Chicken
   "ks-20261015-006": "center 44%", // Kung Bao Chicken

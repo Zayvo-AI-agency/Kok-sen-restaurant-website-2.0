@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { useNavigation } from '../context/NavigationContext';
 import { useApp } from '../context/AppContext';
 import { MENU_CATEGORIES, FULL_MENU_ITEMS, TABLE_SPREAD_PRESETS } from '../data/restaurantData';
@@ -12,6 +12,7 @@ import {
   UtensilsCrossed, 
   Users, 
   Sparkles, 
+  ChevronLeft,
   ChevronRight,
   Bookmark
 } from 'lucide-react';
@@ -34,6 +35,8 @@ export function MenuPage() {
   const { 
     handleAddToOrder, 
     setSelectedDish, 
+    setModalDishList,
+    registerCardImageOverride,
     handleOpenConcierge, 
     handleLoadPresetSpread,
     orderedItemIds,
@@ -51,6 +54,74 @@ export function MenuPage() {
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const [imageSources, setImageSources] = useState<Record<string, string>>({});
 
+  // Horizontal Category Scroller state & refs
+  const categoryScrollRef = useRef<HTMLDivElement>(null);
+  const categoryButtonRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [hasCategoryOverflow, setHasCategoryOverflow] = useState(true);
+
+  const updateCategoryScrollState = useCallback(() => {
+    const el = categoryScrollRef.current;
+    if (!el) return;
+    const maxScrollLeft = el.scrollWidth - el.clientWidth;
+    const overflows = maxScrollLeft > 2;
+    setHasCategoryOverflow(overflows);
+    setCanScrollLeft(overflows && el.scrollLeft > 2);
+    setCanScrollRight(overflows && el.scrollLeft < maxScrollLeft - 2);
+  }, []);
+
+  const scrollCategoryButtonIntoView = useCallback((catId: string) => {
+    const container = categoryScrollRef.current;
+    const btn = categoryButtonRefs.current[catId];
+    if (!container || !btn) return;
+    const containerRect = container.getBoundingClientRect();
+    const btnRect = btn.getBoundingClientRect();
+    const padding = 16;
+    if (btnRect.left < containerRect.left + padding) {
+      container.scrollBy({
+        left: btnRect.left - containerRect.left - padding,
+        behavior: 'smooth',
+      });
+    } else if (btnRect.right > containerRect.right - padding) {
+      container.scrollBy({
+        left: btnRect.right - containerRect.right + padding,
+        behavior: 'smooth',
+      });
+    }
+  }, []);
+
+  const scrollCategoriesBy = (direction: 'left' | 'right') => {
+    const el = categoryScrollRef.current;
+    if (!el) return;
+    const step = Math.max(200, Math.round(el.clientWidth * 0.65));
+    el.scrollBy({
+      left: direction === 'left' ? -step : step,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    updateCategoryScrollState();
+    const el = categoryScrollRef.current;
+    let observer: ResizeObserver | null = null;
+    if (el && typeof ResizeObserver !== 'undefined') {
+      observer = new ResizeObserver(() => updateCategoryScrollState());
+      observer.observe(el);
+    }
+    window.addEventListener('resize', updateCategoryScrollState);
+    return () => {
+      if (observer) observer.disconnect();
+      window.removeEventListener('resize', updateCategoryScrollState);
+    };
+  }, [updateCategoryScrollState]);
+
+  useEffect(() => {
+    scrollCategoryButtonIntoView(activeCategory);
+    const timer = setTimeout(updateCategoryScrollState, 220);
+    return () => clearTimeout(timer);
+  }, [activeCategory, scrollCategoryButtonIntoView, updateCategoryScrollState]);
+
   // Sync state when URL params change
   useEffect(() => {
     const cat = searchParams.get('category') || 'all';
@@ -59,33 +130,16 @@ export function MenuPage() {
     setSearchQuery(q);
   }, [searchParams]);
 
-  // Handle category switch (Smooth jump to section in all-sections view, or filter)
-  const handleSelectCategory = (catId: string, forceFilter = false) => {
+  // Handle category switch
+  const handleSelectCategory = (catId: string, _forceFilter = false) => {
     if (catId === 'all') {
       setActiveCategory('all');
       setSearchParam('category', null);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
 
-    if (!forceFilter && activeCategory === 'all' && !searchQuery.trim()) {
-      // Smooth scroll directly to the section in the full menu
-      const element = document.getElementById(catId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        return;
-      }
-    }
-
-    // Otherwise filter to single category
     setActiveCategory(catId);
     setSearchParam('category', catId);
-    setTimeout(() => {
-      const element = document.getElementById(catId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 50);
   };
 
   // Handle search input change
@@ -148,6 +202,26 @@ export function MenuPage() {
     }).filter((section) => section.dishes.length > 0);
   }, [activeCategory, filteredDishes]);
 
+  // Exact visible menu order (deduplicated by stable dish ID) for modal Previous/Next navigation
+  const visibleMenuOrderDishes = useMemo(() => {
+    const seen = new Set<string>();
+    const ordered: MenuItem[] = [];
+    for (const section of categorySections) {
+      for (const item of section.dishes) {
+        const key = item.source_item_id || item.id;
+        if (key && !seen.has(key)) {
+          seen.add(key);
+          ordered.push(item);
+        }
+      }
+    }
+    return ordered;
+  }, [categorySections]);
+
+  useEffect(() => {
+    setModalDishList(visibleMenuOrderDishes);
+  }, [visibleMenuOrderDishes, setModalDishList]);
+
   // Active category display name
   const currentCategoryDef = MENU_CATEGORIES.find((c) => c.id === activeCategory);
 
@@ -158,7 +232,8 @@ export function MenuPage() {
     const resolvedPhoto = getDisplayedDishPhoto(dish, imageSources[dishKey]);
     const currentSrc = resolvedPhoto.src;
     const hasValidImage = Boolean(resolvedPhoto.hasValidPhoto && !imageErrors[dishKey]);
-    const openModalForDish = () => setSelectedDish(dish, hasValidImage ? currentSrc : undefined);
+    const openModalForDish = () =>
+      setSelectedDish(dish, hasValidImage ? currentSrc : undefined, visibleMenuOrderDishes);
 
     return (
       <div
@@ -181,6 +256,7 @@ export function MenuPage() {
                 const fallbackUrl = resolvedPhoto.fallbackSrc;
                 if (fallbackUrl && currentSrc !== fallbackUrl) {
                   setImageSources((prev) => ({ ...prev, [dishKey]: fallbackUrl }));
+                  registerCardImageOverride(dishKey, fallbackUrl);
                 } else {
                   setImageErrors((prev) => ({ ...prev, [dishKey]: true }));
                 }
@@ -271,7 +347,7 @@ export function MenuPage() {
   };
 
   return (
-    <div className="flex flex-col gap-8 sm:gap-12 animate-in fade-in duration-300">
+    <div className="flex flex-col gap-8 sm:gap-12 w-full max-w-full min-w-0 animate-in fade-in duration-300">
       {/* 1. Header & Page Intro */}
       <section className="flex flex-col gap-3 border-b border-surface-container-high/60 pb-6">
         <div className="flex items-center justify-between flex-wrap gap-2">
@@ -380,10 +456,10 @@ export function MenuPage() {
       )}
 
       {/* 3. Search Bar & Filter Controls (Sticky on scroll) */}
-      <div className="sticky top-14 sm:top-20 z-30 bg-surface/95 backdrop-blur-xl pt-2 pb-3 border-b border-surface-container-high/60 flex flex-col gap-3 -mx-3 sm:-mx-6 md:-mx-8 lg:-mx-12 xl:-mx-16 px-3 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+      <div className="sticky top-14 sm:top-20 z-30 w-full max-w-full min-w-0 bg-surface/95 backdrop-blur-xl pt-2 pb-3 border-b border-surface-container-high/60 flex flex-col gap-3">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full max-w-full min-w-0">
           {/* Live Search Input */}
-          <div className="relative flex-1">
+          <div className="relative flex-1 min-w-0">
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-tertiary" />
             <input
               type="text"
@@ -429,31 +505,79 @@ export function MenuPage() {
           )}
         </div>
 
-        {/* Category Filter Horizontal Segmented Bar (Mobile Scrollable) */}
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-scroll py-1">
-          {MENU_CATEGORIES.map((cat) => {
-            const isActive = activeCategory === cat.id;
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => handleSelectCategory(cat.id)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 ${
-                  isActive
-                    ? 'bg-secondary text-on-secondary shadow-xs font-bold ring-2 ring-secondary/50'
-                    : 'bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-white border border-surface-container-high/60'
-                }`}
-              >
-                <span>{cat.nameEn}</span>
-                {cat.nameZh && <span className="opacity-75 font-normal text-[11px]">{cat.nameZh}</span>}
-                {cat.count !== undefined && (
-                  <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${isActive ? 'bg-black/20 text-white' : 'bg-surface-container-highest text-tertiary'}`}>
-                    {cat.count}
-                  </span>
-                )}
-              </button>
-            );
-          })}
+        {/* Category Filter Horizontal Scroller with Reserved Left/Right Scroll Controls */}
+        <div className="flex items-center gap-1.5 sm:gap-2 w-full max-w-full min-w-0">
+          {hasCategoryOverflow && (
+            <button
+              type="button"
+              onClick={() => scrollCategoriesBy('left')}
+              disabled={!canScrollLeft}
+              aria-label="Scroll categories left"
+              title="Scroll categories left"
+              className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg shrink-0 flex items-center justify-center border transition-all ${
+                canScrollLeft
+                  ? 'bg-surface-container-high hover:bg-surface-bright text-on-surface border-surface-container-highest cursor-pointer shadow-xs active:scale-95'
+                  : 'bg-surface-container/40 text-tertiary/30 border-surface-container-high/30 cursor-not-allowed opacity-40'
+              }`}
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+          )}
+
+          <div
+            ref={categoryScrollRef}
+            onScroll={updateCategoryScrollState}
+            role="tablist"
+            aria-label="Menu categories"
+            className="flex-1 min-w-0 flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-scroll py-1 px-0.5 scroll-smooth"
+          >
+            {MENU_CATEGORIES.map((cat) => {
+              const isActive = activeCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  ref={(el) => {
+                    categoryButtonRefs.current[cat.id] = el;
+                  }}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => handleSelectCategory(cat.id)}
+                  onFocus={() => scrollCategoryButtonIntoView(cat.id)}
+                  className={`shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 ${
+                    isActive
+                      ? 'bg-secondary text-on-secondary shadow-xs font-bold ring-2 ring-secondary/50'
+                      : 'bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-white border border-surface-container-high/60'
+                  }`}
+                >
+                  <span>{cat.nameEn}</span>
+                  {cat.nameZh && <span className="opacity-75 font-normal text-[11px]">{cat.nameZh}</span>}
+                  {cat.count !== undefined && (
+                    <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${isActive ? 'bg-black/20 text-white' : 'bg-surface-container-highest text-tertiary'}`}>
+                      {cat.count}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {hasCategoryOverflow && (
+            <button
+              type="button"
+              onClick={() => scrollCategoriesBy('right')}
+              disabled={!canScrollRight}
+              aria-label="Scroll categories right"
+              title="Scroll categories right"
+              className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg shrink-0 flex items-center justify-center border transition-all ${
+                canScrollRight
+                  ? 'bg-surface-container-high hover:bg-surface-bright text-on-surface border-surface-container-highest cursor-pointer shadow-xs active:scale-95'
+                  : 'bg-surface-container/40 text-tertiary/30 border-surface-container-high/30 cursor-not-allowed opacity-40'
+              }`}
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          )}
         </div>
       </div>
 

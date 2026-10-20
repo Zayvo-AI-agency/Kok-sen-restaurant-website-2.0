@@ -138,9 +138,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "additional-dishes",
     "price": 0,
     "description": "",
-    "imageUrl": "/images/yam-paste.jpg",
+    "imageUrl": "/oddle-photos-web-2026-10-19/yam-ring--1a781e5cf735.webp",
     "photos": [
-      "/images/yam-paste.jpg"
+      "/oddle-photos-web-2026-10-19/yam-ring--1a781e5cf735.webp"
     ],
     "photo_status": "available",
     "isConflict": false,

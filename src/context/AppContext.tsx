@@ -37,7 +37,10 @@ interface AppContextType {
   setDeliveryOpen: (open: boolean) => void;
   selectedDish: MenuItem | null;
   selectedDishImage?: string;
-  setSelectedDish: (dish: MenuItem | null, resolvedImage?: string) => void;
+  modalDishList: MenuItem[];
+  setModalDishList: (dishes: MenuItem[]) => void;
+  registerCardImageOverride: (dishKey: string, src: string) => void;
+  setSelectedDish: (dish: MenuItem | null, resolvedImage?: string, dishList?: MenuItem[]) => void;
 
   // Toast
   toastMessage: string | null;
@@ -123,20 +126,69 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [deliveryOpen, setDeliveryOpen] = useState(false);
   const [selectedDish, setSelectedDishState] = useState<MenuItem | null>(null);
   const [selectedDishImage, setSelectedDishImage] = useState<string | undefined>(undefined);
+  const [cardImageOverrides, setCardImageOverrides] = useState<Record<string, string>>({});
 
-  const setSelectedDish = useCallback((dish: MenuItem | null, resolvedImage?: string) => {
-    if (!dish) {
-      setSelectedDishState(null);
-      setSelectedDishImage(undefined);
-      return;
+  const deduplicateDishes = useCallback((dishes: MenuItem[]): MenuItem[] => {
+    const seen = new Set<string>();
+    const result: MenuItem[] = [];
+    for (const item of dishes) {
+      if (!item || item.publish === false) continue;
+      const key = item.source_item_id || item.id;
+      if (key && !seen.has(key)) {
+        seen.add(key);
+        result.push(item);
+      }
     }
-    const resolved = getDisplayedDishPhoto(dish, resolvedImage);
-    setSelectedDishImage(resolved.src);
-    setSelectedDishState({
-      ...dish,
-      resolvedDisplayImage: resolved.src,
-    });
+    return result;
   }, []);
+
+  const [modalDishList, setModalDishListState] = useState<MenuItem[]>(() => {
+    const seen = new Set<string>();
+    const result: MenuItem[] = [];
+    for (const item of FULL_MENU_ITEMS) {
+      if (item.publish === false) continue;
+      const key = item.source_item_id || item.id;
+      if (key && !seen.has(key)) {
+        seen.add(key);
+        result.push(item);
+      }
+    }
+    return result;
+  });
+
+  const setModalDishList = useCallback(
+    (dishes: MenuItem[]) => {
+      setModalDishListState(deduplicateDishes(dishes));
+    },
+    [deduplicateDishes]
+  );
+
+  const registerCardImageOverride = useCallback((dishKey: string, src: string) => {
+    if (!dishKey || !src) return;
+    setCardImageOverrides((prev) => (prev[dishKey] === src ? prev : { ...prev, [dishKey]: src }));
+  }, []);
+
+  const setSelectedDish = useCallback(
+    (dish: MenuItem | null, resolvedImage?: string, dishList?: MenuItem[]) => {
+      if (!dish) {
+        setSelectedDishState(null);
+        setSelectedDishImage(undefined);
+        return;
+      }
+      if (dishList) {
+        setModalDishListState(deduplicateDishes(dishList));
+      }
+      const dishKey = dish.source_item_id || dish.id;
+      const effectiveOverride = resolvedImage || (dishKey ? cardImageOverrides[dishKey] : undefined);
+      const resolved = getDisplayedDishPhoto(dish, effectiveOverride);
+      setSelectedDishImage(resolved.src);
+      setSelectedDishState({
+        ...dish,
+        resolvedDisplayImage: resolved.src,
+      });
+    },
+    [cardImageOverrides, deduplicateDishes]
+  );
 
   // Toast
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -265,6 +317,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setDeliveryOpen,
         selectedDish,
         selectedDishImage,
+        modalDishList,
+        setModalDishList,
+        registerCardImageOverride,
         setSelectedDish,
         toastMessage,
         showToast,

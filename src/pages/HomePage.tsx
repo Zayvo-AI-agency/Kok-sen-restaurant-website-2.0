@@ -34,6 +34,7 @@ export function HomePage() {
   const { 
     handleAddToOrder, 
     setSelectedDish, 
+    registerCardImageOverride,
     handleOpenConcierge, 
     setReservationOpen,
     setScanTableOpen,
@@ -272,7 +273,8 @@ export function HomePage() {
             const resolvedPhoto = getDisplayedDishPhoto(dish, imageSources[dishKey]);
             const currentSrc = resolvedPhoto.src;
             const hasValidImage = Boolean(resolvedPhoto.hasValidPhoto && !imageErrors[dishKey]);
-            const openModalForDish = () => setSelectedDish(dish, hasValidImage ? currentSrc : undefined);
+            const openModalForDish = () =>
+              setSelectedDish(dish, hasValidImage ? currentSrc : undefined, TOP_SIGNATURES.slice(0, 4));
 
             return (
               <div
@@ -295,6 +297,7 @@ export function HomePage() {
                         const fallbackUrl = resolvedPhoto.fallbackSrc;
                         if (fallbackUrl && currentSrc !== fallbackUrl) {
                           setImageSources((prev) => ({ ...prev, [dishKey]: fallbackUrl }));
+                          registerCardImageOverride(dishKey, fallbackUrl);
                         } else {
                           setImageErrors((prev) => ({ ...prev, [dishKey]: true }));
                         }

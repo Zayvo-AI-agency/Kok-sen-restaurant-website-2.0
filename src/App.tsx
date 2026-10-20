@@ -39,6 +39,7 @@ function AppContent() {
     handleClearOrder,
     selectedDish,
     selectedDishImage,
+    modalDishList,
     setSelectedDish,
     reservationOpen,
     setReservationOpen,
@@ -93,7 +94,7 @@ function AppContent() {
 
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container flex flex-col justify-between">
-      <div>
+      <div className="w-full max-w-full min-w-0">
         {/* Global Multipage Sticky Header */}
         <Header
           onOpenReservation={() => setReservationOpen(true)}
@@ -124,9 +125,10 @@ function AppContent() {
 
       {/* Global Dish Detail Modal */}
       <DishDetailModal
-        key={selectedDish ? `${selectedDish.source_item_id || selectedDish.id}` : 'closed'}
         dish={selectedDish}
         resolvedImage={selectedDishImage || selectedDish?.resolvedDisplayImage}
+        dishes={modalDishList}
+        onSelectDish={(nextDish) => setSelectedDish(nextDish)}
         onClose={() => setSelectedDish(null)}
         onAddToOrder={handleAddToOrder}
       />
