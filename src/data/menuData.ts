@@ -939,9 +939,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "frogs",
     "price": 0,
     "description": "Crispy golden deep-fried fresh frog pieces tossed with aromatic ginger and garlic, tender on the inside with a crunchy exterior.",
-    "imageUrl": "/public/assets/aistudio/WhatsApp_Image_2026-10-20_at_7.10.31_PM_69501bb3.jpeg",
+    "imageUrl": "/images/deep-fried-frog.jpg",
     "photos": [
-      "/public/assets/aistudio/WhatsApp_Image_2026-10-20_at_7.10.31_PM_69501bb3.jpeg"
+      "/images/deep-fried-frog.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
