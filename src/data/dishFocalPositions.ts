@@ -18,6 +18,7 @@ export const DISH_FOCAL_POSITIONS: Record<string, string> = {
   "ks-20261015-035": "center 52%", // Golden Dragon Chicken
 
   // Fish & Seafood
+  "ks-20261015-022": "center 60%", // Deep Fried "Yu Gai" Fish
   "ks-20261015-024": "center 44%", // Black Bean Fish Meat
   "ks-20261015-025": "center 40%", // Claypot Fish Meat (Curry Fish Tail)
   "ks-20261015-029": "center 42%", // Sambal Fish Meat

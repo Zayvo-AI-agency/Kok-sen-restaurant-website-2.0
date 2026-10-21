@@ -682,9 +682,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "fish",
     "price": 0,
     "description": "",
-    "imageUrl": "/images/deep-fried-fish-meat.jpg",
+    "imageUrl": "/images/deep-fried-yu-gai-fish.jpg",
     "photos": [
-      "/images/deep-fried-fish-meat.jpg"
+      "/images/deep-fried-yu-gai-fish.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -827,12 +827,12 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "id": "ks-20261015-028",
     "source_item_id": "ks-20261015-028",
     "itemCode": "#028",
-    "name": "Hong Kong Style Steamed Grouper",
-    "english_name": "Hong Kong Style Steamed Grouper",
-    "nameEn": "Hong Kong Style Steamed Grouper",
+    "name": "HK Style Steam Fish",
+    "english_name": "HK Style Steam Fish",
+    "nameEn": "HK Style Steam Fish",
     "nameZh": "",
     "chinese_name": "",
-    "fullName": "Hong Kong Style Steamed Grouper",
+    "fullName": "HK Style Steam Fish",
     "category": "Fish",
     "categoryId": "fish",
     "price": 0,
