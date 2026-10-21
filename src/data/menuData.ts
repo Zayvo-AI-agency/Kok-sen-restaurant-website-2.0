@@ -28,6 +28,13 @@ export const MENU_CATEGORIES: MenuCategoryDef[] = [
     "nameZh": "全部菜品"
   },
   {
+    "id": "dining",
+    "name": "Dining",
+    "nameEn": "Dining",
+    "nameZh": "堂食独享",
+    "count": 5
+  },
+  {
     "id": "beef",
     "name": "Beef",
     "nameEn": "Beef",
@@ -40,13 +47,6 @@ export const MENU_CATEGORIES: MenuCategoryDef[] = [
     "nameEn": "Chicken",
     "nameZh": "鸡肉类",
     "count": 6
-  },
-  {
-    "id": "crab",
-    "name": "Crab",
-    "nameEn": "Crab",
-    "nameZh": "螃蟹类",
-    "count": 5
   },
   {
     "id": "eggs",
@@ -67,7 +67,7 @@ export const MENU_CATEGORIES: MenuCategoryDef[] = [
     "name": "Frogs",
     "nameEn": "Frogs",
     "nameZh": "田鸡类",
-    "count": 3
+    "count": 4
   },
   {
     "id": "vegetables",
@@ -403,8 +403,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "nameZh": "",
     "chinese_name": "",
     "fullName": "Black Pepper Crab",
-    "category": "Crab",
-    "categoryId": "crab",
+    "category": "Dining",
+    "categoryId": "dining",
     "price": 0,
     "description": "",
     "imageUrl": blackPepperCrabPhoto,
@@ -426,8 +426,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "nameZh": "",
     "chinese_name": "",
     "fullName": "Chilli Crab",
-    "category": "Crab",
-    "categoryId": "crab",
+    "category": "Dining",
+    "categoryId": "dining",
     "price": 0,
     "description": "",
     "imageUrl": chilliCrabPhoto,
@@ -449,8 +449,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "nameZh": "",
     "chinese_name": "",
     "fullName": "Salted Egg Crab",
-    "category": "Crab",
-    "categoryId": "crab",
+    "category": "Dining",
+    "categoryId": "dining",
     "price": 0,
     "description": "",
     "imageUrl": saltedEggCrabPhoto,
@@ -472,8 +472,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "nameZh": "",
     "chinese_name": "",
     "fullName": "Sambal Crab",
-    "category": "Crab",
-    "categoryId": "crab",
+    "category": "Dining",
+    "categoryId": "dining",
     "price": 0,
     "description": "",
     "imageUrl": sambalCrabPhoto,
@@ -497,8 +497,8 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "nameZh": "",
     "chinese_name": "",
     "fullName": "Spring Onion Crab",
-    "category": "Crab",
-    "categoryId": "crab",
+    "category": "Dining",
+    "categoryId": "dining",
     "price": 0,
     "description": "",
     "imageUrl": springOnionCrabPhoto,
@@ -878,12 +878,12 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "id": "ks-20261015-030",
     "source_item_id": "ks-20261015-030",
     "itemCode": "#030",
-    "name": "Sweet and Sour Grouper",
-    "english_name": "Sweet and Sour Grouper",
-    "nameEn": "Sweet and Sour Grouper",
+    "name": "Sweet and Sour Slice Fish",
+    "english_name": "Sweet and Sour Slice Fish",
+    "nameEn": "Sweet and Sour Slice Fish",
     "nameZh": "",
     "chinese_name": "",
-    "fullName": "Sweet and Sour Grouper",
+    "fullName": "Sweet and Sour Slice Fish",
     "category": "Fish",
     "categoryId": "fish",
     "price": 0,
@@ -924,6 +924,31 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "publish": true,
     "oddle_source_url": "https://ucarecdn.com/bad55b76-1fdb-462f-8ef0-2f20160a3726/",
     "hasOddleOriginalPhoto": true
+  },
+  {
+    "id": "ks-20261015-032",
+    "source_item_id": "ks-20261015-032",
+    "itemCode": "#032",
+    "name": "Deep Fried Frog",
+    "english_name": "Deep Fried Frog",
+    "nameEn": "Deep Fried Frog",
+    "nameZh": "酥炸田鸡",
+    "chinese_name": "酥炸田鸡",
+    "fullName": "Deep Fried Frog (酥炸田鸡)",
+    "category": "Frogs",
+    "categoryId": "frogs",
+    "price": 0,
+    "description": "Crispy golden deep-fried fresh frog pieces tossed with aromatic ginger and garlic, tender on the inside with a crunchy exterior.",
+    "imageUrl": "/public/assets/aistudio/WhatsApp_Image_2026-10-20_at_7.10.31_PM_69501bb3.jpeg",
+    "photos": [
+      "/public/assets/aistudio/WhatsApp_Image_2026-10-20_at_7.10.31_PM_69501bb3.jpeg"
+    ],
+    "photo_status": "available",
+    "isConflict": false,
+    "isSignature": false,
+    "isChefRecommendation": false,
+    "publish": true,
+    "hasOddleOriginalPhoto": false
   },
   {
     "id": "ks-20261015-033",
@@ -2687,30 +2712,6 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
   }
 ];
 
-export const UNPUBLISHED_REVIEW_ITEMS: MenuItem[] = [
-  {
-    "id": "ks-20261015-032",
-    "source_item_id": "ks-20261015-032",
-    "itemCode": "#032",
-    "name": "Unnamed Frog Dish (Awaiting Client Confirmation)",
-    "english_name": "Unnamed Frog Dish (Awaiting Client Confirmation)",
-    "nameEn": "Unnamed Frog Dish (Awaiting Client Confirmation)",
-    "nameZh": "",
-    "chinese_name": "",
-    "fullName": "Unnamed Frog Dish (Awaiting Client Confirmation)",
-    "category": "Frogs",
-    "categoryId": "frogs",
-    "price": 0,
-    "description": "Client confirmation needed for exact dish name from frogs 1.zip (BackgroundEraser_20260906_131532826.png).",
-    "imageUrl": "/kok-sen-menu-2026-10-15/frogs/02-unnamed-frog-dish-needs-confirmation.png",
-    "photos": [
-      "/kok-sen-menu-2026-10-15/frogs/02-unnamed-frog-dish-needs-confirmation.png"
-    ],
-    "photo_status": "awaiting_client_name",
-    "isConflict": false,
-    "isSignature": false,
-    "publish": false
-  }
-];
+export const UNPUBLISHED_REVIEW_ITEMS: MenuItem[] = [];
 
 export const TOP_SIGNATURES: MenuItem[] = FULL_MENU_ITEMS.filter(i => i.isSignature);

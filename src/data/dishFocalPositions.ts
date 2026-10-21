@@ -21,7 +21,10 @@ export const DISH_FOCAL_POSITIONS: Record<string, string> = {
   "ks-20261015-024": "center 44%", // Black Bean Fish Meat
   "ks-20261015-025": "center 40%", // Claypot Fish Meat (Curry Fish Tail)
   "ks-20261015-029": "center 42%", // Sambal Fish Meat
-  "ks-20261015-030": "center 43%", // Sweet and Sour Grouper
+  "ks-20261015-030": "center 43%", // Sweet and Sour Slice Fish
+
+  // Frogs
+  "ks-20261015-032": "center 60%", // Deep Fried Frog
 
   // Hor Fun
   "ks-20261015-045": "center 48%", // Sanluo Hor Fun

@@ -23,6 +23,7 @@ export function isItemInCategory(item: MenuItem, catId: string): boolean {
   const itemCatId = (item.categoryId || '').toLowerCase().trim();
   const itemCat = (item.category || '').toLowerCase().trim();
   const itemCatNormalized = itemCat.replace(/[^a-z0-9]/g, '-');
+  if (target === 'crab' && (itemCatId === 'dining' || itemCat === 'dining')) return true;
   return (
     itemCatId === target ||
     itemCat === target ||
@@ -280,11 +281,15 @@ export function MenuPage() {
             {dish.itemCode || dish.code}
           </div>
 
-          {dish.isSignature && (
+          {(dish.categoryId === 'dining' || dish.category?.toLowerCase() === 'dining' || dish.nameEn?.toLowerCase().includes('crab')) ? (
+            <div className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full bg-amber-500/95 text-stone-950 text-[10px] font-extrabold uppercase tracking-wider shadow-md z-10">
+              Dine-in Only
+            </div>
+          ) : dish.isSignature ? (
             <div className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full bg-primary/95 text-white text-[10px] font-bold uppercase tracking-wider shadow-md z-10">
               Signature
             </div>
-          )}
+          ) : null}
         </div>
 
         {/* Content */}
@@ -353,7 +358,7 @@ export function MenuPage() {
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2 text-xs font-semibold text-secondary">
             <UtensilsCrossed className="w-4 h-4 text-primary" />
-            <span className="uppercase tracking-widest font-label-caps">99 Verified Dishes Across 15 Authentic Categories</span>
+            <span className="uppercase tracking-widest font-label-caps">{FULL_MENU_ITEMS.length} Verified Dishes Across 15 Authentic Categories</span>
           </div>
           
           <button
@@ -465,7 +470,7 @@ export function MenuPage() {
               type="text"
               value={searchQuery}
               onChange={(e) => handleSearchChange(e.target.value)}
-              placeholder="Search 99 menu listings by English, Chinese, or code (e.g. Beef, Hor Fun, #050)..."
+              placeholder={`Search ${FULL_MENU_ITEMS.length} menu listings by English, Chinese, or code (e.g. Beef, Hor Fun, #050)...`}
               className="w-full pl-10 pr-9 py-2.5 rounded-xl bg-surface-container border border-surface-container-high text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none focus:border-secondary transition-colors"
             />
             {searchQuery && (
@@ -641,6 +646,11 @@ export function MenuPage() {
                       </span>
                     )}
                   </h2>
+                  {category.id === 'dining' && (
+                    <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xs border border-amber-500/40 uppercase tracking-wide">
+                      Dine-in Only
+                    </span>
+                  )}
                   <span className="text-xs px-2.5 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-semibold border border-surface-container-high">
                     {dishes.length} {dishes.length === 1 ? 'dish' : 'dishes'}
                   </span>

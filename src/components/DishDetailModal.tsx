@@ -301,10 +301,16 @@ export function DishDetailModal({
                 {dish.nameEn}
               </h3>
             </div>
-            <div className="flex items-center gap-3 mt-1">
+            <div className="flex items-center gap-3 mt-1 flex-wrap">
               <span className="text-secondary font-headline-md text-base">
                 {dish.nameZh}
               </span>
+              {(dish.categoryId === 'dining' || dish.category?.toLowerCase() === 'dining' || dish.nameEn?.toLowerCase().includes('crab')) && (
+                <span className="px-2.5 py-0.5 bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded text-xs font-bold uppercase tracking-wider flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[13px]">restaurant</span>
+                  Dine-in Only
+                </span>
+              )}
               {dish.isChefRecommendation && (
                 <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded text-xs font-bold flex items-center gap-1">
                   <span className="material-symbols-outlined text-[13px]">star</span>

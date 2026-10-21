@@ -107,6 +107,11 @@ export function TableOrderDrawer({
                           Size {size}
                         </span>
                       )}
+                      {(item.categoryId === 'dining' || item.category?.toLowerCase() === 'dining' || item.nameEn?.toLowerCase().includes('crab')) && (
+                        <span className="px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] font-bold uppercase tracking-wider border border-amber-500/30">
+                          Dine-in Only
+                        </span>
+                      )}
                     </div>
                     <div className="text-body-sm text-tertiary">
                       {item.nameZh}
