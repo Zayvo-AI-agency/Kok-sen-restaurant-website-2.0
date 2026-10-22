@@ -39,7 +39,9 @@ export const DISH_FOCAL_POSITIONS: Record<string, string> = {
   "ks-20261015-051": "center 56%", // Black Bean Fish Meat Bee Hoon
   "ks-20261015-052": "center 42%", // Dry Bee Hoon
   "ks-20261015-053": "center 49%", // Fish Meat Bee Hoon Soup
+  "ks-20261015-054": "center 62%", // Hokkien Mee
   "ks-20261015-055": "center 48%", // Eggs Crispy Noodle
+  "ks-20261015-056": "center 68%", // Mee Goreng
   "ks-20261015-057": "center 38%", // Prawn Bee Hoon Soup / Big Prawn Soup
   "ks-20261015-058": "center 47%", // Crispy Noodle
 

@@ -1508,9 +1508,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/04-hokkien-mee.png",
+    "imageUrl": "/images/hokkien-mee.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/noodles/04-hokkien-mee.png"
+      "/images/hokkien-mee.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -1559,9 +1559,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/kok-sen-menu-2026-10-15/noodles/06-mee-goreng.png",
+    "imageUrl": "/images/mee-goreng.jpg",
     "photos": [
-      "/kok-sen-menu-2026-10-15/noodles/06-mee-goreng.png"
+      "/images/mee-goreng.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
