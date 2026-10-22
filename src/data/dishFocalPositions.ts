@@ -51,7 +51,7 @@ export const DISH_FOCAL_POSITIONS: Record<string, string> = {
 
   // Rice
   "ks-20261015-066": "center 44%", // Black Bean with Sliced Fish Rice
-  "ks-20261015-067": "center 49%", // Black Sauce with Roasted Pork Rice
+  "ks-20261015-067": "center 54%", // Black Sauce with Roasted Pork Rice
   "ks-20261015-068": "center 42%", // Seafood Fried Rice
   "ks-20261015-069": "center 47%", // Beef Fried Rice
   "ks-20261015-070": "center 48%", // Braised Rice
