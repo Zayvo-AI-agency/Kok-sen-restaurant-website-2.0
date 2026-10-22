@@ -1430,9 +1430,9 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "categoryId": "noodles",
     "price": 0,
     "description": "",
-    "imageUrl": "/images/braised-fish-meat-bee-hoon.jpg",
+    "imageUrl": "/images/black-bean-fish-meat-bee-hoon.jpg",
     "photos": [
-      "/images/braised-fish-meat-bee-hoon.jpg"
+      "/images/black-bean-fish-meat-bee-hoon.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,
@@ -2301,19 +2301,19 @@ export const FULL_MENU_ITEMS: MenuItem[] = [
     "id": "ks-20261015-085",
     "source_item_id": "ks-20261015-085",
     "itemCode": "#085",
-    "name": "Sambal Prawn",
-    "english_name": "Sambal Prawn",
-    "nameEn": "Sambal Prawn",
+    "name": "Sambal prawn balls",
+    "english_name": "Sambal prawn balls",
+    "nameEn": "Sambal prawn balls",
     "nameZh": "",
     "chinese_name": "",
-    "fullName": "Sambal Prawn",
+    "fullName": "Sambal prawn balls",
     "category": "Seafood",
     "categoryId": "seafood",
     "price": 0,
     "description": "",
-    "imageUrl": "/oddle-photos-web-2026-10-19/sambal-stir-fried-with-prawns-balls--5f11a3b9cd39.webp",
+    "imageUrl": "/images/sambal-prawn-balls.jpg",
     "photos": [
-      "/oddle-photos-web-2026-10-19/sambal-stir-fried-with-prawns-balls--5f11a3b9cd39.webp"
+      "/images/sambal-prawn-balls.jpg"
     ],
     "photo_status": "available",
     "isConflict": false,

@@ -23,6 +23,7 @@ export const DISH_FOCAL_POSITIONS: Record<string, string> = {
   "ks-20261015-025": "center 40%", // Claypot Fish Meat (Curry Fish Tail)
   "ks-20261015-029": "center 42%", // Sambal Fish Meat
   "ks-20261015-030": "center 43%", // Sweet and Sour Slice Fish
+  "ks-20261015-085": "center 62%", // Sambal Prawn Balls
 
   // Frogs
   "ks-20261015-032": "center 60%", // Deep Fried Frog
@@ -35,7 +36,7 @@ export const DISH_FOCAL_POSITIONS: Record<string, string> = {
   "ks-20261015-050": "center 46%", // Big Prawn Hor Fun
 
   // Noodles
-  "ks-20261015-051": "center 45%", // Black Bean Fish Meat Bee Hoon
+  "ks-20261015-051": "center 56%", // Black Bean Fish Meat Bee Hoon
   "ks-20261015-052": "center 42%", // Dry Bee Hoon
   "ks-20261015-053": "center 49%", // Fish Meat Bee Hoon Soup
   "ks-20261015-055": "center 48%", // Eggs Crispy Noodle

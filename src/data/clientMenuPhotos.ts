@@ -20,7 +20,7 @@ import photoT7 from '../assets/client-menu/094-tofu-hotplate-tofu.webp';
 import photoP1 from '../assets/client-menu/061-pork-bittergourd-pork-ribs.webp';
 import photoP4 from '../assets/client-menu/062-pork-kai-lan-rooset-pork.webp';
 import photoCH2 from '../assets/client-menu/001-golden-dragon-chicken.webp';
-import photoSE1 from '../assets/client-menu/084-seafood-sambal-prawn.webp';
+import photoSE1 from '../assets/images/sambal-prawn-balls.jpg';
 import photoSE2 from '../assets/client-menu/085-seafood-sea-cucumber-with-mushroom.webp';
 import photoSE3 from '../assets/client-menu/083-seafood-salted-egg-prawns.webp';
 import photoSE4 from '../assets/client-menu/082-seafood-salt-pepper-prawn.webp';
