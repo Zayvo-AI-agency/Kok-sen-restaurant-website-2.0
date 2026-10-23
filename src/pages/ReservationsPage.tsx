@@ -357,10 +357,14 @@ export function ReservationsPage() {
                     : 'border-surface-container-high focus:border-secondary'
                 }`}
               />
-              {guestError && guestTouched && (
+              {guestError && guestTouched ? (
                 <span className="text-xs text-rose-400 flex items-center gap-1 mt-0.5 animate-in fade-in duration-200">
                   <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                   <span>{guestError}</span>
+                </span>
+              ) : (
+                <span className="text-[11px] text-tertiary">
+                  Suitable table seating will be arranged by restaurant staff.
                 </span>
               )}
             </div>
@@ -402,12 +406,12 @@ export function ReservationsPage() {
           {/* Special Requests */}
           <div className="flex flex-col gap-2">
             <label htmlFor="res-special" className="text-xs font-bold text-on-surface uppercase tracking-wider">
-              Dietary Restrictions or Seating Requests (Optional)
+              Dietary Restrictions or Special Requests (Optional)
             </label>
             <textarea
               id="res-special"
               rows={2}
-              placeholder="e.g. High chair needed, elderly guest requiring ground-floor booth, severe shellfish allergy..."
+              placeholder="e.g. High chair needed, elderly guest requiring ground floor seating, severe shellfish allergy..."
               value={specialRequests}
               onChange={(e) => setSpecialRequests(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border border-surface-container-high text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none focus:border-secondary"

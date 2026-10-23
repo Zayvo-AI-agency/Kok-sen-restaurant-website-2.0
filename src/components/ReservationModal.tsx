@@ -287,10 +287,14 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
                       : 'border-surface-container-high focus:border-secondary'
                   }`}
                 />
-                {guestError && guestTouched && (
+                {guestError && guestTouched ? (
                   <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
                     <span className="material-symbols-outlined text-[14px]">error</span>
                     <span>{guestError}</span>
+                  </span>
+                ) : (
+                  <span className="text-[10px] text-tertiary block mt-1">
+                    Seating assigned by staff upon arrival.
                   </span>
                 )}
               </div>

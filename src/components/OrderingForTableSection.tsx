@@ -86,7 +86,7 @@ export function OrderingForTableSection({
                     className="w-full py-2.5 sm:py-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-button-text text-xs sm:text-button-text uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md font-bold active:scale-98"
                   >
                     <span className="material-symbols-outlined text-[16px]">event_seat</span>
-                    <span>Reserve a Round Table</span>
+                    <span>Reserve a Table</span>
                   </button>
                 ) : (
                   <button

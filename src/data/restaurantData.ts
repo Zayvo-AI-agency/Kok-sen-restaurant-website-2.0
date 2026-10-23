@@ -197,7 +197,7 @@ export const TABLE_SPREAD_PRESETS: TableSpreadPreset[] = [
     id: "eight-or-more",
     title: "Eight or More",
     dinerCount: "8+ Diners",
-    estimatedTotal: "Round Table Banquet",
+    estimatedTotal: "Large Group Spread",
     subtitle: "Family celebration, office supper banquet",
     dishes: [
       "Golden Dragon Chicken",
@@ -206,7 +206,7 @@ export const TABLE_SPREAD_PRESETS: TableSpreadPreset[] = [
       "Homemade Tofu",
       "Big Prawn Hor Fun"
     ],
-    note: "Give us a call ahead and we will hold a round revolving table for you.",
+    note: "Reserve ahead and our team will prepare a comfortable table spread for your group.",
     suggestedItems: [
       "ks-20261015-035",
       "ks-20261015-026",
