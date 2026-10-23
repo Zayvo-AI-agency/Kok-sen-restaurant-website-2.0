@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { RESTAURANT_INFO, OUTLETS, getOpeningStatus, PHOTO_ASSETS } from '../data/restaurantData';
 import { TableReservationRequest } from '../types';
+import { validateGuestCount } from '../utils/reservationValidation';
 
 export function LocationAndBookingSection() {
   const [selectedOutletTab, setSelectedOutletTab] = useState<'keong-saik' | 'city-square-mall'>('keong-saik');
@@ -10,18 +11,28 @@ export function LocationAndBookingSection() {
     outlet: 'keong-saik',
     name: '',
     phone: '',
-    guests: '4 guests',
+    guests: '',
     dateTime: '',
     dietaryNotes: ''
   });
 
+  const [guestError, setGuestError] = useState<string | null>(null);
+  const [guestTouched, setGuestTouched] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const currentOutlet = OUTLETS.find((o) => o.id === formData.outlet) || OUTLETS[0];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.phone) return;
+
+    const guestValidation = validateGuestCount(formData.guests);
+    if (!guestValidation.isValid) {
+      setGuestError(guestValidation.error);
+      setGuestTouched(true);
+      return;
+    }
+
+    if (!formData.name.trim() || !formData.phone.trim()) return;
 
     // Save to local storage for persistence
     try {
@@ -30,6 +41,7 @@ export function LocationAndBookingSection() {
         ...formData,
         outletName: currentOutlet.name,
         outletPhone: currentOutlet.whatsappNumber,
+        guestNumber: guestValidation.count,
         id: Date.now().toString(),
         createdAt: new Date().toISOString()
       });
@@ -48,7 +60,7 @@ export function LocationAndBookingSection() {
       `• Outlet: ${targetOutlet.name}\n` +
       `• Name: ${formData.name || '(Your Name)'}\n` +
       `• Contact: ${formData.phone || '(Contact Number)'}\n` +
-      `• Diners: ${formData.guests}\n` +
+      `• Number of Guests: ${formData.guests}\n` +
       `• Date & Time: ${formData.dateTime || 'Tonight'}\n` +
       (formData.dietaryNotes ? `• Notes: ${formData.dietaryNotes}\n` : '') +
       `\nPlease confirm if a table is available. Thank you!`
@@ -295,7 +307,7 @@ export function LocationAndBookingSection() {
                       Table Request Received for {currentOutlet.shortName}!
                     </h4>
                     <p className="font-body-md text-xs sm:text-body-md text-tertiary mt-1">
-                      Thank you, <strong className="text-on-surface">{formData.name}</strong>. We have logged your request for <strong className="text-on-surface">{formData.guests}</strong> at <strong className="text-secondary">{currentOutlet.name}</strong>.
+                      Thank you, <strong className="text-on-surface">{formData.name}</strong>. We have logged your request for <strong className="text-on-surface">{formData.guests} {parseInt(formData.guests) === 1 ? 'guest' : 'guests'}</strong> at <strong className="text-secondary">{currentOutlet.name}</strong>.
                     </p>
                   </div>
 
@@ -391,19 +403,46 @@ export function LocationAndBookingSection() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-space-sm">
                     <div>
                       <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
-                        Number of Diners
+                        Number of Guests *
                       </label>
-                      <select 
+                      <input 
+                        type="number"
+                        inputMode="numeric"
+                        min="1"
+                        step="1"
+                        required
+                        placeholder="Enter number of guests"
                         value={formData.guests}
-                        onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                        className="w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border border-surface-container-high focus:outline-none focus:border-secondary text-sm cursor-pointer"
-                      >
-                        <option value="2 guests">2 guests (Small Table)</option>
-                        <option value="3 - 4 guests">3 – 4 guests</option>
-                        <option value="5 - 6 guests">5 – 6 guests</option>
-                        <option value="7 - 8 guests">7 – 8 guests (Round Table)</option>
-                        <option value="9 - 12 guests">9 – 12 guests (Large Banquet)</option>
-                      </select>
+                        onKeyDown={(e) => {
+                          if (['e', 'E', '+', '-', '.'].includes(e.key)) {
+                            e.preventDefault();
+                          }
+                        }}
+                        onChange={(e) => {
+                          const val = e.target.value;
+                          setFormData({ ...formData, guests: val });
+                          if (guestTouched) {
+                            const validation = validateGuestCount(val);
+                            setGuestError(validation.isValid ? null : validation.error);
+                          }
+                        }}
+                        onBlur={() => {
+                          setGuestTouched(true);
+                          const validation = validateGuestCount(formData.guests);
+                          setGuestError(validation.isValid ? null : validation.error);
+                        }}
+                        className={`w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border placeholder:text-tertiary focus:outline-none text-sm transition-colors ${
+                          guestError && guestTouched
+                            ? 'border-rose-500 focus:border-rose-400'
+                            : 'border-surface-container-high focus:border-secondary'
+                        }`}
+                      />
+                      {guestError && guestTouched && (
+                        <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
+                          <span className="material-symbols-outlined text-[14px]">error</span>
+                          <span>{guestError}</span>
+                        </span>
+                      )}
                     </div>
 
                     <div>

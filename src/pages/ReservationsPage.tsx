@@ -15,6 +15,8 @@ import {
   ChevronRight
 } from 'lucide-react';
 
+import { validateGuestCount, formatGuestsLabel } from '../utils/reservationValidation';
+
 export function ReservationsPage() {
   const { selectedOutlet, setSelectedOutlet, showToast } = useApp();
 
@@ -27,7 +29,9 @@ export function ReservationsPage() {
     return tomorrow.toISOString().split('T')[0];
   });
   const [time, setTime] = useState<string>('18:30');
-  const [partySize, setPartySize] = useState<string>('4 diners');
+  const [guestCount, setGuestCount] = useState<string>('');
+  const [guestError, setGuestError] = useState<string | null>(null);
+  const [guestTouched, setGuestTouched] = useState<boolean>(false);
   const [name, setName] = useState<string>('');
   const [phone, setPhone] = useState<string>('');
   const [specialRequests, setSpecialRequests] = useState<string>('');
@@ -37,6 +41,14 @@ export function ReservationsPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const guestValidation = validateGuestCount(guestCount);
+    if (!guestValidation.isValid) {
+      setGuestError(guestValidation.error);
+      setGuestTouched(true);
+      showToast(guestValidation.error || 'Please enter the number of guests');
+      return;
+    }
 
     if (!name.trim()) {
       showToast('Please provide your name');
@@ -48,6 +60,27 @@ export function ReservationsPage() {
       return;
     }
 
+    // Save to local storage for persistence
+    try {
+      const existing = JSON.parse(localStorage.getItem('koksen_reservations') || '[]');
+      existing.push({
+        outlet: activeOutlet.id,
+        outletName: activeOutlet.name,
+        outletPhone: activeOutlet.whatsappNumber,
+        name: name.trim(),
+        phone: phone.trim(),
+        guests: guestCount.trim(),
+        guestNumber: guestValidation.count,
+        dateTime: `${date} ${time}`,
+        dietaryNotes: specialRequests.trim(),
+        id: Date.now().toString(),
+        createdAt: new Date().toISOString()
+      });
+      localStorage.setItem('koksen_reservations', JSON.stringify(existing));
+    } catch {
+      // ignore
+    }
+
     // Format WhatsApp reservation message
     const msgLines = [
       `*Kok Sen Restaurant — Table Reservation Enquiry*`,
@@ -55,7 +88,7 @@ export function ReservationsPage() {
       `📍 *Outlet:* ${activeOutlet.name} (${activeOutlet.address})`,
       `📅 *Date:* ${date}`,
       `⏰ *Preferred Time:* ${time}`,
-      `👥 *Party Size:* ${partySize}`,
+      `👥 *Number of Guests:* ${guestCount.trim()}`,
       `👤 *Name:* ${name.trim()}`,
       `📞 *Phone:* ${phone.trim()}`,
     ];
@@ -285,24 +318,51 @@ export function ReservationsPage() {
               </select>
             </div>
 
-            {/* Party Size */}
+            {/* Number of Guests */}
             <div className="flex flex-col gap-2">
-              <label htmlFor="res-party" className="text-xs font-bold text-on-surface uppercase tracking-wider flex items-center gap-1.5">
+              <label htmlFor="res-guests" className="text-xs font-bold text-on-surface uppercase tracking-wider flex items-center gap-1.5">
                 <Users className="w-3.5 h-3.5 text-secondary" />
-                <span>Party Size</span>
+                <span>Number of Guests *</span>
               </label>
-              <select
-                id="res-party"
-                value={partySize}
-                onChange={(e) => setPartySize(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border border-surface-container-high text-on-surface text-xs sm:text-sm focus:outline-none focus:border-secondary cursor-pointer"
-              >
-                <option value="1 - 2 diners">1 – 2 Diners (Small Table)</option>
-                <option value="3 - 4 diners">3 – 4 Diners (Standard Booth)</option>
-                <option value="5 - 6 diners">5 – 6 Diners</option>
-                <option value="7 - 8 diners">7 – 8 Diners</option>
-                <option value="9+ diners (Round Banquet)">9+ Diners (Round Revolving Table)</option>
-              </select>
+              <input
+                id="res-guests"
+                type="number"
+                inputMode="numeric"
+                min="1"
+                step="1"
+                required
+                placeholder="Enter number of guests"
+                value={guestCount}
+                onKeyDown={(e) => {
+                  if (['e', 'E', '+', '-', '.'].includes(e.key)) {
+                    e.preventDefault();
+                  }
+                }}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  setGuestCount(val);
+                  if (guestTouched) {
+                    const validation = validateGuestCount(val);
+                    setGuestError(validation.isValid ? null : validation.error);
+                  }
+                }}
+                onBlur={() => {
+                  setGuestTouched(true);
+                  const validation = validateGuestCount(guestCount);
+                  setGuestError(validation.isValid ? null : validation.error);
+                }}
+                className={`w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none transition-colors ${
+                  guestError && guestTouched
+                    ? 'border-rose-500 focus:border-rose-400'
+                    : 'border-surface-container-high focus:border-secondary'
+                }`}
+              />
+              {guestError && guestTouched && (
+                <span className="text-xs text-rose-400 flex items-center gap-1 mt-0.5 animate-in fade-in duration-200">
+                  <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                  <span>{guestError}</span>
+                </span>
+              )}
             </div>
           </div>
 

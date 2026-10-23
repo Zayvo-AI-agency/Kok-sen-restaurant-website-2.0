@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { RESTAURANT_INFO, OUTLETS } from '../data/restaurantData';
 import { TableReservationRequest } from '../types';
+import { validateGuestCount } from '../utils/reservationValidation';
 
 interface ReservationModalProps {
   isOpen: boolean;
@@ -13,11 +14,13 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
     outlet: defaultOutletId,
     name: '',
     phone: '',
-    guests: '4 guests',
+    guests: '',
     dateTime: '',
     dietaryNotes: ''
   });
 
+  const [guestError, setGuestError] = useState<string | null>(null);
+  const [guestTouched, setGuestTouched] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   if (!isOpen) return null;
@@ -26,7 +29,15 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.phone) return;
+
+    const guestValidation = validateGuestCount(formData.guests);
+    if (!guestValidation.isValid) {
+      setGuestError(guestValidation.error);
+      setGuestTouched(true);
+      return;
+    }
+
+    if (!formData.name.trim() || !formData.phone.trim()) return;
 
     try {
       const existing = JSON.parse(localStorage.getItem('koksen_reservations') || '[]');
@@ -34,6 +45,7 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
         ...formData,
         outletName: currentOutlet.name,
         outletPhone: currentOutlet.whatsappNumber,
+        guestNumber: guestValidation.count,
         id: Date.now().toString(),
         createdAt: new Date().toISOString()
       });
@@ -52,7 +64,7 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
       `• Outlet: ${targetOutlet.name}\n` +
       `• Name: ${formData.name || '(Your Name)'}\n` +
       `• Mobile: ${formData.phone || '(Contact)'}\n` +
-      `• Diners: ${formData.guests}\n` +
+      `• Number of Guests: ${formData.guests}\n` +
       `• Date & Time: ${formData.dateTime || 'Tonight'}\n` +
       (formData.dietaryNotes ? `• Notes: ${formData.dietaryNotes}\n` : '') +
       `\nPlease let me know if you have an open table. Thank you!`
@@ -139,7 +151,7 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
               Reservation Logged for {currentOutlet.shortName}
             </h4>
             <p className="font-body-sm text-body-sm text-tertiary">
-              We look forward to hosting you, {formData.name}! Send your details directly to the {currentOutlet.shortName} mainline WhatsApp (<strong className="text-emerald-400 font-mono">+{currentOutlet.phoneClean}</strong>) for instant confirmation.
+              We look forward to hosting you, {formData.name}! We have logged your request for <strong className="text-on-surface">{formData.guests} {parseInt(formData.guests) === 1 ? 'guest' : 'guests'}</strong> at <strong className="text-secondary">{currentOutlet.name}</strong>. Send your details directly to the {currentOutlet.shortName} mainline WhatsApp (<strong className="text-emerald-400 font-mono">+{currentOutlet.phoneClean}</strong>) for instant confirmation.
             </p>
             <a
               href={getWhatsAppBookingLink()}
@@ -241,19 +253,46 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label className="font-label-caps text-label-caps uppercase text-tertiary block mb-1">
-                  Diners
+                  Number of Guests *
                 </label>
-                <select 
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  min="1"
+                  step="1"
+                  required
+                  placeholder="Enter number of guests"
                   value={formData.guests}
-                  onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                  className="w-full px-3 py-2 rounded-lg bg-surface-container text-on-surface border border-surface-container-high focus:outline-none focus:border-secondary font-body-md text-sm"
-                >
-                  <option value="2 guests">2 guests</option>
-                  <option value="4 guests">4 guests</option>
-                  <option value="6 guests">6 guests</option>
-                  <option value="8 guests (Round Table)">8 guests (Round Table)</option>
-                  <option value="10+ guests (Banquet)">10+ guests (Banquet)</option>
-                </select>
+                  onKeyDown={(e) => {
+                    if (['e', 'E', '+', '-', '.'].includes(e.key)) {
+                      e.preventDefault();
+                    }
+                  }}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setFormData({ ...formData, guests: val });
+                    if (guestTouched) {
+                      const validation = validateGuestCount(val);
+                      setGuestError(validation.isValid ? null : validation.error);
+                    }
+                  }}
+                  onBlur={() => {
+                    setGuestTouched(true);
+                    const validation = validateGuestCount(formData.guests);
+                    setGuestError(validation.isValid ? null : validation.error);
+                  }}
+                  className={`w-full px-3 py-2 rounded-lg bg-surface-container text-on-surface border placeholder:text-tertiary focus:outline-none font-body-md text-sm transition-colors ${
+                    guestError && guestTouched
+                      ? 'border-rose-500 focus:border-rose-400'
+                      : 'border-surface-container-high focus:border-secondary'
+                  }`}
+                />
+                {guestError && guestTouched && (
+                  <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
+                    <span className="material-symbols-outlined text-[14px]">error</span>
+                    <span>{guestError}</span>
+                  </span>
+                )}
               </div>
 
               <div>
