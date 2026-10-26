@@ -96,8 +96,8 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
             Table Reservation
           </h3>
         </div>
-        <p className="font-body-md text-xs sm:text-body-md text-tertiary mb-3">
-          Book your table or link directly to our mainline WhatsApp for instant assistance.
+        <p className="font-body-md text-xs sm:text-body-md text-tertiary mb-3 leading-relaxed">
+          <strong className="text-on-surface font-semibold">Please note:</strong> This form submits a table reservation request only. Your booking is confirmed only after you receive confirmation from the restaurant. Kindly await our team’s reply.
         </p>
 
         {/* Quick WhatsApp Mainline Buttons */}
