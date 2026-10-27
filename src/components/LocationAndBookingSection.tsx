@@ -158,12 +158,12 @@ export function LocationAndBookingSection() {
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between py-1.5 border-b border-surface-container-high/30 gap-1 sm:gap-2">
                       <span className="text-on-surface font-semibold shrink-0">Tuesday – Sunday</span>
                       <div className="sm:text-right space-y-0.5 text-tertiary">
-                        <div><span className="text-secondary/90 font-medium">Lunch:</span> 12:00pm – 2:15pm</div>
-                        <div><span className="text-secondary/90 font-medium">Dinner:</span> 5:00pm – 9:15pm</div>
+                        <div><span className="text-secondary/90 font-medium">Lunch:</span> 12:00 PM–2:45 PM <span className="text-tertiary text-xs">(Last order 2:15 PM)</span></div>
+                        <div><span className="text-secondary/90 font-medium">Dinner:</span> 5:00 PM–9:45 PM <span className="text-tertiary text-xs">(Last order 9:15 PM)</span></div>
                       </div>
                     </div>
                     <div className="text-[11px] sm:text-xs text-secondary/90 italic pt-1 leading-relaxed">
-                      * Last lunch order 2:00pm · Last dinner order 8:45pm. Evening queue begins ~15m before doors open.
+                      * Last order for lunch: 2:15 PM · Last order for dinner: 9:15 PM. Evening queue begins ~15m before doors open.
                     </div>
                   </div>
                 </div>

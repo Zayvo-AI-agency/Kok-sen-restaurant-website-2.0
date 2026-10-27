@@ -71,11 +71,11 @@ export const KEONG_SAIK_HOURS = {
   daysSummary: 'Tuesday – Sunday',
   closedSummary: 'Monday: Closed (Weekly Kitchen Rest)',
   isClosedOnMonday: true,
-  lunchDisplay: 'Lunch: 12:00pm – 2:15pm (Last order 2:00pm)',
-  dinnerDisplay: 'Dinner: 5:00pm – 9:15pm (Last order 8:45pm)',
-  lunchTime: '12:00pm – 2:15pm',
-  dinnerTime: '5:00pm – 9:15pm',
-  lastOrderNote: 'Last lunch order 2:00pm · Last dinner order 8:45pm',
+  lunchDisplay: 'Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)',
+  dinnerDisplay: 'Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)',
+  lunchTime: '12:00 PM–2:45 PM',
+  dinnerTime: '5:00 PM–9:45 PM',
+  lastOrderNote: 'Last order for lunch: 2:15 PM · Last order for dinner: 9:15 PM',
   statusNote: 'Open until 10:30 PM on weekend peak for seated diners. Queue forms ~15m early.',
 } as const;
 
@@ -143,7 +143,7 @@ export const RESTAURANT_INFO = {
   michelinStatus: 'Michelin Guide Singapore · Bib Gourmand Awarded (2016–2026)',
   hours: [
     { day: 'Monday', lunch: 'Closed', dinner: 'Closed', outlet: 'Keong Saik (Flagship)' },
-    { day: 'Tuesday – Sunday', lunch: '12:00pm – 2:15pm (Last order 2:00pm)', dinner: '5:00pm – 9:15pm (Last order 8:45pm)', outlet: 'Keong Saik (Flagship)' },
+    { day: 'Tuesday – Sunday', lunch: '12:00 PM–2:45 PM (Last order 2:15 PM)', dinner: '5:00 PM–9:45 PM (Last order 9:15 PM)', outlet: 'Keong Saik (Flagship)' },
     { day: 'Monday – Sunday', lunch: '11:30am–2:30pm', dinner: '4:30pm–9:00pm', outlet: 'City Square Mall' },
   ],
   mrtStations: [
@@ -251,7 +251,7 @@ export const FAQS: FaqItem[] = [
   {
     id: 'faq-1',
     question: 'What are your operating hours at each outlet?',
-    answer: '1) Keong Saik Outlet (Flagship): Tuesday – Sunday with Lunch 12:00pm – 2:15pm (Last order 2:00pm) and Dinner 5:00pm – 9:15pm (Last order 8:45pm). Closed on Mondays. \n2) City Square Mall Outlet: Open Daily · Monday–Sunday with Lunch 11:30am–2:30pm and Dinner 4:30pm–9:00pm.'
+    answer: '1) Keong Saik Outlet (Flagship): Tuesday – Sunday with Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM) and Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM). Closed on Mondays.\n2) City Square Mall Outlet: Open Daily · Monday–Sunday with Lunch 11:30am–2:30pm and Dinner 4:30pm–9:00pm.'
   },
   {
     id: 'faq-2',
@@ -589,21 +589,21 @@ export function getOpeningStatus(outletId?: 'keong-saik' | 'city-square-mall') {
 
   // Specific Outlet: Keong Saik Flagship
   // Closed on Mondays
-  // Tue–Sun: Lunch: 12:00pm–2:15pm (12.0 to 14.25) | Dinner: 5:00pm–9:15pm (17.0 to 21.25)
+  // Tue–Sun: Lunch: 12:00 PM–2:45 PM (12.0 to 14.75) | Dinner: 5:00 PM–9:45 PM (17.0 to 21.75)
   if (outletId === 'keong-saik') {
     if (day === 1) {
       return { isOpen: false, message: 'Keong Saik Closed on Mondays · Reopens Tuesday 12:00pm', outletId: 'keong-saik' };
     }
-    if (currentTimeVal >= 12.0 && currentTimeVal <= 14.25) {
-      return { isOpen: true, message: 'Keong Saik Open · Lunch Service until 2:15pm', outletId: 'keong-saik' };
+    if (currentTimeVal >= 12.0 && currentTimeVal <= 14.75) {
+      return { isOpen: true, message: 'Keong Saik Open · Lunch Service until 2:45pm (Last order 2:15pm)', outletId: 'keong-saik' };
     }
-    if (currentTimeVal >= 17.0 && currentTimeVal <= 21.25) {
-      return { isOpen: true, message: 'Keong Saik Open · Dinner Service until 9:15pm', outletId: 'keong-saik' };
+    if (currentTimeVal >= 17.0 && currentTimeVal <= 21.75) {
+      return { isOpen: true, message: 'Keong Saik Open · Dinner Service until 9:45pm (Last order 9:15pm)', outletId: 'keong-saik' };
     }
     if (currentTimeVal < 12.0) {
       return { isOpen: false, message: 'Keong Saik Opens Today at 12:00pm for Lunch', outletId: 'keong-saik' };
     }
-    if (currentTimeVal > 14.25 && currentTimeVal < 17.0) {
+    if (currentTimeVal > 14.75 && currentTimeVal < 17.0) {
       return { isOpen: false, message: 'Kitchen Break · Dinner service begins at 5:00pm', outletId: 'keong-saik' };
     }
     return { isOpen: false, message: 'Closed for the night · Reopens 12:00pm', outletId: 'keong-saik' };
@@ -611,7 +611,7 @@ export function getOpeningStatus(outletId?: 'keong-saik' | 'city-square-mall') {
 
   // General Status (Both Outlets):
   const isCsmOpen = (currentTimeVal >= 11.5 && currentTimeVal <= 14.5) || (currentTimeVal >= 16.5 && currentTimeVal <= 21.0);
-  const isKsOpen = day !== 1 && ((currentTimeVal >= 12.0 && currentTimeVal <= 14.25) || (currentTimeVal >= 17.0 && currentTimeVal <= 21.25));
+  const isKsOpen = day !== 1 && ((currentTimeVal >= 12.0 && currentTimeVal <= 14.75) || (currentTimeVal >= 17.0 && currentTimeVal <= 21.75));
 
   if (isCsmOpen && isKsOpen) {
     return { isOpen: true, message: 'Kitchens Open · Serving at Keong Saik & City Square Mall' };
@@ -627,7 +627,7 @@ export function getOpeningStatus(outletId?: 'keong-saik' | 'city-square-mall') {
   if (currentTimeVal < 11.5) {
     return { isOpen: false, message: 'Kitchens Closed · Opens 11:30am (City Square Mall) / 12:00pm (Keong Saik)' };
   }
-  if (currentTimeVal > 14.5 && currentTimeVal < 16.5) {
+  if (currentTimeVal > 14.75 && currentTimeVal < 16.5) {
     return { isOpen: false, message: 'Afternoon Kitchen Break · Dinner from 4:30pm (City Sq) / 5:00pm (Keong Saik)' };
   }
   return { isOpen: false, message: 'Closed for the night · Reopens Tomorrow at 11:30am' };

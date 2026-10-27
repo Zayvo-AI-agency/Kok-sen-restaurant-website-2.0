@@ -54,7 +54,7 @@ export function HeroSection({
         <div className="flex items-center gap-2 min-w-0">
           <Clock className="w-4 h-4 text-secondary shrink-0" />
           <span className="text-xs sm:text-sm font-semibold text-on-surface truncate">
-            {status.isOpen ? 'Kitchen Open · Closes 9:15 PM' : 'Kitchen Closed · Opens 11:30 AM'}
+            {status.message || (status.isOpen ? 'Kitchens Open' : 'Kitchens Closed')}
           </span>
         </div>
         <div className="flex items-center gap-1.5 shrink-0">

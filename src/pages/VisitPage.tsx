@@ -99,8 +99,8 @@ export function VisitPage() {
                   <div className="text-xs sm:text-sm text-tertiary space-y-0.5 mt-0.5">
                     <p><strong className="text-rose-400">Monday: Closed</strong> (Kitchen Rest)</p>
                     <p><strong>Tuesday – Sunday:</strong></p>
-                    <p className="pl-2">Lunch: 12:00 PM – 2:15 PM (Last Order 2:00 PM)</p>
-                    <p className="pl-2">Dinner: 5:00 PM – 9:15 PM (Last Order 8:45 PM)</p>
+                    <p className="pl-2">Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)</p>
+                    <p className="pl-2">Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)</p>
                     <p className="text-[11px] text-secondary font-medium pt-0.5">
                       Open until 10:30 PM on weekend peak for seated diners
                     </p>

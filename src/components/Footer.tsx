@@ -90,7 +90,8 @@ export function Footer({ onOpenReservation }: FooterProps) {
                   <span className="block font-semibold text-on-surface text-xs">1) Keong Saik Flagship:</span>
                   <div className="text-[11px] leading-tight">
                     <strong className="text-rose-400 block font-medium">Monday: Closed</strong>
-                    <span>Tue–Sun: 12:00pm–2:15pm · 5:00pm–9:15pm</span>
+                    <span>Tue–Sun: 12:00 PM–2:45 PM · 5:00 PM–9:45 PM</span>
+                    <div className="text-[10px] text-secondary/90">Last orders: Lunch 2:15 PM · Dinner 9:15 PM</div>
                   </div>
                 </div>
 

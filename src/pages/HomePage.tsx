@@ -166,7 +166,7 @@ export function HomePage() {
                 <p className="text-[11px] text-tertiary">Chinatown / 4 min from Outram Park MRT (Exit 4)</p>
                 <div className="pt-1 text-[11px] text-on-surface-variant flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-secondary shrink-0" />
-                  <span>Tue–Sun: 12:00pm–2:15pm · 5:00pm–9:15pm (Mon Closed)</span>
+                  <span>Tue–Sun: 12:00 PM–2:45 PM · 5:00 PM–9:45 PM (Mon Closed)</span>
                 </div>
               </div>
             </div>
@@ -486,9 +486,9 @@ export function HomePage() {
                         </>
                       ) : (
                         <>
-                          <span>Lunch: 12:00pm – 2:15pm (LO 2:00pm)</span>
+                          <span>Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)</span>
                           <br />
-                          <span>Dinner: 5:00pm – 9:15pm (LO 8:45pm)</span>
+                          <span>Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)</span>
                           <br />
                           <strong className="text-rose-400 font-semibold">Closed on Mondays</strong>
                         </>

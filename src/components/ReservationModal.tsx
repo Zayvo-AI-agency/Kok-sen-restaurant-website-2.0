@@ -209,7 +209,7 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
                         )}
                       </div>
                       <div className="text-[11px] font-medium text-secondary mt-0.5">
-                        {outlet.id === 'city-square-mall' ? 'Open Daily · Mon–Sun (11:30am–2:30pm · 4:30pm–9:00pm)' : 'Tue–Sun (12:00pm–2:15pm · 5:00pm–9:15pm, Mon Closed)'}
+                        {outlet.id === 'city-square-mall' ? 'Open Daily · Mon–Sun (11:30am–2:30pm · 4:30pm–9:00pm)' : 'Tue–Sun: Lunch 12:00 PM–2:45 PM · Dinner 5:00 PM–9:45 PM (Mon Closed)'}
                       </div>
                       <div className="text-[11px] font-mono font-medium text-emerald-400 mt-0.5">
                         WhatsApp: {outlet.whatsappNumber}

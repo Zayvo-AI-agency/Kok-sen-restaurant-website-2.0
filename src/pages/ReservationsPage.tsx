@@ -228,7 +228,7 @@ export function ReservationsPage() {
                     <span className="text-[11px] text-secondary font-medium pt-1">
                       {outlet.id === 'city-square-mall'
                         ? 'Open Daily · Mon–Sun (11:30am–2:30pm · 4:30pm–9:00pm)'
-                        : 'Tue–Sun (12:00pm–2:15pm · 5:00pm–9:15pm, Mon Closed)'}
+                        : 'Tue–Sun: Lunch 12:00 PM–2:45 PM · Dinner 5:00 PM–9:45 PM (Mon Closed)'}
                     </span>
                   </button>
                 );
@@ -297,13 +297,14 @@ export function ReservationsPage() {
                   </>
                 ) : (
                   <>
-                    <optgroup label="Lunch Seating (Tue–Sun · Mon Closed)">
+                    <optgroup label="Lunch Seating (Tue–Sun · Mon Closed · 12:00 PM–2:45 PM)">
                       <option value="12:00">12:00 PM</option>
                       <option value="12:30">12:30 PM</option>
                       <option value="13:00">1:00 PM</option>
-                      <option value="13:30">1:30 PM (Last Order 2:00 PM)</option>
+                      <option value="13:30">1:30 PM</option>
+                      <option value="14:00">2:00 PM (Last Order 2:15 PM)</option>
                     </optgroup>
-                    <optgroup label="Dinner Seating (Tue–Sun · Mon Closed)">
+                    <optgroup label="Dinner Seating (Tue–Sun · Mon Closed · 5:00 PM–9:45 PM)">
                       <option value="17:00">5:00 PM (Early Dinner)</option>
                       <option value="17:30">5:30 PM</option>
                       <option value="18:00">6:00 PM</option>
@@ -311,7 +312,8 @@ export function ReservationsPage() {
                       <option value="19:00">7:00 PM</option>
                       <option value="19:30">7:30 PM</option>
                       <option value="20:00">8:00 PM</option>
-                      <option value="20:30">8:30 PM (Last Order 8:45 PM)</option>
+                      <option value="20:30">8:30 PM</option>
+                      <option value="21:00">9:00 PM (Last Order 9:15 PM)</option>
                     </optgroup>
                   </>
                 )}
