@@ -90,6 +90,8 @@ export interface OutletHoursConfig {
   dinnerDisplay: string;
   lunchTime: string;
   dinnerTime: string;
+  lunchLastOrder?: string;
+  dinnerLastOrder?: string;
   lastOrderNote?: string;
   statusNote?: string;
 }

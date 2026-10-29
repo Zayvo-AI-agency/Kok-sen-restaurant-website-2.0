@@ -208,8 +208,20 @@ export function ReservationModal({ isOpen, onClose, defaultOutletId = 'keong-sai
                           <span className="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
                         )}
                       </div>
-                      <div className="text-[11px] font-medium text-secondary mt-0.5">
-                        {outlet.id === 'city-square-mall' ? 'Open Daily · Mon–Sun (11:30am–2:30pm · 4:30pm–9:00pm)' : 'Tue–Sun: Lunch 12:00 PM–2:45 PM · Dinner 5:00 PM–9:45 PM (Mon Closed)'}
+                      <div className="text-[11px] font-medium text-secondary mt-0.5 space-y-0.5">
+                        {outlet.id === 'city-square-mall' ? (
+                          <>
+                            <div className="text-emerald-400 font-semibold">Open daily · Monday–Sunday</div>
+                            <div>Lunch: 11:30 AM–3:00 PM (Last order 2:30 PM)</div>
+                            <div>Dinner: 4:30 PM–9:30 PM (Last order 9:00 PM)</div>
+                          </>
+                        ) : (
+                          <>
+                            <div className="text-rose-400 font-semibold">Tuesday–Sunday · Closed Monday</div>
+                            <div>Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)</div>
+                            <div>Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)</div>
+                          </>
+                        )}
                       </div>
                       <div className="text-[11px] font-mono font-medium text-emerald-400 mt-0.5">
                         WhatsApp: {outlet.whatsappNumber}

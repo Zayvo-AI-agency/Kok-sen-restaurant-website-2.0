@@ -86,11 +86,10 @@ You can reference site sections using these Markdown anchor tags:
 
 ### OUTLETS & OPERATING HOURS
 - **1) Keong Saik Outlet (Flagship):** 4 Keong Saik Road, Singapore 089110 · Mainline WhatsApp: 9727 2533 ([Chat with Keong Saik](https://wa.me/6597272533))
-  - Tuesday – Sunday: Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM) · Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)
-  - Monday: Closed (Weekly Kitchen Rest)
-- **2) City Square Mall Outlet:** 180 Kitchener Road, #02-K1/K2, Singapore 208539 · Mainline WhatsApp: 9624 4244 ([Chat with City Square Mall](https://wa.me/6596244244))
-  - Open Daily · Monday–Sunday: Lunch: 11:30am–2:30pm · Dinner: 4:30pm–9:00pm
-  - No Monday closure. Afternoon kitchen break between 2:30pm and 4:30pm.
+  - Tuesday–Sunday · Closed Monday: Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM) · Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)
+- **2) City Square Mall Outlet:** 180 Kitchener Rd, #04-31/32 City Square Mall, Singapore 208539 · Mainline WhatsApp: 9624 4244 ([Chat with City Square Mall](https://wa.me/6596244244))
+  - Open daily · Monday–Sunday: Lunch: 11:30 AM–3:00 PM (Last order 2:30 PM) · Dinner: 4:30 PM–9:30 PM (Last order 9:00 PM)
+  - No Monday closure. Afternoon kitchen break between 3:00 PM and 4:30 PM.
 
 ### MICHELIN RECOGNITION
 - Michelin Bib Gourmand awarded continuously spanning 2016 through 2026.
@@ -260,16 +259,15 @@ We have explored all suitable menu options across our conversation! Would you li
 We welcome you across two distinct dining locations:
 
 **1) Keong Saik Outlet (Flagship):**
-- **Tuesday – Sunday:**
-  - Lunch: 12:00 PM–2:45 PM *(Last order 2:15 PM)*
-  - Dinner: 5:00 PM–9:45 PM *(Last order 9:15 PM)*
-- **Monday: Closed** (Weekly Kitchen Rest)
+- **Tuesday–Sunday · Closed Monday:**
+  - Lunch: 12:00 PM–2:45 PM *(Last order: 2:15 PM)*
+  - Dinner: 5:00 PM–9:45 PM *(Last order: 9:15 PM)*
 
 **2) City Square Mall Outlet:**
-- **Open Daily · Monday–Sunday:**
-  - Lunch: 11:30am–2:30pm
-  - Dinner: 4:30pm–9:00pm
-*(Afternoon break: 2:30pm–4:30pm)*
+- **Open daily · Monday–Sunday:**
+  - Lunch: 11:30 AM–3:00 PM *(Last order: 2:30 PM)*
+  - Dinner: 4:30 PM–9:30 PM *(Last order: 9:00 PM)*
+*(Afternoon break: 3:00 PM–4:30 PM)*
 
 🚶 *Concierge Tip:* Weekday lunch is ideal for spontaneous walk-ins. For weekend dinners, reserving in advance via [#book-table] is strongly advised!`,
       recommendedDishes: [],
@@ -303,7 +301,7 @@ We welcome you at two distinct dining locations:
 - **Outram Park MRT (EW16/NE3/TE17):** 4-min walk via Exit 4
 - **Chinatown MRT (NE4/DT19):** 6-min walk via Exit H
 
-📍 **City Square Mall:** 180 Kitchener Road, #02-K1/K2, Singapore 208539 (Farrer Park MRT Exit I)
+📍 **City Square Mall:** 180 Kitchener Rd, #04-31/32 City Square Mall, Singapore 208539 (Farrer Park MRT Exit I)
 
 Find full interactive maps and parking tips in our [#location] guide!`,
       recommendedDishes: [],

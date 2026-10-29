@@ -225,11 +225,21 @@ export function ReservationsPage() {
                     <span className="text-xs text-tertiary">
                       {outlet.address}
                     </span>
-                    <span className="text-[11px] text-secondary font-medium pt-1">
-                      {outlet.id === 'city-square-mall'
-                        ? 'Open Daily · Mon–Sun (11:30am–2:30pm · 4:30pm–9:00pm)'
-                        : 'Tue–Sun: Lunch 12:00 PM–2:45 PM · Dinner 5:00 PM–9:45 PM (Mon Closed)'}
-                    </span>
+                    <div className="text-[11px] text-secondary font-medium pt-1 space-y-0.5">
+                      {outlet.id === 'city-square-mall' ? (
+                        <>
+                          <div className="text-emerald-400 font-semibold">Open daily · Monday–Sunday</div>
+                          <div>Lunch: 11:30 AM–3:00 PM (Last order 2:30 PM)</div>
+                          <div>Dinner: 4:30 PM–9:30 PM (Last order 9:00 PM)</div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="text-rose-400 font-semibold">Tuesday–Sunday · Closed Monday</div>
+                          <div>Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)</div>
+                          <div>Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)</div>
+                        </>
+                      )}
+                    </div>
                   </button>
                 );
               })}
@@ -275,15 +285,16 @@ export function ReservationsPage() {
               >
                 {outletId === 'city-square-mall' ? (
                   <>
-                    <optgroup label="Lunch Seating (Daily · Mon–Sun)">
+                    <optgroup label="Lunch Seating (Daily · Mon–Sun · 11:30 AM–3:00 PM)">
                       <option value="11:30">11:30 AM</option>
                       <option value="12:00">12:00 PM</option>
                       <option value="12:30">12:30 PM</option>
                       <option value="13:00">1:00 PM</option>
                       <option value="13:30">1:30 PM</option>
                       <option value="14:00">2:00 PM</option>
+                      <option value="14:15">2:15 PM (Last Order 2:30 PM)</option>
                     </optgroup>
-                    <optgroup label="Dinner Seating (Daily · Mon–Sun)">
+                    <optgroup label="Dinner Seating (Daily · Mon–Sun · 4:30 PM–9:30 PM)">
                       <option value="16:30">4:30 PM</option>
                       <option value="17:00">5:00 PM</option>
                       <option value="17:30">5:30 PM</option>
@@ -293,6 +304,7 @@ export function ReservationsPage() {
                       <option value="19:30">7:30 PM</option>
                       <option value="20:00">8:00 PM</option>
                       <option value="20:30">8:30 PM</option>
+                      <option value="20:45">8:45 PM (Last Order 9:00 PM)</option>
                     </optgroup>
                   </>
                 ) : (

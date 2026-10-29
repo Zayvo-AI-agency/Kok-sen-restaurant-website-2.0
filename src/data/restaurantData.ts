@@ -68,25 +68,30 @@ export const PHOTO_ASSETS = {
 };
 
 export const KEONG_SAIK_HOURS = {
-  daysSummary: 'Tuesday – Sunday',
+  daysSummary: 'Tuesday–Sunday · Closed Monday',
   closedSummary: 'Monday: Closed (Weekly Kitchen Rest)',
   isClosedOnMonday: true,
+  lunchTime: '12:00 PM–2:45 PM',
+  lunchLastOrder: '2:15 PM',
+  dinnerTime: '5:00 PM–9:45 PM',
+  dinnerLastOrder: '9:15 PM',
   lunchDisplay: 'Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)',
   dinnerDisplay: 'Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)',
-  lunchTime: '12:00 PM–2:45 PM',
-  dinnerTime: '5:00 PM–9:45 PM',
   lastOrderNote: 'Last order for lunch: 2:15 PM · Last order for dinner: 9:15 PM',
   statusNote: 'Open until 10:30 PM on weekend peak for seated diners. Queue forms ~15m early.',
 } as const;
 
 export const CITY_SQUARE_HOURS = {
-  daysSummary: 'Open Daily · Monday–Sunday',
+  daysSummary: 'Open daily · Monday–Sunday',
   closedSummary: 'None (Open 7 Days a Week)',
   isClosedOnMonday: false,
-  lunchDisplay: 'Lunch: 11:30am–2:30pm',
-  dinnerDisplay: 'Dinner: 4:30pm–9:00pm',
-  lunchTime: '11:30am–2:30pm',
-  dinnerTime: '4:30pm–9:00pm',
+  lunchTime: '11:30 AM–3:00 PM',
+  lunchLastOrder: '2:30 PM',
+  dinnerTime: '4:30 PM–9:30 PM',
+  dinnerLastOrder: '9:00 PM',
+  lunchDisplay: 'Lunch: 11:30 AM–3:00 PM (Last order 2:30 PM)',
+  dinnerDisplay: 'Dinner: 4:30 PM–9:30 PM (Last order 9:00 PM)',
+  lastOrderNote: 'Last order for lunch: 2:30 PM · Last order for dinner: 9:00 PM',
   statusNote: 'Fully air-conditioned dining room with round family banquet tables.',
 } as const;
 
@@ -110,7 +115,7 @@ export const OUTLETS: OutletInfo[] = [
     name: 'City Square Mall Outlet',
     nameZh: '城市广场分店',
     shortName: 'City Square Mall Outlet',
-    address: 'City Square Mall, 180 Kitchener Road, Singapore 208539',
+    address: '180 Kitchener Rd, #04-31/32 City Square Mall, Singapore 208539',
     district: 'Kitchener Road / Farrer Park MRT (Direct Connection)',
     phone: '+65 9624 4244',
     phoneClean: '6596244244',
@@ -144,7 +149,7 @@ export const RESTAURANT_INFO = {
   hours: [
     { day: 'Monday', lunch: 'Closed', dinner: 'Closed', outlet: 'Keong Saik (Flagship)' },
     { day: 'Tuesday – Sunday', lunch: '12:00 PM–2:45 PM (Last order 2:15 PM)', dinner: '5:00 PM–9:45 PM (Last order 9:15 PM)', outlet: 'Keong Saik (Flagship)' },
-    { day: 'Monday – Sunday', lunch: '11:30am–2:30pm', dinner: '4:30pm–9:00pm', outlet: 'City Square Mall' },
+    { day: 'Monday – Sunday', lunch: '11:30 AM–3:00 PM (Last order 2:30 PM)', dinner: '4:30 PM–9:30 PM (Last order 9:00 PM)', outlet: 'City Square Mall' },
   ],
   mrtStations: [
     { name: 'Outram Park MRT (EW16 / NE3 / TE17)', distance: '4 min walk (Exit 4)' },
@@ -251,7 +256,7 @@ export const FAQS: FaqItem[] = [
   {
     id: 'faq-1',
     question: 'What are your operating hours at each outlet?',
-    answer: '1) Keong Saik Outlet (Flagship): Tuesday – Sunday with Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM) and Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM). Closed on Mondays.\n2) City Square Mall Outlet: Open Daily · Monday–Sunday with Lunch 11:30am–2:30pm and Dinner 4:30pm–9:00pm.'
+    answer: '1) Keong Saik Flagship:\nTuesday–Sunday · Closed Monday\nLunch: 12:00 PM–2:45 PM (Last order: 2:15 PM)\nDinner: 5:00 PM–9:45 PM (Last order: 9:15 PM)\n\n2) City Square Mall:\nOpen daily · Monday–Sunday\nLunch: 11:30 AM–3:00 PM (Last order: 2:30 PM)\nDinner: 4:30 PM–9:30 PM (Last order: 9:00 PM)'
   },
   {
     id: 'faq-2',
@@ -266,7 +271,7 @@ export const FAQS: FaqItem[] = [
   {
     id: 'faq-4',
     question: 'How do I find you, and where can I park?',
-    answer: "We welcome you at two locations: \n1) Keong Saik Flagship: 4 Keong Saik Road (4-min walk from Outram Park MRT Exit 4, 5-min walk from Maxwell MRT Exit 2). Street parking along Keong Saik and multi-storey parking at Kreta Ayer Complex.\n2) City Square Mall: 180 Kitchener Road, #02-K1/K2 (Direct sheltered connection from Farrer Park MRT Exit I). Ample sheltered basement carpark available in the mall."
+    answer: "We welcome you at two locations: \n1) Keong Saik Flagship: 4 Keong Saik Road (4-min walk from Outram Park MRT Exit 4, 5-min walk from Maxwell MRT Exit 2). Street parking along Keong Saik and multi-storey parking at Kreta Ayer Complex.\n2) City Square Mall: 180 Kitchener Rd, #04-31/32 City Square Mall, Singapore 208539 (Direct sheltered connection from Farrer Park MRT Exit I). Ample sheltered basement carpark available in the mall."
   },
   {
     id: 'faq-5',
@@ -568,20 +573,20 @@ export function getOpeningStatus(outletId?: 'keong-saik' | 'city-square-mall') {
 
   // Specific Outlet: City Square Mall
   // Open daily: Monday–Sunday
-  // Lunch: 11:30am–2:30pm (11.5 to 14.5)
-  // Afternoon break: 2:30pm–4:30pm (14.5 to 16.5)
-  // Dinner: 4:30pm–9:00pm (16.5 to 21.0)
+  // Lunch: 11:30 AM–3:00 PM (11.5 to 15.0) | Last order 2:30 PM (14.5)
+  // Afternoon break: 3:00 PM–4:30 PM (15.0 to 16.5)
+  // Dinner: 4:30 PM–9:30 PM (16.5 to 21.5) | Last order 9:00 PM (21.0)
   if (outletId === 'city-square-mall') {
-    if (currentTimeVal >= 11.5 && currentTimeVal <= 14.5) {
-      return { isOpen: true, message: 'City Square Mall Open · Lunch Service until 2:30pm', outletId: 'city-square-mall' };
+    if (currentTimeVal >= 11.5 && currentTimeVal <= 15.0) {
+      return { isOpen: true, message: 'City Square Mall Open · Lunch Service until 3:00pm (Last order 2:30pm)', outletId: 'city-square-mall' };
     }
-    if (currentTimeVal >= 16.5 && currentTimeVal <= 21.0) {
-      return { isOpen: true, message: 'City Square Mall Open · Dinner Service until 9:00pm', outletId: 'city-square-mall' };
+    if (currentTimeVal >= 16.5 && currentTimeVal <= 21.5) {
+      return { isOpen: true, message: 'City Square Mall Open · Dinner Service until 9:30pm (Last order 9:00pm)', outletId: 'city-square-mall' };
     }
     if (currentTimeVal < 11.5) {
       return { isOpen: false, message: 'City Square Mall Opens Today at 11:30am for Lunch', outletId: 'city-square-mall' };
     }
-    if (currentTimeVal > 14.5 && currentTimeVal < 16.5) {
+    if (currentTimeVal > 15.0 && currentTimeVal < 16.5) {
       return { isOpen: false, message: 'Afternoon Kitchen Break · Dinner Service Begins at 4:30pm', outletId: 'city-square-mall' };
     }
     return { isOpen: false, message: 'Closed for the night · Reopens Tomorrow at 11:30am', outletId: 'city-square-mall' };
@@ -610,7 +615,7 @@ export function getOpeningStatus(outletId?: 'keong-saik' | 'city-square-mall') {
   }
 
   // General Status (Both Outlets):
-  const isCsmOpen = (currentTimeVal >= 11.5 && currentTimeVal <= 14.5) || (currentTimeVal >= 16.5 && currentTimeVal <= 21.0);
+  const isCsmOpen = (currentTimeVal >= 11.5 && currentTimeVal <= 15.0) || (currentTimeVal >= 16.5 && currentTimeVal <= 21.5);
   const isKsOpen = day !== 1 && ((currentTimeVal >= 12.0 && currentTimeVal <= 14.75) || (currentTimeVal >= 17.0 && currentTimeVal <= 21.75));
 
   if (isCsmOpen && isKsOpen) {
@@ -627,7 +632,7 @@ export function getOpeningStatus(outletId?: 'keong-saik' | 'city-square-mall') {
   if (currentTimeVal < 11.5) {
     return { isOpen: false, message: 'Kitchens Closed · Opens 11:30am (City Square Mall) / 12:00pm (Keong Saik)' };
   }
-  if (currentTimeVal > 14.75 && currentTimeVal < 16.5) {
+  if (currentTimeVal > 15.0 && currentTimeVal < 16.5) {
     return { isOpen: false, message: 'Afternoon Kitchen Break · Dinner from 4:30pm (City Sq) / 5:00pm (Keong Saik)' };
   }
   return { isOpen: false, message: 'Closed for the night · Reopens Tomorrow at 11:30am' };

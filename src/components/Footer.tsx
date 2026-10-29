@@ -88,10 +88,10 @@ export function Footer({ onOpenReservation }: FooterProps) {
                 {/* 1) Keong Saik Flagship */}
                 <div className="space-y-0.5">
                   <span className="block font-semibold text-on-surface text-xs">1) Keong Saik Flagship:</span>
-                  <div className="text-[11px] leading-tight">
-                    <strong className="text-rose-400 block font-medium">Monday: Closed</strong>
-                    <span>Tue–Sun: 12:00 PM–2:45 PM · 5:00 PM–9:45 PM</span>
-                    <div className="text-[10px] text-secondary/90">Last orders: Lunch 2:15 PM · Dinner 9:15 PM</div>
+                  <div className="text-[11px] leading-tight space-y-0.5">
+                    <strong className="text-rose-400 block font-medium">Tuesday–Sunday · Closed Monday</strong>
+                    <div>Lunch: 12:00 PM–2:45 PM <span className="text-secondary/90 font-medium">(Last order: 2:15 PM)</span></div>
+                    <div>Dinner: 5:00 PM–9:45 PM <span className="text-secondary/90 font-medium">(Last order: 9:15 PM)</span></div>
                   </div>
                 </div>
 
@@ -99,10 +99,9 @@ export function Footer({ onOpenReservation }: FooterProps) {
                 <div className="space-y-0.5 pt-1.5 border-t border-surface-container-high/60">
                   <span className="block font-semibold text-on-surface text-xs">2) City Square Mall:</span>
                   <div className="text-[11px] leading-tight space-y-0.5">
-                    <strong className="text-emerald-400 block font-medium">Open Daily · Monday–Sunday</strong>
-                    <span>Lunch: 11:30am–2:30pm</span>
-                    <br />
-                    <span>Dinner: 4:30pm–9:00pm</span>
+                    <strong className="text-emerald-400 block font-medium">Open daily · Monday–Sunday</strong>
+                    <div>Lunch: 11:30 AM–3:00 PM <span className="text-secondary/90 font-medium">(Last order: 2:30 PM)</span></div>
+                    <div>Dinner: 4:30 PM–9:30 PM <span className="text-secondary/90 font-medium">(Last order: 9:00 PM)</span></div>
                   </div>
                 </div>
 
@@ -143,7 +142,7 @@ export function Footer({ onOpenReservation }: FooterProps) {
                     <MessageSquare className="w-3.5 h-3.5" />
                     <span>+65 9624 4244</span>
                   </a>
-                  <span className="text-[11px] text-tertiary">180 Kitchener Road, S208539</span>
+                  <span className="text-[11px] text-tertiary">180 Kitchener Rd, #04-31/32, S208539</span>
                 </div>
 
                 <div className="pt-2">

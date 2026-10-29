@@ -96,11 +96,14 @@ export function VisitPage() {
                 <Clock className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-on-surface text-sm block font-semibold">Operating Hours</strong>
-                  <div className="text-xs sm:text-sm text-tertiary space-y-0.5 mt-0.5">
-                    <p><strong className="text-rose-400">Monday: Closed</strong> (Kitchen Rest)</p>
-                    <p><strong>Tuesday – Sunday:</strong></p>
-                    <p className="pl-2">Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)</p>
-                    <p className="pl-2">Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)</p>
+                  <div className="text-xs sm:text-sm text-tertiary space-y-1 mt-0.5">
+                    <p><strong className="text-rose-400">Tuesday–Sunday · Closed Monday</strong></p>
+                    <div className="pl-2 space-y-0.5">
+                      <p className="text-on-surface font-medium">Lunch: 12:00 PM–2:45 PM</p>
+                      <p className="text-[11px] text-secondary font-medium">Last order: 2:15 PM</p>
+                      <p className="text-on-surface font-medium pt-0.5">Dinner: 5:00 PM–9:45 PM</p>
+                      <p className="text-[11px] text-secondary font-medium">Last order: 9:15 PM</p>
+                    </div>
                     <p className="text-[11px] text-secondary font-medium pt-0.5">
                       Open until 10:30 PM on weekend peak for seated diners
                     </p>
@@ -227,7 +230,7 @@ export function VisitPage() {
                 <div>
                   <strong className="text-on-surface text-sm block font-semibold">Address</strong>
                   <span className="text-xs sm:text-sm text-tertiary">
-                    City Square Mall, 180 Kitchener Road, Singapore 208539
+                    180 Kitchener Rd, #04-31/32 City Square Mall, Singapore 208539
                   </span>
                 </div>
               </div>
@@ -237,12 +240,16 @@ export function VisitPage() {
                 <Clock className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-on-surface text-sm block font-semibold">Operating Hours</strong>
-                  <div className="text-xs sm:text-sm text-tertiary space-y-0.5 mt-0.5">
-                    <p><strong className="text-emerald-400">Open Daily · Monday–Sunday</strong></p>
-                    <p className="pl-2">Lunch: 11:30am–2:30pm</p>
-                    <p className="pl-2">Dinner: 4:30pm–9:00pm</p>
+                  <div className="text-xs sm:text-sm text-tertiary space-y-1 mt-0.5">
+                    <p><strong className="text-emerald-400">Open daily · Monday–Sunday</strong></p>
+                    <div className="pl-2 space-y-0.5">
+                      <p className="text-on-surface font-medium">Lunch: 11:30 AM–3:00 PM</p>
+                      <p className="text-[11px] text-secondary font-medium">Last order: 2:30 PM</p>
+                      <p className="text-on-surface font-medium pt-0.5">Dinner: 4:30 PM–9:30 PM</p>
+                      <p className="text-[11px] text-secondary font-medium">Last order: 9:00 PM</p>
+                    </div>
                     <p className="text-[11px] text-secondary font-medium pt-0.5">
-                      Fully air-conditioned dining room with round family banquet tables
+                      Fully air-conditioned dining room (#04-31/32)
                     </p>
                   </div>
                 </div>
@@ -309,7 +316,7 @@ export function VisitPage() {
                   <div className="rounded-xl overflow-hidden border border-surface-container-high aspect-16/9 bg-surface-container-lowest">
                     <iframe
                       title="Kok Sen City Square Mall Google Map"
-                      src="https://maps.google.com/maps?q=City+Square+Mall,+180+Kitchener+Road,+Singapore&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                      src="https://maps.google.com/maps?q=180+Kitchener+Rd,+%2304-31/32+City+Square+Mall,+Singapore+208539&t=&z=16&ie=UTF8&iwloc=&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -321,7 +328,7 @@ export function VisitPage() {
               </div>
 
               <a
-                href="https://maps.google.com/?q=City+Square+Mall+180+Kitchener+Road+Singapore"
+                href="https://maps.google.com/?q=180+Kitchener+Rd,+%2304-31/32+City+Square+Mall,+Singapore+208539"
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs text-secondary hover:underline flex items-center justify-center gap-1 pt-1"

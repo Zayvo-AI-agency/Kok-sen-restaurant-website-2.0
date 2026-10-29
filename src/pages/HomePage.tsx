@@ -154,19 +154,27 @@ export function HomePage() {
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <span className="font-bold text-sm sm:text-base text-on-surface">
-                  1) Keong Saik Flagship
+                  1. Keong Saik Flagship
                 </span>
                 <span className="text-[10px] uppercase font-bold text-secondary bg-secondary/15 px-2 py-0.5 rounded-full border border-secondary/30">
                   Est. 1968
                 </span>
               </div>
 
-              <div className="text-xs text-tertiary space-y-1">
+              <div className="text-xs text-tertiary space-y-1.5">
                 <p className="text-on-surface/90 font-medium">4 Keong Saik Road, Singapore 089110</p>
                 <p className="text-[11px] text-tertiary">Chinatown / 4 min from Outram Park MRT (Exit 4)</p>
-                <div className="pt-1 text-[11px] text-on-surface-variant flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5 text-secondary shrink-0" />
-                  <span>Tue–Sun: 12:00 PM–2:45 PM · 5:00 PM–9:45 PM (Mon Closed)</span>
+                <div className="pt-2 text-xs text-on-surface-variant flex flex-col gap-1 border-t border-surface-container-high/60 mt-1">
+                  <div className="flex items-center gap-1.5 font-semibold text-rose-300">
+                    <Clock className="w-3.5 h-3.5 text-secondary shrink-0" />
+                    <span>Tuesday–Sunday · Closed Monday</span>
+                  </div>
+                  <div className="pl-5 flex flex-col gap-0.5 text-xs">
+                    <span className="text-on-surface/95 font-medium">Lunch: 12:00 PM–2:45 PM</span>
+                    <span className="text-[11px] text-secondary font-medium">Last order: 2:15 PM</span>
+                    <span className="text-on-surface/95 font-medium pt-1">Dinner: 5:00 PM–9:45 PM</span>
+                    <span className="text-[11px] text-secondary font-medium">Last order: 9:15 PM</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,23 +204,26 @@ export function HomePage() {
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <span className="font-bold text-sm sm:text-base text-on-surface">
-                  2) City Square Mall
+                  2. City Square Mall
                 </span>
                 <span className="text-[10px] uppercase font-bold text-emerald-400 bg-emerald-950/50 px-2 py-0.5 rounded-full border border-emerald-500/30">
                   Air-Conditioned
                 </span>
               </div>
 
-              <div className="text-xs text-tertiary space-y-1">
-                <p className="text-on-surface/90 font-medium">180 Kitchener Road, #02-K1/K2, Singapore 208539</p>
+              <div className="text-xs text-tertiary space-y-1.5">
+                <p className="text-on-surface/90 font-medium">Address: 180 Kitchener Rd, #04-31/32 City Square Mall, Singapore 208539</p>
                 <p className="text-[11px] text-tertiary">Kitchener Road / Direct Link from Farrer Park MRT (Exit I)</p>
-                <div className="pt-1 text-[11px] text-on-surface-variant flex flex-col gap-0.5">
-                  <div className="flex items-center gap-1.5 font-medium text-emerald-400">
+                <div className="pt-2 text-xs text-on-surface-variant flex flex-col gap-1 border-t border-surface-container-high/60 mt-1">
+                  <div className="flex items-center gap-1.5 font-semibold text-emerald-400">
                     <Clock className="w-3.5 h-3.5 text-secondary shrink-0" />
-                    <span>Open Daily · Monday–Sunday</span>
+                    <span>Open daily · Monday–Sunday</span>
                   </div>
-                  <div className="pl-5 text-tertiary">
-                    Lunch: 11:30am–2:30pm · Dinner: 4:30pm–9:00pm
+                  <div className="pl-5 flex flex-col gap-0.5 text-xs">
+                    <span className="text-on-surface/95 font-medium">Lunch: 11:30 AM–3:00 PM</span>
+                    <span className="text-[11px] text-secondary font-medium">Last order: 2:30 PM</span>
+                    <span className="text-on-surface/95 font-medium pt-1">Dinner: 4:30 PM–9:30 PM</span>
+                    <span className="text-[11px] text-secondary font-medium">Last order: 9:00 PM</span>
                   </div>
                 </div>
               </div>
@@ -476,21 +487,26 @@ export function HomePage() {
                   </div>
                   <div className="flex items-start gap-2">
                     <Clock className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                    <div>
+                    <div className="space-y-1 w-full text-xs sm:text-sm">
                       {outlet.id === 'city-square-mall' ? (
                         <>
-                          <strong className="text-emerald-400 font-semibold block">Open Daily · Monday–Sunday</strong>
-                          <span>Lunch: 11:30am–2:30pm</span>
-                          <br />
-                          <span>Dinner: 4:30pm–9:00pm</span>
+                          <strong className="text-emerald-400 font-semibold block">Open daily · Monday–Sunday</strong>
+                          <div className="space-y-0.5 pt-0.5">
+                            <span className="text-on-surface/95 font-medium block">Lunch: 11:30 AM–3:00 PM</span>
+                            <span className="text-[11px] text-secondary font-medium block">Last order: 2:30 PM</span>
+                            <span className="text-on-surface/95 font-medium block pt-1">Dinner: 4:30 PM–9:30 PM</span>
+                            <span className="text-[11px] text-secondary font-medium block">Last order: 9:00 PM</span>
+                          </div>
                         </>
                       ) : (
                         <>
-                          <span>Lunch: 12:00 PM–2:45 PM (Last order 2:15 PM)</span>
-                          <br />
-                          <span>Dinner: 5:00 PM–9:45 PM (Last order 9:15 PM)</span>
-                          <br />
-                          <strong className="text-rose-400 font-semibold">Closed on Mondays</strong>
+                          <strong className="text-rose-400 font-semibold block">Tuesday–Sunday · Closed Monday</strong>
+                          <div className="space-y-0.5 pt-0.5">
+                            <span className="text-on-surface/95 font-medium block">Lunch: 12:00 PM–2:45 PM</span>
+                            <span className="text-[11px] text-secondary font-medium block">Last order: 2:15 PM</span>
+                            <span className="text-on-surface/95 font-medium block pt-1">Dinner: 5:00 PM–9:45 PM</span>
+                            <span className="text-[11px] text-secondary font-medium block">Last order: 9:15 PM</span>
+                          </div>
                         </>
                       )}
                     </div>

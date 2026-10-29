@@ -204,7 +204,7 @@ export function LocationAndBookingSection() {
                     </a>
                   </div>
                   <p className="font-dish-title text-base sm:text-dish-title text-on-surface font-semibold mt-1">
-                    City Square Mall, 180 Kitchener Road, Singapore 208539
+                    180 Kitchener Rd, #04-31/32 City Square Mall, Singapore 208539
                   </p>
                   <p className="font-body-sm text-xs sm:text-body-sm text-tertiary mt-0.5">
                     Kitchener Road / Farrer Park MRT Station (Direct Underground Link)
@@ -217,14 +217,14 @@ export function LocationAndBookingSection() {
                   </span>
                   <div className="mt-2 space-y-1.5 font-body-md text-xs sm:text-body-md">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between py-1.5 border-b border-surface-container-high/30 gap-1 sm:gap-2">
-                      <span className="text-on-surface font-semibold shrink-0">Open Daily · Monday–Sunday</span>
+                      <span className="text-on-surface font-semibold shrink-0">Open daily · Monday–Sunday</span>
                       <div className="sm:text-right space-y-0.5 text-tertiary">
-                        <div><span className="text-secondary/90 font-medium">Lunch:</span> 11:30am–2:30pm</div>
-                        <div><span className="text-secondary/90 font-medium">Dinner:</span> 4:30pm–9:00pm</div>
+                        <div><span className="text-secondary/90 font-medium">Lunch:</span> 11:30 AM–3:00 PM <span className="text-tertiary text-xs">(Last order 2:30 PM)</span></div>
+                        <div><span className="text-secondary/90 font-medium">Dinner:</span> 4:30 PM–9:30 PM <span className="text-tertiary text-xs">(Last order 9:00 PM)</span></div>
                       </div>
                     </div>
                     <div className="text-[11px] sm:text-xs text-secondary/90 italic pt-1 leading-relaxed">
-                      * Fully air-conditioned dining room with round family banquet tables.
+                      * Last order for lunch: 2:30 PM · Last order for dinner: 9:00 PM. Fully air-conditioned dining room.
                     </div>
                   </div>
                 </div>

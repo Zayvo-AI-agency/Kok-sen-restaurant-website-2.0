@@ -47,7 +47,7 @@ export function FaqSection() {
 
               {isOpen && (
                 <div className="px-3.5 pb-3.5 sm:px-space-md sm:pb-space-md md:px-space-lg md:pb-space-lg pt-0 text-tertiary font-body-md text-xs sm:text-body-md leading-relaxed border-t border-surface-container-high/30">
-                  <p className="pt-2">{faq.answer}</p>
+                  <p className="pt-2 whitespace-pre-line">{faq.answer}</p>
                 </div>
               )}
             </div>
