@@ -16,12 +16,18 @@ import {
 } from 'lucide-react';
 
 import { validateGuestCount, formatGuestsLabel } from '../utils/reservationValidation';
+import {
+  buildReservationWhatsAppUrl,
+  triggerWhatsAppNavigation,
+  OUTLET_WHATSAPP_CONFIG,
+  ReservationOutletId
+} from '../utils/reservationWhatsApp';
 
 export function ReservationsPage() {
   const { selectedOutlet, setSelectedOutlet, showToast } = useApp();
 
   // Form state
-  const [outletId, setOutletId] = useState<string>(selectedOutlet.id);
+  const [outletId, setOutletId] = useState<ReservationOutletId>(selectedOutlet.id as ReservationOutletId);
   const [date, setDate] = useState<string>(() => {
     // Default to tomorrow or today
     const tomorrow = new Date();
@@ -33,81 +39,97 @@ export function ReservationsPage() {
   const [guestError, setGuestError] = useState<string | null>(null);
   const [guestTouched, setGuestTouched] = useState<boolean>(false);
   const [name, setName] = useState<string>('');
+  const [nameError, setNameError] = useState<string | null>(null);
   const [phone, setPhone] = useState<string>('');
+  const [phoneError, setPhoneError] = useState<string | null>(null);
   const [specialRequests, setSpecialRequests] = useState<string>('');
-  const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
+  const [preparedUrl, setPreparedUrl] = useState<string | null>(null);
+  const [preparedMessage, setPreparedMessage] = useState<string | null>(null);
+  const [copied, setCopied] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const activeOutlet = OUTLETS.find((o) => o.id === outletId) || OUTLETS[0];
+  const outletConfig = OUTLET_WHATSAPP_CONFIG[outletId] || OUTLET_WHATSAPP_CONFIG['keong-saik'];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    const nameTrimmed = name.trim();
+    const phoneTrimmed = phone.trim();
     const guestValidation = validateGuestCount(guestCount);
+
+    let hasError = false;
+
+    if (!nameTrimmed) {
+      setNameError('Please provide your name');
+      hasError = true;
+    } else {
+      setNameError(null);
+    }
+
+    if (!phoneTrimmed) {
+      setPhoneError('Please provide your contact number');
+      hasError = true;
+    } else {
+      setPhoneError(null);
+    }
+
     if (!guestValidation.isValid) {
-      setGuestError(guestValidation.error);
+      setGuestError(guestValidation.error || 'Please enter the number of guests');
       setGuestTouched(true);
-      showToast(guestValidation.error || 'Please enter the number of guests');
+      hasError = true;
+    } else {
+      setGuestError(null);
+    }
+
+    if (hasError) {
+      showToast('Please correct the highlighted errors before continuing.');
       return;
     }
 
-    if (!name.trim()) {
-      showToast('Please provide your name');
-      return;
-    }
+    if (isSubmitting) return;
+    setIsSubmitting(true);
 
-    if (!phone.trim()) {
-      showToast('Please provide your contact number');
-      return;
-    }
+    const { whatsappUrl, rawMessage } = buildReservationWhatsAppUrl({
+      outlet: outletId,
+      name: nameTrimmed,
+      phone: phoneTrimmed,
+      guests: guestCount.trim(),
+      dateTime: `${date} at ${time}`,
+      notes: specialRequests.trim()
+    });
 
-    // Save to local storage for persistence
+    setPreparedUrl(whatsappUrl);
+    setPreparedMessage(rawMessage);
+
+    // Direct navigation to WhatsApp
+    triggerWhatsAppNavigation(whatsappUrl);
+
+    setTimeout(() => {
+      setIsSubmitting(false);
+    }, 1000);
+  };
+
+  const handleCopyDetails = async () => {
+    if (!preparedMessage) return;
     try {
-      const existing = JSON.parse(localStorage.getItem('koksen_reservations') || '[]');
-      existing.push({
-        outlet: activeOutlet.id,
-        outletName: activeOutlet.name,
-        outletPhone: activeOutlet.whatsappNumber,
-        name: name.trim(),
-        phone: phone.trim(),
-        guests: guestCount.trim(),
-        guestNumber: guestValidation.count,
-        dateTime: `${date} ${time}`,
-        dietaryNotes: specialRequests.trim(),
-        id: Date.now().toString(),
-        createdAt: new Date().toISOString()
-      });
-      localStorage.setItem('koksen_reservations', JSON.stringify(existing));
-    } catch {
-      // ignore
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(preparedMessage);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = preparedMessage;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch (err) {
+      console.warn('Copy failed:', err);
     }
-
-    // Format WhatsApp reservation message
-    const msgLines = [
-      `*Kok Sen Restaurant — Table Reservation Enquiry*`,
-      ``,
-      `📍 *Outlet:* ${activeOutlet.name} (${activeOutlet.address})`,
-      `📅 *Date:* ${date}`,
-      `⏰ *Preferred Time:* ${time}`,
-      `👥 *Number of Guests:* ${guestCount.trim()}`,
-      `👤 *Name:* ${name.trim()}`,
-      `📞 *Phone:* ${phone.trim()}`,
-    ];
-
-    if (specialRequests.trim()) {
-      msgLines.push(`📝 *Special Requests / Dietary:* ${specialRequests.trim()}`);
-    }
-
-    msgLines.push(``);
-    msgLines.push(`_Enquiry submitted via Kok Sen website. Please confirm table availability._`);
-
-    const encodedMsg = encodeURIComponent(msgLines.join('\n'));
-    const whatsappUrl = `https://wa.me/${activeOutlet.phoneClean}?text=${encodedMsg}`;
-
-    setFormSubmitted(true);
-    showToast('Redirecting to WhatsApp reservation host...');
-
-    // Open WhatsApp link in new tab
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -175,17 +197,15 @@ export function ReservationsPage() {
         </div>
       </div>
 
-      {/* 3. Distinction Note: Enquiry vs Confirmation */}
+      {/* 3. Client Specified Reservation Notice */}
       <div className="p-4 sm:p-5 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-start gap-3.5 text-xs sm:text-sm text-on-surface">
         <Info className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
         <div className="space-y-1">
           <strong className="text-secondary font-semibold block text-sm">
-            Important Note on Reservation Confirmation
+            Reservation Instructions
           </strong>
-          <p className="text-tertiary leading-relaxed">
-            Submitting this form prepares an instant reservation enquiry directly to our host on WhatsApp. 
-            <strong> Your reservation is confirmed only once our restaurant host responds with your confirmation message.</strong> 
-            For immediate seating within the next 2 hours, please call the outlet directly.
+          <p className="text-on-surface/90 leading-relaxed">
+            Complete your details below, then continue to WhatsApp and tap Send to submit your reservation request. Your booking is confirmed only after the restaurant replies with confirmation.
           </p>
         </div>
       </div>
@@ -395,10 +415,24 @@ export function ReservationsPage() {
                 type="text"
                 placeholder="e.g. Rachel Tan"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => {
+                  setName(e.target.value);
+                  if (nameError) setNameError(null);
+                  setPreparedUrl(null);
+                }}
                 required
-                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border border-surface-container-high text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none focus:border-secondary"
+                className={`w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none transition-colors ${
+                  nameError
+                    ? 'border-rose-500 focus:border-rose-400'
+                    : 'border-surface-container-high focus:border-secondary'
+                }`}
               />
+              {nameError && (
+                <span className="text-xs text-rose-400 flex items-center gap-1 mt-0.5 animate-in fade-in duration-200">
+                  <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                  <span>{nameError}</span>
+                </span>
+              )}
             </div>
 
             <div className="flex flex-col gap-2">
@@ -410,10 +444,24 @@ export function ReservationsPage() {
                 type="tel"
                 placeholder="e.g. +65 9123 4567"
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                  if (phoneError) setPhoneError(null);
+                  setPreparedUrl(null);
+                }}
                 required
-                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border border-surface-container-high text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none focus:border-secondary"
+                className={`w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none transition-colors ${
+                  phoneError
+                    ? 'border-rose-500 focus:border-rose-400'
+                    : 'border-surface-container-high focus:border-secondary'
+                }`}
               />
+              {phoneError && (
+                <span className="text-xs text-rose-400 flex items-center gap-1 mt-0.5 animate-in fade-in duration-200">
+                  <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                  <span>{phoneError}</span>
+                </span>
+              )}
             </div>
           </div>
 
@@ -427,19 +475,28 @@ export function ReservationsPage() {
               rows={2}
               placeholder="e.g. High chair needed, elderly guest requiring ground floor seating, severe shellfish allergy..."
               value={specialRequests}
-              onChange={(e) => setSpecialRequests(e.target.value)}
+              onChange={(e) => {
+                setSpecialRequests(e.target.value);
+                setPreparedUrl(null);
+              }}
               className="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low border border-surface-container-high text-on-surface placeholder:text-tertiary text-xs sm:text-sm focus:outline-none focus:border-secondary"
             />
           </div>
 
+          {/* Explicit client instruction immediately above the primary button */}
+          <div className="text-xs sm:text-sm text-secondary font-medium leading-relaxed">
+            You must tap Send in WhatsApp for the restaurant to receive your request.
+          </div>
+
           {/* Submit Action */}
-          <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">
+          <div className="pt-1 flex flex-col sm:flex-row items-center gap-3">
             <button
               type="submit"
-              className="w-full sm:flex-1 py-3.5 px-6 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-button-text font-bold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg transition-all hover:scale-[1.02] active:scale-95 cursor-pointer"
+              disabled={isSubmitting}
+              className="w-full sm:flex-1 py-3.5 px-6 rounded-xl bg-emerald-700 hover:bg-emerald-600 active:bg-emerald-800 text-white font-button-text font-bold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg transition-all hover:scale-[1.01] active:scale-95 cursor-pointer disabled:opacity-70"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>Send Reservation Enquiry to WhatsApp Host</span>
+              <span>Continue to WhatsApp</span>
             </button>
 
             <a
@@ -451,12 +508,33 @@ export function ReservationsPage() {
             </a>
           </div>
 
-          {formSubmitted && (
-            <div className="p-3.5 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-2 animate-in fade-in">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>
-                Your enquiry was prepared! If your WhatsApp client did not open automatically, click the button above again or message <strong>+{activeOutlet.phoneClean}</strong> directly.
+          {/* Recovery Fallback Link & Copy Button */}
+          {preparedUrl && (
+            <div className="p-4 rounded-xl bg-surface-container-low border border-surface-container-high flex flex-col gap-2.5 animate-in fade-in duration-200">
+              <span className="text-xs text-tertiary leading-relaxed">
+                If WhatsApp did not open automatically on your device, tap below to open or copy your request details:
               </span>
+              <div className="flex flex-wrap items-center gap-2">
+                <a
+                  href={preparedUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 transition-colors"
+                >
+                  <MessageSquare className="w-3.5 h-3.5" />
+                  <span>Open WhatsApp ({outletConfig.displayPhone})</span>
+                </a>
+                <button
+                  type="button"
+                  onClick={handleCopyDetails}
+                  className="px-4 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-semibold text-xs border border-surface-container-high flex items-center gap-1.5 cursor-pointer transition-colors"
+                >
+                  <span className="material-symbols-outlined text-[16px]">
+                    {copied ? 'check' : 'content_copy'}
+                  </span>
+                  <span>{copied ? 'Details Copied!' : 'Copy request details'}</span>
+                </button>
+              </div>
             </div>
           )}
         </form>

@@ -2,6 +2,12 @@ import { useState } from 'react';
 import { RESTAURANT_INFO, OUTLETS, getOpeningStatus, PHOTO_ASSETS } from '../data/restaurantData';
 import { TableReservationRequest } from '../types';
 import { validateGuestCount } from '../utils/reservationValidation';
+import {
+  buildReservationWhatsAppUrl,
+  triggerWhatsAppNavigation,
+  OUTLET_WHATSAPP_CONFIG,
+  ReservationOutletId
+} from '../utils/reservationWhatsApp';
 
 export function LocationAndBookingSection() {
   const [selectedOutletTab, setSelectedOutletTab] = useState<'keong-saik' | 'city-square-mall'>('keong-saik');
@@ -16,56 +22,103 @@ export function LocationAndBookingSection() {
     dietaryNotes: ''
   });
 
+  const [nameError, setNameError] = useState<string | null>(null);
+  const [phoneError, setPhoneError] = useState<string | null>(null);
   const [guestError, setGuestError] = useState<string | null>(null);
+  const [dateTimeError, setDateTimeError] = useState<string | null>(null);
   const [guestTouched, setGuestTouched] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+  const [preparedUrl, setPreparedUrl] = useState<string | null>(null);
+  const [preparedMessage, setPreparedMessage] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const currentOutlet = OUTLETS.find((o) => o.id === formData.outlet) || OUTLETS[0];
+  const outletConfig = OUTLET_WHATSAPP_CONFIG[formData.outlet as ReservationOutletId] || OUTLET_WHATSAPP_CONFIG['keong-saik'];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    const nameTrimmed = formData.name.trim();
+    const phoneTrimmed = formData.phone.trim();
+    const dateTimeTrimmed = formData.dateTime.trim();
     const guestValidation = validateGuestCount(formData.guests);
+
+    let hasError = false;
+
+    if (!nameTrimmed) {
+      setNameError('Please enter your name.');
+      hasError = true;
+    } else {
+      setNameError(null);
+    }
+
+    if (!phoneTrimmed) {
+      setPhoneError('Please enter your phone or WhatsApp number.');
+      hasError = true;
+    } else {
+      setPhoneError(null);
+    }
+
     if (!guestValidation.isValid) {
-      setGuestError(guestValidation.error);
+      setGuestError(guestValidation.error || 'Please enter the number of guests.');
       setGuestTouched(true);
-      return;
+      hasError = true;
+    } else {
+      setGuestError(null);
     }
 
-    if (!formData.name.trim() || !formData.phone.trim()) return;
-
-    // Save to local storage for persistence
-    try {
-      const existing = JSON.parse(localStorage.getItem('koksen_reservations') || '[]');
-      existing.push({
-        ...formData,
-        outletName: currentOutlet.name,
-        outletPhone: currentOutlet.whatsappNumber,
-        guestNumber: guestValidation.count,
-        id: Date.now().toString(),
-        createdAt: new Date().toISOString()
-      });
-      localStorage.setItem('koksen_reservations', JSON.stringify(existing));
-    } catch {
-      // storage quota or private mode ignore
+    if (!dateTimeTrimmed) {
+      setDateTimeError('Please enter your requested date and time.');
+      hasError = true;
+    } else {
+      setDateTimeError(null);
     }
 
-    setSubmitted(true);
+    if (hasError) return;
+
+    if (isSubmitting) return;
+    setIsSubmitting(true);
+
+    const { whatsappUrl, rawMessage } = buildReservationWhatsAppUrl({
+      outlet: formData.outlet as ReservationOutletId,
+      name: nameTrimmed,
+      phone: phoneTrimmed,
+      guests: formData.guests.trim(),
+      dateTime: dateTimeTrimmed,
+      notes: formData.dietaryNotes.trim()
+    });
+
+    setPreparedUrl(whatsappUrl);
+    setPreparedMessage(rawMessage);
+
+    // Direct navigation to WhatsApp
+    triggerWhatsAppNavigation(whatsappUrl);
+
+    setTimeout(() => {
+      setIsSubmitting(false);
+    }, 1000);
   };
 
-  const getWhatsAppBookingLink = (outletId: 'keong-saik' | 'city-square-mall' = formData.outlet) => {
-    const targetOutlet = OUTLETS.find((o) => o.id === outletId) || OUTLETS[0];
-    const text = encodeURIComponent(
-      `Hello Kok Sen Restaurant (${targetOutlet.shortName})! I would like to request a table reservation:\n\n` +
-      `• Outlet: ${targetOutlet.name}\n` +
-      `• Name: ${formData.name || '(Your Name)'}\n` +
-      `• Contact: ${formData.phone || '(Contact Number)'}\n` +
-      `• Number of Guests: ${formData.guests}\n` +
-      `• Date & Time: ${formData.dateTime || 'Tonight'}\n` +
-      (formData.dietaryNotes ? `• Notes: ${formData.dietaryNotes}\n` : '') +
-      `\nPlease confirm if a table is available. Thank you!`
-    );
-    return `https://wa.me/${targetOutlet.phoneClean}?text=${text}`;
+  const handleCopyDetails = async () => {
+    if (!preparedMessage) return;
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(preparedMessage);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = preparedMessage;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch (err) {
+      console.warn('Copy failed:', err);
+    }
   };
 
   return (
@@ -294,208 +347,247 @@ export function LocationAndBookingSection() {
                 </span>
               </div>
               <p className="font-body-md text-xs sm:text-body-md text-tertiary mb-3 sm:mb-space-md leading-relaxed">
-                Connect directly with our mainline WhatsApp for reservations at either outlet.
+                Complete your details below, then continue to WhatsApp and tap Send to submit your reservation request. Your booking is confirmed only after the restaurant replies with confirmation.
               </p>
 
-              {submitted ? (
-                <div className="p-4 sm:p-space-lg rounded-xl bg-emerald-950/40 border border-emerald-500/40 flex flex-col gap-3 sm:gap-space-md text-center items-center my-3 sm:my-4">
-                  <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[28px]">check_circle</span>
+              <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-2.5 sm:gap-space-sm">
+                {/* Outlet Selection */}
+                <div>
+                  <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
+                    Choose Outlet *
+                  </label>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {OUTLETS.map((outlet) => {
+                      const isSelected = formData.outlet === outlet.id;
+                      return (
+                        <button
+                          key={outlet.id}
+                          type="button"
+                          onClick={() => {
+                            setFormData({ ...formData, outlet: outlet.id });
+                            setSelectedOutletTab(outlet.id);
+                            setPreparedUrl(null);
+                          }}
+                          className={`p-2.5 rounded-lg text-left border transition-all cursor-pointer ${
+                            isSelected
+                              ? 'bg-secondary/15 border-secondary text-on-surface shadow-xs'
+                              : 'bg-surface-container-low border-surface-container-high text-tertiary hover:border-outline'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="font-bold text-xs sm:text-sm text-on-surface">
+                              {outlet.id === 'keong-saik' ? '1) Keong Saik' : '2) City Square Mall'}
+                            </span>
+                            {isSelected && (
+                              <span className="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                            )}
+                          </div>
+                          <div className="text-[11px] font-mono text-emerald-400 font-semibold mt-0.5">
+                            WhatsApp: {outlet.whatsappNumber}
+                          </div>
+                        </button>
+                      );
+                    })}
                   </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-space-sm">
                   <div>
-                    <h4 className="font-dish-title text-base sm:text-dish-title text-on-surface font-bold">
-                      Table Request Received for {currentOutlet.shortName}!
-                    </h4>
-                    <p className="font-body-md text-xs sm:text-body-md text-tertiary mt-1">
-                      Thank you, <strong className="text-on-surface">{formData.name}</strong>. We have logged your request for <strong className="text-on-surface">{formData.guests} {parseInt(formData.guests) === 1 ? 'guest' : 'guests'}</strong> at <strong className="text-secondary">{currentOutlet.name}</strong>.
-                    </p>
+                    <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
+                      Your Name *
+                    </label>
+                    <input 
+                      type="text"
+                      required
+                      placeholder="e.g. Rachel Tan"
+                      value={formData.name}
+                      onChange={(e) => {
+                        setFormData({ ...formData, name: e.target.value });
+                        if (nameError) setNameError(null);
+                        setPreparedUrl(null);
+                      }}
+                      className={`w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border text-sm focus:outline-none transition-colors ${
+                        nameError
+                          ? 'border-rose-500 focus:border-rose-400'
+                          : 'border-surface-container-high focus:border-secondary'
+                      }`}
+                    />
+                    {nameError && (
+                      <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
+                        <span className="material-symbols-outlined text-[14px]">error</span>
+                        <span>{nameError}</span>
+                      </span>
+                    )}
                   </div>
 
-                  <a
-                    href={getWhatsAppBookingLink()}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-button-text text-xs sm:text-button-text uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-colors font-bold"
+                  <div>
+                    <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
+                      Mobile / WhatsApp *
+                    </label>
+                    <input 
+                      type="tel"
+                      required
+                      placeholder="+65 9123 4567"
+                      value={formData.phone}
+                      onChange={(e) => {
+                        setFormData({ ...formData, phone: e.target.value });
+                        if (phoneError) setPhoneError(null);
+                        setPreparedUrl(null);
+                      }}
+                      className={`w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border text-sm focus:outline-none transition-colors ${
+                        phoneError
+                          ? 'border-rose-500 focus:border-rose-400'
+                          : 'border-surface-container-high focus:border-secondary'
+                      }`}
+                    />
+                    {phoneError && (
+                      <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
+                        <span className="material-symbols-outlined text-[14px]">error</span>
+                        <span>{phoneError}</span>
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-space-sm">
+                  <div>
+                    <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
+                      Number of Guests *
+                    </label>
+                    <input 
+                      type="number"
+                      inputMode="numeric"
+                      min="1"
+                      step="1"
+                      required
+                      placeholder="Enter number of guests"
+                      value={formData.guests}
+                      onKeyDown={(e) => {
+                        if (['e', 'E', '+', '-', '.'].includes(e.key)) {
+                          e.preventDefault();
+                        }
+                      }}
+                      onChange={(e) => {
+                        const val = e.target.value;
+                        setFormData({ ...formData, guests: val });
+                        setPreparedUrl(null);
+                        if (guestTouched) {
+                          const validation = validateGuestCount(val);
+                          setGuestError(validation.isValid ? null : validation.error);
+                        }
+                      }}
+                      onBlur={() => {
+                        setGuestTouched(true);
+                        const validation = validateGuestCount(formData.guests);
+                        setGuestError(validation.isValid ? null : validation.error);
+                      }}
+                      className={`w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border placeholder:text-tertiary focus:outline-none text-sm transition-colors ${
+                        guestError && guestTouched
+                          ? 'border-rose-500 focus:border-rose-400'
+                          : 'border-surface-container-high focus:border-secondary'
+                      }`}
+                    />
+                    {guestError && guestTouched ? (
+                      <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
+                        <span className="material-symbols-outlined text-[14px]">error</span>
+                        <span>{guestError}</span>
+                      </span>
+                    ) : (
+                      <span className="text-[10px] text-tertiary block mt-1">
+                        Seating arranged by restaurant staff.
+                      </span>
+                    )}
+                  </div>
+
+                  <div>
+                    <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
+                      Requested Date &amp; Time *
+                    </label>
+                    <input 
+                      type="text"
+                      required
+                      placeholder="e.g. 25 Dec, 7:00 PM or Tonight 7:30 PM"
+                      value={formData.dateTime}
+                      onChange={(e) => {
+                        setFormData({ ...formData, dateTime: e.target.value });
+                        if (dateTimeError) setDateTimeError(null);
+                        setPreparedUrl(null);
+                      }}
+                      className={`w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border text-sm focus:outline-none transition-colors ${
+                        dateTimeError
+                          ? 'border-rose-500 focus:border-rose-400'
+                          : 'border-surface-container-high focus:border-secondary'
+                      }`}
+                    />
+                    {dateTimeError && (
+                      <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
+                        <span className="material-symbols-outlined text-[14px]">error</span>
+                        <span>{dateTimeError}</span>
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
+                    Dietary Preferences / Notes (Optional)
+                  </label>
+                  <textarea 
+                    rows={2}
+                    placeholder="e.g. Birthday dinner, less spicy, one vegetarian diner..."
+                    value={formData.dietaryNotes}
+                    onChange={(e) => {
+                      setFormData({ ...formData, dietaryNotes: e.target.value });
+                      setPreparedUrl(null);
+                    }}
+                    className="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface border border-surface-container-high focus:outline-none focus:border-secondary text-sm"
+                  />
+                </div>
+
+                <div className="pt-1 text-xs text-secondary font-medium leading-relaxed">
+                  You must tap Send in WhatsApp for the restaurant to receive your request.
+                </div>
+
+                <div className="pt-1.5 flex flex-col sm:flex-row gap-2">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="flex-1 py-3 px-4 rounded-lg bg-emerald-700 hover:bg-emerald-600 active:bg-emerald-800 text-white font-button-text text-xs sm:text-button-text uppercase tracking-wider transition-all shadow-md active:scale-98 cursor-pointer font-bold text-center flex items-center justify-center gap-2 disabled:opacity-70"
                   >
                     <span className="material-symbols-outlined text-[18px]">chat</span>
-                    <span>Send to {currentOutlet.shortName} WhatsApp ({currentOutlet.whatsappNumber})</span>
-                  </a>
-
-                  <button
-                    type="button"
-                    onClick={() => setSubmitted(false)}
-                    className="text-secondary text-xs sm:text-body-sm hover:underline cursor-pointer"
-                  >
-                    Make another request
+                    <span>Continue to WhatsApp</span>
                   </button>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-2.5 sm:gap-space-sm">
-                  {/* Outlet Selection */}
-                  <div>
-                    <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
-                      Choose Outlet *
-                    </label>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {OUTLETS.map((outlet) => {
-                        const isSelected = formData.outlet === outlet.id;
-                        return (
-                          <button
-                            key={outlet.id}
-                            type="button"
-                            onClick={() => {
-                              setFormData({ ...formData, outlet: outlet.id });
-                              setSelectedOutletTab(outlet.id);
-                            }}
-                            className={`p-2.5 rounded-lg text-left border transition-all cursor-pointer ${
-                              isSelected
-                                ? 'bg-secondary/15 border-secondary text-on-surface shadow-xs'
-                                : 'bg-surface-container-low border-surface-container-high text-tertiary hover:border-outline'
-                            }`}
-                          >
-                            <div className="flex items-center justify-between">
-                              <span className="font-bold text-xs sm:text-sm text-on-surface">
-                                {outlet.id === 'keong-saik' ? '1) Keong Saik' : '2) City Square Mall'}
-                              </span>
-                              {isSelected && (
-                                <span className="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
-                              )}
-                            </div>
-                            <div className="text-[11px] font-mono text-emerald-400 font-semibold mt-0.5">
-                              WhatsApp: {outlet.whatsappNumber}
-                            </div>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-space-sm">
-                    <div>
-                      <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
-                        Your Name *
-                      </label>
-                      <input 
-                        type="text"
-                        required
-                        placeholder="e.g. Mr. David Lim"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border border-surface-container-high focus:outline-none focus:border-secondary text-sm"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
-                        Mobile / WhatsApp *
-                      </label>
-                      <input 
-                        type="tel"
-                        required
-                        placeholder="+65 9123 4567"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border border-surface-container-high focus:outline-none focus:border-secondary text-sm"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-space-sm">
-                    <div>
-                      <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
-                        Number of Guests *
-                      </label>
-                      <input 
-                        type="number"
-                        inputMode="numeric"
-                        min="1"
-                        step="1"
-                        required
-                        placeholder="Enter number of guests"
-                        value={formData.guests}
-                        onKeyDown={(e) => {
-                          if (['e', 'E', '+', '-', '.'].includes(e.key)) {
-                            e.preventDefault();
-                          }
-                        }}
-                        onChange={(e) => {
-                          const val = e.target.value;
-                          setFormData({ ...formData, guests: val });
-                          if (guestTouched) {
-                            const validation = validateGuestCount(val);
-                            setGuestError(validation.isValid ? null : validation.error);
-                          }
-                        }}
-                        onBlur={() => {
-                          setGuestTouched(true);
-                          const validation = validateGuestCount(formData.guests);
-                          setGuestError(validation.isValid ? null : validation.error);
-                        }}
-                        className={`w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border placeholder:text-tertiary focus:outline-none text-sm transition-colors ${
-                          guestError && guestTouched
-                            ? 'border-rose-500 focus:border-rose-400'
-                            : 'border-surface-container-high focus:border-secondary'
-                        }`}
-                      />
-                      {guestError && guestTouched ? (
-                        <span className="text-xs text-rose-400 flex items-center gap-1 mt-1 animate-in fade-in duration-200">
-                          <span className="material-symbols-outlined text-[14px]">error</span>
-                          <span>{guestError}</span>
+                {preparedUrl && (
+                  <div className="mt-2 p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col gap-2 animate-in fade-in duration-200">
+                    <span className="text-xs text-tertiary leading-relaxed">
+                      If WhatsApp did not open automatically, tap below to open or copy your details:
+                    </span>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <a
+                        href={preparedUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 transition-colors"
+                      >
+                        <span className="material-symbols-outlined text-[16px]">chat</span>
+                        <span>Open WhatsApp ({outletConfig.displayPhone})</span>
+                      </a>
+                      <button
+                        type="button"
+                        onClick={handleCopyDetails}
+                        className="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-semibold text-xs border border-surface-container-high flex items-center gap-1.5 cursor-pointer transition-colors"
+                      >
+                        <span className="material-symbols-outlined text-[16px]">
+                          {copied ? 'check' : 'content_copy'}
                         </span>
-                      ) : (
-                        <span className="text-[10px] text-tertiary block mt-1">
-                          Seating arranged by restaurant staff.
-                        </span>
-                      )}
-                    </div>
-
-                    <div>
-                      <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
-                        Date &amp; Time
-                      </label>
-                      <input 
-                        type="text"
-                        placeholder="e.g. Tomorrow 7:30pm"
-                        value={formData.dateTime}
-                        onChange={(e) => setFormData({ ...formData, dateTime: e.target.value })}
-                        className="w-full px-3 py-2 sm:py-2.5 rounded-lg bg-surface-container-low text-on-surface border border-surface-container-high focus:outline-none focus:border-secondary text-sm"
-                      />
+                        <span>{copied ? 'Details Copied!' : 'Copy request details'}</span>
+                      </button>
                     </div>
                   </div>
-
-
-                  <div>
-                    <label className="font-label-caps text-[11px] sm:text-label-caps uppercase text-tertiary block mb-1">
-                      Dietary Preferences / Notes (Optional)
-                    </label>
-                    <textarea 
-                      rows={2}
-                      placeholder="e.g. Birthday dinner, less spicy, one vegetarian diner..."
-                      value={formData.dietaryNotes}
-                      onChange={(e) => setFormData({ ...formData, dietaryNotes: e.target.value })}
-                      className="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface border border-surface-container-high focus:outline-none focus:border-secondary text-sm"
-                    />
-                  </div>
-
-                  <div className="pt-1.5 flex flex-col sm:flex-row gap-2">
-                    <button
-                      type="submit"
-                      className="flex-1 py-3 px-4 rounded-lg bg-secondary hover:bg-secondary-fixed text-on-secondary font-button-text text-xs sm:text-button-text uppercase tracking-wider transition-all shadow-md active:scale-98 cursor-pointer font-bold text-center"
-                    >
-                      Submit Table Request
-                    </button>
-                    <a
-                      href={getWhatsAppBookingLink()}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-3 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white font-button-text text-xs sm:text-button-text uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors shadow-md font-bold"
-                    >
-                      <span className="material-symbols-outlined text-[18px]">chat</span>
-                      <span>WhatsApp {currentOutlet.shortName}</span>
-                    </a>
-                  </div>
-                </form>
-              )}
+                )}
+              </form>
             </div>
 
             {/* Direct Mainline WhatsApp Lines */}
